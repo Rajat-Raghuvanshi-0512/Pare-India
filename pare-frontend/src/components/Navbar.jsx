@@ -41,14 +41,19 @@ const NavSm = ({ isScrolled }) => {
           <Img src={Logo} width={500} height={400} alt="logo" className="h-14 w-20 object-contain sm:h-20 sm:w-32" />
         </div>
         <div onClick={openModal}>
-          <Img src={BurgerMenu} className={`h-9 w-9 object-contain sm:h-14 sm:w-14 ${!isScrolled ? '' : 'hidden'}`} />
+          <Img
+            src={BurgerMenu}
+            className={`h-9 w-9 object-contain sm:h-14 sm:w-14 ${!isScrolled ? '' : 'hidden'}`}
+            alt="burger-menu"
+          />
           <Img
             src={BurgerMenuBlack}
             className={`h-9 w-9 object-contain sm:h-14 sm:w-14 ${isScrolled ? '' : 'hidden'}`}
+            alt="burger-menu-black"
           />
         </div>
         <Drawer isOpen={isOpen}>
-          <ul className="flex flex-col items-center justify-center gap-8">
+          <ul className="flex flex-col items-center justify-center gap-8 text-black">
             {navLinks.map((link) => (
               <Link to={link.path} key={link.path} className="font-montserrat text-xl uppercase">
                 {link.text}
