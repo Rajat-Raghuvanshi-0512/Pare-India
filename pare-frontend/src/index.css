@@ -5,6 +5,11 @@
 @tailwind utilities;
 @font-face {
   font-family: 'Metropolis';
+  src: url('./assets/fonts/metropolis/Metropolis-Light.otf') format('opentype');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Metropolis';
   src: url('./assets/fonts/metropolis/Metropolis-Regular.otf') format('opentype');
   font-weight: normal;
 }

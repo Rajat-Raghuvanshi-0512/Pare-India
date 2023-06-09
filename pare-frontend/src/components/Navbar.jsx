@@ -8,7 +8,7 @@ import { useState } from 'react'
 const navLinks = [
   {
     text: 'home',
-    path: '/home',
+    path: '/',
   },
   {
     text: 'about',
@@ -62,17 +62,17 @@ const NavSm = ({ isScrolled }) => {
   )
 }
 
-const NavMd = () => {
+const NavMd = ({ isScrolled }) => {
   return (
-    <nav className="sticky">
+    <nav className={`fixed w-full ${isScrolled ? 'bg-[#EBEBEB]' : 'text-white'} `}>
       <div className="mx-10 flex items-center justify-between border-b-2">
         <div className="flex items-end">
-          <Img src={Logo} width={500} height={400} alt="logo" className="h-16 w-28 object-contain" />
+          <Img src={Logo} width={400} height={400} alt="logo" className="h-12 w-20 object-contain" />
         </div>
         <div>
           <ul className="flex items-center justify-center gap-8">
             {navLinks.map((link) => (
-              <Link to={link.path} key={link.path} className="font-montserrat text-xl uppercase">
+              <Link to={link.path} key={link.path} className="font-montserrat text-sm uppercase">
                 {link.text}
               </Link>
             ))}
@@ -86,7 +86,9 @@ const NavMd = () => {
 const NavLg = ({ isScrolled }) => {
   return (
     <nav className={`fixed w-full ${isScrolled ? 'bg-[#EBEBEB]' : 'text-white'} `}>
-      <div className={`mx-10 flex items-center justify-between ${isScrolled ? '' : 'border-b-2 border-white'}`}>
+      <div
+        className={`mx-10 flex items-center justify-between 2xl:mx-40 ${isScrolled ? '' : 'border-b-2 border-white'}`}
+      >
         <div className="flex items-end">
           <Img src={Logo} width={500} height={400} alt="logo" className="h-16 w-28 object-contain" />
         </div>

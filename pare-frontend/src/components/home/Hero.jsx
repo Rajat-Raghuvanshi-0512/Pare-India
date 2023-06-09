@@ -13,8 +13,7 @@ const HeroSm = () => {
     </section>
   )
 }
-const HeroMd = () => {}
-const HeroLg = () => {
+const HeroMd = () => {
   return (
     <section>
       <Img
@@ -24,6 +23,23 @@ const HeroLg = () => {
         className={'absolute -z-10 h-screen w-full object-cover object-top'}
       />
       <div className="flex h-screen flex-col items-start justify-center gap-5 px-20">
+        <Img src={InnovText} width={'350'} height={'100'} className={''} />
+        <p className="text-4xl font-bold tracking-widest text-white">INNOVATIVE SURFACES</p>
+        <Button className={'!px-8'}>BUILD WITH US</Button>
+      </div>
+    </section>
+  )
+}
+const HeroLg = () => {
+  return (
+    <section>
+      <Img
+        src={HeroBg}
+        width={'1900'}
+        height={'100'}
+        className={'absolute -z-10  h-screen w-full object-cover object-top'}
+      />
+      <div className="flex h-screen flex-col items-start justify-center gap-5 px-20 2xl:mx-60 2xl:scale-125">
         <Img src={InnovText} width={'350'} height={'100'} className={''} />
         <p className="text-4xl font-bold tracking-widest text-white">INNOVATIVE SURFACES</p>
         <Button className={'!px-8'}>BUILD WITH US</Button>

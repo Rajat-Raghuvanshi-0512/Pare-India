@@ -6,5 +6,8 @@ import Logo from './images/home/logo.png'
 import HeroBgMobile from './images/home/home-hero-bg-mob.png'
 import HeroBg from './images/home/hero-bg.png'
 import InnovText from './images/home/innov.png'
+import sofa from './images/home/sofa.webp'
+import sofa1000 from './images/home/sofa-1000.webp'
+import desk from './images/home/desk.webp'
 
-export { Logo, HeroBgMobile, BurgerMenu, HeroBg, InnovText, BurgerMenuBlack, ChatIcon }
+export { Logo, HeroBgMobile, BurgerMenu, HeroBg, InnovText, BurgerMenuBlack, ChatIcon, sofa, sofa1000, desk }
