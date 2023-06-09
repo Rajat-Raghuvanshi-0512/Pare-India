@@ -2,7 +2,6 @@ import { useRef } from 'react'
 import { desk, sofa, sofa1000 } from '../../assets'
 import { Img } from '../custom'
 import { useInView } from 'framer-motion'
-import { useEffect } from 'react'
 import CountUp from 'react-countup'
 
 const AboutSectionSm = () => {
@@ -90,9 +89,6 @@ const AboutSectionLg = ({ numbersInView, numbersRef }) => {
 const AboutSection = () => {
   const numbersRef = useRef(null)
   const numbersInView = useInView(numbersRef)
-  useEffect(() => {
-    console.log(numbersInView)
-  }, [numbersInView])
   return (
     <div>
       <div className="md:hidden">
