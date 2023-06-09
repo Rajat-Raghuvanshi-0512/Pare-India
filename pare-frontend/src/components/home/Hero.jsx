@@ -39,6 +39,7 @@ const HeroLg = () => {
         width={'1900'}
         height={'100'}
         className={'absolute -z-10  h-screen w-full object-cover object-top'}
+        alt="hero-bg"
       />
       <div className="flex h-screen flex-col items-start justify-center gap-5 px-20 2xl:mx-60 2xl:scale-125">
         <Img src={InnovText} width={'350'} height={'100'} alt="hero-text" />
