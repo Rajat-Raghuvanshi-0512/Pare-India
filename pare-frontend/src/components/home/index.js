@@ -1,4 +1,5 @@
 import AboutSection from './AboutSection'
 import Hero from './Hero'
+import ProductsRange from './ProductsRange'
 
-export { Hero, AboutSection }
+export { Hero, AboutSection, ProductsRange }

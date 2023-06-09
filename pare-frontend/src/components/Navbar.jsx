@@ -35,7 +35,7 @@ const navLinks = [
 const NavSm = ({ isScrolled }) => {
   const { isOpen, closeModal, openModal } = useModal()
   return (
-    <nav className={`fixed w-full ${isScrolled ? 'bg-[#EBEBEB]' : 'text-white'} `}>
+    <nav className={`fixed z-50 w-full ${isScrolled ? 'bg-[#EBEBEB]' : 'text-white'} `}>
       <div className="mx-4 flex items-center justify-between">
         <div className="flex items-end">
           <Img src={Logo} width={500} height={400} alt="logo" className="h-14 w-20 object-contain sm:h-20 sm:w-32" />
@@ -55,9 +55,11 @@ const NavSm = ({ isScrolled }) => {
         <Drawer isOpen={isOpen}>
           <ul className="flex flex-col items-center justify-center gap-8 text-black">
             {navLinks.map((link) => (
-              <Link to={link.path} key={link.path} className="font-montserrat text-xl uppercase">
-                {link.text}
-              </Link>
+              <li key={link.path}>
+                <Link to={link.path} className="font-montserrat text-xl uppercase">
+                  {link.text}
+                </Link>
+              </li>
             ))}
             <div onClick={closeModal}>x</div>
           </ul>
@@ -69,7 +71,7 @@ const NavSm = ({ isScrolled }) => {
 
 const NavMd = ({ isScrolled }) => {
   return (
-    <nav className={`fixed w-full ${isScrolled ? 'bg-[#EBEBEB]' : 'text-white'} `}>
+    <nav className={`fixed z-50 w-full ${isScrolled ? 'bg-[#EBEBEB]' : 'text-white'} `}>
       <div className="mx-10 flex items-center justify-between border-b-2">
         <div className="flex items-end">
           <Img src={Logo} width={400} height={400} alt="logo" className="h-12 w-20 object-contain" />
@@ -77,9 +79,11 @@ const NavMd = ({ isScrolled }) => {
         <div>
           <ul className="flex items-center justify-center gap-8">
             {navLinks.map((link) => (
-              <Link to={link.path} key={link.path} className="font-montserrat text-sm uppercase">
-                {link.text}
-              </Link>
+              <li key={link.path}>
+                <Link to={link.path} className="font-montserrat text-sm uppercase">
+                  {link.text}
+                </Link>
+              </li>
             ))}
           </ul>
         </div>
@@ -90,7 +94,7 @@ const NavMd = ({ isScrolled }) => {
 
 const NavLg = ({ isScrolled }) => {
   return (
-    <nav className={`fixed w-full ${isScrolled ? 'bg-[#EBEBEB]' : 'text-white'} `}>
+    <nav className={`fixed z-50 w-full ${isScrolled ? 'bg-[#EBEBEB]' : 'text-white'} `}>
       <div
         className={`mx-10 flex items-center justify-between 2xl:mx-40 ${isScrolled ? '' : 'border-b-2 border-white'}`}
       >
@@ -100,9 +104,11 @@ const NavLg = ({ isScrolled }) => {
         <div>
           <ul className="flex items-center justify-center gap-8">
             {navLinks.map((link) => (
-              <Link to={link.path} key={link.path} className="font-montserrat text-xl uppercase ">
-                {link.text}
-              </Link>
+              <li key={link.path}>
+                <Link to={link.path} className="font-montserrat text-xl uppercase ">
+                  {link.text}
+                </Link>
+              </li>
             ))}
           </ul>
         </div>

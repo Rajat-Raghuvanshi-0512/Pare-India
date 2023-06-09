@@ -4,7 +4,7 @@ import { Img } from '../custom'
 import { useInView } from 'framer-motion'
 import CountUp from 'react-countup'
 
-const AboutSectionSm = () => {
+const AboutSectionSm = ({ numbersRef, numbersInView }) => {
   return (
     <section className="m-5">
       <h3 className="font-metropolis text-4xl font-medium uppercase leading-snug">
@@ -15,14 +15,47 @@ const AboutSectionSm = () => {
         and manufacture a matchless range in India.
       </p>
       <div>
-        <img src={sofa} alt="sofa" />
+        <div className="my-10 ml-auto mr-5 h-[240px] w-[260px] border border-red-base">
+          <Img src={sofa} width={200} height={200} alt="sofa" className="-ml-3 mt-3 h-[240px] w-[260px] " />
+        </div>
+      </div>
+      <div className="mt-5 grid grid-cols-3 gap-5 lg:mt-14 lg:gap-10">
+        <div>
+          <div className="h-[130px] w-[100px] border border-red-base">
+            <Img src={desk} width={300} height={400} alt="desk" className="-ml-3 mt-2  h-full  w-full" />
+          </div>
+        </div>
+        <div className="col-span-2 flex items-center justify-center gap-2 text-center" ref={numbersRef}>
+          {numbersInView && (
+            <>
+              <div>
+                <p className="font-metropolis text-2xl font-bold text-red-base">
+                  <CountUp end={20} duration={2} />+
+                </p>
+                <p className="font-helvetica text-xs">HAPPY CUSTOMERS</p>
+              </div>
+              <div>
+                <p className="font-metropolis text-2xl font-bold text-red-base">
+                  <CountUp end={45} duration={2} />+
+                </p>
+                <p className="font-helvetica text-xs">CITIES SERVED</p>
+              </div>
+              <div>
+                <p className="font-metropolis text-2xl font-bold text-red-base">
+                  <CountUp end={200} duration={1.5} />+
+                </p>
+                <p className="font-helvetica text-xs">CLIENT REVIEWS</p>
+              </div>
+            </>
+          )}
+        </div>
       </div>
     </section>
   )
 }
 const AboutSectionLg = ({ numbersInView, numbersRef }) => {
   return (
-    <section className="m-10 lg:m-16">
+    <section className="m-10 lg:m-16 2xl:mx-48">
       <div className="grid grid-cols-2 gap-10 lg:gap-16">
         <div className="mt-20">
           <h3 className="mb-3 font-metropolis text-xl font-bold uppercase lg:text-3xl">About Us</h3>

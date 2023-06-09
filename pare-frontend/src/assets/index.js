@@ -1,5 +1,5 @@
-import BurgerMenu from './images/burger-menu.png'
-import BurgerMenuBlack from './images/burger-menu-black.png'
+import BurgerMenu from './images/burger-menu.webp'
+import BurgerMenuBlack from './images/burger-menu-black.webp'
 import ChatIcon from './images/chat-icon.webp'
 
 import Logo from './images/home/logo.webp'
