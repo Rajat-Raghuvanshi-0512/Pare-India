@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -34,4 +34,58 @@
   font-family: 'Helvetica';
   src: url('./assets/fonts/helvetica-neue/HelveticaNeue-Light.otf') format('opentype');
   font-weight: 400;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.animate-infinite {
+  width: calc(300px * 16);
+  animation: rotateInfinite 10s linear infinite;
+}
+@keyframes rotateInfinite {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-300px * 4));
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #be1e2d;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media (max-width: 768px) {
+  .animate-infinite {
+    width: calc(150px * 8);
+    animation: rotateInfinite 10s linear infinite;
+  }
+  @keyframes rotateInfinite {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-150px * 4));
+    }
+  }
 }

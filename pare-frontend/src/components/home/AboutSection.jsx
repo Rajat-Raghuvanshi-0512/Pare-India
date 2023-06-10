@@ -4,7 +4,9 @@ import { Img } from '../custom'
 import { useInView } from 'framer-motion'
 import CountUp from 'react-countup'
 
-const AboutSectionSm = ({ numbersRef, numbersInView }) => {
+const AboutSectionSm = () => {
+  const numbersRef = useRef(null)
+  const numbersInView = useInView(numbersRef)
   return (
     <section className="m-5">
       <h3 className="font-metropolis text-4xl font-medium uppercase leading-snug">
@@ -25,24 +27,24 @@ const AboutSectionSm = ({ numbersRef, numbersInView }) => {
             <Img src={desk} width={300} height={400} alt="desk" className="-ml-3 mt-2  h-full  w-full" />
           </div>
         </div>
-        <div className="col-span-2 flex items-center justify-center gap-2 text-center" ref={numbersRef}>
+        <div className="col-span-2 flex items-center justify-center gap-2 text-center md:hidden" ref={numbersRef}>
           {numbersInView && (
             <>
               <div>
                 <p className="font-metropolis text-2xl font-bold text-red-base">
-                  <CountUp end={20} duration={2} />+
+                  <CountUp end={20} duration={3} />+
                 </p>
                 <p className="font-helvetica text-xs">HAPPY CUSTOMERS</p>
               </div>
               <div>
                 <p className="font-metropolis text-2xl font-bold text-red-base">
-                  <CountUp end={45} duration={2} />+
+                  <CountUp end={45} duration={3} />+
                 </p>
                 <p className="font-helvetica text-xs">CITIES SERVED</p>
               </div>
               <div>
                 <p className="font-metropolis text-2xl font-bold text-red-base">
-                  <CountUp end={200} duration={1.5} />+
+                  <CountUp end={200} duration={2.5} />+
                 </p>
                 <p className="font-helvetica text-xs">CLIENT REVIEWS</p>
               </div>
@@ -53,7 +55,9 @@ const AboutSectionSm = ({ numbersRef, numbersInView }) => {
     </section>
   )
 }
-const AboutSectionLg = ({ numbersInView, numbersRef }) => {
+const AboutSectionLg = () => {
+  const numbersRef = useRef(null)
+  const numbersInView = useInView(numbersRef)
   return (
     <section className="m-10 lg:m-16 2xl:mx-48">
       <div className="grid grid-cols-2 gap-10 lg:gap-16">
@@ -78,24 +82,24 @@ const AboutSectionLg = ({ numbersInView, numbersRef }) => {
             trends and manufacture a matchless range in India.
           </p>
           <div className="mt-5 grid grid-cols-2 gap-5 lg:mt-14 lg:gap-10">
-            <div className="flex items-end gap-5 text-center" ref={numbersRef}>
+            <div className="hidden items-end gap-5 text-center md:flex" ref={numbersRef}>
               {numbersInView && (
                 <>
                   <div>
                     <p className="font-metropolis text-xl font-bold text-red-base lg:text-2xl">
-                      <CountUp end={20} duration={2} />+
+                      <CountUp end={20} duration={3} />+
                     </p>
                     <p className="font-helvetica text-xs">HAPPY CUSTOMERS</p>
                   </div>
                   <div>
                     <p className="font-metropolis text-xl font-bold text-red-base lg:text-2xl">
-                      <CountUp end={45} duration={2} />+
+                      <CountUp end={45} duration={3} />+
                     </p>
                     <p className="font-helvetica text-xs">CITIES SERVED</p>
                   </div>
                   <div>
                     <p className="font-metropolis text-xl font-bold text-red-base lg:text-2xl">
-                      <CountUp end={200} duration={1.5} />+
+                      <CountUp end={200} duration={2.5} />+
                     </p>
                     <p className="font-helvetica text-xs">CLIENT REVIEWS</p>
                   </div>
@@ -103,7 +107,7 @@ const AboutSectionLg = ({ numbersInView, numbersRef }) => {
               )}
             </div>
             <div>
-              <div className="h-[170px] w-[140px] border-2 border-red-base lg:h-[300px] lg:w-[250px]">
+              <div className="ml-auto h-[150px] w-[120px] border-2 border-red-base lg:h-[300px] lg:w-[250px]">
                 <Img
                   src={desk}
                   width={300}

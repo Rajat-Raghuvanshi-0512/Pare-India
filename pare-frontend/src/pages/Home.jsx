@@ -1,4 +1,4 @@
-import { Hero, AboutSection, ProductsRange } from '../components/home'
+import { Hero, AboutSection, ProductsRange, InfiniteScroll } from '../components/home'
 
 const Home = () => {
   return (
@@ -6,6 +6,7 @@ const Home = () => {
       <Hero />
       <AboutSection />
       <ProductsRange />
+      <InfiniteScroll />
     </>
   )
 }
