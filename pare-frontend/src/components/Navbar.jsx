@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { BurgerMenu, BurgerMenuBlack, Logo } from '../assets'
+import { BurgerMenu, BurgerMenuBlack, FbIcon, InstaIcon, LinkedInIcon, Logo } from '../assets'
 import { Drawer, Img } from './custom'
 import { useModal } from '../custom-hooks'
 import { useMotionValueEvent, useScroll } from 'framer-motion'
@@ -53,15 +53,20 @@ const NavSm = ({ isScrolled }) => {
           />
         </div>
         <Drawer isOpen={isOpen}>
-          <ul className="flex flex-col items-center justify-center gap-8 text-black">
+          <ul className="flex h-screen w-full flex-col items-end justify-center gap-12 pt-[10vh] text-white">
             {navLinks.map((link) => (
               <li key={link.path}>
-                <Link to={link.path} className="font-montserrat text-xl uppercase">
+                <Link to={link.path} className="font-montserrat text-3xl uppercase">
                   {link.text}
                 </Link>
               </li>
             ))}
             <div onClick={closeModal}>x</div>
+            <div className="mb-5 mt-auto flex items-end justify-end gap-2">
+              <img src={InstaIcon} alt="insta" className="h-8 w-8 object-contain" />
+              <img src={FbIcon} alt="fb" className="h-8 w-8 object-contain" />
+              <img src={LinkedInIcon} alt="Ld" className="h-8 w-8 object-contain" />
+            </div>
           </ul>
         </Drawer>
       </div>

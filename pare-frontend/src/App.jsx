@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 import { Home } from './pages'
-import { ContactFloatBtn, Navbar } from './components'
+import { ContactFloatBtn, Footer, Navbar } from './components'
 
 const App = () => {
   return (
@@ -10,6 +10,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
       </Routes>
       <ContactFloatBtn />
+      <Footer />
     </>
   )
 }

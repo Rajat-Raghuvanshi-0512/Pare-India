@@ -32,6 +32,12 @@
 
 @font-face {
   font-family: 'Helvetica';
+  src: url('./assets/fonts/helvetica-neue/HelveticaNeue-Thin.otf') format('opentype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Helvetica';
   src: url('./assets/fonts/helvetica-neue/HelveticaNeue-Light.otf') format('opentype');
   font-weight: 400;
 }
@@ -56,7 +62,7 @@ body {
 /* width */
 ::-webkit-scrollbar {
   width: 8px;
-  height: 6px;
+  height: 0px;
 }
 
 /* Track */
@@ -73,6 +79,19 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.fade {
+  animation: fade 0.5s ease-in-out;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.95;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 768px) {
