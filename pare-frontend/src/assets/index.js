@@ -17,6 +17,8 @@ import sofa from './images/home/sofa.webp'
 import sofa1000 from './images/home/sofa-1000.webp'
 import desk from './images/home/desk.webp'
 import PareText from './images/home/pare-text.webp'
+import NextProjectImg from './images/home/next-project.webp'
+import NextProjectImgWeb from './images/home/next-project-web.webp'
 
 import P1 from './images/home/products range/p1.webp'
 import P2 from './images/home/products range/p2.webp'
@@ -90,4 +92,6 @@ export {
   InstaIcon,
   FbIcon,
   LinkedInIcon,
+  NextProjectImg,
+  NextProjectImgWeb,
 }

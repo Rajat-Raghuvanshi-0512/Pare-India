@@ -9,7 +9,7 @@ const PRCard = ({ id, heading, desc, img }) => {
           <h3 className=" text-3xl font-bold uppercase md:text-4xl lg:text-6xl">{heading}</h3>
         </div>
         <p className="my-3 font-montserrat text-[10px] leading-3 md:text-sm lg:text-xl">{desc}</p>
-        <Button type="outlined" className="md:my-5">
+        <Button variant="outlined" className="md:my-5">
           view products
         </Button>
       </div>

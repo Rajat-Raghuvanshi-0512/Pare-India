@@ -3,7 +3,7 @@ import { Img } from '../custom'
 
 const Projects = () => {
   return (
-    <section className="bg-[#151515] p-5 text-white md:p-10 lg:px-20 ">
+    <section className="p-5 md:p-10 lg:px-20 ">
       <div className="flex justify-between">
         <div className="font-metropolis">
           <div className="text-3xl font-bold uppercase md:text-4xl lg:text-5xl">Projects</div>
