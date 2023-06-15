@@ -3,7 +3,7 @@ import { Logo } from '../assets'
 import { Img } from './custom'
 import { Link, useLocation } from 'react-router-dom'
 
-const darkNavLinks = ['/about', '/', 'contact']
+const darkNavLinks = ['/about', '/', '/contact']
 const darkNavLinksSm = ['/about']
 
 const FooterSm = () => {
@@ -45,7 +45,7 @@ const FooterSm = () => {
 }
 const FooterLg = ({ dark }) => {
   return (
-    <section className={` ${dark ? 'bg-[#151515] text-white' : ''} px-20`}>
+    <section className={` ${dark ? 'bg-[#151515] text-white' : ''} px-20  md:pt-10 lg:pt-14`}>
       <div className="grid font-montserrat md:grid-cols-10">
         <div className="col-span-5 flex flex-col justify-between border-[0.01rem] border-white border-opacity-50 p-10">
           <Img src={Logo} alt="logo" width={200} height={200} />

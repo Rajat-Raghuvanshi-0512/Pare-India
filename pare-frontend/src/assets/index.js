@@ -6,6 +6,9 @@ import RightArrow from './images/right-arrow.webp'
 import InstaIcon from './images/instagram.webp'
 import FbIcon from './images/facebook.webp'
 import LinkedInIcon from './images/linkedin.webp'
+import MailIcon from './images/mail-icon.webp'
+import PhoneIcon from './images/phone-icon.webp'
+import WhatsappIcon from './images/whatsapp.png'
 
 import Logo from './images/home/logo.webp'
 import HeroBgMobile from './images/home/home-hero-bg-mob.webp'
@@ -48,6 +51,20 @@ import Project2Img from './images/home/projects/img2.webp'
 import Project3Img from './images/home/projects/img3.webp'
 import PrevArrow from './images/home/projects/prev.webp'
 import NextArrow from './images/home/projects/next.webp'
+
+import Chair400 from './images/about/chair-400.webp'
+import Chair700 from './images/about/chair-700.webp'
+import Chair1000 from './images/about/chair-1000.webp'
+
+import Parth from './images/about/team/parth.webp'
+
+import Client1 from './images/about/clients/1.webp'
+import Client2 from './images/about/clients/2.webp'
+
+import LampDesk from './images/contact/lamp-desk.webp'
+import ContactImgPhone from './images/contact/contact-img-phone.webp'
+import ContactImg from './images/contact/contact-img.webp'
+import MapImg from './images/contact/map.webp'
 
 export {
   Logo,
@@ -94,4 +111,17 @@ export {
   LinkedInIcon,
   NextProjectImg,
   NextProjectImgWeb,
+  Chair400,
+  Chair700,
+  Chair1000,
+  Parth,
+  Client1,
+  Client2,
+  MailIcon,
+  WhatsappIcon,
+  PhoneIcon,
+  LampDesk,
+  ContactImgPhone,
+  ContactImg,
+  MapImg,
 }

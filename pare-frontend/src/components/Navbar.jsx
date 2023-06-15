@@ -1,9 +1,11 @@
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { BurgerMenu, BurgerMenuBlack, FbIcon, InstaIcon, LinkedInIcon, Logo } from '../assets'
 import { Drawer, Img } from './custom'
 import { useModal } from '../custom-hooks'
 import { useMotionValueEvent, useScroll } from 'framer-motion'
 import { useState } from 'react'
+
+const greNavRoutes = ['/about']
 
 const navLinks = [
   {
@@ -34,8 +36,13 @@ const navLinks = [
 
 const NavSm = ({ isScrolled }) => {
   const { isOpen, closeModal, openModal } = useModal()
+  const location = useLocation()
   return (
-    <nav className={`fixed z-50 w-full ${isScrolled ? 'bg-[#EBEBEB]' : 'text-white'} `}>
+    <nav
+      className={`fixed z-50 w-full ${
+        isScrolled || greNavRoutes.includes(location.pathname) ? 'bg-[#EBEBEB]' : 'text-white'
+      } `}
+    >
       <div className="mx-4 flex items-center justify-between">
         <div className="flex items-end">
           <Img src={Logo} width={500} height={400} alt="logo" className="h-14 w-20 object-contain sm:h-20 sm:w-32" />
@@ -43,12 +50,16 @@ const NavSm = ({ isScrolled }) => {
         <div onClick={openModal}>
           <Img
             src={BurgerMenu}
-            className={`h-9 w-9 object-contain sm:h-14 sm:w-14 ${!isScrolled ? '' : 'hidden'}`}
+            className={`h-9 w-9 object-contain sm:h-14 sm:w-14 ${
+              !isScrolled && !greNavRoutes.includes(location.pathname) ? '' : 'hidden'
+            }`}
             alt="burger-menu"
           />
           <Img
             src={BurgerMenuBlack}
-            className={`h-9 w-9 object-contain sm:h-14 sm:w-14 ${isScrolled ? '' : 'hidden'}`}
+            className={`h-9 w-9 object-contain sm:h-14 sm:w-14 ${
+              isScrolled || greNavRoutes.includes(location.pathname) ? '' : 'hidden'
+            }`}
             alt="burger-menu-black"
           />
         </div>
@@ -56,7 +67,7 @@ const NavSm = ({ isScrolled }) => {
           <ul className="flex h-screen w-full flex-col items-end justify-center gap-12 pt-[10vh] text-white">
             {navLinks.map((link) => (
               <li key={link.path}>
-                <Link to={link.path} className="font-montserrat text-3xl uppercase">
+                <Link to={link.path} className="font-montserrat text-3xl uppercase" onClick={closeModal}>
                   {link.text}
                 </Link>
               </li>
@@ -75,8 +86,13 @@ const NavSm = ({ isScrolled }) => {
 }
 
 const NavMd = ({ isScrolled }) => {
+  const location = useLocation()
   return (
-    <nav className={`fixed z-50 w-full ${isScrolled ? 'bg-[#EBEBEB]' : 'text-white'} `}>
+    <nav
+      className={`fixed z-50 w-full ${
+        isScrolled || greNavRoutes.includes(location.pathname) ? 'bg-[#EBEBEB]' : 'text-white'
+      } `}
+    >
       <div className="mx-10 flex items-center justify-between border-b-2">
         <div className="flex items-end">
           <Img src={Logo} width={400} height={400} alt="logo" className="h-12 w-20 object-contain" />
@@ -98,8 +114,13 @@ const NavMd = ({ isScrolled }) => {
 }
 
 const NavLg = ({ isScrolled }) => {
+  const location = useLocation()
   return (
-    <nav className={`fixed z-50 w-full ${isScrolled ? 'bg-[#EBEBEB]' : 'text-white'} `}>
+    <nav
+      className={`fixed z-50 w-full ${
+        isScrolled || greNavRoutes.includes(location.pathname) ? 'bg-[#EBEBEB]' : 'text-white'
+      } `}
+    >
       <div
         className={`mx-10 flex items-center justify-between 2xl:mx-40 ${isScrolled ? '' : 'border-b-2 border-white'}`}
       >
@@ -109,8 +130,8 @@ const NavLg = ({ isScrolled }) => {
         <div>
           <ul className="flex items-center justify-center gap-8">
             {navLinks.map((link) => (
-              <li key={link.path}>
-                <Link to={link.path} className="font-montserrat text-xl uppercase ">
+              <li key={link.path} className="duration-200 hover:scale-95 hover:text-red-base">
+                <Link to={link.path} className="font-montserrat text-xl uppercase">
                   {link.text}
                 </Link>
               </li>

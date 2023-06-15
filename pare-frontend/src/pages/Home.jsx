@@ -12,7 +12,7 @@ import {
 
 const Home = () => {
   return (
-    <>
+    <main>
       <Hero />
       <AboutSection />
       <ProductsRange />
@@ -24,7 +24,7 @@ const Home = () => {
         <NextProject />
         <PareIndiaRotatingImg />
       </div>
-    </>
+    </main>
   )
 }
 

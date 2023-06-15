@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ChatIcon } from '../assets'
+import { ChatIcon, MailIcon, PhoneIcon, WhatsappIcon } from '../assets'
 import { Img } from './custom'
 
 const ContactFloatBtn = () => {
@@ -19,21 +19,21 @@ const ContactFloatBtn = () => {
             open ? '-top-20 left-0' : 'left-0 top-0'
           } `}
         >
-          x
+          <Img src={WhatsappIcon} alt={'whatsapp'} width={50} height={50} />
         </div>
         <div
           className={`absolute -z-10 flex h-16 w-16 cursor-pointer items-center justify-center rounded-full bg-white text-black duration-500 ${
             open ? '-top-40 left-0' : 'left-0 top-0'
           }`}
         >
-          x
+          <Img src={MailIcon} alt={'mail'} width={30} height={30} />
         </div>
         <div
           className={`absolute -z-10 flex h-16 w-16 cursor-pointer items-center justify-center rounded-full bg-white text-black duration-500 ${
             open ? '-top-60 left-0' : 'left-0 top-0'
           }`}
         >
-          x
+          <Img src={PhoneIcon} alt={'phone'} width={30} height={30} />
         </div>
       </div>
     </div>
