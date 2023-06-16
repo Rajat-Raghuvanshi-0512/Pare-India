@@ -18,7 +18,6 @@ import 'swiper/css/bundle'
 import 'swiper/css'
 import { useMediaQuery } from '../../custom-hooks'
 import { useState } from 'react'
-import { useEffect } from 'react'
 import SliderNavigation from './SliderNavigation'
 import TestimonialSlider from './TestimonialSlider'
 
@@ -33,10 +32,6 @@ const Projects = () => {
   const largeDevice = useMediaQuery('(min-width: 768px)')
   const [testmonialActiveNo, settestmonialActive] = useState(0)
   const [projectsActiveNo, setprojectsActiveNo] = useState(0)
-  const [projectsSwiperControler, setProjectsSwiperControler] = useState(null)
-  useEffect(() => {
-    console.log(projectsSwiperControler)
-  }, [projectsSwiperControler])
   return (
     <section className="p-5 md:p-10 lg:px-20 ">
       <div className="flex justify-between">
@@ -56,7 +51,6 @@ const Projects = () => {
       <Swiper
         spaceBetween={50}
         slidesPerView={largeDevice ? 3 : 1}
-        onSwiper={setProjectsSwiperControler}
         onSlideChange={(swiper) => {
           setprojectsActiveNo(swiper.activeIndex)
         }}

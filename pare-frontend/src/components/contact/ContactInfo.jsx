@@ -10,8 +10,8 @@ const ContactInfo = () => {
         </div>
         <div className="flex-1">
           <div className="ml-auto flex flex-col gap-3 font-helvetica text-xs md:w-[80%] md:text-base">
-            <p className="font-semibold"> +91 8356954856</p>
-            <p className="font-semibold">hello@pareindia.com</p>
+            <p className="font-semibold text-red-base"> +91 8356954856</p>
+            <p className="font-semibold text-red-base">hello@pareindia.com</p>
             <div className="ml-auto w-40 text-left md:w-full md:text-right">
               <p className="my-5">
                 Corporate Office Address - 102, 103, Jai Commercial Complex, Cadbury Junction, Khopat, Thane West,
