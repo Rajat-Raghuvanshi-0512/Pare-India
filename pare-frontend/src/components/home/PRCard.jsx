@@ -10,7 +10,7 @@ const PRCard = ({ id, heading, desc, img }) => {
       <div className={`ml-3 ${id === '02' ? 'order-3' : ''} `}>
         <div className={`flex items-start gap-1 font-metropolis md:gap-2 ${id === '02' ? 'justify-end' : ''}`}>
           <span className="text-xs font-bold md:text-sm">{id}</span>
-          <h3 className={` text-3xl font-bold uppercase md:text-4xl lg:text-6xl`}>{heading}</h3>
+          <h3 className={`  text-4xl font-bold uppercase lg:text-6xl`}>{heading}</h3>
         </div>
         <p className="my-3 font-montserrat text-[10px] leading-3 md:text-sm lg:text-2xl">{desc}</p>
         <Button variant="outlined" className="md:my-5">
@@ -21,9 +21,11 @@ const PRCard = ({ id, heading, desc, img }) => {
         <Img
           src={img}
           alt={`product-${id}`}
-          width={200}
+          width={300}
           height={300}
-          className={' object-contain md:h-[300px] md:w-[400px] lg:h-[400px] lg:w-[550px]'}
+          className={
+            'h-[220px] w-[220px] object-cover md:h-[300px] md:w-[400px] md:object-contain lg:h-[400px] lg:w-[550px]'
+          }
         />
       </div>
     </div>

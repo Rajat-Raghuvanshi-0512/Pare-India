@@ -65,7 +65,7 @@ const Portfolio = () => {
           to life.
         </div>
       </div>
-      <div className="w-[110vw] origin-left scale-90 overflow-x-hidden">
+      <div className="-my-40 w-[200vw] origin-left scale-50 overflow-x-hidden md:my-0 md:w-[110vw] md:scale-90">
         <div
           className="relative -left-[400vw] flex items-end gap-10 md:-left-[150vw] md:max-w-[450px]"
           ref={slider1Ref}

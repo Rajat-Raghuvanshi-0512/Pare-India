@@ -27,7 +27,7 @@ const ProductsRange = () => {
   return (
     <div>
       <div className=" flex items-center justify-center">
-        <h2 className="m-10  border-b-2 border-b-red-base text-center font-montserrat text-xl font-bold uppercase md:text-3xl lg:my-24 lg:text-4xl xl:text-5xl">
+        <h2 className="m-10  border-b-2 border-b-red-base text-center font-montserrat text-3xl font-bold uppercase lg:my-24 lg:text-4xl xl:text-5xl">
           Products Range
         </h2>
       </div>
