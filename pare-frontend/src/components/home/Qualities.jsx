@@ -29,8 +29,8 @@ const Element = ({ image, heading, desc }) => {
       <div className="h-24 w-24 rounded-full border border-white p-5 md:border-2 md:p-4">
         <img src={image} alt="quality" className="h-full w-full object-contain" />
       </div>
-      <h6 className="text-xl font-semibold uppercase">{heading}</h6>
-      <p className="text-center text-xs font-light md:text-sm">{desc}</p>
+      <h6 className="text-xl font-semibold uppercase md:font-normal">{heading}</h6>
+      <p className="text-center text-xs font-light">{desc}</p>
     </div>
   )
 }
@@ -40,11 +40,11 @@ const Qualities = () => {
     <div>
       <div className="relative ml-5 flex font-montserrat font-bold uppercase md:ml-10 lg:text-3xl">
         <span>Our Qualities</span>
-        <div className="relative ml-2 mt-3 border-r border-t border-[#151515] p-5 md:-mb-2 md:mt-5 lg:p-7">
-          <div className="absolute -right-1 bottom-0 hidden h-1 rounded bg-[#151515] p-1 md:block"></div>
+        <div className="relative ml-2 mt-3 border-r border-t border-[#151515] p-5 md:-mb-7 md:mt-5 lg:p-8">
+          <div className="absolute -bottom-1 -right-1 hidden h-1 rounded bg-[#151515] p-1 md:block"></div>
         </div>
       </div>
-      <div className="mx-auto flex flex-wrap gap-5 bg-red-base p-5 md:flex-nowrap md:gap-10 md:p-10 lg:gap-20 lg:px-20  2xl:scale-110 2xl:px-60">
+      <div className="mx-auto flex flex-wrap gap-5 bg-red-base p-5 md:flex-nowrap md:gap-10 md:p-10 md:pt-20 lg:gap-20 lg:px-20  2xl:scale-110 2xl:px-60">
         {elemData.map((element) => {
           return <Element key={element.heading} {...element} />
         })}
