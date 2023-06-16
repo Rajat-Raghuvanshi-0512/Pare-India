@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-import { BurgerMenu, BurgerMenuBlack, FbIcon, InstaIcon, LinkedInIcon, Logo } from '../assets'
+import { BurgerMenu, BurgerMenuBlack, CloseIcon, FbIcon, InstaIcon, LinkedInIcon, Logo } from '../assets'
 import { Drawer, Img } from './custom'
 import { useModal } from '../custom-hooks'
 import { useMotionValueEvent, useScroll } from 'framer-motion'
@@ -39,7 +39,7 @@ const NavSm = ({ isScrolled }) => {
   const location = useLocation()
   return (
     <nav
-      className={`fixed z-50 w-full ${
+      className={`fixed left-0 top-0 z-40 w-full ${
         isScrolled || greNavRoutes.includes(location.pathname) ? 'bg-[#EBEBEB]' : 'text-white'
       } `}
     >
@@ -64,21 +64,25 @@ const NavSm = ({ isScrolled }) => {
           />
         </div>
         <Drawer isOpen={isOpen}>
-          <ul className="flex h-screen w-full flex-col items-end justify-center gap-12 pt-[10vh] text-white">
-            {navLinks.map((link) => (
-              <li key={link.path}>
-                <Link to={link.path} className="font-montserrat text-3xl uppercase" onClick={closeModal}>
-                  {link.text}
-                </Link>
-              </li>
-            ))}
-            <div onClick={closeModal}>x</div>
-            <div className="mb-5 mt-auto flex items-end justify-end gap-2">
+          <div className="flex h-screen flex-col justify-between">
+            <div className="pt-5">
+              <img src={CloseIcon} alt="close" className="ml-auto h-10 w-10" onClick={closeModal} />
+            </div>
+            <ul className="flex w-full flex-col items-end justify-center gap-12 text-white">
+              {navLinks.map((link) => (
+                <li key={link.path}>
+                  <Link to={link.path} className="font-montserrat text-3xl uppercase" onClick={closeModal}>
+                    {link.text}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <div className="mb-5 flex items-end justify-end gap-2">
               <img src={InstaIcon} alt="insta" className="h-8 w-8 object-contain" />
               <img src={FbIcon} alt="fb" className="h-8 w-8 object-contain" />
               <img src={LinkedInIcon} alt="Ld" className="h-8 w-8 object-contain" />
             </div>
-          </ul>
+          </div>
         </Drawer>
       </div>
     </nav>

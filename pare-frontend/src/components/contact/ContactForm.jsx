@@ -3,7 +3,7 @@ import { Button, Img } from '../custom'
 
 const ContactForm = () => {
   return (
-    <section className="py-5 md:py-10 lg:py-20">
+    <section className="py-5 md:p-10 md:pr-0 lg:py-20 lg:pl-20 ">
       <div className="grid  md:grid-cols-2 md:gap-5">
         <div className="absolute mt-10 h-[530px] w-[70%] bg-[#151515B5] bg-opacity-25 p-4 md:static md:mt-0 md:h-auto md:w-full">
           <h2 className="font-metropolis text-2xl leading-snug md:text-4xl lg:text-6xl lg:leading-snug">

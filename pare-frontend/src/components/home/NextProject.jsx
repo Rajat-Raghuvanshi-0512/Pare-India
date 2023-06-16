@@ -43,8 +43,8 @@ const NextProject = () => {
           <Img
             src={NextProjectImg}
             alt="img"
-            width={500}
-            height={800}
+            width={300}
+            height={300}
             className="ml-auto h-full w-[80%] object-cover md:hidden"
           />
           <Img

@@ -1,12 +1,27 @@
 import { useState } from 'react'
 import { ChatIcon, MailIcon, PhoneIcon, WhatsappIcon } from '../assets'
 import { Img } from './custom'
+import { useRef } from 'react'
+import { useEffect } from 'react'
 
 const ContactFloatBtn = () => {
   const [open, setOpen] = useState(false)
+  const ref = useRef()
+
+  useEffect(() => {
+    const checkIfClickedOutside = (e) => {
+      if (ref.current && !ref.current.contains(e.target)) {
+        setOpen(false)
+      }
+    }
+    document.addEventListener('click', checkIfClickedOutside)
+    return () => {
+      document.removeEventListener('click', checkIfClickedOutside)
+    }
+  }, [open])
 
   return (
-    <div className="fixed bottom-5 right-5 md:bottom-10 md:right-10">
+    <div className="fixed bottom-5 right-5 md:bottom-10 md:right-10" ref={ref}>
       <div className="relative">
         <div
           className="z-40 flex h-16 w-16 cursor-pointer items-center justify-center rounded-full bg-red-base text-white"

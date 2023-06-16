@@ -1,29 +1,29 @@
-import { godrej, dlf, indiabulls, brigade } from '../../assets'
+import { hyundai, minerva, ginger, regency } from '../../assets'
 
 const scrollData = [
   {
-    image: godrej,
+    image: hyundai,
   },
   {
-    image: dlf,
+    image: minerva,
   },
   {
-    image: indiabulls,
+    image: ginger,
   },
   {
-    image: brigade,
+    image: regency,
   },
   {
-    image: godrej,
+    image: hyundai,
   },
   {
-    image: dlf,
+    image: minerva,
   },
   {
-    image: indiabulls,
+    image: ginger,
   },
   {
-    image: brigade,
+    image: regency,
   },
 ]
 
@@ -41,14 +41,24 @@ const InfiniteScroll = () => {
           <div className="flex items-center justify-center ">
             {scrollData.map((item, idx) => (
               <div className="flex w-[150px] items-center md:w-[300px]" key={idx}>
-                <img loading="lazy" src={item.image} alt="logo" className="h-7 w-full object-contain md:h-10 lg:h-12" />
+                <img
+                  loading="lazy"
+                  src={item.image}
+                  alt="logo"
+                  className="h-14 w-full object-contain md:h-20 lg:h-32"
+                />
               </div>
             ))}
           </div>
           <div className="flex items-center justify-center ">
             {scrollData.map((item, idx) => (
               <div className="flex w-[150px] items-center md:w-[300px]" key={idx}>
-                <img loading="lazy" src={item.image} alt="logo" className="h-7 w-full object-contain md:h-10 lg:h-12" />
+                <img
+                  loading="lazy"
+                  src={item.image}
+                  alt="logo"
+                  className="h-14 w-full object-contain md:h-20 lg:h-32"
+                />
               </div>
             ))}
           </div>

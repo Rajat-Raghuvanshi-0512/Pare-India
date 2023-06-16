@@ -1,7 +1,7 @@
-import { Client1, Client2, godrej } from '../../assets'
+import { Client1, Client2, ginger, hyundai, minerva, regency } from '../../assets'
 import { Img } from '../custom'
 
-const clients = [Client1, Client2, Client1, Client2, Client1, Client2, Client1, Client2]
+const clients = [ginger, hyundai, minerva, regency]
 
 const Vision = () => {
   return (
@@ -20,17 +20,17 @@ const Vision = () => {
           {clients.map((client, idx) => {
             return (
               <div key={client + idx}>
-                <Img src={client} alt={'client' + idx + 1} width={70} height={70} />
+                <Img src={client} alt={'client' + idx + 1} width={200} height={200} />
               </div>
             )
           })}
         </div>
       </div>
       <div className="mx-5 my-10 flex flex-col gap-16 md:hidden">
-        <Img src={godrej} alt={'godrej'} width={400} />
-        <Img src={godrej} alt={'godrej'} width={400} />
-        <Img src={godrej} alt={'godrej'} width={400} />
-        <Img src={godrej} alt={'godrej'} width={400} />
+        <Img src={hyundai} alt={'godrej'} width={400} />
+        <Img src={minerva} alt={'godrej'} width={400} />
+        <Img src={ginger} alt={'godrej'} width={400} />
+        <Img src={regency} alt={'godrej'} width={400} />
       </div>
     </section>
   )

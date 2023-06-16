@@ -86,6 +86,107 @@ body {
   animation: fade 0.5s ease-in-out;
 }
 
+.circle-container {
+  position: relative;
+  width: 40em;
+  height: 20em;
+  border-radius: 50%;
+  padding: 0;
+  list-style: none;
+  margin: 5em auto 0;
+  /* animation: rotate 5s linear infinite; */
+}
+.circle-container > img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -5em;
+  width: auto;
+  height: 11em;
+}
+.circle-container > img:nth-of-type(1) {
+  transform: rotate(0deg) translate(30em) rotate(0deg);
+}
+.circle-container > img:nth-of-type(2) {
+  transform: rotate(35deg) translate(24em) rotate(-35deg);
+}
+.circle-container > img:nth-of-type(3) {
+  transform: rotate(90deg) translate(20em) rotate(-90deg);
+}
+.circle-container > img:nth-of-type(4) {
+  transform: rotate(135deg) translate(24em) rotate(-135deg);
+}
+.circle-container > img:nth-of-type(5) {
+  transform: rotate(180deg) translate(34em) rotate(-180deg);
+}
+.circle-container > img:nth-of-type(6) {
+  transform: rotate(225deg) translate(25em) rotate(-225deg);
+}
+.circle-container > img:nth-of-type(7) {
+  transform: rotate(280deg) translate(22em) rotate(-280deg);
+}
+.circle-container > img:nth-of-type(8) {
+  transform: rotate(315deg) translate(25em) rotate(-315deg);
+}
+.circle-container img {
+  display: block;
+  max-width: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white !important;
+  width: 5px !important;
+  height: 5px !important;
+}
+
+.bg-transform {
+  display: none;
+  animation: nav-items 1s;
+}
+
+@keyframes nav-items {
+  0% {
+    right: -100%;
+  }
+
+  100% {
+    right: 0%;
+  }
+}
+
+.bg-transform::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 300px;
+  background: rgba(0, 0, 0);
+  z-index: -1;
+  animation: glass 0.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes glass {
+  0% {
+    right: 0%;
+  }
+
+  100% {
+    right: 50%;
+  }
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
 @keyframes fade {
   from {
     opacity: 0.95;
@@ -99,6 +200,10 @@ body {
   .animate-infinite {
     width: calc(150px * 8);
     animation: rotateInfinite 10s linear infinite;
+  }
+  .circle-container {
+    width: 100%;
+    height: 100%;
   }
   @keyframes rotateInfinite {
     0% {

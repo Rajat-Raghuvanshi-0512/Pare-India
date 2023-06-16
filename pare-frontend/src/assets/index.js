@@ -9,6 +9,8 @@ import LinkedInIcon from './images/linkedin.webp'
 import MailIcon from './images/mail-icon.webp'
 import PhoneIcon from './images/phone-icon.webp'
 import WhatsappIcon from './images/whatsapp.png'
+import PlayIcon from './images/play-icon.webp'
+import CloseIcon from './images/close.webp'
 
 import Logo from './images/home/logo.webp'
 import HeroBgMobile from './images/home/home-hero-bg-mob.webp'
@@ -27,10 +29,10 @@ import P1 from './images/home/products range/p1.webp'
 import P2 from './images/home/products range/p2.webp'
 import P3 from './images/home/products range/p3.webp'
 
-import brigade from './images/home/companies/brigade.webp'
-import dlf from './images/home/companies/dlf.webp'
-import godrej from './images/home/companies/godrej.webp'
-import indiabulls from './images/home/companies/indiabulls.webp'
+import hyundai from './images/home/companies/hyundai.webp'
+import ginger from './images/home/companies/ginger.webp'
+import minerva from './images/home/companies/minerva.webp'
+import regency from './images/home/companies/regency.webp'
 
 import PortfolioImg1 from './images/home/portfolio/img1.webp'
 import PortfolioImg2 from './images/home/portfolio/img2.webp'
@@ -49,6 +51,8 @@ import Star from './images/home/star.webp'
 import Project1Img from './images/home/projects/img1.webp'
 import Project2Img from './images/home/projects/img2.webp'
 import Project3Img from './images/home/projects/img3.webp'
+import Project4Img from './images/home/projects/img4.webp'
+import Project5Img from './images/home/projects/img5.webp'
 import PrevArrow from './images/home/projects/prev.webp'
 import NextArrow from './images/home/projects/next.webp'
 
@@ -65,6 +69,10 @@ import LampDesk from './images/contact/lamp-desk.webp'
 import ContactImgPhone from './images/contact/contact-img-phone.webp'
 import ContactImg from './images/contact/contact-img.webp'
 import MapImg from './images/contact/map.webp'
+
+import testVideo1 from './videos/testimonial1.mp4'
+import testVideo2 from './videos/testimonial2.mp4'
+import testVideo3 from './videos/testimonial3.mp4'
 
 export {
   Logo,
@@ -85,12 +93,9 @@ export {
   P1,
   P2,
   P3,
-  brigade,
-  dlf,
-  godrej,
-  indiabulls,
   PortfolioImg1,
   PortfolioImg2,
+  PlayIcon,
   PortfolioImg3,
   PortfolioImg4,
   PortfolioImg5,
@@ -101,9 +106,12 @@ export {
   SunLoader,
   Star,
   PenTool,
+  CloseIcon,
   Project1Img,
   Project2Img,
   Project3Img,
+  Project4Img,
+  Project5Img,
   PrevArrow,
   NextArrow,
   InstaIcon,
@@ -124,4 +132,11 @@ export {
   ContactImgPhone,
   ContactImg,
   MapImg,
+  testVideo1,
+  testVideo2,
+  testVideo3,
+  hyundai,
+  ginger,
+  minerva,
+  regency,
 }

@@ -121,10 +121,11 @@ const HeroLg = () => {
               y: [-100, 0],
             }}
             transition={{ duration: 1 }}
+            className="font-metropolis font-bold text-white md:text-5xl lg:text-6xl"
           >
-            <Img src={InnovText} width={'350'} height={'100'} alt="hero-text" />
+            <span className="text-red-base">INDIA’S</span> BEST
           </motion.div>
-          <p className="text-4xl font-bold tracking-widest text-white">INNOVATIVE SURFACES</p>
+          <p className="font-metropolis text-4xl font-bold tracking-widest text-white">INNOVATIVE SURFACES</p>
           <Button className={'!px-8'}>BUILD WITH US</Button>
         </div>
       </section>

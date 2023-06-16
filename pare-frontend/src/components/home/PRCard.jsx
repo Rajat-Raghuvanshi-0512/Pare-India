@@ -2,7 +2,11 @@ import { Button, Img } from '../custom'
 
 const PRCard = ({ id, heading, desc, img }) => {
   return (
-    <div className="mx-3 my-10 grid grid-cols-2 gap-3 md:mx-10 lg:mx-16 2xl:mx-40">
+    <div
+      className={`lg:gap:20 my-10 grid grid-cols-2 gap-3 md:gap-10 ${
+        id === '02' ? 'md:mr-10 lg:mr-16 2xl:mr-40' : 'md:ml-10 lg:ml-16 2xl:ml-40'
+      }`}
+    >
       <div className={`ml-3 ${id === '02' ? 'order-3' : ''} `}>
         <div className="flex items-start gap-1 font-metropolis md:gap-2">
           <span className="text-xs font-bold md:text-sm">{id}</span>
@@ -19,7 +23,7 @@ const PRCard = ({ id, heading, desc, img }) => {
           alt={`product-${id}`}
           width={200}
           height={300}
-          className={' object-contain md:h-[300px] md:w-[400px] lg:h-[400px] lg:w-[500px]'}
+          className={' object-contain md:h-[300px] md:w-[400px] lg:h-[400px] lg:w-[550px]'}
         />
       </div>
     </div>
