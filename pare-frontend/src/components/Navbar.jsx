@@ -45,19 +45,19 @@ const NavSm = ({ isScrolled }) => {
     >
       <div className="mx-4 flex items-center justify-between">
         <div className="flex items-end">
-          <Img src={Logo} width={500} height={400} alt="logo" className="h-14 w-20 object-contain sm:h-20 sm:w-32" />
+          <Img src={Logo} width={500} height={400} alt="logo" className="h-16 w-24 object-contain sm:h-20 sm:w-32" />
         </div>
         <div onClick={openModal}>
           <Img
             src={BurgerMenu}
-            className={`h-9 w-9 object-contain sm:h-14 sm:w-14 ${
+            className={`h-11 w-11 object-contain sm:h-14 sm:w-14 ${
               !isScrolled && !greNavRoutes.includes(location.pathname) ? '' : 'hidden'
             }`}
             alt="burger-menu"
           />
           <Img
             src={BurgerMenuBlack}
-            className={`h-9 w-9 object-contain sm:h-14 sm:w-14 ${
+            className={`h-11 w-11 object-contain sm:h-14 sm:w-14 ${
               isScrolled || greNavRoutes.includes(location.pathname) ? '' : 'hidden'
             }`}
             alt="burger-menu-black"
