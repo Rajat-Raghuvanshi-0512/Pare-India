@@ -1,5 +1,5 @@
 import { NextProjectImg, NextProjectImgWeb } from '../../assets'
-import { Button, Img } from '../custom'
+import { Button } from '../custom'
 
 const NextProject = () => {
   return (
@@ -39,15 +39,15 @@ const NextProject = () => {
             </Button>
           </form>
         </div>
-        <div className="h-[550px] w-full md:h-auto">
-          <Img
+        <div className="h-[550px] md:h-auto">
+          <img
             src={NextProjectImg}
             alt="img"
             width={300}
             height={300}
             className="ml-auto h-full w-[80%] object-cover md:hidden"
           />
-          <Img
+          <img
             src={NextProjectImgWeb}
             alt="img"
             width={500}
