@@ -43,6 +43,12 @@
   font-weight: 400;
 }
 
+@font-face {
+  font-family: 'Helvetica';
+  src: url('./assets/fonts/helvetica-neue/HelveticaNeue-Heavy.otf') format('opentype');
+  font-weight: 700;
+}
+
 body {
   overflow-x: hidden;
 }
