@@ -153,6 +153,11 @@ const Navbar = () => {
   const [hide, setHide] = useState(false)
   const [prevScroll, setPrevScroll] = useState(0)
   useMotionValueEvent(scrollY, 'change', (currScroll) => {
+    if (currScroll <= 0) {
+      setHide(false)
+      setIsScrolled(false)
+      return
+    }
     if (currScroll > 10) {
       setIsScrolled(true)
     } else {
