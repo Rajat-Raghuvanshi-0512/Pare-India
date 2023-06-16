@@ -1,5 +1,5 @@
 import { useSwiper } from 'swiper/react'
-import { NextArrow, PrevArrow, LeftArrowMobile, RightArrowMobile } from '../../assets'
+import { LeftArrowMobile, RightArrowMobile, NextArrowProject, PrevArrowProject } from '../../assets'
 import { Img } from '../custom'
 
 const SliderNavigation = () => {
@@ -24,23 +24,21 @@ const SliderNavigation = () => {
           onClick={() => swiper.slideNext()}
         />
       </div>
-      <div className="hidden justify-between md:flex">
-        <Img
-          src={PrevArrow}
-          alt={'prev'}
-          width={100}
-          height={100}
-          className={'cursor-pointer duration-200 hover:scale-95'}
+      <div className="z-20 hidden h-20 items-center justify-between overflow-visible pb-5 md:flex">
+        <div
+          className="project-btn flex cursor-pointer items-center duration-200 hover:scale-125"
           onClick={() => swiper.slidePrev()}
-        />
-        <Img
-          src={NextArrow}
-          alt={'prev'}
-          width={100}
-          height={100}
-          className={'cursor-pointer duration-200 hover:scale-95'}
+        >
+          <div className="h-14 w-14 translate-x-[50%] rounded-full border"></div>
+          <Img src={PrevArrowProject} alt={'prev'} width={80} height={80} className={' object-contain '} />
+        </div>
+        <div
+          className="project-btn flex cursor-pointer items-center duration-200 hover:scale-125"
           onClick={() => swiper.slideNext()}
-        />
+        >
+          <Img src={NextArrowProject} alt={'prev'} width={80} height={80} className={' object-contain '} />
+          <div className="h-14 w-14 -translate-x-[50%] rounded-full border"></div>
+        </div>
       </div>
     </div>
   )

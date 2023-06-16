@@ -26,6 +26,8 @@ import desk from './images/home/desk.webp'
 import PareText from './images/home/pare-text.webp'
 import NextProjectImg from './images/home/next-project.webp'
 import NextProjectImgWeb from './images/home/next-project-web.webp'
+import PrevArrowProject from './images/home/prev-arrow-project.webp'
+import NextArrowProject from './images/home/next-arrow-project.webp'
 
 import P1 from './images/home/products range/p1.webp'
 import P2 from './images/home/products range/p2.webp'
@@ -44,6 +46,7 @@ import PortfolioImg5 from './images/home/portfolio/img5.webp'
 import PortfolioImg6 from './images/home/portfolio/img6.webp'
 import PortfolioImg7 from './images/home/portfolio/img7.webp'
 import PortfolioImg8 from './images/home/portfolio/img8.webp'
+import PortfolioBg from './images/home/portfolio/portfolio-bg.webp'
 
 import Feather from './images/home/feather.webp'
 import SunLoader from './images/home/loader.webp'
@@ -118,6 +121,7 @@ export {
   Project3Img,
   Project4Img,
   Project5Img,
+  PortfolioBg,
   PrevArrow,
   NextArrow,
   InstaIcon,
@@ -147,4 +151,6 @@ export {
   minerva,
   MapMobImg,
   regency,
+  PrevArrowProject,
+  NextArrowProject,
 }

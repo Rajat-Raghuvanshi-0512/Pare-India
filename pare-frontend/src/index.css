@@ -62,6 +62,13 @@ body {
   scroll-behavior: smooth;
 }
 
+.project-btn:hover div {
+  background: rgba(255, 255, 255, 0.5);
+  /* width: 70px;
+  height: 70px;
+  transition: all 0.4s; */
+}
+
 .animate-infinite {
   width: calc(300px * 16);
   animation: rotateInfinite 10s linear infinite;

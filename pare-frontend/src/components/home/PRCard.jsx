@@ -4,7 +4,7 @@ const PRCard = ({ id, heading, desc, img }) => {
   return (
     <div
       className={`lg:gap:20 my-10 grid grid-cols-2 gap-3 md:gap-10 lg:gap-20 ${
-        id === '02' ? 'text-right md:mr-10 lg:mr-16 2xl:mr-40' : 'md:ml-10 lg:ml-16 2xl:ml-40'
+        id === '02' ? 'mr-3 text-right md:mr-10 lg:mr-16 2xl:mr-40' : 'md:ml-10 lg:ml-16 2xl:ml-40'
       }`}
     >
       <div className={`ml-3 ${id === '02' ? 'order-3' : ''} `}>

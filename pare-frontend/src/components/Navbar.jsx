@@ -34,14 +34,14 @@ const navLinks = [
   },
 ]
 
-const NavSm = ({ isScrolled }) => {
+const NavSm = ({ isScrolled, hide }) => {
   const { isOpen, closeModal, openModal } = useModal()
   const location = useLocation()
   return (
     <nav
       className={`fixed left-0 top-0 z-40 w-full ${
         isScrolled || greNavRoutes.includes(location.pathname) ? 'bg-[#EBEBEB]' : 'text-white'
-      } `}
+      } ${hide ? '-translate-y-[100%]' : 'translate-y-0'} duration-300 `}
     >
       <div className="mx-4 flex items-center justify-between">
         <div className="flex items-end">
@@ -89,13 +89,13 @@ const NavSm = ({ isScrolled }) => {
   )
 }
 
-const NavMd = ({ isScrolled }) => {
+const NavMd = ({ isScrolled, hide }) => {
   const location = useLocation()
   return (
     <nav
       className={`fixed z-50 w-full ${
         isScrolled || greNavRoutes.includes(location.pathname) ? 'bg-[#EBEBEB]' : 'text-white'
-      } `}
+      } ${hide ? '-translate-y-[100%]' : 'translate-y-0'} duration-300 `}
     >
       <div className="mx-10 flex items-center justify-between border-b-2">
         <div className="flex items-end">
@@ -117,13 +117,13 @@ const NavMd = ({ isScrolled }) => {
   )
 }
 
-const NavLg = ({ isScrolled }) => {
+const NavLg = ({ isScrolled, hide }) => {
   const location = useLocation()
   return (
     <nav
       className={`fixed z-50 w-full ${
         isScrolled || greNavRoutes.includes(location.pathname) ? 'bg-[#EBEBEB]' : 'text-white'
-      } `}
+      } ${hide ? '-translate-y-[100%]' : 'translate-y-0'} duration-300`}
     >
       <div
         className={`mx-10 flex items-center justify-between 2xl:mx-40 ${isScrolled ? '' : 'border-b-2 border-white'}`}
@@ -150,23 +150,31 @@ const NavLg = ({ isScrolled }) => {
 const Navbar = () => {
   const { scrollY } = useScroll()
   const [isScrolled, setIsScrolled] = useState(false)
+  const [hide, setHide] = useState(false)
+  const [prevScroll, setPrevScroll] = useState(0)
   useMotionValueEvent(scrollY, 'change', (currScroll) => {
     if (currScroll > 10) {
       setIsScrolled(true)
     } else {
       setIsScrolled(false)
     }
+    if (prevScroll > currScroll) {
+      setHide(false)
+    } else {
+      setHide(true)
+    }
+    setPrevScroll(currScroll)
   })
   return (
     <div>
       <div className="md:hidden">
-        <NavSm isScrolled={isScrolled} />
+        <NavSm isScrolled={isScrolled} hide={hide} />
       </div>
       <div className="hidden md:block lg:hidden">
-        <NavMd isScrolled={isScrolled} />
+        <NavMd isScrolled={isScrolled} hide={hide} />
       </div>
       <div className="hidden lg:block">
-        <NavLg isScrolled={isScrolled} />
+        <NavLg isScrolled={isScrolled} hide={hide} />
       </div>
     </div>
   )

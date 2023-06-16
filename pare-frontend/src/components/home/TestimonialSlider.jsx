@@ -31,7 +31,7 @@ const TestimonialSlider = ({ testmonialActiveNo }) => {
           alt={'prev'}
           width={20}
           height={20}
-          className={'absolute left-0 top-[45%] z-20'}
+          className={'absolute left-4 top-[45%] z-20'}
           onClick={() => swiper.slidePrev()}
         />
         <Img
@@ -39,7 +39,7 @@ const TestimonialSlider = ({ testmonialActiveNo }) => {
           alt={'prev'}
           width={20}
           height={20}
-          className={'absolute right-0 top-[45%] z-20 '}
+          className={'absolute right-4 top-[45%] z-20 '}
           onClick={() => swiper.slideNext()}
         />
       </div>

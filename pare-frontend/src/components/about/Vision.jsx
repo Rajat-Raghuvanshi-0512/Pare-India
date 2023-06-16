@@ -8,7 +8,7 @@ const Vision = () => {
     <section className=" bg-red-base p-5 md:p-10 lg:px-16 lg:pb-0 lg:pt-10">
       <div className="flex gap-5 md:gap-10 lg:gap-16">
         <div className="hidden flex-[0.7] md:block"></div>
-        <div className="flex-[1.3] text-center font-metropolis text-white md:text-left md:text-xl lg:text-3xl">
+        <div className="mt-5 flex-[1.3] text-center font-metropolis text-white md:mt-0 md:text-left md:text-xl lg:text-3xl">
           <span className="text-3xl font-medium md:text-4xl lg:text-5xl">Our Vision,</span> is to revolutionize the
           world of surfaces by bringing innovative, cutting-edge, sustainable and functional solutions to the market.
         </div>
@@ -33,11 +33,11 @@ const Vision = () => {
           })}
         </div>
       </div>
-      <div className="mx-5 my-7 flex flex-col gap-16 md:hidden">
-        <Img src={hyundai} alt={'godrej'} width={400} />
-        <Img src={minerva} alt={'godrej'} width={400} />
-        <Img src={ginger} alt={'godrej'} width={400} />
-        <Img src={regency} alt={'godrej'} width={400} />
+      <div className="mx-5 my-7 flex flex-col items-center justify-center md:hidden">
+        <Img src={hyundai} alt={'godrej'} width={140} />
+        <Img src={minerva} alt={'godrej'} width={140} />
+        <Img src={ginger} alt={'godrej'} width={140} />
+        <Img src={regency} alt={'godrej'} width={140} />
       </div>
     </section>
   )

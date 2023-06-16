@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react'
 import {
+  PortfolioBg,
   PortfolioImg1,
   PortfolioImg2,
   PortfolioImg3,
@@ -9,6 +10,7 @@ import {
   PortfolioImg7,
   PortfolioImg8,
 } from '../../assets'
+import { Img } from '../custom'
 
 const slider1 = [
   PortfolioImg1,
@@ -52,26 +54,30 @@ const Portfolio = () => {
     return () => window.removeEventListener('scroll', getScrollOffset, { passive: true })
   }, [])
   return (
-    <section>
-      <div className="mx-3 my-5 grid grid-cols-2 gap-4 md:m-10 lg:m-16 2xl:mx-40">
+    <section className="relative">
+      <div className="z-10 mx-3 my-5 grid grid-cols-2 gap-4 md:m-10 lg:m-16 2xl:mx-40">
+        <Img src={PortfolioBg} alt={'bg'} className={'absolute -top-20 left-0 -z-20  h-[120%] w-full object-cover'} />
         <div className="font-metropolis text-lg uppercase !leading-snug md:text-4xl lg:text-5xl">
           Explore our portfolio and discover some of our <span className="font-bold text-red-base">PAST WORK</span>
         </div>
-        <div className="flex items-end font-helvetica text-xs font-light leading-[14px] md:text-xl lg:text-3xl">
+        <div className="flex items-end font-helvetica text-xs  leading-[14px] md:text-xl lg:text-3xl">
           PARÉ has completed numerous innovative and world-class projects across the globe, showcasing our expertise in
           building materials and interior decor. Browse through our portfolio to see how we can help bring your vision
           to life.
         </div>
       </div>
-      <div className="w-screen overflow-x-hidden">
-        <div className="relative -left-[300vw] flex h-[250px] w-[270px] gap-10 md:-left-[150vw]" ref={slider1Ref}>
+      <div className="w-[110vw] origin-left scale-90 overflow-x-hidden">
+        <div
+          className="relative -left-[300vw] flex items-end gap-10 md:-left-[150vw] md:max-w-[450px]"
+          ref={slider1Ref}
+        >
           {slider1.map((slide, idx) => (
-            <img src={slide} alt="slide" key={slide + idx} className="h-full w-full object-contain" />
+            <img src={slide} alt="slide" key={slide + idx} className="object-contain" />
           ))}
         </div>
-        <div className="relative my-10 flex h-[250px] w-[270px] gap-10 md:-left-[-20vw]" ref={slider2Ref}>
+        <div className="relative my-10 flex items-start gap-10 md:-left-[-20vw] md:max-w-[450px]" ref={slider2Ref}>
           {slider2.map((slide, idx) => (
-            <img src={slide} alt="slide" key={slide + idx} className="h-full w-full object-contain" />
+            <img src={slide} alt="slide" key={slide + idx} className="" />
           ))}
         </div>
       </div>

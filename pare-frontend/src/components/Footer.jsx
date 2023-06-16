@@ -24,9 +24,15 @@ const FooterSm = () => {
       </div>
       <p className="py-5 text-3xl font-semibold">LET’S CONNECT.</p>
       <div className="flex gap-5 uppercase">
-        <Link to={'/'}>Instagram</Link>
-        <Link to={'/'}>Facebook</Link>
-        <Link to={'/'}>Linkedin</Link>
+        <Link to={'https://www.instagram.com/pareindia/'} target="_blank">
+          Instagram
+        </Link>
+        <Link to={'https://www.facebook.com/Pareinnov.'} target="_blank">
+          Facebook
+        </Link>
+        <Link to={'https://www.linkedin.com/company/pareindia/'} target="_blank">
+          Linkedin
+        </Link>
       </div>
       <p className="mr-14 py-4 text-[10px]">
         Transform your living spaces with PARÉ&apos;s innovative, sustainable, and high-quality products . Let&apos;s
@@ -69,13 +75,13 @@ const FooterLg = ({ dark }) => {
           <div className="flex h-2/3 w-auto flex-col border-[0.01rem] border-white border-opacity-50 p-10">
             <ul>
               <li className="mb-4 font-metropolis  font-medium tracking-wider md:text-2xl lg:text-3xl">SOCIAL</li>
-              <Link to={'/'}>
+              <Link to={'https://www.instagram.com/pareindia/'} target="_blank">
                 <li className="mb-2">INSTAGRAM</li>
               </Link>
-              <Link to={'/'}>
+              <Link to={'https://www.facebook.com/Pareinnov.'} target="_blank">
                 <li className="mb-2">FACEBOOK</li>
               </Link>
-              <Link to={'/'}>
+              <Link to={'https://www.linkedin.com/company/pareindia/'} target="_blank">
                 <li>LINKEDIN</li>
               </Link>
             </ul>

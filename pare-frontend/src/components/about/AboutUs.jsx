@@ -8,7 +8,9 @@ const AboutUs = () => {
   const numbersInView = useInView(numbersRef)
   return (
     <div className="md:p-10">
-      <h2 className="mb-5 font-montserrat text-2xl font-bold uppercase md:text-3xl lg:text-4xl">About us</h2>
+      <h2 className="my-10 mb-5 font-montserrat text-4xl font-bold uppercase md:my-0 md:text-3xl lg:text-4xl">
+        About us
+      </h2>
       <p className="font-montserrat text-base">
         PARÉ Innovations is a leading player in the building material segment, specializing in top-notch surfaces for
         ceilings, walls, and facade systems. At PARÉ, we take immense pride in being at the forefront of innovation,
@@ -34,34 +36,34 @@ const AboutUs = () => {
           {numbersInView && (
             <>
               <div>
-                <p className="w-[90%] border-b  border-black font-metropolis text-sm font-bold md:border-b-2 md:text-4xl lg:text-5xl">
+                <p className="w-[90%] border-b border-black  text-center font-metropolis text-xl font-bold md:border-b-2 md:text-left md:text-4xl lg:text-5xl">
                   <CountUp end={10} duration={4} />+
                 </p>
-                <p className="py-1 font-montserrat text-[10px] font-medium md:py-3 md:text-lg lg:text-xl">
+                <p className="py-1 text-center font-montserrat text-[10px] font-medium leading-3 md:py-3 md:text-left md:text-lg lg:text-xl">
                   Quality Products
                 </p>
               </div>
               <div>
-                <p className="w-[90%] border-b border-black font-metropolis text-sm font-bold md:border-b-2 md:text-4xl lg:text-5xl">
+                <p className="w-[90%] border-b border-black text-center font-metropolis text-xl font-bold md:border-b-2 md:text-left md:text-4xl lg:text-5xl">
                   <CountUp end={500} duration={2} />+
                 </p>
-                <p className="py-1 font-montserrat text-[10px] font-medium md:py-3 md:text-lg lg:text-xl">
+                <p className="py-1 text-center font-montserrat text-[10px] font-medium leading-3 md:py-3 md:text-left md:text-lg lg:text-xl">
                   Architectural projects of houses
                 </p>
               </div>
               <div>
-                <p className="w-[90%] border-b border-black font-metropolis text-sm font-bold md:border-b-2 md:text-4xl lg:text-5xl">
+                <p className="w-[90%] border-b border-black text-center font-metropolis text-xl font-bold md:border-b-2 md:text-left md:text-4xl lg:text-5xl">
                   <CountUp end={5000} duration={2} />+
                 </p>
-                <p className="py-1 font-montserrat text-[10px] font-medium md:py-3 md:text-lg lg:text-xl">
+                <p className="py-1 text-center font-montserrat text-[10px] font-medium leading-3 md:py-3 md:text-left md:text-lg lg:text-xl">
                   Satisfied Clients
                 </p>
               </div>
               <div>
-                <p className="w-[90%] border-b border-black font-metropolis text-sm font-bold md:border-b-2 md:text-4xl lg:text-5xl">
+                <p className="w-[90%] border-b border-black text-center font-metropolis text-xl font-bold md:border-b-2 md:text-left md:text-4xl lg:text-5xl">
                   <CountUp end={2000} duration={2} />+
                 </p>
-                <p className="py-1 font-montserrat text-[10px] font-medium md:py-3 md:text-lg lg:text-xl">
+                <p className="py-1 text-center font-montserrat text-[10px] font-medium leading-3 md:py-3 md:text-left md:text-lg lg:text-xl">
                   Unique Spaces modified{' '}
                 </p>
               </div>
@@ -71,10 +73,10 @@ const AboutUs = () => {
       </div>
       <div className="my-10 flex flex-col gap-5 font-metropolis">
         <div className="flex justify-between gap-5">
-          <div className="flex-[0.5] text-lg font-bold uppercase text-red-base md:text-2xl lg:text-3xl">
-            Pan-India Presence{' '}
+          <div className="flex-[0.8] text-lg font-bold uppercase text-red-base md:flex-[0.5] md:text-2xl lg:text-3xl">
+            Pan-India Presence
           </div>
-          <div className="flex-[1.5] text-right text-xs md:text-left md:text-lg lg:text-xl">
+          <div className="flex-[1.2] text-right text-xs md:flex-[1.5] md:text-left md:text-lg lg:text-xl">
             Unlocking Possibilities, Nationwide! We are proud to announce our Pan-India Presence, a testament to our
             commitment in serving you better, no matter where you are in this vast and diverse nation. With our
             extensive network spanning across every corner of India, we bring our products and services right to your
