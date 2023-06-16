@@ -1,32 +1,28 @@
 import {
-  LeftArrow,
   PlayIcon,
   Project1Img,
   Project2Img,
   Project3Img,
   Project4Img,
   Project5Img,
-  RightArrow,
   testVideo1,
   testVideo2,
   testVideo3,
 } from '../../assets'
 import { Img } from '../custom'
 import ReactPlayer from 'react-player'
-// Import Swiper React components
-import { Navigation, A11y } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 // Import Swiper styles
 import 'swiper/css/bundle'
 import 'swiper/css'
-import 'swiper/css/navigation'
-import 'swiper/css/pagination'
-import 'swiper/css/scrollbar'
 import { useMediaQuery } from '../../custom-hooks'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import SliderNavigation from './SliderNavigation'
+import TestimonialSlider from './TestimonialSlider'
+
+const projectImages = [Project1Img, Project2Img, Project3Img, Project4Img, Project5Img]
 
 const Projects = () => {
   const [testState, setTestState] = useState({
@@ -60,62 +56,21 @@ const Projects = () => {
       <Swiper
         spaceBetween={50}
         slidesPerView={largeDevice ? 3 : 1}
-        modules={[A11y]}
         onSwiper={setProjectsSwiperControler}
         onSlideChange={(swiper) => {
           setprojectsActiveNo(swiper.activeIndex)
         }}
       >
-        <SwiperSlide className="!flex h-full w-full !items-center !justify-center">
-          <Img
-            src={Project1Img}
-            alt={'project'}
-            width={300}
-            height={300}
-            className={'h-[70%] w-[70%] md:h-full md:w-full'}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Img
-            src={Project2Img}
-            alt={'project'}
-            width={300}
-            height={300}
-            className={'m-auto h-[70%] w-[70%] md:h-full md:w-full'}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Img
-            src={Project3Img}
-            alt={'project'}
-            width={300}
-            height={300}
-            className={'m-auto h-[70%] w-[70%] md:h-full md:w-full'}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Img
-            src={Project4Img}
-            alt={'project'}
-            width={300}
-            height={300}
-            className={'m-auto h-[70%] w-[70%] md:h-full md:w-full'}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <Img
-            src={Project5Img}
-            alt={'project'}
-            width={300}
-            height={300}
-            className={'m-auto h-[70%] w-[70%] md:h-full md:w-full'}
-          />
-        </SwiperSlide>
+        {projectImages.map((image) => (
+          <SwiperSlide className="!flex !items-center !justify-center" key={image}>
+            <Img src={image} alt={'project'} width={300} height={300} className={' md:h-full md:w-full'} />
+          </SwiperSlide>
+        ))}
 
         <hr className="hidden md:m-5 md:block lg:m-8" />
-
         <SliderNavigation />
       </Swiper>
+      <div className="mt-5 text-center font-metropolis font-light md:hidden">0{projectsActiveNo + 1}/05</div>
 
       <div className="mt-10 flex flex-col justify-between gap-5 md:flex-row md:gap-10 lg:gap-20">
         <div className="flex-1 font-metropolis text-3xl !leading-snug md:text-4xl lg:text-5xl">
@@ -130,8 +85,6 @@ const Projects = () => {
         <Swiper
           spaceBetween={50}
           slidesPerView={1}
-          modules={[Navigation, A11y]}
-          navigation
           onSlideChange={(swiper) => {
             settestmonialActive(swiper.activeIndex)
           }}
@@ -141,12 +94,12 @@ const Projects = () => {
             className="realtive"
           >
             {testState.test1 === false && (
-              <div className="absolute left-14 z-10 mx-auto my-5 flex h-[200px] w-[90%] items-center justify-center bg-black/30 text-white md:my-10 md:h-[400px] lg:h-[500px]">
+              <div className="absolute left-5 z-10 mx-auto my-5 flex h-[200px] w-[90%] items-center justify-center bg-black-base bg-opacity-30 text-white md:left-14 md:my-10 md:h-[400px] lg:h-[500px]">
                 <Img src={PlayIcon} alt={'play'} className={'h-20 w-20'} />
               </div>
             )}
             <ReactPlayer
-              width="90%"
+              width="100%"
               height="500"
               url={testVideo1}
               className={`mx-auto my-5 h-[200px] md:my-10 md:h-[400px] lg:h-[500px]`}
@@ -156,12 +109,12 @@ const Projects = () => {
           </SwiperSlide>
           <SwiperSlide onClick={() => setTestState((prev) => ({ test2: !prev.test2, test1: false, test3: false }))}>
             {testState.test2 === false && (
-              <div className="absolute left-14 z-10 mx-auto my-5 mr-10 flex h-[200px] w-[90%] items-center justify-center bg-black/30 text-white md:my-10 md:h-[400px] lg:h-[500px]">
+              <div className="absolute left-5 z-10 mx-auto my-5 mr-10 flex h-[200px] w-[90%] items-center justify-center bg-black-base bg-opacity-30 text-white md:left-14 md:my-10 md:h-[400px] lg:h-[500px]">
                 <Img src={PlayIcon} alt={'play'} className={'h-20 w-20'} />
               </div>
             )}
             <ReactPlayer
-              width="90%"
+              width="100%"
               height="500"
               url={testVideo2}
               className="mx-auto my-5 h-[200px] md:my-10 md:h-[400px] lg:h-[500px]"
@@ -171,12 +124,12 @@ const Projects = () => {
           </SwiperSlide>
           <SwiperSlide onClick={() => setTestState((prev) => ({ test3: !prev.test3, test2: false, test1: false }))}>
             {testState.test3 === false && (
-              <div className="absolute left-14 right-10 z-10 mx-auto my-5 flex h-[200px] w-[90%] items-center justify-center bg-black/30 text-white md:my-10 md:h-[400px] lg:h-[500px]">
+              <div className="absolute left-5 z-10  mx-auto my-5 flex h-[200px] w-[90%] items-center justify-center bg-black-base bg-opacity-30 text-white md:left-14 md:my-10 md:h-[400px] lg:h-[500px]">
                 <Img src={PlayIcon} alt={'play'} className={'h-20 w-20'} />
               </div>
             )}
             <ReactPlayer
-              width="90%"
+              width="100%"
               height="500"
               url={testVideo3}
               className="mx-auto my-5 h-[200px] md:my-10 md:h-[400px] lg:h-[500px]"
@@ -184,12 +137,8 @@ const Projects = () => {
               playing={testState.test3}
             />
           </SwiperSlide>
+          <TestimonialSlider testmonialActiveNo={testmonialActiveNo} />
         </Swiper>
-        <div className="flex items-center justify-center gap-5">
-          <Img src={LeftArrow} alt={'larrow'} width={40} height={10} className={'hidden cursor-pointer md:block'} />
-          <div className="font-metropolis text-xs font-light md:text-xl">0{testmonialActiveNo + 1}/03</div>
-          <Img src={RightArrow} alt={'rarrow'} width={40} height={10} className={'hidden cursor-pointer md:block'} />
-        </div>
       </div>
     </section>
   )

@@ -2,7 +2,9 @@ import BurgerMenu from './images/burger-menu.webp'
 import BurgerMenuBlack from './images/burger-menu-black.webp'
 import ChatIcon from './images/chat-icon.webp'
 import LeftArrow from './images/left-arrow.webp'
+import LeftArrowMobile from './images/left-arrow-mobile.webp'
 import RightArrow from './images/right-arrow.webp'
+import RightArrowMobile from './images/right-arrow-mobile.webp'
 import InstaIcon from './images/instagram.webp'
 import FbIcon from './images/facebook.webp'
 import LinkedInIcon from './images/linkedin.webp'
@@ -79,7 +81,9 @@ export {
   HeroBgMobile,
   BurgerMenu,
   LeftArrow,
+  LeftArrowMobile,
   RightArrow,
+  RightArrowMobile,
   HeroBg,
   HeroBg1,
   HeroBg2,
