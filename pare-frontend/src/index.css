@@ -45,6 +45,12 @@
 
 @font-face {
   font-family: 'Helvetica';
+  src: url('./assets/fonts/helvetica-neue/HelveticaNeue-Medium.otf') format('opentype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Helvetica';
   src: url('./assets/fonts/helvetica-neue/HelveticaNeue-Heavy.otf') format('opentype');
   font-weight: 700;
 }
