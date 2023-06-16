@@ -59,7 +59,7 @@ const ContactForm = () => {
               <textarea
                 type="text"
                 placeholder="your message"
-                className="resize-none border-b-2 border-gray-400 bg-transparent  p-1 font-montserrat  text-white outline-none placeholder:uppercase lg:py-3 lg:text-xl"
+                className="resize-none border-b-2 border-[#adadad] bg-transparent  p-1 font-montserrat  text-white outline-none placeholder:uppercase lg:py-3 lg:text-xl"
               />
             </div>
             <p className="mb-5 mt-6 font-montserrat text-xs md:text-base lg:mb-8 lg:mt-5 lg:text-xl">
