@@ -71,6 +71,8 @@ import LampDesk from './images/contact/lamp-desk.webp'
 import ContactImgPhone from './images/contact/contact-img-phone.webp'
 import ContactImg from './images/contact/contact-img.webp'
 import MapImg from './images/contact/map.webp'
+import MapMobImg from './images/contact/map-mobile.webp'
+import ContactBg from './images/contact/contact-bg.webp'
 
 import testVideo1 from './videos/testimonial1.mp4'
 import testVideo2 from './videos/testimonial2.mp4'
@@ -135,6 +137,7 @@ export {
   LampDesk,
   ContactImgPhone,
   ContactImg,
+  ContactBg,
   MapImg,
   testVideo1,
   testVideo2,
@@ -142,5 +145,6 @@ export {
   hyundai,
   ginger,
   minerva,
+  MapMobImg,
   regency,
 }

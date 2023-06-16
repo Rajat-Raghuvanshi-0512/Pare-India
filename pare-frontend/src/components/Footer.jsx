@@ -23,7 +23,7 @@ const FooterSm = () => {
         Let&apos;s work together to create the space of your dreams.
       </div>
       <p className="py-5 text-3xl font-semibold">LET’S CONNECT.</p>
-      <div className="flex gap-5">
+      <div className="flex gap-5 uppercase">
         <Link to={'/'}>Instagram</Link>
         <Link to={'/'}>Facebook</Link>
         <Link to={'/'}>Linkedin</Link>

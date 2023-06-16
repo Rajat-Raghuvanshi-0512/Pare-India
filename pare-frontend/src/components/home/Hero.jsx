@@ -9,9 +9,18 @@ const HeroSm = () => {
       <div className="absolute -z-10 h-[100vh] w-full bg-gradient-to-r from-[#151515] to-transparent opacity-50"></div>
       <Img src={HeroBgMobile} alt="bg-mobile" className={'absolute -z-20 h-screen w-full object-cover object-top'} />
       <div className="flex h-screen flex-col items-start justify-center gap-8 px-5">
-        <Img src={InnovText} alt="text" width={'250'} height={'100'} className={'object-contain  sm:w-[22rem]'} />
+        <motion.div
+          whileInView={{
+            opacity: [0, 1],
+            y: [-100, 0],
+          }}
+          transition={{ duration: 1 }}
+          className="font-metropolis text-5xl font-bold text-white"
+        >
+          <span className="text-red-base">INDIA’S</span> BEST
+        </motion.div>
         <p className="font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl">INNOVATIVE SURFACES</p>
-        <Button className={'!px-8'}>BUILD WITH US</Button>
+        <Button className={'!px-10'}>BUILD WITH US</Button>
       </div>
     </section>
   )

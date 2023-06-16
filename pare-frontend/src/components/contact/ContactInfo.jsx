@@ -5,9 +5,12 @@ const ContactInfo = () => {
   return (
     <section>
       <div className="flex items-end gap-5 text-right">
-        <div className="flex flex-1 flex-col items-start gap-5 md:gap-10">
+        <div className="relative flex flex-1 flex-col items-start gap-5 md:gap-10">
           <Img src={LampDesk} alt={'lampdesk'} width={350} height={600} />
-          <a className="cursor-pointer font-helvetica md:text-xl lg:text-3xl" href="#map">
+          <a
+            className="absolute -bottom-9 cursor-pointer font-helvetica md:-bottom-20 md:text-xl lg:text-3xl"
+            href="#map"
+          >
             MAPS
           </a>
         </div>

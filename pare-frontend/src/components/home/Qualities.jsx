@@ -25,12 +25,12 @@ const elemData = [
 
 const Element = ({ image, heading, desc }) => {
   return (
-    <div className="flex flex-col items-center gap-3 p-5 font-metropolis text-white md:p-0">
+    <div className="mx-auto flex w-32 flex-col items-center gap-3 p-5 font-metropolis text-white md:p-0">
       <div className="h-20 w-20 rounded-full border border-white p-5 md:border-2 md:p-4">
         <img src={image} alt="quality" className="h-full w-full object-contain" />
       </div>
       <h6 className="text-xl font-semibold uppercase">{heading}</h6>
-      <p className="text-center text-sm font-light md:text-sm">{desc}</p>
+      <p className="text-center text-xs font-light md:text-sm">{desc}</p>
     </div>
   )
 }
@@ -44,7 +44,7 @@ const Qualities = () => {
           <div className="absolute -right-1 bottom-0 hidden h-1 rounded bg-[#151515] p-1 md:block"></div>
         </div>
       </div>
-      <div className="flex flex-wrap gap-5 bg-red-base p-5 md:flex-nowrap md:gap-10 md:p-10 lg:gap-20 lg:px-20  2xl:scale-110 2xl:px-60">
+      <div className="mx-auto flex flex-wrap gap-5 bg-red-base p-5 md:flex-nowrap md:gap-10 md:p-10 lg:gap-20 lg:px-20  2xl:scale-110 2xl:px-60">
         {elemData.map((element) => {
           return <Element key={element.heading} {...element} />
         })}

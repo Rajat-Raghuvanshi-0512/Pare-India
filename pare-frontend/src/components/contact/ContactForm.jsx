@@ -5,9 +5,13 @@ const ContactForm = () => {
   return (
     <section className="py-5 md:p-10 md:pr-0 lg:py-20 lg:pl-20 ">
       <div className="grid md:grid-cols-2 md:gap-5">
-        <div className="absolute mt-10 h-[530px] w-[70%] scale-95 bg-[#151515B5] bg-opacity-25 p-4 md:static md:mt-0 md:h-auto md:w-full">
+        <div className="absolute mt-10 h-[550px] w-[70%] scale-95 bg-[#151515B5] bg-opacity-25 p-4 md:static md:h-auto md:w-full">
           <h2 className="font-metropolis text-2xl leading-snug md:text-4xl lg:text-6xl lg:leading-snug">
-            <span className="font-semibold text-red-base">LET&apos;S WORK</span> on your project
+            <div className="flex items-center lg:gap-3">
+              <div className="flex-[1.3] font-medium text-red-base">LET&apos;S WORK</div>
+              <div className="h-[2px] w-[80%] flex-[0.7] bg-red-base lg:h-1"></div>
+            </div>
+            on your project
           </h2>
           <p className="my-3 font-helvetica text-xs md:text-base lg:text-xl">
             Let&apos;s work together to turn your design dreams into reality.
@@ -32,18 +36,14 @@ const ContactForm = () => {
                 placeholder="email"
                 className="border-b-2 border-gray-400 bg-transparent p-1  font-montserrat text-white  outline-none placeholder:uppercase lg:py-3 lg:text-xl"
               />
-              {/* <input
-                type="text"
-                placeholder="requirement type"
-                className="border-b-2 border-gray-400 bg-transparent p-1  font-montserrat text-white  outline-none placeholder:uppercase lg:py-3 lg:text-xl"
-              /> */}
               <select
                 id="cars"
                 name="cars"
                 className="border-b-2 border-gray-400 bg-transparent p-1 font-montserrat text-gray-400  outline-none placeholder:uppercase lg:py-3 lg:text-xl"
                 placeholder="requirement type"
+                defaultValue={'DEFAULT'}
               >
-                <option value="" disabled selected className="bg-black uppercase text-gray-400">
+                <option value="DEFAULT" disabled className="bg-black uppercase text-gray-400">
                   REQUIREMENT TYPE
                 </option>
                 <option value="walls" className="bg-black-base text-white">
@@ -56,10 +56,10 @@ const ContactForm = () => {
                   Facades
                 </option>
               </select>
-              <input
+              <textarea
                 type="text"
                 placeholder="your message"
-                className="border-b-2 border-gray-400 bg-transparent p-1  font-montserrat text-white  outline-none placeholder:uppercase lg:py-3 lg:text-xl"
+                className="resize-none border-b-2 border-gray-400 bg-transparent  p-1 font-montserrat  text-white outline-none placeholder:uppercase lg:py-3 lg:text-xl"
               />
             </div>
             <p className="mb-5 mt-3 font-montserrat text-xs md:text-base lg:mb-8 lg:mt-5 lg:text-xl">
@@ -70,13 +70,13 @@ const ContactForm = () => {
             </Button>
           </form>
         </div>
-        <div className="h-[650px] w-full md:h-auto">
+        <div className="h-[630px] w-full md:h-auto">
           <Img
             src={ContactImgPhone}
             alt="img"
             width={500}
             height={800}
-            className="ml-auto h-full w-[80%] object-cover md:hidden"
+            className="ml-auto mr-7 h-full w-[75%] object-cover md:hidden"
           />
           <Img
             src={ContactImg}
