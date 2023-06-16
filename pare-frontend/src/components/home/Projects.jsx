@@ -67,10 +67,10 @@ const Projects = () => {
       <div className="mt-5 text-center font-metropolis font-light md:hidden">0{projectsActiveNo + 1}/05</div>
 
       <div className="mt-10 flex flex-col justify-between gap-5 md:flex-row md:gap-10 lg:gap-20">
-        <div className="flex-1 font-metropolis text-4xl !leading-snug lg:text-5xl">
+        <div className="flex-1 font-metropolis text-4xl !leading-snug lg:text-[3.4rem]">
           WHAT OUR <span className="font-bold text-red-base">CLIENTS</span> HAVE TO SAY ABOUT US
         </div>
-        <div className="ml-28 mr-5 flex flex-1 items-end text-right font-helvetica text-sm md:mx-0 md:text-xl lg:text-3xl">
+        <div className="ml-28 mr-5 flex flex-1 items-end text-right font-helvetica text-sm md:mx-0 md:text-xl lg:text-4xl">
           Browse through our client testimonials to hear first-hand accounts of our quality products and exceptional
           customer service.
         </div>
