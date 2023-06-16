@@ -68,7 +68,7 @@ const Portfolio = () => {
       </div>
       <div className="w-[110vw] origin-left scale-90 overflow-x-hidden">
         <div
-          className="relative -left-[300vw] flex items-end gap-10 md:-left-[150vw] md:max-w-[450px]"
+          className="relative -left-[400vw] flex items-end gap-10 md:-left-[150vw] md:max-w-[450px]"
           ref={slider1Ref}
         >
           {slider1.map((slide, idx) => (
