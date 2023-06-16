@@ -26,10 +26,6 @@ const slider1 = [
   PortfolioImg3,
 ]
 const slider2 = [
-  PortfolioImg5,
-  PortfolioImg6,
-  PortfolioImg7,
-  PortfolioImg8,
   PortfolioImg1,
   PortfolioImg2,
   PortfolioImg3,
@@ -37,6 +33,9 @@ const slider2 = [
   PortfolioImg5,
   PortfolioImg6,
   PortfolioImg7,
+  PortfolioImg1,
+  PortfolioImg2,
+  PortfolioImg3,
 ]
 
 const Portfolio = () => {

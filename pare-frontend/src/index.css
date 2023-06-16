@@ -81,6 +81,16 @@ body {
     transform: translateX(calc(-300px * 4));
   }
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
 
 /* width */
 ::-webkit-scrollbar {
