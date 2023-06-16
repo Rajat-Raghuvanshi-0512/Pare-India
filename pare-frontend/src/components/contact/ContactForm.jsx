@@ -5,7 +5,7 @@ const ContactForm = () => {
   return (
     <section className="py-5 md:p-10 md:pr-0 lg:py-20 lg:pl-20 ">
       <div className="grid md:grid-cols-2 md:gap-5">
-        <div className="absolute mt-10 h-[550px] w-[75%] scale-95 bg-[#151515B5] bg-opacity-25 p-4 md:static md:h-auto md:w-full">
+        <div className="absolute mt-6 h-[590px] w-[75%] scale-95 bg-[#151515B5] bg-opacity-25 p-4 md:static md:h-auto md:w-full">
           <h2 className="font-metropolis text-3xl leading-snug md:text-4xl lg:text-5xl lg:leading-snug">
             <div className="flex items-center gap-1 lg:gap-3">
               <div className=" font-medium text-red-base">LET&apos;S WORK</div>
@@ -62,7 +62,7 @@ const ContactForm = () => {
                 className="resize-none border-b-2 border-gray-400 bg-transparent  p-1 font-montserrat  text-white outline-none placeholder:uppercase lg:py-3 lg:text-xl"
               />
             </div>
-            <p className="mb-5 mt-3 font-montserrat text-xs md:text-base lg:mb-8 lg:mt-5 lg:text-xl">
+            <p className="mb-5 mt-6 font-montserrat text-xs md:text-base lg:mb-8 lg:mt-5 lg:text-xl">
               I AGREE TO TERMS OF THE PRIVACY POLICY
             </p>
             <Button variant="outlined" type="buttton">
@@ -70,7 +70,7 @@ const ContactForm = () => {
             </Button>
           </form>
         </div>
-        <div className="h-[630px] w-full md:h-auto">
+        <div className="h-[640px] w-full md:h-auto">
           <Img
             src={ContactImgPhone}
             alt="img"
