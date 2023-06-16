@@ -60,10 +60,10 @@ const AboutSectionLg = () => {
   const numbersInView = useInView(numbersRef)
   return (
     <section className="m-10 lg:m-16 2xl:mx-48">
-      <div className="grid grid-cols-2 gap-10 lg:gap-16">
-        <div className="mt-20">
-          <h3 className="mb-3 font-metropolis text-xl font-bold uppercase lg:text-3xl">About Us</h3>
-          <div className="h-[300px] w-[300px] border-2 border-red-base lg:h-[500px] lg:w-[500px]">
+      <div className="grid grid-cols-2 gap-10 lg:gap-5">
+        <div className="mt-20 flex flex-col justify-end">
+          <h3 className="mb-3 font-metropolis text-xl font-bold uppercase lg:text-4xl">About Us</h3>
+          <div className="ml-6 h-[300px] w-[300px] border-2 border-red-base lg:h-[500px] lg:w-[500px]">
             <Img
               src={sofa1000}
               width={500}
@@ -73,32 +73,32 @@ const AboutSectionLg = () => {
             />
           </div>
         </div>
-        <div className="text-right">
+        <div className="flex flex-col justify-end text-right">
           <h3 className="font-metropolis font-light uppercase !leading-snug md:text-4xl lg:text-5xl">
             GIVE YOUR SPACE AN <span className="font-bold text-red-base">ASTONISHING</span> FEEL.
           </h3>
-          <p className="ml-10 mt-8 font-helvetica text-xl leading-tight">
+          <p className="ml-10 mt-8 font-helvetica text-xl leading-tight lg:text-2xl">
             Our vision is to impart a global outreach to Indian made Interior products. We identify innovative global
             trends and manufacture a matchless range in India.
           </p>
           <div className="mt-5 grid grid-cols-2 gap-5 lg:mt-14 lg:gap-10">
-            <div className="hidden items-end gap-5 text-center md:flex" ref={numbersRef}>
+            <div className="-ml-5 hidden items-end gap-5 text-center md:flex lg:gap-9" ref={numbersRef}>
               {numbersInView && (
                 <>
                   <div>
-                    <p className="font-metropolis text-xl font-bold text-red-base lg:text-2xl">
+                    <p className="font-metropolis text-xl font-bold text-red-base lg:text-3xl">
                       <CountUp end={20} duration={3} />+
                     </p>
                     <p className="font-helvetica text-xs">HAPPY CUSTOMERS</p>
                   </div>
                   <div>
-                    <p className="font-metropolis text-xl font-bold text-red-base lg:text-2xl">
+                    <p className="font-metropolis text-xl font-bold text-red-base lg:text-3xl">
                       <CountUp end={45} duration={3} />+
                     </p>
                     <p className="font-helvetica text-xs">CITIES SERVED</p>
                   </div>
                   <div>
-                    <p className="font-metropolis text-xl font-bold text-red-base lg:text-2xl">
+                    <p className="font-metropolis text-xl font-bold text-red-base lg:text-3xl">
                       <CountUp end={200} duration={2.5} />+
                     </p>
                     <p className="font-helvetica text-xs">CLIENT REVIEWS</p>

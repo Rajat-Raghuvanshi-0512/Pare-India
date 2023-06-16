@@ -64,12 +64,12 @@ const Portfolio = () => {
         </div>
       </div>
       <div className="w-screen overflow-x-hidden">
-        <div className="relative -left-[300vw] flex h-[200px] gap-10 md:-left-[150vw]" ref={slider1Ref}>
+        <div className="relative -left-[300vw] flex h-[250px] w-[270px] gap-10 md:-left-[150vw]" ref={slider1Ref}>
           {slider1.map((slide, idx) => (
             <img src={slide} alt="slide" key={slide + idx} className="h-full w-full object-contain" />
           ))}
         </div>
-        <div className="relative my-10 flex h-[200px] gap-10 md:-left-[-20vw]" ref={slider2Ref}>
+        <div className="relative my-10 flex h-[250px] w-[270px] gap-10 md:-left-[-20vw]" ref={slider2Ref}>
           {slider2.map((slide, idx) => (
             <img src={slide} alt="slide" key={slide + idx} className="h-full w-full object-contain" />
           ))}

@@ -57,7 +57,7 @@ const Projects = () => {
       >
         {projectImages.map((image) => (
           <SwiperSlide className="!flex !items-center !justify-center" key={image}>
-            <Img src={image} alt={'project'} width={300} height={300} className={' md:h-full md:w-full'} />
+            <img src={image} alt={'project'} width={300} height={300} className={' md:h-full md:w-full'} />
           </SwiperSlide>
         ))}
 

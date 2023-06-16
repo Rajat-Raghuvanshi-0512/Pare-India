@@ -26,13 +26,19 @@ const ProductsData = [
 const ProductsRange = () => {
   return (
     <div>
-      <div className="flex items-center justify-center ">
-        <h2 className="mt-10 border-b-2 border-b-red-base text-center font-montserrat text-xl font-bold uppercase md:text-3xl lg:text-4xl xl:text-5xl">
+      <div className=" flex items-center justify-center">
+        <h2 className="m-10  border-b-2 border-b-red-base text-center font-montserrat text-xl font-bold uppercase md:text-3xl lg:my-24 lg:text-4xl xl:text-5xl">
           Products Range
         </h2>
       </div>
-      <div>
-        <Img src={PareText} alt="pare" width={250} height={800} className="absolute left-2 -z-10 hidden md:block" />
+      <div className="relative">
+        <Img
+          src={PareText}
+          alt="pare"
+          width={250}
+          height={800}
+          className="absolute -top-10 left-2 -z-10 hidden md:block lg:-top-28"
+        />
         {ProductsData.map((product) => (
           <div key={product.id}>
             <PRCard {...product} />
