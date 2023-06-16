@@ -52,6 +52,9 @@
 body {
   overflow-x: hidden;
 }
+* {
+  scroll-behavior: smooth;
+}
 
 .animate-infinite {
   width: calc(300px * 16);

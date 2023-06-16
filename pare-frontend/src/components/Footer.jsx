@@ -48,8 +48,8 @@ const FooterLg = ({ dark }) => {
     <section className={` ${dark ? 'bg-[#151515] text-white' : ''} px-20  md:pt-10 lg:pt-14`}>
       <div className="grid font-montserrat md:grid-cols-10">
         <div className="col-span-5 flex flex-col justify-between border-[0.01rem] border-white border-opacity-50 p-10">
-          <Img src={Logo} alt="logo" width={200} height={200} />
-          <div className="text-lg font-light tracking-wider">
+          <Img src={Logo} alt="logo" width={140} height={140} />
+          <div className="w-[80%] text-base font-light tracking-wider">
             Transform your living spaces with PARÉ&apos;s innovative, sustainable, and high-quality products. Let&apos;s
             work together to create a space that reflects your unique style and create unforgettable memories.
           </div>
@@ -57,7 +57,7 @@ const FooterLg = ({ dark }) => {
         <div className="col-span-2 flex flex-col">
           <div className="flex h-1/2 flex-col border-[0.01rem] border-white border-opacity-50 p-10">
             <ul>
-              <li className="mb-4 font-metropolis  font-semibold tracking-wider md:text-2xl lg:text-3xl">LEGAL</li>
+              <li className="mb-4 font-metropolis  font-medium tracking-wider md:text-2xl lg:text-3xl">LEGAL</li>
               <Link to={'/'}>
                 <li className="mb-2">COOKIE POLICY</li>
               </Link>
@@ -68,7 +68,7 @@ const FooterLg = ({ dark }) => {
           </div>
           <div className="flex h-2/3 w-auto flex-col border-[0.01rem] border-white border-opacity-50 p-10">
             <ul>
-              <li className="mb-4 font-metropolis  font-semibold tracking-wider md:text-2xl lg:text-3xl">SOCIAL</li>
+              <li className="mb-4 font-metropolis  font-medium tracking-wider md:text-2xl lg:text-3xl">SOCIAL</li>
               <Link to={'/'}>
                 <li className="mb-2">INSTAGRAM</li>
               </Link>
@@ -83,7 +83,7 @@ const FooterLg = ({ dark }) => {
         </div>
         <div className="col-span-3 flex  flex-col border-[0.01rem] border-white border-opacity-50 p-10">
           <ul>
-            <li className="mb-4 font-metropolis font-semibold tracking-wider md:text-2xl lg:text-3xl">MENU</li>
+            <li className="mb-4 font-metropolis font-medium tracking-wider md:text-2xl lg:text-3xl">MENU</li>
             <Link to={'/'}>
               <li className="mb-3">HOME</li>
             </Link>

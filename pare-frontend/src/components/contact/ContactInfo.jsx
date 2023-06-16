@@ -5,8 +5,11 @@ const ContactInfo = () => {
   return (
     <section>
       <div className="flex items-end gap-5 text-right">
-        <div className="flex-1">
+        <div className="flex flex-1 flex-col items-start gap-5 md:gap-10">
           <Img src={LampDesk} alt={'lampdesk'} width={350} height={600} />
+          <a className="cursor-pointer font-helvetica md:text-xl lg:text-3xl" href="#map">
+            MAPS
+          </a>
         </div>
         <div className="flex-1">
           <div className="ml-auto flex flex-col gap-3 font-helvetica text-xs md:w-[80%] md:text-base">
