@@ -25,8 +25,8 @@ const elemData = [
 
 const Element = ({ image, heading, desc }) => {
   return (
-    <div className="mx-auto flex w-32 flex-col items-center gap-3 p-5 font-metropolis text-white md:p-0">
-      <div className="h-20 w-20 rounded-full border border-white p-5 md:border-2 md:p-4">
+    <div className="mx-auto flex w-32 flex-col items-center gap-3 font-metropolis text-white md:p-0">
+      <div className="h-24 w-24 rounded-full border border-white p-5 md:border-2 md:p-4">
         <img src={image} alt="quality" className="h-full w-full object-contain" />
       </div>
       <h6 className="text-xl font-semibold uppercase">{heading}</h6>

@@ -5,11 +5,11 @@ const ContactForm = () => {
   return (
     <section className="py-5 md:p-10 md:pr-0 lg:py-20 lg:pl-20 ">
       <div className="grid md:grid-cols-2 md:gap-5">
-        <div className="absolute mt-10 h-[550px] w-[70%] scale-95 bg-[#151515B5] bg-opacity-25 p-4 md:static md:h-auto md:w-full">
-          <h2 className="font-metropolis text-2xl leading-snug md:text-4xl lg:text-6xl lg:leading-snug">
-            <div className="flex items-center lg:gap-3">
-              <div className="flex-[1.3] font-medium text-red-base">LET&apos;S WORK</div>
-              <div className="h-[2px] w-[80%] flex-[0.7] bg-red-base lg:h-1"></div>
+        <div className="absolute mt-10 h-[550px] w-[75%] scale-95 bg-[#151515B5] bg-opacity-25 p-4 md:static md:h-auto md:w-full">
+          <h2 className="font-metropolis text-2xl leading-snug md:text-4xl lg:text-5xl lg:leading-snug">
+            <div className="flex items-center gap-1 lg:gap-3">
+              <div className=" font-medium text-red-base">LET&apos;S WORK</div>
+              <div className="mr-auto h-[2px] w-[25%] bg-red-base lg:h-1"></div>
             </div>
             on your project
           </h2>

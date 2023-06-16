@@ -49,7 +49,7 @@ const FooterLg = ({ dark }) => {
       <div className="grid font-montserrat md:grid-cols-10">
         <div className="col-span-5 flex flex-col justify-between border-[0.01rem] border-white border-opacity-50 p-10">
           <Img src={Logo} alt="logo" width={140} height={140} />
-          <div className="w-[80%] text-base font-light tracking-wider">
+          <div className="w-[80%] text-base font-normal leading-5 tracking-tight">
             Transform your living spaces with PARÉ&apos;s innovative, sustainable, and high-quality products. Let&apos;s
             work together to create a space that reflects your unique style and create unforgettable memories.
           </div>
