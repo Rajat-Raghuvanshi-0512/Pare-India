@@ -23,16 +23,12 @@ import { Img } from '../custom'
 const slider1 = [
   PortfolioImg1,
   PortfolioImg2,
-  PortfolioImg4,
   PortfolioImg3,
+  PortfolioImg4,
   PortfolioImg9,
   PortfolioImg10,
   PortfolioImg11,
   PortfolioImg12,
-  PortfolioImg1,
-  PortfolioImg2,
-  PortfolioImg3,
-  PortfolioImg4,
 ]
 const slider2 = [
   PortfolioImg5,
@@ -43,10 +39,6 @@ const slider2 = [
   PortfolioImg14,
   PortfolioImg15,
   PortfolioImg16,
-  PortfolioImg5,
-  PortfolioImg6,
-  PortfolioImg7,
-  PortfolioImg8,
 ]
 
 const PortfolioSm = () => {
@@ -63,15 +55,15 @@ const PortfolioSm = () => {
           to life.
         </div>
       </div>
-      <div className="z-10 mx-auto w-[96vw] overflow-y-hidden overflow-x-scroll">
-        <div className="relative flex max-h-[150px] max-w-[150px] items-end gap-3">
+      <div className="z-10 -mb-32 -mt-16 w-[143%] origin-left scale-[70%] overflow-y-hidden overflow-x-scroll">
+        <div className="portfolio-slider relative flex items-end gap-6">
           {slider1.map((slide, idx) => (
-            <img src={slide} alt="slide" key={slide + idx} className="h-full w-full object-contain " />
+            <img src={slide} alt="slide" key={slide + idx} className="object-contain object-bottom " />
           ))}
         </div>
-        <div className="relative my-5 flex max-h-[150px] max-w-[150px] items-start gap-3">
+        <div className="portfolio-slider-1 relative my-5 flex items-start gap-6">
           {slider2.map((slide, idx) => (
-            <img src={slide} alt="slide" key={slide + idx} className="object-contain" />
+            <img src={slide} alt="slide" key={slide + idx} className="object-contain object-top" />
           ))}
         </div>
       </div>
@@ -107,20 +99,17 @@ const PortfolioLg = () => {
         </div>
       </div>
       <div className="-my-40 h-fit w-[200vw] origin-left overflow-hidden md:m-0 md:w-[110vw] md:scale-100">
-        <div
-          className="relative -left-[400vw] flex items-end gap-3 md:-left-[150vw] md:max-h-[300px] md:max-w-[300px] md:gap-10"
-          ref={slider1Ref}
-        >
+        <div className="portfolio-slider relative -left-[200vw] flex items-end gap-3 md:gap-10" ref={slider1Ref}>
           {slider1.map((slide, idx) => (
-            <img src={slide} alt="slide" key={slide + idx} className="object-contain" />
+            <img src={slide} alt="slide" key={slide + idx} className="object-contain object-bottom" />
           ))}
         </div>
         <div
-          className="relative my-10 flex items-start gap-3 md:-left-[-20vw] md:max-h-[300px] md:max-w-[300px] md:gap-10"
+          className="portfolio-slider-1 relative -right-[100vw] my-10 flex items-start gap-3 md:gap-10"
           ref={slider2Ref}
         >
           {slider2.map((slide, idx) => (
-            <img src={slide} alt="slide" key={slide + idx} className="object-contain" />
+            <img src={slide} alt="slide" key={slide + idx} className="object-contain object-top" />
           ))}
         </div>
       </div>

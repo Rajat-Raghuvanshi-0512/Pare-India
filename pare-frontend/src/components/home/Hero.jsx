@@ -7,8 +7,8 @@ const HeroSm = ({ counter }) => {
   return (
     <>
       <section className={counter !== 0 ? 'hidden' : ''}>
-        <div className="absolute -z-10 h-[100vh] w-full bg-gradient-to-r from-[#151515] to-transparent opacity-50"></div>
-        <Img src={HeroBgMobile} alt="bg-mobile" className={'absolute -z-20 h-screen w-full object-cover object-top'} />
+        <div className="absolute -z-10 h-[100vh] w-full bg-gradient-to-r from-[#151515] to-transparent opacity-70"></div>
+        <img src={HeroBgMobile} alt="bg-mobile" className={'absolute -z-20 h-screen w-full object-cover object-top'} />
         <div className="flex h-screen flex-col items-start justify-center gap-8 px-5">
           <motion.div
             whileInView={{
@@ -27,8 +27,8 @@ const HeroSm = ({ counter }) => {
         </div>
       </section>
       <section className={counter !== 1 ? 'hidden' : ''}>
-        <div className="absolute -z-10 h-[100vh] w-full bg-gradient-to-r from-[#151515] to-transparent opacity-50"></div>
-        <Img src={HeroBgMobile1} alt="bg-mobile" className={'absolute -z-20 h-screen w-full object-cover object-top'} />
+        <div className="absolute -z-10 h-[100vh] w-full bg-gradient-to-r from-[#151515] to-transparent opacity-70"></div>
+        <img src={HeroBgMobile1} alt="bg-mobile" className={'absolute -z-20 h-screen w-full object-cover object-top'} />
         <div className="flex h-screen flex-col items-start justify-center gap-8 px-5">
           <motion.div
             whileInView={{
@@ -38,7 +38,7 @@ const HeroSm = ({ counter }) => {
             transition={{ duration: 1 }}
             className="font-metropolis text-5xl font-bold text-white"
           >
-            <span className="text-red-base">INDIA’S</span> BEST
+            <span className="text-red-base drop-shadow-md">INDIA’S</span> BEST
           </motion.div>
           <p className="font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl">
             INNOVATIVE SURFACES
@@ -47,8 +47,8 @@ const HeroSm = ({ counter }) => {
         </div>
       </section>
       <section className={counter !== 2 ? 'hidden' : ''}>
-        <div className="absolute -z-10 h-[100vh] w-full bg-gradient-to-r from-[#151515] to-transparent opacity-50"></div>
-        <Img src={HeroBgMobile2} alt="bg-mobile" className={'absolute -z-20 h-screen w-full object-cover object-top'} />
+        <div className="absolute -z-10 h-[100vh] w-full bg-gradient-to-r from-[#151515] to-transparent opacity-70"></div>
+        <img src={HeroBgMobile2} alt="bg-mobile" className={'absolute -z-20 h-screen w-full object-cover object-top'} />
         <div className="flex h-screen flex-col items-start justify-center gap-8 px-5">
           <motion.div
             whileInView={{
@@ -73,7 +73,7 @@ const HeroMd = () => {
   return (
     <section>
       <div className="absolute -z-10 h-[100vh] w-full bg-gradient-to-r from-[#151515] to-transparent opacity-50"></div>
-      <Img
+      <img
         src={HeroBg}
         width={'1900'}
         height={'100'}
@@ -94,7 +94,7 @@ const HeroLg = ({ counter }) => {
       <section className={counter !== 0 ? 'hidden' : ''}>
         <div>
           <div className="absolute -z-10 h-[100vh] w-full bg-gradient-to-r from-[#151515] to-transparent opacity-50"></div>
-          <Img
+          <img
             src={HeroBg}
             width={'1900'}
             height={'100'}
@@ -120,7 +120,7 @@ const HeroLg = ({ counter }) => {
       <section className={counter !== 1 ? 'hidden' : 'fade'}>
         <div>
           <div className="absolute -z-10 h-[100vh] w-full bg-gradient-to-r from-[#151515] to-transparent opacity-20"></div>
-          <Img
+          <img
             src={HeroBg1}
             width={'1900'}
             height={'100'}
@@ -146,7 +146,7 @@ const HeroLg = ({ counter }) => {
       <section className={counter !== 2 ? 'hidden' : 'fade'}>
         <div>
           <div className="absolute -z-10 h-[100vh] w-full bg-gradient-to-r from-[#151515] to-transparent opacity-80"></div>
-          <Img
+          <img
             src={HeroBg2}
             width={'1900'}
             height={'100'}

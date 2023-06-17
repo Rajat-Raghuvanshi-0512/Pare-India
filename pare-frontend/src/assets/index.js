@@ -32,8 +32,14 @@ import PrevArrowProject from './images/home/prev-arrow-project.webp'
 import NextArrowProject from './images/home/next-arrow-project.webp'
 
 import P1 from './images/home/products range/p1.webp'
+import P12 from './images/home/products range/p11.webp'
+import P13 from './images/home/products range/p12.webp'
 import P2 from './images/home/products range/p2.webp'
+import P21 from './images/home/products range/p21.webp'
+import P22 from './images/home/products range/p22.webp'
 import P3 from './images/home/products range/p3.webp'
+import P31 from './images/home/products range/p31.webp'
+import P32 from './images/home/products range/p32.webp'
 
 import hyundai from './images/home/companies/hyundai.webp'
 import ginger from './images/home/companies/ginger.webp'
@@ -120,8 +126,14 @@ export {
   desk,
   PareText,
   P1,
+  P12,
+  P13,
   P2,
+  P21,
+  P22,
   P3,
+  P31,
+  P32,
   PortfolioImg1,
   PortfolioImg2,
   PlayIcon,

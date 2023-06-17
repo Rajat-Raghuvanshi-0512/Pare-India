@@ -47,7 +47,8 @@ const AboutSectionSm = () => {
               </div>
               <div>
                 <p className="font-metropolis text-2xl font-bold text-red-base">
-                  <CountUp end={500} duration={2.5} />+
+                  <CountUp end={500} duration={2.5} />
+                  K+
                 </p>
                 <p className="font-helvetica text-xs"> Happy Customers</p>
               </div>

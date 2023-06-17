@@ -1,4 +1,4 @@
-import { P1, P2, P3, PareText } from '../../assets'
+import { P1, P12, P13, P2, P21, P22, P3, P31, P32, PareText } from '../../assets'
 import { Img } from '../custom'
 import PRCard from './PRCard'
 
@@ -8,18 +8,24 @@ const ProductsData = [
     heading: 'Innov+',
     desc: 'Elevate your space with PARÉ Soffit Systems. Embrace the allure of wood, minus the drawbacks. Transform effortlessly with our versatile Soffit Louvers or sleek Vertica Soffit Panels. Discover our first-time-in-India products for walls and ceilings.',
     img: P1,
+    img1: P12,
+    img2: P13,
   },
   {
     id: '02',
     heading: 'Easy+',
     desc: "PARÉ's Easy+ Locking System revolutionizes wall and ceiling panel integration with a seamless, hassle-free installation. Embrace the Pyramid design for added texture or choose Linea panels for clean lines and easy flexibility. Experience effortless, dust-free installation with PARÉ's world-first innovation.",
     img: P2,
+    img1: P21,
+    img2: P22,
   },
   {
     id: '03',
     heading: 'Dura+',
     desc: "PARÉ DURA+ Systems redefine durability and functionality, ensuring a smooth and flexible experience. Elevate exteriors with Norma panels for long-lasting exterior facades, and enhance wall cladding with Stretta panels' high impact resistance. Experience excellence with PARÉ DURA+.",
     img: P3,
+    img1: P31,
+    img2: P32,
   },
 ]
 
