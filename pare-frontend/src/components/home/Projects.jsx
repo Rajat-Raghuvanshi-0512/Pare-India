@@ -36,7 +36,7 @@ const Projects = () => {
       <div className="flex justify-between">
         <div className="font-metropolis">
           <div className="text-3xl font-bold uppercase md:text-4xl lg:text-5xl">Projects</div>
-          <p className="mb-8 mt-3 text-xs md:mb-0 md:w-60 md:text-base lg:w-80">
+          <p className="mb-8 mt-3 text-sm md:mb-0 md:w-60 md:text-base lg:w-80">
             Browse through and see how we have transformed spaces and exceeded our client&apos;s expectations, one
             project at a time.
           </p>

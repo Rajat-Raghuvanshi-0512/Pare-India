@@ -29,20 +29,20 @@ const PRCard = ({ id, heading, desc, img, img1, img2 }) => {
         <div className={`relative flex items-start gap-1 font-metropolis md:gap-2 ${id === '02' ? 'justify-end' : ''}`}>
           <span
             className={` ${
-              id !== '02' ? 'absolute -left-4 md:-left-8' : ''
-            }  font-montserrat text-xs font-bold md:text-xl`}
+              id !== '02' ? 'absolute -left-4 md:-left-8 2xl:-left-12' : ''
+            }  font-montserrat text-xs font-bold md:text-xl 2xl:text-3xl`}
           >
             {id}
           </span>
-          <h3 className={`  text-4xl font-bold uppercase lg:text-7xl`}>{heading}</h3>
+          <h3 className={`  text-4xl font-bold uppercase lg:text-7xl 2xl:text-8xl`}>{heading}</h3>
         </div>
-        <p className="my-3 font-montserrat text-[10px] leading-3 md:text-sm lg:text-2xl">{desc}</p>
+        <p className="my-3 font-montserrat text-[10px] leading-3 md:text-sm lg:text-2xl 2xl:text-3xl">{desc}</p>
         <Button variant="outlined" className="md:my-5">
           view products
         </Button>
       </div>
       <div className={`flex items-end ${id === '02' ? 'justify-start' : 'justify-end'}`}>
-        <Carousel images={[img, img1, img2]} left={id === '02' ? false : true} />
+        <Carousel images={[img, img1, img2]} left={id === '02' ? false : true} alignLeft={id === '02' ? true : false} />
       </div>
     </div>
   )

@@ -15,7 +15,7 @@ const TestimonialSlider = ({ testmonialActiveNo }) => {
           className={'hidden cursor-pointer md:block'}
           onClick={() => swiper.slidePrev()}
         />
-        <div className="font-metropolis text-xs font-light md:text-xl">0{testmonialActiveNo + 1}/02</div>
+        <div className="font-metropolis text-base font-light md:text-xl">0{testmonialActiveNo + 1}/02</div>
         <Img
           src={RightArrow}
           alt={'rarrow'}
