@@ -78,6 +78,7 @@ const PortfolioSm = () => {
     </section>
   )
 }
+
 const PortfolioLg = () => {
   const slider1Ref = useRef()
   const slider2Ref = useRef()

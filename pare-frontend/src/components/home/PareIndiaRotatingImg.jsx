@@ -5,7 +5,21 @@ import { Img } from '../custom'
 const images = [InstaImg1, InstaImg2, InstaImg3, InstaImg4, InstaImg5, InstaImg6, InstaImg7, InstaImg8]
 
 const PareIndiaRotatingImgSm = () => {
-  return null
+  return (
+    <section className="relative flex h-[70vh] w-screen flex-col items-center justify-start overflow-hidden">
+      <div className="absolute left-[50%] top-[37%] -translate-x-[50%] text-center">
+        <h1 className="font-metropolis text-4xl font-bold">@pare.india</h1>
+        <p className="py-2 text-center font-helvetica text-xs  opacity-60 md:text-base lg:text-lg">
+          Follow @pare.india on Instagram to see our latest innovative designs and get inspired for your next project!
+        </p>
+      </div>
+      <div className="circle-container z-30 flex h-[100vh] flex-col items-center justify-center">
+        {images.map((im, idx) => {
+          return <Img src={im} key={im + idx} id="instafeed" />
+        })}
+      </div>
+    </section>
+  )
 }
 const PareIndiaRotatingImgLg = () => {
   const ref = useRef()

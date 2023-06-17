@@ -250,13 +250,36 @@ input[type='number'] {
   }
   .circle-container {
     width: 100vw;
-    height: 2em;
   }
   .circle-container > img {
-    width: 20em;
-    height: 20em;
+    width: 12em;
+    height: 12em;
     scale: 40%;
     object-fit: contain;
+  }
+  .circle-container > img:nth-of-type(1) {
+    transform: rotate(0deg) translateX(30em) translateY(5em) rotate(0deg) scale(120%);
+  }
+  .circle-container > img:nth-of-type(2) {
+    transform: rotate(35deg) translateX(23em) translateY(5em) rotate(-35deg) scale(80%);
+  }
+  .circle-container > img:nth-of-type(3) {
+    transform: rotate(90deg) translateX(23em) translateY(5em) rotate(-90deg) scale(135%);
+  }
+  .circle-container > img:nth-of-type(4) {
+    transform: rotate(135deg) translateX(30em) translateY(15em) rotate(-135deg) scale(150%);
+  }
+  .circle-container > img:nth-of-type(5) {
+    transform: rotate(180deg) translateX(34em) translateY(12em) rotate(-180deg) scale(125%);
+  }
+  .circle-container > img:nth-of-type(6) {
+    transform: rotate(225deg) translateX(23em) translateY(7em) rotate(-225deg) scale(100%);
+  }
+  .circle-container > img:nth-of-type(7) {
+    transform: rotate(280deg) translateX(25em) translateY(5em) rotate(-280deg) scale(130%);
+  }
+  .circle-container > img:nth-of-type(8) {
+    transform: rotate(315deg) translateX(35em) translateY(10em) rotate(-315deg) scale(170%);
   }
   @keyframes rotateInfinite {
     0% {
