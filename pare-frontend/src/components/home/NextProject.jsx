@@ -3,7 +3,7 @@ import { Button } from '../custom'
 
 const NextProject = () => {
   return (
-    <section className="px-5 pb-5 pt-12 md:p-10 lg:px-16">
+    <section className="px-5 pb-5 pt-12 md:p-10 lg:px-16 xl:px-24 2xl:px-40">
       <div className="grid  md:grid-cols-2 md:gap-5">
         <div className="absolute mt-5 h-[500px] w-[70%] bg-[#151515B5] bg-opacity-25 p-4 md:static md:mt-0 md:h-auto md:w-full">
           <h2 className="font-metropolis text-3xl leading-snug md:text-4xl lg:text-6xl lg:leading-snug">
