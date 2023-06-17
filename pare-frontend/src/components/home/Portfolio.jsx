@@ -23,8 +23,8 @@ import { Img } from '../custom'
 const slider1 = [
   PortfolioImg1,
   PortfolioImg2,
-  PortfolioImg3,
   PortfolioImg4,
+  PortfolioImg3,
   PortfolioImg9,
   PortfolioImg10,
   PortfolioImg11,
@@ -63,13 +63,13 @@ const PortfolioSm = () => {
           to life.
         </div>
       </div>
-      <div className="z-10 mx-auto w-[96vw] overflow-x-scroll">
-        <div className="relative flex max-h-[100px] max-w-[100px] items-end gap-3">
+      <div className="z-10 mx-auto w-[96vw] overflow-y-hidden overflow-x-scroll">
+        <div className="relative flex max-h-[150px] max-w-[150px] items-end gap-3">
           {slider1.map((slide, idx) => (
             <img src={slide} alt="slide" key={slide + idx} className="h-full w-full object-contain " />
           ))}
         </div>
-        <div className="relative my-5 flex max-h-[100px] max-w-[100px] items-start gap-3">
+        <div className="relative my-5 flex max-h-[150px] max-w-[150px] items-start gap-3">
           {slider2.map((slide, idx) => (
             <img src={slide} alt="slide" key={slide + idx} className="object-contain" />
           ))}
