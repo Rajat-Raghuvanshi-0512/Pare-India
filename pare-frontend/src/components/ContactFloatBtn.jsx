@@ -21,7 +21,7 @@ const ContactFloatBtn = () => {
   }, [open])
 
   return (
-    <div className="fixed bottom-5 right-5 md:bottom-10 md:right-10" ref={ref}>
+    <div className="fixed bottom-5 right-5 z-[100] md:bottom-10 md:right-10" ref={ref}>
       <div className="relative">
         <div
           className="z-40 flex h-16 w-16 cursor-pointer items-center justify-center rounded-full bg-red-base text-white"

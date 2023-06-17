@@ -64,12 +64,12 @@ const PortfolioSm = () => {
         </div>
       </div>
       <div className="z-10 mx-auto w-[96vw] overflow-x-scroll">
-        <div className="relative flex h-[100px] w-[100px] items-end gap-3 ">
+        <div className="relative flex max-h-[100px] max-w-[100px] items-end gap-3">
           {slider1.map((slide, idx) => (
-            <img src={slide} alt="slide" key={slide + idx} className="object-contain" />
+            <img src={slide} alt="slide" key={slide + idx} className="h-full w-full object-contain " />
           ))}
         </div>
-        <div className="relative my-5 flex h-[100px] w-[100px] items-start gap-3">
+        <div className="relative my-5 flex max-h-[100px] max-w-[100px] items-start gap-3">
           {slider2.map((slide, idx) => (
             <img src={slide} alt="slide" key={slide + idx} className="object-contain" />
           ))}

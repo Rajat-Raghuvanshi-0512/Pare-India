@@ -1,34 +1,35 @@
-import {
-  PortfolioImg1,
-  PortfolioImg2,
-  PortfolioImg3,
-  PortfolioImg4,
-  PortfolioImg5,
-  PortfolioImg6,
-  PortfolioImg7,
-  PortfolioImg8,
-} from '../../assets'
+import { useRef } from 'react'
+import { InstaImg1, InstaImg2, InstaImg3, InstaImg4, InstaImg5, InstaImg6, InstaImg7, InstaImg8 } from '../../assets'
 import { Img } from '../custom'
 
-const images = [
-  PortfolioImg1,
-  PortfolioImg2,
-  PortfolioImg3,
-  PortfolioImg4,
-  PortfolioImg5,
-  PortfolioImg6,
-  PortfolioImg7,
-  PortfolioImg8,
-]
+const images = [InstaImg1, InstaImg2, InstaImg3, InstaImg4, InstaImg5, InstaImg6, InstaImg7, InstaImg8]
 const PareIndiaRotatingImg = () => {
+  const ref = useRef()
+
+  const getScrollOffset = (e) => {
+    let xValue = e.clientX
+    let yValue = e.clientY
+    let windowHeight = window.innerHeight
+    let windowWidth = window.innerWidth
+
+    let mousePosX = -1 + (xValue / windowWidth) * 200
+    let mousePosY = 1 - (yValue / windowHeight) * 100
+    ref.current.style.transform = `translate3d(${-mousePosX + 100}px,${mousePosY + 100}px,0px)`
+    ref.current.style.transition = ' all 0.4s'
+  }
   return (
-    <section className="flex flex-col items-center justify-center md:h-[140vh]">
-      <div className="circle-container flex h-[100vh] flex-col items-center justify-center">
+    <section className="relative flex w-screen flex-col items-center justify-center overflow-hidden md:h-[140vh]">
+      <div className="absolute left-[50%] top-[50%] w-[40%] -translate-x-[50%] text-center">
         <h1 className="font-metropolis text-2xl font-black md:text-4xl lg:text-7xl">@pare.india</h1>
         <p className="py-2 text-center font-helvetica text-sm opacity-60 md:text-base lg:text-lg">
-          Follow @pare.india on Instagram to see our latest <br /> innovative designs and get inspired for your next{' '}
-          <br /> project!
+          Follow @pare.india on Instagram to see our latest innovative designs and get inspired for your next project!
         </p>
+      </div>
+      <div
+        className="circle-container z-30 flex h-[100vh] flex-col items-center justify-center"
+        ref={ref}
+        onMouseMove={getScrollOffset}
+      >
         {images.map((im, idx) => {
           return <Img src={im} key={im + idx} className="!hidden md:!block" />
         })}

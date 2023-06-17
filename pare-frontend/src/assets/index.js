@@ -87,7 +87,15 @@ import MapImg from './images/contact/map.webp'
 import MapMobImg from './images/contact/map-mobile.webp'
 import ContactBg from './images/contact/contact-bg.webp'
 
-import testVideo1 from './videos/testimonial1.mp4'
+import InstaImg1 from './images/home/insta/img1.webp'
+import InstaImg2 from './images/home/insta/img2.webp'
+import InstaImg3 from './images/home/insta/img3.webp'
+import InstaImg4 from './images/home/insta/img4.webp'
+import InstaImg5 from './images/home/insta/img5.webp'
+import InstaImg6 from './images/home/insta/img6.webp'
+import InstaImg7 from './images/home/insta/img7.webp'
+import InstaImg8 from './images/home/insta/img8.webp'
+
 import testVideo2 from './videos/testimonial2.mp4'
 import testVideo3 from './videos/testimonial3.mp4'
 
@@ -163,7 +171,6 @@ export {
   ContactImg,
   ContactBg,
   MapImg,
-  testVideo1,
   testVideo2,
   testVideo3,
   hyundai,
@@ -173,4 +180,12 @@ export {
   regency,
   PrevArrowProject,
   NextArrowProject,
+  InstaImg1,
+  InstaImg2,
+  InstaImg3,
+  InstaImg4,
+  InstaImg5,
+  InstaImg6,
+  InstaImg7,
+  InstaImg8,
 }

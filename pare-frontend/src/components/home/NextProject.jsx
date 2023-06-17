@@ -18,17 +18,17 @@ const NextProject = () => {
               <input
                 type="text"
                 placeholder="Name"
-                className="border-b-2 border-gray-400 bg-transparent p-1 font-montserrat text-white outline-none placeholder:uppercase lg:py-3 lg:text-xl"
+                className="border-b-2 border-[#adadad] bg-transparent p-1 font-montserrat text-white outline-none placeholder:uppercase lg:py-3 lg:text-xl"
               />
               <input
                 type="number"
                 placeholder="Phone number"
-                className="border-b-2 border-gray-400 bg-transparent p-1 font-montserrat text-white outline-none placeholder:uppercase lg:py-3 lg:text-xl"
+                className="border-b-2 border-[#adadad] bg-transparent p-1 font-montserrat text-white outline-none placeholder:uppercase lg:py-3 lg:text-xl"
               />
               <input
                 type="email"
                 placeholder="email"
-                className="border-b-2 border-gray-400 bg-transparent p-1  font-montserrat text-white  outline-none placeholder:uppercase lg:py-3 lg:text-xl"
+                className="border-b-2 border-[#adadad] bg-transparent p-1  font-montserrat text-white  outline-none placeholder:uppercase lg:py-3 lg:text-xl"
               />
             </div>
             <p className="mb-5 mt-3 font-montserrat text-xs md:text-base lg:mb-8 lg:mt-5 lg:text-xl">

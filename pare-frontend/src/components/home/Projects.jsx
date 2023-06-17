@@ -5,7 +5,6 @@ import {
   Project3Img,
   Project4Img,
   Project5Img,
-  testVideo1,
   testVideo2,
   testVideo3,
 } from '../../assets'
@@ -113,25 +112,6 @@ const Projects = () => {
               playing={testState.test3}
             />
           </SwiperSlide>
-          <SwiperSlide
-            onClick={() => setTestState((prev) => ({ test1: !prev.test1, test2: false, test3: false }))}
-            className="realtive"
-          >
-            {testState.test1 === false && (
-              <div className="absolute z-10 mx-auto my-5 flex h-[200px] w-full items-center justify-center bg-black-base bg-opacity-30 text-white md:left-14 md:my-10 md:h-[400px] md:w-[90%] lg:h-[500px]">
-                <Img src={PlayIcon} alt={'play'} className={'h-14 w-14 md:h-20 md:w-20'} />
-              </div>
-            )}
-            <ReactPlayer
-              width="100%"
-              height="500"
-              url={testVideo1}
-              className={`mx-auto my-5 h-[200px] md:my-10 md:h-[400px] lg:h-[500px]`}
-              title="test1"
-              playing={testState.test1}
-            />
-          </SwiperSlide>
-
           <TestimonialSlider testmonialActiveNo={testmonialActiveNo} />
         </Swiper>
       </div>
