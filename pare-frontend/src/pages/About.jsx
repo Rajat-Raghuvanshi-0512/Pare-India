@@ -1,5 +1,5 @@
 import { LastSection } from '../components'
-import { AboutUs, Team, Vision } from '../components/about'
+import { AboutUs, Vision } from '../components/about'
 
 const About = () => {
   return (

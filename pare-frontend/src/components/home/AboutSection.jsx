@@ -32,9 +32,9 @@ const AboutSectionSm = () => {
             <>
               <div>
                 <p className="font-metropolis text-2xl font-bold text-red-base">
-                  <CountUp end={20} duration={3} />+
+                  <CountUp end={10} duration={3} />+
                 </p>
-                <p className="font-helvetica text-xs">HAPPY CUSTOMERS</p>
+                <p className="font-helvetica text-xs">Quality Products</p>
               </div>
               <div>
                 <p className="font-metropolis text-2xl font-bold text-red-base">
@@ -82,26 +82,27 @@ const AboutSectionLg = () => {
             trends and manufacture a matchless range in India.
           </p>
           <div className="mt-5 grid grid-cols-2 gap-5 lg:mt-14 lg:gap-10">
-            <div className="-ml-5 hidden items-end gap-5 text-center md:flex lg:gap-9" ref={numbersRef}>
+            <div className="-ml-5 hidden items-end gap-5 text-center uppercase md:flex" ref={numbersRef}>
               {numbersInView && (
                 <>
                   <div>
                     <p className="font-metropolis text-xl font-bold text-red-base lg:text-3xl">
-                      <CountUp end={20} duration={3} />+
+                      <CountUp end={10} duration={3} />+
                     </p>
-                    <p className="font-helvetica text-xs">HAPPY CUSTOMERS</p>
+                    <p className="font-helvetica text-xs">Quality Products</p>
                   </div>
                   <div>
                     <p className="font-metropolis text-xl font-bold text-red-base lg:text-3xl">
-                      <CountUp end={45} duration={3} />+
+                      <CountUp end={25} duration={3} />+
                     </p>
-                    <p className="font-helvetica text-xs">CITIES SERVED</p>
+                    <p className="font-helvetica text-xs">Shades TO CHoose </p>
                   </div>
                   <div>
                     <p className="font-metropolis text-xl font-bold text-red-base lg:text-3xl">
-                      <CountUp end={200} duration={2.5} />+
+                      <CountUp end={500} duration={2.5} />
+                      K+
                     </p>
-                    <p className="font-helvetica text-xs">CLIENT REVIEWS</p>
+                    <p className="font-helvetica text-xs"> Happy Customers</p>
                   </div>
                 </>
               )}

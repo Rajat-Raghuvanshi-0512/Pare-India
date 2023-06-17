@@ -8,7 +8,7 @@ const AboutUs = () => {
   const numbersInView = useInView(numbersRef)
   return (
     <div className="md:p-10">
-      <h2 className="my-10 mb-5 font-montserrat text-4xl font-bold uppercase md:my-0 md:text-3xl lg:text-4xl">
+      <h2 className="my-10 mb-5 font-montserrat text-4xl font-bold uppercase md:mb-5 md:mt-0 md:text-3xl lg:text-4xl">
         About us
       </h2>
       <p className="font-montserrat text-base">
@@ -45,10 +45,18 @@ const AboutUs = () => {
               </div>
               <div>
                 <p className="w-[90%] border-b border-black text-center font-metropolis text-xl font-bold md:border-b-2 md:text-left md:text-4xl lg:text-5xl">
-                  <CountUp end={500} duration={2} />+
+                  <CountUp end={25} duration={2} />+
                 </p>
                 <p className="py-1 text-center font-montserrat text-[10px] font-medium leading-3 md:py-3 md:text-left md:text-lg lg:text-xl">
-                  Architectural projects of houses
+                  Shades to choose
+                </p>
+              </div>
+              <div>
+                <p className="w-[90%] border-b border-black text-center font-metropolis text-xl font-bold md:border-b-2 md:text-left md:text-4xl lg:text-5xl">
+                  <CountUp end={200} duration={2} />+
+                </p>
+                <p className="py-1 text-center font-montserrat text-[10px] font-medium leading-3 md:py-3 md:text-left md:text-lg lg:text-xl">
+                  Cities Served
                 </p>
               </div>
               <div>
@@ -56,15 +64,7 @@ const AboutUs = () => {
                   <CountUp end={5000} duration={2} />+
                 </p>
                 <p className="py-1 text-center font-montserrat text-[10px] font-medium leading-3 md:py-3 md:text-left md:text-lg lg:text-xl">
-                  Satisfied Clients
-                </p>
-              </div>
-              <div>
-                <p className="w-[90%] border-b border-black text-center font-metropolis text-xl font-bold md:border-b-2 md:text-left md:text-4xl lg:text-5xl">
-                  <CountUp end={2000} duration={2} />+
-                </p>
-                <p className="py-1 text-center font-montserrat text-[10px] font-medium leading-3 md:py-3 md:text-left md:text-lg lg:text-xl">
-                  Unique Spaces modified{' '}
+                  Architectural projects of houses
                 </p>
               </div>
             </>
