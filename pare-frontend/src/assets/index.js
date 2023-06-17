@@ -16,6 +16,8 @@ import CloseIcon from './images/close.webp'
 
 import Logo from './images/home/logo.webp'
 import HeroBgMobile from './images/home/home-hero-bg-mob.webp'
+import HeroBgMobile1 from './images/home/home-hero-bg-mob1.webp'
+import HeroBgMobile2 from './images/home/home-hero-bg-mob2.webp'
 import HeroBg from './images/home/hero-bg.webp'
 import HeroBg1 from './images/home/hero-bg1.webp'
 import HeroBg2 from './images/home/hero-bg2.webp'
@@ -46,6 +48,14 @@ import PortfolioImg5 from './images/home/portfolio/img5.webp'
 import PortfolioImg6 from './images/home/portfolio/img6.webp'
 import PortfolioImg7 from './images/home/portfolio/img7.webp'
 import PortfolioImg8 from './images/home/portfolio/img8.webp'
+import PortfolioImg9 from './images/home/portfolio/img9.webp'
+import PortfolioImg10 from './images/home/portfolio/img10.webp'
+import PortfolioImg11 from './images/home/portfolio/img11.webp'
+import PortfolioImg12 from './images/home/portfolio/img12.webp'
+import PortfolioImg13 from './images/home/portfolio/img13.webp'
+import PortfolioImg14 from './images/home/portfolio/img14.webp'
+import PortfolioImg15 from './images/home/portfolio/img15.webp'
+import PortfolioImg16 from './images/home/portfolio/img16.webp'
 import PortfolioBg from './images/home/portfolio/portfolio-bg.webp'
 
 import Feather from './images/home/feather.webp'
@@ -84,6 +94,8 @@ import testVideo3 from './videos/testimonial3.mp4'
 export {
   Logo,
   HeroBgMobile,
+  HeroBgMobile1,
+  HeroBgMobile2,
   BurgerMenu,
   LeftArrow,
   LeftArrowMobile,
@@ -111,6 +123,14 @@ export {
   PortfolioImg6,
   PortfolioImg7,
   PortfolioImg8,
+  PortfolioImg9,
+  PortfolioImg10,
+  PortfolioImg11,
+  PortfolioImg12,
+  PortfolioImg13,
+  PortfolioImg14,
+  PortfolioImg15,
+  PortfolioImg16,
   Feather,
   SunLoader,
   Star,

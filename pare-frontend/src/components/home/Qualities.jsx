@@ -38,7 +38,7 @@ const Element = ({ image, heading, desc }) => {
 const Qualities = () => {
   return (
     <div>
-      <div className="relative ml-5 flex font-montserrat font-bold uppercase md:ml-10 lg:text-3xl">
+      <div className="relative ml-5 mt-5 flex font-montserrat font-bold uppercase md:ml-10 md:mt-10 lg:text-3xl">
         <span>Our Qualities</span>
         <div className="relative ml-2 mt-3 border-r border-t border-[#151515] p-5 md:-mb-7 md:mt-5 lg:p-8">
           <div className="absolute -bottom-1 -right-1 hidden h-1 rounded bg-[#151515] p-1 md:block"></div>
