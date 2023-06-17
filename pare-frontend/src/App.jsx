@@ -7,7 +7,7 @@ import Blobity from 'blobity'
 const App = () => {
   const { pathname } = useLocation()
   const options = useMemo(
-    () => ({ color: 'rgb(255, 0, 0)', dotColor: 'rgb(255, 0, 0)', zIndex: 500, opacity: 0.1 }),
+    () => ({ color: 'rgb(255, 0, 0)', dotColor: 'rgb(255, 0, 0)', zIndex: 500, opacity: 0.1, licenseKey: 'jsmastery' }),
     [],
   )
   useEffect(() => {

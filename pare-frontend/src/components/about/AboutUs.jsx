@@ -64,7 +64,7 @@ const AboutUs = () => {
                   <CountUp end={5000} duration={2} />+
                 </p>
                 <p className="py-1 text-center font-montserrat text-[10px] font-medium leading-3 md:py-3 md:text-left md:text-lg lg:text-xl">
-                  Architectural projects of houses
+                  Architectural projects
                 </p>
               </div>
             </>

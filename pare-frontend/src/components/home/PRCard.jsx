@@ -1,6 +1,7 @@
 import { useState } from 'react'
-import { Button, Img } from '../custom'
+import { Button } from '../custom'
 import { useEffect } from 'react'
+import Carousel from '../custom/Carousel'
 
 const PRCard = ({ id, heading, desc, img, img1, img2 }) => {
   const [counter, setCounter] = useState(0)
@@ -41,33 +42,7 @@ const PRCard = ({ id, heading, desc, img, img1, img2 }) => {
         </Button>
       </div>
       <div className={`flex items-end ${id === '02' ? 'justify-start' : 'justify-end'}`}>
-        <Img
-          src={img}
-          alt={`product-${id}`}
-          width={300}
-          height={300}
-          className={`${
-            counter !== 0 ? 'hidden' : ''
-          } h-[220px] w-[220px] object-cover md:h-[300px] md:w-[400px] md:object-contain lg:h-[400px] lg:w-[550px]`}
-        />
-        <Img
-          src={img1}
-          alt={`product-${id}`}
-          width={300}
-          height={300}
-          className={`${
-            counter !== 1 ? 'hidden' : ''
-          } h-[220px] w-[220px] object-cover md:h-[300px] md:w-[400px] md:object-contain lg:h-[400px] lg:w-[550px]`}
-        />
-        <Img
-          src={img2}
-          alt={`product-${id}`}
-          width={300}
-          height={300}
-          className={`${
-            counter !== 2 ? 'hidden' : ''
-          } h-[220px] w-[220px] object-cover md:h-[300px] md:w-[400px] md:object-contain lg:h-[400px] lg:w-[550px]`}
-        />
+        <Carousel images={[img, img1, img2]} left={id === '02' ? false : true} />
       </div>
     </div>
   )
