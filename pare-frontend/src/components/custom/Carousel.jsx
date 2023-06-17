@@ -13,7 +13,7 @@ const Carousel = ({ images = [], left = false }) => {
     }, 3000)
   }, [activeImg])
   return (
-    <div id="default-carousel" className="relative h-full w-full">
+    <div id="default-carousel" className="relative z-[1] h-full w-full">
       <div className="relative h-full overflow-hidden">
         {images.map((image, i) => (
           <div
