@@ -27,7 +27,10 @@ const AboutSectionSm = () => {
             <Img src={desk} width={300} height={400} alt="desk" className="-ml-3 mt-2  h-full  w-full" />
           </div>
         </div>
-        <div className="col-span-2 flex items-center justify-center gap-2 text-center md:hidden" ref={numbersRef}>
+        <div
+          className="col-span-2 flex items-center justify-center gap-2 text-center uppercase md:hidden"
+          ref={numbersRef}
+        >
           {numbersInView && (
             <>
               <div>
@@ -38,15 +41,15 @@ const AboutSectionSm = () => {
               </div>
               <div>
                 <p className="font-metropolis text-2xl font-bold text-red-base">
-                  <CountUp end={45} duration={3} />+
+                  <CountUp end={25} duration={3} />+
                 </p>
-                <p className="font-helvetica text-xs">CITIES SERVED</p>
+                <p className="font-helvetica text-xs">Shades TO CHoose </p>
               </div>
               <div>
                 <p className="font-metropolis text-2xl font-bold text-red-base">
-                  <CountUp end={200} duration={2.5} />+
+                  <CountUp end={500} duration={2.5} />+
                 </p>
-                <p className="font-helvetica text-xs">CLIENT REVIEWS</p>
+                <p className="font-helvetica text-xs"> Happy Customers</p>
               </div>
             </>
           )}
