@@ -35,7 +35,7 @@ const PareIndiaRotatingImgLg = () => {
         onMouseMove={getScrollOffset}
       >
         {images.map((im, idx) => {
-          return <Img src={im} key={im + idx} className="" />
+          return <Img src={im} key={im + idx} id="instafeed" />
         })}
       </div>
     </section>
