@@ -23,7 +23,7 @@ const HeroSm = ({ counter }) => {
           <p className="font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl">
             INNOVATIVE SURFACES
           </p>
-          <Button className={'!px-10 !text-base font-medium'}>BUILD WITH US</Button>
+          <Button className={'!px-10 !text-base'}>BUILD WITH US</Button>
         </div>
       </section>
       <section className={counter !== 1 ? 'hidden' : ''}>
@@ -43,7 +43,7 @@ const HeroSm = ({ counter }) => {
           <p className="font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl">
             INNOVATIVE SURFACES
           </p>
-          <Button className={'!px-10 !text-base font-medium'}>BUILD WITH US</Button>
+          <Button className={'!px-10 !text-base'}>BUILD WITH US</Button>
         </div>
       </section>
       <section className={counter !== 2 ? 'hidden' : ''}>
@@ -63,7 +63,7 @@ const HeroSm = ({ counter }) => {
           <p className="font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl">
             INNOVATIVE SURFACES
           </p>
-          <Button className={'!px-10 !text-base font-medium'}>BUILD WITH US</Button>
+          <Button className={'!px-10 !text-base'}>BUILD WITH US</Button>
         </div>
       </section>
     </>
