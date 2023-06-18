@@ -308,7 +308,13 @@ input[type='number'] {
   }
 }
 
+/* Media Queries */
+
 @media (max-width: 768px) {
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    display: none;
+  }
   .animate-infinite {
     width: calc(150px * 8);
     animation: rotateInfinite 10s linear infinite;

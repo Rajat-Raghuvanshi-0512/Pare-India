@@ -1,8 +1,8 @@
 import { Line } from 'rc-progress'
 const Loader = ({ percent }) => {
   return (
-    <div className="flex h-screen flex-col justify-between">
-      <div className="p-5 text-center font-montserrat text-5xl font-semibold uppercase text-red-base md:p-10 md:text-start lg:px-20">
+    <div className="flex h-[90vh] flex-col justify-between overflow-hidden md:h-screen">
+      <div className="p-5 pt-20 text-center font-montserrat text-5xl font-semibold uppercase text-red-base md:p-10 md:text-start lg:px-20">
         LOADING
       </div>
       <div>

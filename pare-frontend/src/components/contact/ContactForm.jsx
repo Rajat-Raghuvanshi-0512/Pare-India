@@ -3,43 +3,43 @@ import { Button, Img } from '../custom'
 
 const ContactForm = () => {
   return (
-    <section className="py-5 md:p-10 md:pr-0 lg:py-20 lg:pl-20 ">
+    <section className="py-5 md:p-10 md:pr-0 lg:py-20 lg:pl-20  2xl:pl-40">
       <div className="grid md:grid-cols-2 md:gap-5">
         <div className="absolute mt-6 h-[590px] w-[75%] scale-95 bg-[#151515B5] bg-opacity-25 p-4 md:static md:h-auto md:w-full">
-          <h2 className="font-metropolis text-3xl leading-snug md:text-4xl lg:text-5xl lg:leading-snug">
+          <h2 className="font-metropolis text-3xl leading-snug md:text-4xl lg:text-5xl lg:leading-snug 2xl:text-7xl">
             <div className="flex items-center gap-1 lg:gap-3">
               <div className=" font-medium text-red-base">LET&apos;S WORK</div>
               <div className="mr-auto h-[2px] w-[20%] bg-red-base md:w-[25%] lg:h-1"></div>
             </div>
             on your project
           </h2>
-          <p className="my-3 font-helvetica text-xs md:text-base lg:text-xl">
+          <p className="my-3 font-helvetica text-xs md:text-base lg:text-xl 2xl:text-3xl">
             Let&apos;s work together to turn your design dreams into reality.
           </p>
-          <p className="my-3 font-helvetica text-xs md:text-base lg:text-xl">
+          <p className="my-3 font-helvetica text-xs md:text-base lg:text-xl 2xl:text-3xl">
             Fill out our form and our team will be in touch with you shortly to get started on your project
           </p>
           <form onSubmit={(e) => e.preventDefault()}>
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-3 2xl:gap-10">
               <input
                 type="text"
                 placeholder="Name"
-                className="border-b-2 border-[#adadad] bg-transparent p-1 font-montserrat text-white outline-none placeholder:uppercase lg:py-3 lg:text-xl"
+                className="border-b-2 border-[#adadad] bg-transparent p-1 font-montserrat text-white outline-none placeholder:uppercase lg:py-3 lg:text-xl 2xl:text-2xl"
               />
               <input
                 type="number"
                 placeholder="Phone number"
-                className="border-b-2 border-[#adadad] bg-transparent p-1 font-montserrat text-white outline-none placeholder:uppercase lg:py-3 lg:text-xl"
+                className="border-b-2 border-[#adadad] bg-transparent p-1 font-montserrat text-white outline-none placeholder:uppercase lg:py-3 lg:text-xl 2xl:text-2xl"
               />
               <input
                 type="email"
                 placeholder="email"
-                className="border-b-2 border-[#adadad] bg-transparent p-1  font-montserrat text-white  outline-none placeholder:uppercase lg:py-3 lg:text-xl"
+                className="border-b-2 border-[#adadad] bg-transparent p-1  font-montserrat text-white  outline-none placeholder:uppercase lg:py-3 lg:text-xl 2xl:text-2xl"
               />
               <select
                 id="cars"
                 name="cars"
-                className="border-b-2 border-[#adadad] bg-transparent p-1 font-montserrat text-[#adadad]  outline-none placeholder:uppercase lg:py-3 lg:text-xl"
+                className="border-b-2 border-[#adadad] bg-transparent p-1 font-montserrat text-[#adadad]  outline-none placeholder:uppercase lg:py-3 lg:text-xl 2xl:text-2xl"
                 placeholder="requirement type"
                 defaultValue={'DEFAULT'}
               >
@@ -62,10 +62,10 @@ const ContactForm = () => {
                 className="resize-none border-b-2 border-[#adadad] bg-transparent  p-1 font-montserrat  text-white outline-none placeholder:uppercase lg:py-3 lg:text-xl"
               />
             </div>
-            <p className="mb-5 mt-6 font-montserrat text-xs md:text-base lg:mb-8 lg:mt-5 lg:text-xl">
+            <p className="mb-5 mt-6 font-montserrat text-xs md:text-base lg:mb-8 lg:mt-5 lg:text-xl 2xl:text-2xl">
               I AGREE TO TERMS OF THE PRIVACY POLICY
             </p>
-            <Button variant="outlined" type="buttton">
+            <Button variant="outlined" type="buttton" className={'2xl:px-10 2xl:py-4 2xl:text-2xl'}>
               SEND REQUEST
             </Button>
           </form>

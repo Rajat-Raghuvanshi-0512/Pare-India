@@ -23,33 +23,39 @@ const ContactFloatBtn = () => {
   return (
     <div className="fixed bottom-5 right-5 z-[100] md:bottom-10 md:right-10" ref={ref}>
       <div className="relative">
-        <div
+        <button
           className="z-40 flex h-16 w-16 cursor-pointer items-center justify-center rounded-full bg-red-base text-white"
           onClick={() => setOpen((prev) => !prev)}
         >
           <Img src={ChatIcon} alt={'chat'} width={30} height={30} />
-        </div>
-        <div
+        </button>
+        <a
+          aria-label="Chat on WhatsApp"
+          href="https://wa.me/8356954856"
+          target="_blank"
+          rel="noreferrer"
           className={`absolute -z-10 flex h-16 w-16 cursor-pointer items-center justify-center rounded-full bg-green-500 text-white duration-500 ${
             open ? '-top-20 left-0' : 'left-0 top-0'
           } `}
         >
           <Img src={WhatsappIcon} alt={'whatsapp'} width={50} height={50} />
-        </div>
-        <div
+        </a>
+        <a
+          href="mailto:hello@pareindia.com"
           className={`absolute -z-10 flex h-16 w-16 cursor-pointer items-center justify-center rounded-full bg-white text-black duration-500 ${
             open ? '-top-40 left-0' : 'left-0 top-0'
           }`}
         >
           <Img src={MailIcon} alt={'mail'} width={30} height={30} />
-        </div>
-        <div
+        </a>
+        <a
+          href="tel:+918356954856"
           className={`absolute -z-10 flex h-16 w-16 cursor-pointer items-center justify-center rounded-full bg-white text-black duration-500 ${
             open ? '-top-60 left-0' : 'left-0 top-0'
           }`}
         >
           <Img src={PhoneIcon} alt={'phone'} width={30} height={30} />
-        </div>
+        </a>
       </div>
     </div>
   )
