@@ -24,8 +24,8 @@ const ContactInfo = () => {
             </div>
             <div className="ml-auto mt-10 w-40 text-left text-[10.5px] md:mt-0 md:w-full md:text-right md:text-lg">
               <p className="mt-5">
-                Corporate Office Address - 102, 103, Jai Commercial Complex, Cadbury Junction, Khopat, Thane West,
-                Thane, Maharashtra 400601
+                Corporate Office Address: 101-103, Jai Commercial Complex, Cadbury Junction, Thane (W), 400601,
+                Maharashtra, INDIA.
               </p>
               <p className="mt-3">
                 Experience Gallery - 21/N, Laxmi Industrial Estate, New Link Rd, near Laxmi Chhaya Hotel, Andheri West,

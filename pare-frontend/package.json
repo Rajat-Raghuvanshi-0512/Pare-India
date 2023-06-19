@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@react-google-maps/api": "^2.18.1",
+    "axios": "^1.4.0",
     "blobity": "^0.2.3",
     "framer-motion": "^10.12.16",
     "instafeed.js": "^2.0.0",

@@ -2,6 +2,7 @@ const Button = ({ children, className, onClick, variant = 'solid', ...props }) =
   return (
     <button
       onClick={onClick}
+      data-cursor-size="80px"
       className={`${
         variant === 'solid'
           ? 'border-2 border-red-base bg-red-base px-5 text-white hover:border-red-base hover:bg-white hover:text-red-base'

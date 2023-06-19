@@ -14,7 +14,7 @@ const Vision = () => {
         </div>
       </div>
       <div className="hidden md:block">
-        <h6 className="pb-3 pl-5 pt-5 font-metropolis text-2xl font-medium text-white 2xl:pl-32">
+        <h6 className="pb-3 pl-5 pt-5 font-metropolis text-2xl font-medium text-white lg:pt-14 2xl:pl-32">
           Our clients include
         </h6>
         <div className="-mt-6 flex justify-between gap-10 px-20 2xl:px-48">

@@ -91,7 +91,7 @@ import ContactImgPhone from './images/contact/contact-img-phone.webp'
 import ContactImg from './images/contact/contact-img.webp'
 import MapImg from './images/contact/map.webp'
 import MapMobImg from './images/contact/map-mobile.webp'
-import ContactBg from './images/contact/contact-bg.webp'
+import ContactBg from './images/contact/contact-bg.png'
 
 import InstaImg1 from './images/home/insta/img1.webp'
 import InstaImg2 from './images/home/insta/img2.webp'

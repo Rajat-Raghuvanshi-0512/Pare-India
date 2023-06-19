@@ -10,7 +10,14 @@ const App = () => {
   const [percent, setPercent] = useState(0)
   const [loading, setLoading] = useState(true)
   const options = useMemo(
-    () => ({ color: 'rgb(255, 0, 0)', dotColor: 'rgb(255, 0, 0)', zIndex: 500, opacity: 0.1, licenseKey: 'jsmastery' }),
+    () => ({
+      color: 'rgb(0, 0, 255)',
+      dotColor: 'rgb(0, 0, 255)',
+      zIndex: 500,
+      opacity: 0.1,
+      licenseKey: 'jsmastery',
+      magnetic: false,
+    }),
     [],
   )
   useEffect(() => {
@@ -31,7 +38,7 @@ const App = () => {
       } else {
         setLoading(false)
       }
-    }, 20)
+    }, 10)
     return () => clearInterval(percentInterval)
   }, [percent])
 

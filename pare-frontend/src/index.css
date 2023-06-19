@@ -114,6 +114,24 @@ input[type='number'] {
   background: #555;
 }
 
+.circle {
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  flex-flow: row;
+  align-content: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  background-color: #1e91d6;
+  border-radius: 200px;
+  pointer-events: none;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+}
 .fade {
   animation: fade 0.5s ease-in-out;
 }
