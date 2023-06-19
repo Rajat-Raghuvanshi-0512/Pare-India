@@ -115,6 +115,7 @@ import ProductImg5 from './images/products/product-img5.webp'
 import ProductImg6 from './images/products/product-img6.webp'
 import Medal from './images/products/medal.webp'
 import Wall from './images/products/wall.webp'
+import Shield from './images/products/shield.webp'
 
 export {
   Logo,
@@ -221,4 +222,5 @@ export {
   ProductImg6,
   Medal,
   Wall,
+  Shield,
 }
