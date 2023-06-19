@@ -14,9 +14,10 @@ const App = () => {
       color: 'rgb(0, 0, 255)',
       dotColor: 'rgb(0, 0, 255)',
       zIndex: 500,
-      opacity: 0.1,
+      opacity: 0.3,
       licenseKey: 'jsmastery',
       magnetic: false,
+      focusableElements: '',
     }),
     [],
   )

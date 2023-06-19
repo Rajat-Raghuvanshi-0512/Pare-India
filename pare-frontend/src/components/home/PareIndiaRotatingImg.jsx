@@ -1,7 +1,8 @@
-import { useRef, useEffect } from 'react'
+import { useRef, useEffect, useCallback } from 'react'
 import { Img } from '../custom'
 import axios from 'axios'
 import { useState } from 'react'
+import useLocalStorage from '../../custom-hooks'
 
 const PareIndiaRotatingImgSm = ({ images }) => {
   return (
@@ -57,33 +58,36 @@ const PareIndiaRotatingImgLg = ({ images = [] }) => {
 
 const PareIndiaRotatingImg = () => {
   const access_token = import.meta.env.VITE_INSTA_API_KEY
+  const [instaImg, setInstaImg] = useLocalStorage('images', null)
 
   const [images, setImages] = useState([])
 
-  const getPostsId = async () => {
+  const getPosts = useCallback(async () => {
     const { data } = await axios.get(`https://graph.instagram.com/me/media?access_token=${access_token}`)
-    console.log(data)
-    data?.data?.forEach(async (postId) => {
+    const finalData = data.data
+    for (let i = 0; i < 8; i++) {
+      const postId = finalData[i]
       const { data } = await axios.get(
         `https://graph.instagram.com/${postId.id}?access_token=${access_token}&fields=media_url,permalink,media_type`,
       )
       if (data.media_type == 'IMAGE') {
         setImages((prev) => [...prev, data])
       }
-    })
+    }
     console.log(images)
-  }
+    setInstaImg(images)
+    console.log(images)
+  }, [access_token, images, setImages, setInstaImg])
   useEffect(() => {
-    getPostsId()
-  }, [])
-  console.log(images)
+    getPosts()
+  }, [getPosts])
   return (
     <div>
       <div className="md:hidden">
-        <PareIndiaRotatingImgSm images={images} />
+        <PareIndiaRotatingImgSm images={instaImg} />
       </div>
       <div className="hidden md:block">
-        <PareIndiaRotatingImgLg images={images} />
+        <PareIndiaRotatingImgLg images={instaImg} />
       </div>
     </div>
   )

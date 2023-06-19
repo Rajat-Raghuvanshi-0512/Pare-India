@@ -63,16 +63,9 @@ export function useMediaQuery(query) {
   return matches
 }
 const useLocalStorage = (key, defaultValue) => {
-  // Create state variable to store
-  // localStorage value in state
   const [localStorageValue, setLocalStorageValue] = useState(() => {
     try {
       const value = localStorage.getItem(key)
-      // If value is already present in
-      // localStorage then return it
-
-      // Else set default value in
-      // localStorage and then return it
       if (value) {
         return JSON.parse(value)
       } else {
