@@ -11,13 +11,16 @@ const App = () => {
   const [loading, setLoading] = useState(true)
   const options = useMemo(
     () => ({
-      color: 'rgb(0, 0, 255)',
-      dotColor: 'rgb(0, 0, 255)',
+      color: 'rgb(255, 0, 0)',
+      dotColor: 'rgb(255, 0, 0)',
       zIndex: 500,
-      opacity: 0.3,
+      opacity: 0.1,
       licenseKey: 'jsmastery',
       magnetic: false,
       focusableElements: '',
+      size: 30,
+      dotSize: 6,
+      mode: 'bouncy',
     }),
     [],
   )

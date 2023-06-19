@@ -2,7 +2,6 @@ import { useRef, useEffect, useCallback } from 'react'
 import { Img } from '../custom'
 import axios from 'axios'
 import { useState } from 'react'
-import useLocalStorage from '../../custom-hooks'
 
 const PareIndiaRotatingImgSm = ({ images }) => {
   return (
@@ -14,8 +13,8 @@ const PareIndiaRotatingImgSm = ({ images }) => {
         </p>
       </div>
       <div className="circle-container z-30 flex h-[100vh] flex-col items-center justify-center">
-        {images.slice(0, 8).map((im, idx) => {
-          return <Img src={im.media_url} key={im.media_url + idx} id="instafeed" />
+        {images?.slice(0, 8)?.map((im, idx) => {
+          return <Img src={im?.media_url} key={im?.media_url + idx} id="instafeed" />
         })}
       </div>
     </section>
@@ -48,8 +47,8 @@ const PareIndiaRotatingImgLg = ({ images = [] }) => {
         ref={ref}
         onMouseMove={getScrollOffset}
       >
-        {images.slice(0, 8).map((im, idx) => {
-          return <Img src={im.media_url} key={im.media_url + idx} id="instafeed" />
+        {images?.slice(0, 8)?.map((im, idx) => {
+          return <Img src={im?.media_url} key={im?.media_url + idx} id="instafeed" />
         })}
       </div>
     </section>
@@ -58,7 +57,6 @@ const PareIndiaRotatingImgLg = ({ images = [] }) => {
 
 const PareIndiaRotatingImg = () => {
   const access_token = import.meta.env.VITE_INSTA_API_KEY
-  const [instaImg, setInstaImg] = useLocalStorage('images', null)
 
   const [images, setImages] = useState([])
 
@@ -74,20 +72,17 @@ const PareIndiaRotatingImg = () => {
         setImages((prev) => [...prev, data])
       }
     }
-    console.log(images)
-    setInstaImg(images)
-    console.log(images)
-  }, [access_token, images, setImages, setInstaImg])
+  }, [access_token, setImages])
   useEffect(() => {
     getPosts()
   }, [getPosts])
   return (
     <div>
       <div className="md:hidden">
-        <PareIndiaRotatingImgSm images={instaImg} />
+        <PareIndiaRotatingImgSm images={images} />
       </div>
       <div className="hidden md:block">
-        <PareIndiaRotatingImgLg images={instaImg} />
+        <PareIndiaRotatingImgLg images={images} />
       </div>
     </div>
   )
