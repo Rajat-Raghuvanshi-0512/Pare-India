@@ -1,5 +1,5 @@
 import { Route, Routes, useLocation } from 'react-router-dom'
-import { About, Contact, Home } from './pages'
+import { About, Contact, Home, Products } from './pages'
 import { ContactFloatBtn, Footer, Navbar } from './components'
 import { useEffect, useMemo, useState } from 'react'
 import Blobity from 'blobity'
@@ -44,6 +44,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/products" element={<Products />} />
       </Routes>
       <ContactFloatBtn />
       <Footer />

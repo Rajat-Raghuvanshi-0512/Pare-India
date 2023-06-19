@@ -55,13 +55,13 @@ const PortfolioSm = () => {
           to life.
         </div>
       </div>
-      <div className="z-10 -mb-32 -mt-16 w-[143%] origin-left scale-[70%] overflow-y-hidden overflow-x-scroll">
-        <div className="portfolio-slider relative flex items-end gap-6">
+      <div className="z-10 -mb-32 -mt-16 w-[143%] origin-left scale-[70%] overflow-hidden">
+        <div className="portfolio-slider relative flex items-end gap-6 overflow-x-scroll">
           {slider1.map((slide, idx) => (
             <img src={slide} alt="slide" key={slide + idx} className="object-contain object-bottom " />
           ))}
         </div>
-        <div className="portfolio-slider-1 relative my-5 flex items-start gap-6">
+        <div className="portfolio-slider-1 relative my-5 flex items-start gap-6 overflow-x-scroll">
           {slider2.map((slide, idx) => (
             <img src={slide} alt="slide" key={slide + idx} className="object-contain object-top" />
           ))}

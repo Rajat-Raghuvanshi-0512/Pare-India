@@ -53,7 +53,11 @@ const FooterLg = ({ dark }) => {
   return (
     <section className={` ${dark ? 'bg-[#151515] text-white' : ''} px-20  md:pt-10 lg:pt-14`}>
       <div className="grid font-montserrat md:grid-cols-10">
-        <div className="col-span-5 flex flex-col justify-between border-[0.01rem] border-white border-opacity-50 p-10">
+        <div
+          className={`col-span-5 flex flex-col justify-between border-[0.01rem] border-opacity-50 p-10 ${
+            dark ? 'border-white' : 'border-black-base'
+          }`}
+        >
           <Img src={Logo} alt="logo" width={140} height={140} />
           <div className="w-[80%] text-base font-normal leading-5 tracking-tight">
             Transform your living spaces with PARÉ&apos;s innovative, sustainable, and high-quality products. Let&apos;s
@@ -61,7 +65,11 @@ const FooterLg = ({ dark }) => {
           </div>
         </div>
         <div className="col-span-2 flex flex-col">
-          <div className="flex h-1/2 flex-col border-[0.01rem] border-white border-opacity-50 p-10">
+          <div
+            className={`flex h-1/2 flex-col border-t-[0.01rem] border-opacity-50 p-10 ${
+              dark ? 'border-white' : 'border-black-base'
+            }`}
+          >
             <ul>
               <li className="mb-4 font-metropolis  font-medium tracking-wider md:text-2xl lg:text-3xl">LEGAL</li>
               <Link to={'/'}>
@@ -72,7 +80,11 @@ const FooterLg = ({ dark }) => {
               </Link>
             </ul>
           </div>
-          <div className="flex h-2/3 w-auto flex-col border-[0.01rem] border-white border-opacity-50 p-10">
+          <div
+            className={`flex h-2/3 w-auto flex-col border-y-[0.01rem] ${
+              dark ? 'border-white' : 'border-black-base'
+            } border-opacity-50 p-10`}
+          >
             <ul>
               <li className="mb-4 font-metropolis  font-medium tracking-wider md:text-2xl lg:text-3xl">SOCIAL</li>
               <Link to={'https://www.instagram.com/pareindia/'} target="_blank">
@@ -87,7 +99,11 @@ const FooterLg = ({ dark }) => {
             </ul>
           </div>
         </div>
-        <div className="col-span-3 flex  flex-col border-[0.01rem] border-white border-opacity-50 p-10">
+        <div
+          className={`col-span-3 flex  flex-col border-[0.01rem] ${
+            dark ? 'border-white' : 'border-black-base'
+          } border-opacity-50 p-10`}
+        >
           <ul>
             <li className="mb-4 font-metropolis font-medium tracking-wider md:text-2xl lg:text-3xl">MENU</li>
             <Link to={'/'}>

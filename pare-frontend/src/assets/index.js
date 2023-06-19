@@ -105,6 +105,17 @@ import InstaImg8 from './images/home/insta/img8.webp'
 import testVideo2 from './videos/testimonial2.mp4'
 import testVideo3 from './videos/testimonial3.mp4'
 
+import ProductHeroImg from './images/products/hero-img.webp'
+import ScrollDown from './images/products/scroll-down.webp'
+import ProductImg1 from './images/products/product-img1.webp'
+import ProductImg2 from './images/products/product-img2.webp'
+import ProductImg3 from './images/products/product-img3.webp'
+import ProductImg4 from './images/products/product-img4.webp'
+import ProductImg5 from './images/products/product-img5.webp'
+import ProductImg6 from './images/products/product-img6.webp'
+import Medal from './images/products/medal.webp'
+import Wall from './images/products/wall.webp'
+
 export {
   Logo,
   HeroBgMobile,
@@ -200,4 +211,14 @@ export {
   InstaImg6,
   InstaImg7,
   InstaImg8,
+  ProductHeroImg,
+  ScrollDown,
+  ProductImg1,
+  ProductImg2,
+  ProductImg3,
+  ProductImg4,
+  ProductImg5,
+  ProductImg6,
+  Medal,
+  Wall,
 }

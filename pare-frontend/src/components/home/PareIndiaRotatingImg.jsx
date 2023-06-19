@@ -2,7 +2,7 @@ import { useRef } from 'react'
 import { InstaImg1, InstaImg2, InstaImg3, InstaImg4, InstaImg5, InstaImg6, InstaImg7, InstaImg8 } from '../../assets'
 import { Img } from '../custom'
 
-const images = [InstaImg1, InstaImg2, InstaImg3, InstaImg4, InstaImg5, InstaImg6, InstaImg7, InstaImg8]
+const images = [InstaImg8, InstaImg2, InstaImg1, InstaImg4, InstaImg7, InstaImg5, InstaImg6, InstaImg3]
 
 const PareIndiaRotatingImgSm = () => {
   return (
@@ -36,8 +36,8 @@ const PareIndiaRotatingImgLg = () => {
     ref.current.style.transition = ' all 0.4s'
   }
   return (
-    <section className="relative flex h-[50vh] w-screen flex-col items-center justify-center overflow-hidden md:h-[140vh]">
-      <div className="absolute left-[50%] top-[50%] w-[40%] -translate-x-[50%] text-center">
+    <section className="relative flex h-[50vh] w-screen flex-col items-center justify-center overflow-hidden md:-mt-24 md:h-[170vh]">
+      <div className="absolute left-[50%] top-[47%] w-[40%] -translate-x-[50%] text-center">
         <h1 className="font-metropolis text-2xl font-black md:text-4xl lg:text-7xl">@pare.india</h1>
         <p className="py-2 text-center font-helvetica text-sm opacity-60 md:text-base lg:text-lg">
           Follow @pare.india on Instagram to see our latest innovative designs and get inspired for your next project!
