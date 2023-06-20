@@ -116,6 +116,12 @@ import ProductImg6 from './images/products/product-img6.webp'
 import Medal from './images/products/medal.webp'
 import Wall from './images/products/wall.webp'
 import Shield from './images/products/shield.webp'
+import Globe from './images/products/globe.webp'
+
+import Career1 from './images/career/career-1.webp'
+import Increment from './images/career/increment.webp'
+import India from './images/career/india.webp'
+import Social from './images/career/social.webp'
 
 export {
   Logo,
@@ -223,4 +229,9 @@ export {
   Medal,
   Wall,
   Shield,
+  Globe,
+  Career1,
+  Increment,
+  India,
+  Social,
 }

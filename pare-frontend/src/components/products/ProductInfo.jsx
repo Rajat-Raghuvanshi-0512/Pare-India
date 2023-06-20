@@ -1,4 +1,5 @@
 import {
+  Globe,
   Medal,
   PareText,
   ProductImg1,
@@ -90,7 +91,7 @@ const ProductInfoSm = () => {
             <div className=" mt-5 flex justify-end font-montserrat text-[8px] font-medium">
               <div className="flex gap-2 border-r-2 px-2 pr-4">
                 <p>First time in the World</p>
-                <Img src={Medal} alt={'medal'} width={15} height={25} className={'object-contain'} />
+                <Img src={Globe} alt={'medal'} width={15} height={25} className={'object-contain'} />
               </div>
               <div className="flex gap-2 px-2 pl-4">
                 <p>Usage: Walls and Ceilings</p>
@@ -139,7 +140,7 @@ const ProductInfoSm = () => {
                 <Img src={Shield} alt={'shield'} width={15} height={25} className={'object-contain'} />
               </div>
               <div className="flex gap-2 px-2 pl-4">
-                <p>Usage: Walls and Ceilings</p>
+                <p>Usage: Exterior Surface</p>
                 <Img src={Wall} alt={'wall'} width={25} height={25} className={'object-contain'} />
               </div>
             </div>
@@ -230,7 +231,7 @@ const ProductInfoLg = () => {
                 Revolutionize your space with PARÉ&apos;s Easy+ Locking System{' '}
                 <span className="font-bold text-red-base">- Seamless installation,</span> versatile Pyramid design, and
                 Linea panels offer effortless flexibility, all with
-                <span className="font-bold text-red-base">world-first, quick and dust-free installation.</span>
+                <span className="font-bold text-red-base"> world-first, quick and dust-free installation.</span>
               </p>
               <div className="mt-2 flex items-end justify-end">
                 <Button>view range</Button>
@@ -240,8 +241,8 @@ const ProductInfoLg = () => {
           <div className="-z-10 -ml-5 md:-ml-10 lg:-ml-14">
             <div className="ml-32 mr-5 mt-5 flex justify-end font-montserrat font-medium md:text-sm lg:text-base 2xl:text-2xl">
               <div className="flex gap-2 border-r px-2 pr-4">
-                <p>First time in the world</p>
-                <Img src={Medal} alt={'medal'} width={30} height={45} className={'object-contain'} />
+                <p>First time in the World</p>
+                <Img src={Globe} alt={'medal'} width={30} height={45} className={'object-contain'} />
               </div>
               <div className="flex gap-2 px-2 pl-4">
                 <p>Usage: Walls and Ceilings</p>
@@ -287,7 +288,7 @@ const ProductInfoLg = () => {
                 <Img src={Shield} alt={'shield'} width={30} height={45} className={'object-contain'} />
               </div>
               <div className="flex gap-2 px-2 pl-4">
-                <p>Usage: Walls and Ceilings</p>
+                <p>Usage: Exterior Surface</p>
                 <Img src={Wall} alt={'wall'} width={50} height={45} className={'object-contain'} />
               </div>
             </div>

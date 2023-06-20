@@ -1,4 +1,7 @@
+import { useNavigate } from 'react-router-dom'
+
 const LastSection = ({ dark = true }) => {
+  const navigate = useNavigate()
   return (
     <div className="hidden md:block">
       <div
@@ -10,7 +13,10 @@ const LastSection = ({ dark = true }) => {
           Let&apos;s work together to create the space of your dreams.
         </div>
         <div>
-          <div className="flex h-28 w-28 items-center justify-center rounded-full border border-white font-metropolis text-sm">
+          <div
+            className="flex h-28 w-28 cursor-pointer items-center justify-center rounded-full border border-white font-metropolis text-sm"
+            onClick={() => navigate('/contact')}
+          >
             Contact us
           </div>
         </div>
