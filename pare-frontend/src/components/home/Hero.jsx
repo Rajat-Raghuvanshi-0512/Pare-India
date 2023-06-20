@@ -2,8 +2,10 @@ import { HeroBg, HeroBg1, HeroBg2, HeroBgMobile, HeroBgMobile1, HeroBgMobile2, I
 import { Button, Img } from '../custom'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import { useNavigate } from 'react-router-dom'
 
 const HeroSm = ({ counter }) => {
+  const navigate = useNavigate()
   return (
     <>
       <section className={counter !== 0 ? 'hidden' : ''}>
@@ -23,7 +25,9 @@ const HeroSm = ({ counter }) => {
           <p className="font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl">
             INNOVATIVE SURFACES
           </p>
-          <Button className={'!px-10 !text-base'}>BUILD WITH US</Button>
+          <Button className={'!px-10 !text-base'} onClick={() => navigate('/contact')}>
+            BUILD WITH US
+          </Button>
         </div>
       </section>
       <section className={counter !== 1 ? 'hidden' : ''}>
@@ -43,7 +47,9 @@ const HeroSm = ({ counter }) => {
           <p className="font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl">
             INNOVATIVE SURFACES
           </p>
-          <Button className={'!px-10 !text-base'}>BUILD WITH US</Button>
+          <Button className={'!px-10 !text-base'} onClick={() => navigate('/contact')}>
+            BUILD WITH US
+          </Button>
         </div>
       </section>
       <section className={counter !== 2 ? 'hidden' : ''}>
@@ -63,13 +69,16 @@ const HeroSm = ({ counter }) => {
           <p className="font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl">
             INNOVATIVE SURFACES
           </p>
-          <Button className={'!px-10 !text-base'}>BUILD WITH US</Button>
+          <Button className={'!px-10 !text-base'} onClick={() => navigate('/contact')}>
+            BUILD WITH US
+          </Button>
         </div>
       </section>
     </>
   )
 }
 const HeroMd = () => {
+  const navigate = useNavigate()
   return (
     <section>
       <div className="absolute -z-10 h-[100vh] w-full bg-gradient-to-r from-[#151515] to-transparent opacity-50"></div>
@@ -83,12 +92,15 @@ const HeroMd = () => {
       <div className="flex h-screen flex-col items-start justify-center gap-5 px-20">
         <Img src={InnovText} width={'350'} height={'100'} alt="hero-text" />
         <p className="text-4xl font-bold tracking-widest text-white">INNOVATIVE SURFACES</p>
-        <Button className={'!px-8'}>BUILD WITH US</Button>
+        <Button className={'!px-8'} onClick={() => navigate('/contact')}>
+          BUILD WITH US
+        </Button>
       </div>
     </section>
   )
 }
 const HeroLg = ({ counter }) => {
+  const navigate = useNavigate()
   return (
     <>
       <section className={counter !== 0 ? 'hidden' : ''}>
@@ -114,7 +126,9 @@ const HeroLg = ({ counter }) => {
             <span className="text-red-base">INDIA’S</span> BEST
           </motion.div>
           <p className="text-4xl font-bold tracking-widest text-white">INNOVATIVE SURFACES</p>
-          <Button className={'!px-8'}>BUILD WITH US</Button>
+          <Button className={'!px-8'} onClick={() => navigate('/contact')}>
+            BUILD WITH US
+          </Button>
         </div>
       </section>
       <section className={counter !== 1 ? 'hidden' : 'fade'}>
@@ -140,7 +154,9 @@ const HeroLg = ({ counter }) => {
             <span className="text-red-base">INDIA’S</span> BEST
           </motion.div>
           <p className="text-4xl font-bold tracking-widest text-white">INNOVATIVE SURFACES</p>
-          <Button className={'!px-8'}>BUILD WITH US</Button>
+          <Button className={'!px-8'} onClick={() => navigate('/contact')}>
+            BUILD WITH US
+          </Button>
         </div>
       </section>
       <section className={counter !== 2 ? 'hidden' : 'fade'}>
@@ -166,7 +182,9 @@ const HeroLg = ({ counter }) => {
             <span className="text-red-base">INDIA’S</span> BEST
           </motion.div>
           <p className="font-metropolis text-4xl font-bold tracking-widest text-white">INNOVATIVE SURFACES</p>
-          <Button className={'!px-8'}>BUILD WITH US</Button>
+          <Button className={'!px-8'} onClick={() => navigate('/contact')}>
+            BUILD WITH US
+          </Button>
         </div>
       </section>
     </>

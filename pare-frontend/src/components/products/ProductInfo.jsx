@@ -47,7 +47,7 @@ const ProductInfoSm = () => {
                 <Img src={Medal} alt={'medal'} width={15} height={25} className={'object-contain'} />
               </div>
               <div className="flex gap-2 px-2 pl-4">
-                <p>Usage: Walls and ceilings</p>
+                <p>Usage: Walls and Ceilings</p>
                 <Img src={Wall} alt={'wall'} width={25} height={25} className={'object-contain'} />
               </div>
             </div>
@@ -89,11 +89,11 @@ const ProductInfoSm = () => {
             </div>
             <div className=" mt-5 flex justify-end font-montserrat text-[8px] font-medium">
               <div className="flex gap-2 border-r-2 px-2 pr-4">
-                <p>First time in India</p>
+                <p>First time in the World</p>
                 <Img src={Medal} alt={'medal'} width={15} height={25} className={'object-contain'} />
               </div>
               <div className="flex gap-2 px-2 pl-4">
-                <p>Usage: Walls and ceilings</p>
+                <p>Usage: Walls and Ceilings</p>
                 <Img src={Wall} alt={'wall'} width={25} height={25} className={'object-contain'} />
               </div>
             </div>
@@ -139,7 +139,7 @@ const ProductInfoSm = () => {
                 <Img src={Shield} alt={'shield'} width={15} height={25} className={'object-contain'} />
               </div>
               <div className="flex gap-2 px-2 pl-4">
-                <p>Usage: Walls and ceilings</p>
+                <p>Usage: Walls and Ceilings</p>
                 <Img src={Wall} alt={'wall'} width={25} height={25} className={'object-contain'} />
               </div>
             </div>
@@ -184,9 +184,9 @@ const ProductInfoLg = () => {
             <div className="mr-14 lg:mr-20">
               <p className="mt-5 font-montserrat font-medium md:text-sm lg:text-[15px] 2xl:text-xl">
                 Elevate your space with PARÉ&apos;s wood-inspired
-                <span className="font-bold text-red-base">first-time-in-India</span> Soffit Systems, transforming
+                <span className="font-bold text-red-base"> first-time-in-India</span> Soffit Systems, transforming
                 effortlessly with our versatile Louvers and sleek Vertica Panels for
-                <span className="font-bold text-red-base">walls and ceilings.</span>
+                <span className="font-bold text-red-base"> walls and ceilings.</span>
               </p>
               <div className="mt-2 flex items-end justify-end">
                 <Button>view range</Button>
@@ -200,7 +200,7 @@ const ProductInfoLg = () => {
                 <Img src={Medal} alt={'medal'} width={30} height={45} className={'object-contain'} />
               </div>
               <div className="flex gap-2 px-2 pl-4">
-                <p>Usage: Walls and ceilings</p>
+                <p>Usage: Walls and Ceilings</p>
                 <Img src={Wall} alt={'wall'} width={50} height={45} className={'object-contain'} />
               </div>
             </div>
@@ -244,7 +244,7 @@ const ProductInfoLg = () => {
                 <Img src={Medal} alt={'medal'} width={30} height={45} className={'object-contain'} />
               </div>
               <div className="flex gap-2 px-2 pl-4">
-                <p>Usage: Walls and ceilings</p>
+                <p>Usage: Walls and Ceilings</p>
                 <Img src={Wall} alt={'wall'} width={50} height={45} className={'object-contain'} />
               </div>
             </div>
@@ -283,11 +283,11 @@ const ProductInfoLg = () => {
           <div className="-z-10 -ml-5 md:-ml-10 lg:-ml-14">
             <div className="ml-32 mr-5 mt-5 flex justify-end font-montserrat font-medium md:text-sm lg:text-base 2xl:text-2xl">
               <div className="flex gap-2 border-r px-2 pr-4">
-                <p>First time in India</p>
+                <p>10 years warrenty</p>
                 <Img src={Shield} alt={'shield'} width={30} height={45} className={'object-contain'} />
               </div>
               <div className="flex gap-2 px-2 pl-4">
-                <p>Usage: Walls and ceilings</p>
+                <p>Usage: Walls and Ceilings</p>
                 <Img src={Wall} alt={'wall'} width={50} height={45} className={'object-contain'} />
               </div>
             </div>
