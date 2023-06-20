@@ -31,7 +31,7 @@ const ContactFloatBtn = () => {
         </button>
         <a
           aria-label="Chat on WhatsApp"
-          href="https://wa.me/8356954856"
+          href="https://wa.me/8655681229"
           target="_blank"
           rel="noreferrer"
           className={`absolute -z-10 flex h-16 w-16 cursor-pointer items-center justify-center rounded-full bg-green-500 text-white duration-500 ${

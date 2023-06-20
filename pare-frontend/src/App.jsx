@@ -20,7 +20,6 @@ const App = () => {
       focusableElements: '',
       size: 30,
       dotSize: 6,
-      mode: 'bouncy',
     }),
     [],
   )

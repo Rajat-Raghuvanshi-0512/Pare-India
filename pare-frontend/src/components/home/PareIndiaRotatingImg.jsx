@@ -48,6 +48,7 @@ const PareIndiaRotatingImgLg = ({ images = [] }) => {
         onMouseMove={getScrollOffset}
       >
         {images?.slice(0, 8)?.map((im, idx) => {
+          console.log(im)
           return <Img src={im?.media_url} key={im?.media_url + idx} id="instafeed" />
         })}
       </div>
@@ -63,7 +64,7 @@ const PareIndiaRotatingImg = () => {
   const getPosts = useCallback(async () => {
     const { data } = await axios.get(`https://graph.instagram.com/me/media?access_token=${access_token}`)
     const finalData = data.data
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 13; i++) {
       const postId = finalData[i]
       const { data } = await axios.get(
         `https://graph.instagram.com/${postId.id}?access_token=${access_token}&fields=media_url,permalink,media_type`,
@@ -72,10 +73,10 @@ const PareIndiaRotatingImg = () => {
         setImages((prev) => [...prev, data])
       }
     }
-  }, [access_token, setImages])
+  }, [access_token])
   useEffect(() => {
     getPosts()
-  }, [getPosts])
+  }, [])
   return (
     <div>
       <div className="md:hidden">
