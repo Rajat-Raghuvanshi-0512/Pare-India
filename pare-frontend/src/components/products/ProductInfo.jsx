@@ -136,7 +136,7 @@ const ProductInfoSm = () => {
             </div>
             <div className=" mt-5 flex justify-end font-montserrat text-[8px] font-medium">
               <div className="flex gap-2 border-r-2 px-2 pr-4">
-                <p>10 years warrenty</p>
+                <p>10 Years Warranty</p>
                 <Img src={Shield} alt={'shield'} width={15} height={25} className={'object-contain'} />
               </div>
               <div className="flex gap-2 px-2 pl-4">
@@ -284,7 +284,7 @@ const ProductInfoLg = () => {
           <div className="-z-10 -ml-5 md:-ml-10 lg:-ml-14">
             <div className="ml-32 mr-5 mt-5 flex justify-end font-montserrat font-medium md:text-sm lg:text-base 2xl:text-2xl">
               <div className="flex gap-2 border-r px-2 pr-4">
-                <p>10 years warrenty</p>
+                <p>10 Years Warranty</p>
                 <Img src={Shield} alt={'shield'} width={30} height={45} className={'object-contain'} />
               </div>
               <div className="flex gap-2 px-2 pl-4">
