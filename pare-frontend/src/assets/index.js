@@ -122,6 +122,8 @@ import Career1 from './images/career/career-1.webp'
 import Increment from './images/career/increment.webp'
 import India from './images/career/india.webp'
 import Social from './images/career/social.webp'
+import CareerFormBanner from './images/career/career-form.webp'
+import CareerFormBannerMobile from './images/career/career-form-mobile.webp'
 
 import CareerImg1 from './images/career/gallery/img1.webp'
 import CareerImg2 from './images/career/gallery/img2.webp'
@@ -245,4 +247,6 @@ export {
   CareerImg3,
   CareerImg4,
   CareerImg5,
+  CareerFormBanner,
+  CareerFormBannerMobile,
 }

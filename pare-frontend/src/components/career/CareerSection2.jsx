@@ -21,9 +21,9 @@ const CareerSection2 = () => {
     <section className="p-5 md:p-10 lg:px-20">
       <h2 className=" font-montserrat font-bold md:text-4xl lg:text-5xl">Why Pare?</h2>
       <div className="mt-5 grid grid-cols-1 gap-10 md:mt-10 md:grid-cols-3 lg:mt-16">
-        {data.map((item) => (
+        {data.map((item, idx) => (
           <div className="flex gap-5 md:flex-col" key={item.text}>
-            <div className="mx-auto flex-1">
+            <div className={`m-auto flex-1 ${idx === 1 ? 'order-2 md:order-none' : ''}`}>
               <Img
                 src={item.image}
                 alt={item.text.slice(0, 5)}
@@ -33,7 +33,7 @@ const CareerSection2 = () => {
               />
             </div>
             <div className="flex-1">
-              <p className="font-montserrat font-medium">{item.text}</p>
+              <p className="font-montserrat leading-4 md:font-medium md:leading-5 lg:leading-6">{item.text}</p>
             </div>
           </div>
         ))}

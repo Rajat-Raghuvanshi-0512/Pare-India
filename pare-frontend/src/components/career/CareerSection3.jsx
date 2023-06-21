@@ -4,7 +4,7 @@ import { Img } from '../custom'
 const CareerSection3 = () => {
   return (
     <section className="p-5 md:p-10 lg:px-20">
-      <div className="mt-10 grid grid-cols-3 gap-5 lg:mt-20">
+      <div className="mt-10 grid grid-cols-3 gap-2 md:gap-5 lg:mt-20">
         <div className="col-span-2">
           <Img src={CareerImg1} alt={'img1'} className="h-full w-full" />
         </div>
