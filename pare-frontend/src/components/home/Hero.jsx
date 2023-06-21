@@ -20,10 +20,10 @@ const HeroSm = ({ counter }) => {
             transition={{ duration: 1 }}
             className="font-metropolis text-5xl font-bold text-white"
           >
-            <span className="text-red-base">INDIA’S</span> BEST
+            <span className="text-red-base">Indian</span> Pioneers
           </motion.div>
-          <p className="font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl">
-            INNOVATIVE SURFACES
+          <p className="font-metropolis font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl">
+            Global Innovators
           </p>
           <Button className={'!px-10 !text-base'} onClick={() => navigate('/contact')}>
             BUILD WITH US
@@ -42,10 +42,10 @@ const HeroSm = ({ counter }) => {
             transition={{ duration: 1 }}
             className="font-metropolis text-5xl font-bold text-white"
           >
-            <span className="text-red-base drop-shadow-md">INDIA’S</span> BEST
+            <span className="text-red-base drop-shadow-md">Indian</span> Pioneers
           </motion.div>
-          <p className="font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl">
-            INNOVATIVE SURFACES
+          <p className="font-metropolis font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl">
+            Global Innovators
           </p>
           <Button className={'!px-10 !text-base'} onClick={() => navigate('/contact')}>
             BUILD WITH US
@@ -64,10 +64,10 @@ const HeroSm = ({ counter }) => {
             transition={{ duration: 1 }}
             className="font-metropolis text-5xl font-bold text-white"
           >
-            <span className="text-red-base">INDIA’S</span> BEST
+            <span className="text-red-base">Indian</span> Pioneers
           </motion.div>
-          <p className="font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl">
-            INNOVATIVE SURFACES
+          <p className="font-metropolis font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl">
+            Global Innovators
           </p>
           <Button className={'!px-10 !text-base'} onClick={() => navigate('/contact')}>
             BUILD WITH US
@@ -91,7 +91,7 @@ const HeroMd = () => {
       />
       <div className="flex h-screen flex-col items-start justify-center gap-5 px-20">
         <Img src={InnovText} width={'350'} height={'100'} alt="hero-text" />
-        <p className="text-4xl font-bold tracking-widest text-white">INNOVATIVE SURFACES</p>
+        <p className="font-metropolis text-4xl font-bold tracking-widest text-white">Global Innovators</p>
         <Button className={'!px-8'} onClick={() => navigate('/contact')}>
           BUILD WITH US
         </Button>
@@ -121,11 +121,11 @@ const HeroLg = ({ counter }) => {
               y: [-100, 0],
             }}
             transition={{ duration: 1 }}
-            className="font-metropolis font-bold text-white md:text-5xl lg:text-6xl"
+            className="font-metropolis font-bold text-white drop-shadow md:text-5xl lg:text-6xl"
           >
-            <span className="text-red-base">INDIA’S</span> BEST
+            <span className="text-red-base">Indian</span> Pioneers
           </motion.div>
-          <p className="text-4xl font-bold tracking-widest text-white">INNOVATIVE SURFACES</p>
+          <p className="font-metropolis text-4xl font-bold tracking-widest text-white">Global Innovators</p>
           <Button className={'!px-8'} onClick={() => navigate('/contact')}>
             BUILD WITH US
           </Button>
@@ -149,11 +149,11 @@ const HeroLg = ({ counter }) => {
               y: [-100, 0],
             }}
             transition={{ duration: 1 }}
-            className="font-metropolis font-bold text-white md:text-5xl lg:text-6xl"
+            className="font-metropolis font-bold text-white drop-shadow md:text-5xl lg:text-6xl"
           >
-            <span className="text-red-base">INDIA’S</span> BEST
+            <span className="text-red-base">Indian</span> Pioneers
           </motion.div>
-          <p className="text-4xl font-bold tracking-widest text-white">INNOVATIVE SURFACES</p>
+          <p className="font-metropolis text-4xl font-bold tracking-widest text-white">Global Innovators</p>
           <Button className={'!px-8'} onClick={() => navigate('/contact')}>
             BUILD WITH US
           </Button>
@@ -177,11 +177,13 @@ const HeroLg = ({ counter }) => {
               y: [-100, 0],
             }}
             transition={{ duration: 1 }}
-            className="font-metropolis font-bold text-white md:text-5xl lg:text-6xl"
+            className="font-metropolis font-bold text-white drop-shadow md:text-5xl lg:text-6xl"
           >
-            <span className="text-red-base">INDIA’S</span> BEST
+            <span className="text-red-base">Indian</span> Pioneers
           </motion.div>
-          <p className="font-metropolis text-4xl font-bold tracking-widest text-white">INNOVATIVE SURFACES</p>
+          <p className="font-metropolis font-metropolis text-4xl font-bold tracking-widest text-white">
+            Global Innovators
+          </p>
           <Button className={'!px-8'} onClick={() => navigate('/contact')}>
             BUILD WITH US
           </Button>

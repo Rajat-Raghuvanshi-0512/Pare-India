@@ -2,6 +2,7 @@
   "name": "pare-frontend",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://pare-india.com",
   "type": "module",
   "scripts": {
     "dev": "vite",
