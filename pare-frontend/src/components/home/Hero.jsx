@@ -20,9 +20,17 @@ const HeroSm = ({ counter }) => {
             transition={{ duration: 1 }}
             className="font-metropolis text-5xl font-bold text-white"
           >
-            <span className="text-red-base">Indian</span> Pioneers
+            <span className="text-red-base">Finest</span> Designs
           </motion.div>
-          <p className="font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl">Global Innovators</p>
+          <motion.p
+            whileInView={{
+              opacity: [0, 1],
+            }}
+            transition={{ duration: 1 }}
+            className="font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl"
+          >
+            Enhance Spaces
+          </motion.p>
           <Button className={'!px-10 !text-base'} onClick={() => navigate('/contact')}>
             BUILD WITH US
           </Button>
@@ -42,7 +50,15 @@ const HeroSm = ({ counter }) => {
           >
             <span className="text-red-base drop-shadow-md">Indian</span> Pioneers
           </motion.div>
-          <p className="font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl">Global Innovators</p>
+          <motion.p
+            whileInView={{
+              opacity: [0, 1],
+            }}
+            transition={{ duration: 1 }}
+            className="font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl"
+          >
+            Global Innovators
+          </motion.p>
           <Button className={'!px-10 !text-base'} onClick={() => navigate('/contact')}>
             BUILD WITH US
           </Button>
@@ -60,9 +76,17 @@ const HeroSm = ({ counter }) => {
             transition={{ duration: 1 }}
             className="font-metropolis text-5xl font-bold text-white"
           >
-            <span className="text-red-base">Indian</span> Pioneers
+            <span className="text-red-base">Elevate</span> Surfaces
           </motion.div>
-          <p className="font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl">Global Innovators</p>
+          <motion.p
+            whileInView={{
+              opacity: [0, 1],
+            }}
+            transition={{ duration: 1 }}
+            className="font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl"
+          >
+            Unmatched Quality
+          </motion.p>
           <Button className={'!px-10 !text-base'} onClick={() => navigate('/contact')}>
             BUILD WITH US
           </Button>
@@ -85,7 +109,14 @@ const HeroMd = () => {
       />
       <div className="flex h-screen flex-col items-start justify-center gap-5 px-20">
         <Img src={InnovText} width={'350'} height={'100'} alt="hero-text" />
-        <p className="font-metropolis text-4xl font-bold tracking-widest text-white">Global Innovators</p>
+        <motion.p
+          whileInView={{
+            opacity: [0, 1],
+          }}
+          className="font-metropolis text-4xl font-bold tracking-widest text-white"
+        >
+          Global Innovators
+        </motion.p>
         <Button className={'!px-8'} onClick={() => navigate('/contact')}>
           BUILD WITH US
         </Button>
@@ -117,9 +148,17 @@ const HeroLg = ({ counter }) => {
             transition={{ duration: 1 }}
             className="font-metropolis font-bold text-white drop-shadow md:text-5xl lg:text-6xl"
           >
-            <span className="text-red-base">Indian</span> Pioneers
+            <span className="text-red-base">Finest</span> Designs
           </motion.div>
-          <p className="font-metropolis text-4xl font-bold tracking-widest text-white">Global Innovators</p>
+          <motion.p
+            whileInView={{
+              opacity: [0, 1],
+            }}
+            transition={{ duration: 1 }}
+            className="font-metropolis text-4xl font-bold tracking-widest text-white"
+          >
+            Enhance Spaces
+          </motion.p>
           <Button className={'!px-8'} onClick={() => navigate('/contact')}>
             BUILD WITH US
           </Button>
@@ -147,7 +186,15 @@ const HeroLg = ({ counter }) => {
           >
             <span className="text-red-base">Indian</span> Pioneers
           </motion.div>
-          <p className="font-metropolis text-4xl font-bold tracking-widest text-white">Global Innovators</p>
+          <motion.p
+            whileInView={{
+              opacity: [0, 1],
+            }}
+            transition={{ duration: 1 }}
+            className="font-metropolis text-4xl font-bold tracking-widest text-white"
+          >
+            Global Innovators
+          </motion.p>
           <Button className={'!px-8'} onClick={() => navigate('/contact')}>
             BUILD WITH US
           </Button>
@@ -173,9 +220,17 @@ const HeroLg = ({ counter }) => {
             transition={{ duration: 1 }}
             className="font-metropolis font-bold text-white drop-shadow md:text-5xl lg:text-6xl"
           >
-            <span className="text-red-base">Indian</span> Pioneers
+            <span className="text-red-base">Elevate</span> Surfaces
           </motion.div>
-          <p className="font-metropolis text-4xl font-bold tracking-widest text-white">Global Innovators</p>
+          <motion.p
+            whileInView={{
+              opacity: [0, 1],
+            }}
+            transition={{ duration: 1 }}
+            className="font-metropolis text-4xl font-bold tracking-widest text-white"
+          >
+            Unmatched Quality
+          </motion.p>
           <Button className={'!px-8'} onClick={() => navigate('/contact')}>
             BUILD WITH US
           </Button>
