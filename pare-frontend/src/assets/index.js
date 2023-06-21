@@ -123,6 +123,12 @@ import Increment from './images/career/increment.webp'
 import India from './images/career/india.webp'
 import Social from './images/career/social.webp'
 
+import CareerImg1 from './images/career/gallery/img1.webp'
+import CareerImg2 from './images/career/gallery/img2.webp'
+import CareerImg3 from './images/career/gallery/img3.webp'
+import CareerImg4 from './images/career/gallery/img4.webp'
+import CareerImg5 from './images/career/gallery/img5.webp'
+
 export {
   Logo,
   HeroBgMobile,
@@ -234,4 +240,9 @@ export {
   Increment,
   India,
   Social,
+  CareerImg1,
+  CareerImg2,
+  CareerImg3,
+  CareerImg4,
+  CareerImg5,
 }

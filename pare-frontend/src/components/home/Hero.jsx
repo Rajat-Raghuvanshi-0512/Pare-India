@@ -22,9 +22,7 @@ const HeroSm = ({ counter }) => {
           >
             <span className="text-red-base">Indian</span> Pioneers
           </motion.div>
-          <p className="font-metropolis font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl">
-            Global Innovators
-          </p>
+          <p className="font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl">Global Innovators</p>
           <Button className={'!px-10 !text-base'} onClick={() => navigate('/contact')}>
             BUILD WITH US
           </Button>
@@ -44,9 +42,7 @@ const HeroSm = ({ counter }) => {
           >
             <span className="text-red-base drop-shadow-md">Indian</span> Pioneers
           </motion.div>
-          <p className="font-metropolis font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl">
-            Global Innovators
-          </p>
+          <p className="font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl">Global Innovators</p>
           <Button className={'!px-10 !text-base'} onClick={() => navigate('/contact')}>
             BUILD WITH US
           </Button>
@@ -66,9 +62,7 @@ const HeroSm = ({ counter }) => {
           >
             <span className="text-red-base">Indian</span> Pioneers
           </motion.div>
-          <p className="font-metropolis font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl">
-            Global Innovators
-          </p>
+          <p className="font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl">Global Innovators</p>
           <Button className={'!px-10 !text-base'} onClick={() => navigate('/contact')}>
             BUILD WITH US
           </Button>
@@ -181,9 +175,7 @@ const HeroLg = ({ counter }) => {
           >
             <span className="text-red-base">Indian</span> Pioneers
           </motion.div>
-          <p className="font-metropolis font-metropolis text-4xl font-bold tracking-widest text-white">
-            Global Innovators
-          </p>
+          <p className="font-metropolis text-4xl font-bold tracking-widest text-white">Global Innovators</p>
           <Button className={'!px-8'} onClick={() => navigate('/contact')}>
             BUILD WITH US
           </Button>
