@@ -62,6 +62,27 @@ body {
   scroll-behavior: smooth;
 }
 
+.form-dropdown li:not(.init) {
+  /* display: none; */
+  background: rgb(56, 56, 56);
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.form-dropdown li:not(.init):nth-child(2) {
+  top: 50px;
+}
+.form-dropdown li:not(.init):nth-child(3) {
+  top: 120px;
+}
+.form-dropdown li:not(.init):nth-child(4) {
+  top: 170px;
+}
+.form-dropdown li:not(.init):hover,
+.form-dropdown li.selected:not(.init) {
+  background: #be1e2d;
+}
+
 .project-btn:hover div {
   background: rgba(255, 255, 255, 0.5);
   /* width: 70px;

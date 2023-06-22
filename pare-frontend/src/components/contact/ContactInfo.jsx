@@ -28,7 +28,7 @@ const ContactInfo = () => {
                 Maharashtra, INDIA.
               </p>
               <p className="mt-3">
-                Experience Gallery - 21/N, Laxmi Industrial Estate, New Link Rd, near Laxmi Chhaya Hotel, Andheri West,
+                Experience Center - 21/N, Laxmi Industrial Estate, New Link Rd, near Laxmi Chhaya Hotel, Andheri West,
                 Mumbai, Maharashtra 400053
               </p>
             </div>

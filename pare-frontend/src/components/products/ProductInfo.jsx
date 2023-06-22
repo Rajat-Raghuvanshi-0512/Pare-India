@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import {
   Globe,
   Medal,
@@ -164,6 +165,7 @@ const ProductInfoSm = () => {
   )
 }
 const ProductInfoLg = () => {
+  const navigate = useNavigate()
   return (
     <section className="relative">
       <Img
@@ -190,7 +192,7 @@ const ProductInfoLg = () => {
                 <span className="font-bold text-red-base"> walls and ceilings.</span>
               </p>
               <div className="mt-2 flex items-end justify-end">
-                <Button>view range</Button>
+                <Button onClick={() => navigate('/product/1')}>view range</Button>
               </div>
             </div>
           </div>

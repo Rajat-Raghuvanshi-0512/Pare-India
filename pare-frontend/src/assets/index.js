@@ -118,6 +118,15 @@ import Wall from './images/products/wall.webp'
 import Shield from './images/products/shield.webp'
 import Globe from './images/products/globe.webp'
 
+import Product1BannerImg from './images/products/product1/banner.webp'
+import Product1SideImg from './images/products/product1/product1-side-img.webp'
+import Product1Img1 from './images/products/product1/product1-img1.webp'
+import Product1Img11 from './images/products/product1/product1-img1.1.webp'
+import Product1Img2 from './images/products/product1/product1-img2.webp'
+import Product1Img21 from './images/products/product1/product1-img2.1.webp'
+import Product1Img3 from './images/products/product1/product1-img3.webp'
+import Product1Img31 from './images/products/product1/product1-img3.1.webp'
+
 import Career1 from './images/career/career-1.webp'
 import Increment from './images/career/increment.webp'
 import India from './images/career/india.webp'
@@ -249,4 +258,12 @@ export {
   CareerImg5,
   CareerFormBanner,
   CareerFormBannerMobile,
+  Product1BannerImg,
+  Product1Img1,
+  Product1Img11,
+  Product1Img2,
+  Product1Img21,
+  Product1Img3,
+  Product1Img31,
+  Product1SideImg,
 }

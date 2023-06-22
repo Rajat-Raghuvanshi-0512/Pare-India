@@ -6,5 +6,6 @@ const Contact = lazy(() => import('./Contact'))
 const Products = lazy(() => import('./Products'))
 const Careers = lazy(() => import('./Careers'))
 const CareerForm = lazy(() => import('./CareerForm'))
+const Product1 = lazy(() => import('./Product1'))
 
-export { Home, About, Contact, Products, Careers, CareerForm }
+export { Home, About, Contact, Products, Careers, CareerForm, Product1 }

@@ -1,7 +1,10 @@
+import { useState } from 'react'
 import { ContactImg, ContactImgPhone } from '../../assets'
 import { Button, Img } from '../custom'
 
 const ContactForm = () => {
+  const [value, setValue] = useState('REQUIREMENT TYPE')
+  const [open, setOpen] = useState(false)
   return (
     <section className="py-5 md:p-10 md:pr-0 lg:py-20 lg:pl-20  2xl:pl-40">
       <div className="grid md:grid-cols-2 md:gap-5">
@@ -36,26 +39,41 @@ const ContactForm = () => {
                 placeholder="email"
                 className="border-b-2 border-[#adadad] bg-transparent p-1  font-montserrat text-white  outline-none placeholder:uppercase lg:py-3 lg:text-xl 2xl:text-2xl"
               />
-              <select
-                id="cars"
-                name="cars"
-                className="border-b-2 border-[#adadad] bg-transparent p-1 font-montserrat text-[#adadad]  outline-none placeholder:uppercase lg:py-3 lg:text-xl 2xl:text-2xl"
-                placeholder="requirement type"
-                defaultValue={'DEFAULT'}
-              >
-                <option value="DEFAULT" disabled className="bg-black uppercase text-gray-400">
-                  REQUIREMENT TYPE
-                </option>
-                <option value="walls" className="bg-black-base text-white">
+              <ul className="form-dropdown relative border-b-2 border-[#adadad] bg-black-base bg-transparent p-1  font-montserrat text-[#adadad] outline-none placeholder:uppercase lg:py-3 lg:text-xl 2xl:text-2xl">
+                <li
+                  className={` init bg-black-base uppercase text-gray-400  `}
+                  onClick={() => setOpen((prev) => !prev)}
+                >
+                  {value}
+                </li>
+                <li
+                  className={`mb-2 mt-5 bg-black-base py-2 text-center text-white ${!open && 'hidden'} `}
+                  onClick={() => {
+                    setValue('walls')
+                    setOpen(false)
+                  }}
+                >
                   Walls
-                </option>
-                <option value="ceiling" className="bg-black-base text-white">
+                </li>
+                <li
+                  className={`mb-2 bg-black-base py-2 text-center text-white ${!open && 'hidden'} `}
+                  onClick={() => {
+                    setValue('ceiling')
+                    setOpen(false)
+                  }}
+                >
                   Ceiling
-                </option>
-                <option value="facades" className="bg-black-base text-white">
+                </li>
+                <li
+                  className={`mb-2 bg-black-base py-2 text-center text-white ${!open && 'hidden'} `}
+                  onClick={() => {
+                    setValue('facades')
+                    setOpen(false)
+                  }}
+                >
                   Facades
-                </option>
-              </select>
+                </li>
+              </ul>
               <textarea
                 type="text"
                 placeholder="your message"
@@ -71,7 +89,7 @@ const ContactForm = () => {
           </form>
         </div>
         <div className="h-[640px] w-full md:h-auto">
-          <Img
+          <img
             src={ContactImgPhone}
             alt="img"
             width={500}

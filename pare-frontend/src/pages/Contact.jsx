@@ -1,4 +1,3 @@
-import { ContactBg } from '../assets'
 import { ContactForm, ContactInfo, Map } from '../components/contact'
 
 const Contact = () => {
