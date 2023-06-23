@@ -15,6 +15,7 @@ import {
 import { Button, Img } from '../custom'
 
 const ProductInfoSm = () => {
+  const navigate = useNavigate()
   return (
     <section className="relative">
       <Img
@@ -63,7 +64,7 @@ const ProductInfoSm = () => {
             </p>
             <div className="mt-3 flex justify-end">
               {' '}
-              <Button variant="outlined" className={'!border !text-[10px]'}>
+              <Button variant="outlined" className={'!border !text-[10px]'} onClick={() => navigate('/product/1')}>
                 view products
               </Button>
             </div>

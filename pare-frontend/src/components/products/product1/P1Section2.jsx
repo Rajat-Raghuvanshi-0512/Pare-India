@@ -1,7 +1,9 @@
+import { useNavigate } from 'react-router-dom'
 import { Product1Img1, Product1Img11, Product1Img2, Product1Img21, Product1Img3, Product1Img31 } from '../../../assets'
 import { Button, Img } from '../../custom'
 
 const P1Section2 = () => {
+  const navigate = useNavigate()
   return (
     <section className="p-5 md:px-10 lg:px-20">
       <div className="grid grid-cols-2 gap-5 md:gap-10">
@@ -18,7 +20,7 @@ const P1Section2 = () => {
             <li className="my-1">No Ply required Can Be Screwed Directly on the walls</li>
             <li className="my-1">Appropriate for walls and ceilings</li>
           </ul>
-          <Button>View range</Button>
+          <Button onClick={() => navigate('/product/linea')}>View range</Button>
         </div>
         <div className="relative">
           <div className="before:absolute before:-top-5 before:left-5 before:-z-10 before:h-full before:w-[80%] before:border-[3px] before:border-red-base">

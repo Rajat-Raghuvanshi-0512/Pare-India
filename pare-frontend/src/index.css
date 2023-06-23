@@ -90,6 +90,10 @@ body {
   transition: all 0.4s; */
 }
 
+img {
+  max-width: none;
+}
+
 .animate-infinite {
   width: calc(300px * 16);
   animation: rotateInfinite 10s linear infinite;

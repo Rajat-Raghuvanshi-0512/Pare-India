@@ -3,7 +3,7 @@ import { Logo } from '../assets'
 import { Img } from './custom'
 import { Link, useLocation } from 'react-router-dom'
 
-const darkNavLinks = ['/about', '/', '/contact', '/career-form']
+const darkNavLinks = ['/about', '/', '/contact', '/career-form', '/product/linea']
 const darkNavLinksSm = ['/about', '/career-form']
 
 const FooterSm = () => {
