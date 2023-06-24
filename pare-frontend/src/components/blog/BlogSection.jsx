@@ -63,9 +63,9 @@ const blogData = [
 
 const BlogSection = () => {
   return (
-    <section className="bg-black-base p-5 text-white md:p-10 lg:py-20">
-      <h2 className="m-5 font-metropolis text-3xl font-bold md:text-4xl lg:text-6xl">Blog</h2>
-      <div className="grid grid-cols-4 gap-2">
+    <section className="bg-black-base p-5 pt-14 text-white md:p-10 lg:pt-20 2xl:px-40">
+      <h2 className="m-5 font-metropolis text-5xl font-bold lg:text-6xl">Blog</h2>
+      <div className="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-4">
         {blogData.map((item) => (
           <BlogCard key={item.title} {...item} />
         ))}

@@ -51,7 +51,7 @@ const FooterSm = () => {
 }
 const FooterLg = ({ dark }) => {
   return (
-    <section className={` ${dark ? 'bg-[#151515] text-white' : ''} px-20  md:pt-10 lg:pt-14`}>
+    <section className={` ${dark ? 'bg-[#151515] text-white' : ''} px-20  md:pt-10 lg:pt-14 2xl:px-40`}>
       <div className="grid font-montserrat md:grid-cols-10">
         <div
           className={`col-span-5 flex flex-col justify-between border-[0.01rem] border-opacity-50 p-10 ${
