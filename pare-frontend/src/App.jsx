@@ -4,6 +4,7 @@ import { ContactFloatBtn, Footer, Navbar } from './components'
 import { useEffect, useMemo, useState } from 'react'
 import Blobity from 'blobity'
 import Loader from './Loader'
+import Blog from './pages/Blog'
 
 const App = () => {
   const { pathname } = useLocation()
@@ -49,6 +50,7 @@ const App = () => {
         <Route path="/product/1" element={<Product1 />} />
         <Route path="/product/linea" element={<Linea />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
       <ContactFloatBtn />
       <Footer />

@@ -3,7 +3,7 @@ import { Logo } from '../assets'
 import { Img } from './custom'
 import { Link, useLocation } from 'react-router-dom'
 
-const darkNavLinks = ['/about', '/', '/contact', '/career-form', '/product/linea', '/gallery']
+const darkNavLinks = ['/about', '/', '/contact', '/career-form', '/product/linea', '/gallery', '/blog']
 const darkNavLinksSm = ['/about', '/career-form']
 
 const FooterSm = () => {
@@ -109,22 +109,22 @@ const FooterLg = ({ dark }) => {
             <Link to={'/'}>
               <li className="mb-3">HOME</li>
             </Link>
-            <Link to={'/'}>
+            <Link to={'/about'}>
               <li className="mb-3">ABOUT</li>
             </Link>
-            <Link to={'/'}>
+            <Link to={'/products'}>
               <li className="mb-3">PRODUCTS</li>
             </Link>
-            <Link to={'/'}>
+            <Link to={'/gallery'}>
               <li className="mb-3">GALLERY</li>
             </Link>
-            <Link to={'/'}>
+            <Link to={'/contact'}>
               <li className="mb-3">CONTACTS</li>
             </Link>
-            <Link to={'/'}>
+            <Link to={'/blog'}>
               <li className="mb-3">BLOG</li>
             </Link>
-            <Link to={'/'}>
+            <Link to={'/careers'}>
               <li className="mb-3">CAREERS</li>
             </Link>
           </ul>
