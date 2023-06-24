@@ -31,7 +31,7 @@ const App = () => {
 
   useEffect(() => {
     if (percent <= 100) {
-      setTimeout(() => setPercent((prev) => prev + 1), 5)
+      setTimeout(() => setPercent((prev) => prev + 1), 10)
     }
   }, [percent])
 

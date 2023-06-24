@@ -1,9 +1,10 @@
-import FAQSection1 from '../components/FAQ/FAQSection1'
+import { AboutUsSection, FAQSection1 } from '../components/FAQ'
 
 const Gallery = () => {
   return (
     <>
       <FAQSection1 />
+      <AboutUsSection />
     </>
   )
 }

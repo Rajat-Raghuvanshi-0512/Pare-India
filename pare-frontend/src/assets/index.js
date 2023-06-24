@@ -186,6 +186,8 @@ import DownArrow from './images/FAQ/down-arrow.webp'
 import ContactAvatar from './images/FAQ/contact-avatar.webp'
 import FAQS from './images/FAQ/FAQS.webp'
 import HeadAvatar from './images/FAQ/head-avatar.webp'
+import PlusCircle from './images/FAQ/plus-circle.webp'
+import MinusCircle from './images/FAQ/minus-circle.webp'
 
 export {
   Logo,
@@ -353,4 +355,6 @@ export {
   DownArrow,
   FAQS,
   HeadAvatar,
+  PlusCircle,
+  MinusCircle,
 }
