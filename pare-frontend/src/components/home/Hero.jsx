@@ -3,6 +3,7 @@ import { Button, Img } from '../custom'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 
 const HeroSm = ({ counter }) => {
   const navigate = useNavigate()
@@ -258,6 +259,14 @@ const Hero = () => {
   })
   return (
     <div>
+      <Helmet>
+        <link rel="preload" as="image" href={HeroBg} />
+        <link rel="preload" as="image" href={HeroBg1} />
+        <link rel="preload" as="image" href={HeroBg2} />
+        <link rel="preload" as="image" href={HeroBgMobile} />
+        <link rel="preload" as="image" href={HeroBgMobile1} />
+        <link rel="preload" as="image" href={HeroBgMobile2} />
+      </Helmet>
       <div className="md:hidden">
         <HeroSm counter={counter} />
       </div>

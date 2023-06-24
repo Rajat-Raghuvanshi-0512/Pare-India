@@ -182,6 +182,11 @@ import CareerImg3 from './images/career/gallery/img3.webp'
 import CareerImg4 from './images/career/gallery/img4.webp'
 import CareerImg5 from './images/career/gallery/img5.webp'
 
+import DownArrow from './images/FAQ/down-arrow.webp'
+import ContactAvatar from './images/FAQ/contact-avatar.webp'
+import FAQS from './images/FAQ/FAQS.webp'
+import HeadAvatar from './images/FAQ/head-avatar.webp'
+
 export {
   Logo,
   HeroBgMobile,
@@ -344,4 +349,8 @@ export {
   PyramidSideImg,
   TrimWoodBg1,
   JLarge,
+  ContactAvatar,
+  DownArrow,
+  FAQS,
+  HeadAvatar,
 }

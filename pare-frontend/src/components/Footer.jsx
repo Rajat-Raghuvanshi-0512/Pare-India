@@ -40,7 +40,7 @@ const FooterSm = () => {
       </p>
       <div>
         <div className=" w-20 rounded-full bg-white px-2 py-1">
-          <Img src={Logo} alt="logo"></Img>
+          <Img src={Logo} alt="logo" width={60}></Img>
         </div>
         <div className="pt-3 text-[10px]">COOKIE POLICY</div>
         <div className="py-1 text-[10px]">PRIVACY POLICY</div>

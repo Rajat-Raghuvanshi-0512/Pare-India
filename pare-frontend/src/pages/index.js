@@ -8,5 +8,6 @@ const Careers = lazy(() => import('./Careers'))
 const CareerForm = lazy(() => import('./CareerForm'))
 const Product1 = lazy(() => import('./Product1'))
 const Linea = lazy(() => import('./Linea'))
+const Gallery = lazy(() => import('./Gallery'))
 
-export { Home, About, Contact, Products, Careers, CareerForm, Product1, Linea }
+export { Home, About, Contact, Products, Careers, CareerForm, Product1, Linea, Gallery }

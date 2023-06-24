@@ -1,5 +1,5 @@
 import { CareerFormBanner, CareerFormBannerMobile } from '../../../assets'
-import { useMediaQuery } from '../../../custom-hooks'
+import { useMediaQuery } from '../../../utils/custom-hooks'
 import { Img } from '../../custom'
 
 const Banner = () => {

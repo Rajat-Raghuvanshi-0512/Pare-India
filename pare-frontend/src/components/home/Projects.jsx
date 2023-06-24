@@ -15,7 +15,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 // Import Swiper styles
 import 'swiper/css/bundle'
 import 'swiper/css'
-import { useMediaQuery } from '../../custom-hooks'
+import { useMediaQuery } from '../../utils/custom-hooks'
 import { useState } from 'react'
 import SliderNavigation from './SliderNavigation'
 import TestimonialSlider from './TestimonialSlider'

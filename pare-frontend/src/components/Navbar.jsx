@@ -1,11 +1,11 @@
 import { Link, useLocation } from 'react-router-dom'
 import { BurgerMenu, BurgerMenuBlack, CloseIcon, FbIcon, InstaIcon, LinkedInIcon, Logo } from '../assets'
 import { Drawer, Img } from './custom'
-import { useModal } from '../custom-hooks'
+import { useModal } from '../utils/custom-hooks'
 import { useMotionValueEvent, useScroll } from 'framer-motion'
 import { useState } from 'react'
 
-const greNavRoutes = ['/about', '/products', '/careers']
+const greNavRoutes = ['/about', '/products', '/careers', '/gallery']
 
 const navLinks = [
   {

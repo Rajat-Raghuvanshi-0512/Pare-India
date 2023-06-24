@@ -1,5 +1,5 @@
 import { Feather, PenTool, Star, SunLoader } from '../../assets'
-import { useMediaQuery } from '../../custom-hooks'
+import { useMediaQuery } from '../../utils/custom-hooks'
 
 const elemData = [
   {

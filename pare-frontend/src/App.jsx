@@ -1,5 +1,5 @@
 import { Route, Routes, useLocation } from 'react-router-dom'
-import { About, Contact, Home, Products, Careers, CareerForm, Product1, Linea } from './pages'
+import { About, Contact, Home, Products, Careers, CareerForm, Product1, Linea, Gallery } from './pages'
 import { ContactFloatBtn, Footer, Navbar } from './components'
 import { useEffect, useMemo, useState } from 'react'
 import Blobity from 'blobity'
@@ -8,7 +8,6 @@ import Loader from './Loader'
 const App = () => {
   const { pathname } = useLocation()
   const [percent, setPercent] = useState(0)
-  const [loading, setLoading] = useState(true)
   const options = useMemo(
     () => ({
       color: 'rgb(255, 0, 0)',
@@ -16,7 +15,6 @@ const App = () => {
       zIndex: 500,
       opacity: 0.1,
       licenseKey: 'jsmastery',
-      magnetic: false,
       focusableElements: '',
       size: 30,
       dotSize: 6,
@@ -32,23 +30,14 @@ const App = () => {
   }, [pathname])
 
   useEffect(() => {
-    const percentInterval = setInterval(() => {
-      if (percent >= 100) {
-        clearInterval(percentInterval)
-      }
-      if (percent < 100) {
-        setPercent(percent + 1)
-      } else {
-        setLoading(false)
-      }
-    }, 10)
-    return () => clearInterval(percentInterval)
+    if (percent <= 100) {
+      setTimeout(() => setPercent((prev) => prev + 1), 5)
+    }
   }, [percent])
-
-  if (loading) return <Loader percent={percent} />
 
   return (
     <>
+      {percent <= 100 && <Loader percent={percent} />}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -59,6 +48,7 @@ const App = () => {
         <Route path="/career-form" element={<CareerForm />} />
         <Route path="/product/1" element={<Product1 />} />
         <Route path="/product/linea" element={<Linea />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
       <ContactFloatBtn />
       <Footer />
