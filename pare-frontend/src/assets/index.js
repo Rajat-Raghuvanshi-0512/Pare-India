@@ -119,6 +119,7 @@ import Shield from './images/products/shield.webp'
 import Globe from './images/products/globe.webp'
 
 import Product1BannerImg from './images/products/product1/banner.webp'
+import Product1BannerPhoneImg from './images/products/product1/banner-mobile.webp'
 import Product1SideImg from './images/products/product1/product1-side-img.webp'
 import Product1Img1 from './images/products/product1/product1-img1.webp'
 import Product1Img11 from './images/products/product1/product1-img1.1.webp'
@@ -357,4 +358,5 @@ export {
   HeadAvatar,
   PlusCircle,
   MinusCircle,
+  Product1BannerPhoneImg,
 }

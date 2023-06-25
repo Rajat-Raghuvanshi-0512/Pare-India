@@ -1,14 +1,18 @@
 import { LampDesk } from '../../assets'
 import Img from '../custom/Img'
 
-// AIzaSyARZnIoShVfwIZdSrfOqwq4j2qUlb8GE7U
-
 const ContactInfo = () => {
   return (
     <section className="mt-3">
       <div className="flex items-end gap-5 text-right">
         <div className="relative flex flex-1 flex-col items-start gap-5 md:gap-10">
-          <Img src={LampDesk} alt={'lampdesk'} width={310} height={600} />
+          <Img
+            src={LampDesk}
+            alt={'lampdesk'}
+            width={310}
+            height={600}
+            className={'h-full w-full object-contain object-bottom md:h-[600px] md:w-[310px]'}
+          />
           <a
             className="absolute -bottom-9 cursor-pointer font-helvetica md:-bottom-20 md:text-xl lg:text-3xl"
             href="#map"

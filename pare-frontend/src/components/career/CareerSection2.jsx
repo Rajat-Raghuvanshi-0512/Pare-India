@@ -27,9 +27,9 @@ const CareerSection2 = () => {
               <Img
                 src={item.image}
                 alt={item.text.slice(0, 5)}
-                width={254}
-                height={254}
-                className={'object-contain object-bottom md:h-[200px] md:w-[200px] lg:h-[250px] lg:w-[250px]'}
+                className={
+                  'h-full w-full object-contain object-bottom md:h-[200px] md:w-[200px] lg:h-[250px] lg:w-[250px]'
+                }
               />
             </div>
             <div className="flex-1">
