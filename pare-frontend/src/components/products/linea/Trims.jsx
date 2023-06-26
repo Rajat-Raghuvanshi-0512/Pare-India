@@ -8,12 +8,12 @@ const Trims = () => {
       <Img alt={'bg'} src={JLarge} className={'absolute right-0 -z-10 h-full w-[70%]'} />
       <div className="text-center">
         <h2 className="py-5 text-3xl font-bold md:py-10 md:text-4xl lg:text-5xl">AVAILABLE TRIMS</h2>
-        <p className="mx-32 text-xl font-medium">
+        <p className="px-5 text-xs font-medium md:mx-32 md:text-xl">
           Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna. Pellentesque
           sit amet
         </p>
       </div>
-      <div className="m-14 flex h-full w-fit flex-col">
+      <div className="m-14 mt-auto flex w-fit flex-col justify-end md:h-full md:justify-start">
         <h5 className="text-center font-metropolis text-xl font-bold uppercase md:text-2xl lg:text-3xl">
           trim options
         </h5>

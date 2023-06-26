@@ -2,7 +2,7 @@ import { LineaImg1, LineaImg2, LineaImg3, LineaImg4 } from '../../../assets'
 import { Img } from '../../custom'
 const ImgGallery = () => {
   return (
-    <div className="grid h-screen grid-cols-4">
+    <div className="grid grid-cols-4 md:h-screen">
       <div>
         <Img src={LineaImg1} height={500} alt={'img1'} className={'h-full w-full'} />
       </div>

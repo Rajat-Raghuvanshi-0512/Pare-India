@@ -43,35 +43,35 @@ const natureData = [
 const Shades = () => {
   return (
     <section className="bg-black-base py-10 font-montserrat">
-      <h2 className="mx-auto w-fit border-b-2 border-red-base py-2 text-center text-4xl font-bold text-white">
+      <h2 className="mx-auto w-fit border-b-2 border-red-base py-2 text-center text-3xl font-bold text-white lg:text-4xl">
         AVAILABLE SHADES
       </h2>
       <div className="relative md:mt-10 lg:mt-20">
-        <div className="flex w-full items-center  pl-10">
+        <div className="flex w-full items-center md:pl-10">
           <h5 className="absolute w-fit -rotate-90 text-xl font-medium text-red-base">
             METALLIC <br /> COLLECTION
           </h5>
-          <div className="ml-40 flex gap-5 overflow-x-auto overflow-y-hidden md:gap-10 lg:gap-20">
+          <div className="ml-28 flex gap-10 overflow-x-auto overflow-y-hidden md:ml-40 md:gap-10 lg:gap-20">
             {metallicData.map((item, idx) => (
               <ShadeBox item={item} idx={idx} key={item.img + idx} />
             ))}
           </div>
         </div>
-        <div className="flex items-center bg-red-base  pl-10">
+        <div className="flex items-center bg-red-base md:pl-10">
           <h5 className="absolute w-fit -rotate-90 text-xl font-medium text-white">
             MARBLE <br /> COLLECTION
           </h5>
-          <div className="ml-40  flex gap-5 overflow-y-hidden overflow-x-scroll md:gap-10 lg:gap-20">
+          <div className="ml-28 flex  gap-10 overflow-y-hidden overflow-x-scroll md:ml-40 md:gap-10 lg:gap-20">
             {marbleData.map((item, idx) => (
               <ShadeBox item={item} idx={idx} key={item.img + idx} />
             ))}
           </div>
         </div>
-        <div className="flex items-center  pl-10">
+        <div className="flex items-center md:pl-10">
           <h5 className="absolute w-fit -rotate-90 text-xl font-medium text-red-base">
             NATURE <br /> COLLECTION
           </h5>
-          <div className="ml-40 flex gap-5 overflow-y-hidden overflow-x-scroll md:gap-10 lg:gap-20">
+          <div className="ml-28 flex gap-10 overflow-y-hidden overflow-x-scroll md:ml-40 md:gap-10 lg:gap-20">
             {natureData.map((item, idx) => (
               <ShadeBox item={item} idx={idx} key={item.img + idx} />
             ))}
