@@ -1,5 +1,17 @@
 import { Route, Routes, useLocation } from 'react-router-dom'
-import { About, Contact, Home, Products, Careers, CareerForm, Product1, Linea, Gallery } from './pages'
+import {
+  About,
+  Contact,
+  Home,
+  Products,
+  Careers,
+  CareerForm,
+  Product1,
+  Linea,
+  Gallery,
+  NotFound,
+  Resources,
+} from './pages'
 import { ContactFloatBtn, Footer, Navbar } from './components'
 import { useEffect, useMemo, useState } from 'react'
 import Blobity from 'blobity'
@@ -51,6 +63,9 @@ const App = () => {
         <Route path="/product/linea" element={<Linea />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/resources" element={<Resources />} />
+
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <ContactFloatBtn />
       <Footer />

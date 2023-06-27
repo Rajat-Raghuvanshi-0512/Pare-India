@@ -301,16 +301,6 @@ input[type='number'] {
   height: 255px;
 }
 
-@keyframes nav-items {
-  0% {
-    right: -100%;
-  }
-
-  100% {
-    right: 0%;
-  }
-}
-
 .bg-transform::before {
   content: '';
   position: absolute;
@@ -322,6 +312,34 @@ input[type='number'] {
   z-index: -1;
   animation: glass 0.5s;
   animation-fill-mode: forwards;
+}
+.download .bg-gradient {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0) 100%);
+  transition: all 1s;
+}
+
+.download .btn {
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.download:hover p {
+  left: 0;
+  transform: translateX(0);
+  transition: all 1s;
+}
+.download:hover .bg-gradient {
+  transform: translateX(-50%);
+  transition: all 1s;
+}
+
+.download p {
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all 1s;
+}
+.download:hover .btn {
+  opacity: 1;
 }
 @keyframes glass {
   0% {
@@ -348,6 +366,16 @@ input[type='number'] {
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes nav-items {
+  0% {
+    right: -100%;
+  }
+
+  100% {
+    right: 0%;
   }
 }
 

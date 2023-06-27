@@ -13,6 +13,8 @@ import PhoneIcon from './images/phone-icon.webp'
 import WhatsappIcon from './images/whatsapp.png'
 import PlayIcon from './images/play-icon.webp'
 import CloseIcon from './images/close.webp'
+import CircularDownArrow from './images/circular-down-arrow.webp'
+import LongDownArrow from './images/long-down-arrow.webp'
 
 import Logo from './images/home/logo.webp'
 import HeroBgMobile from './images/home/home-hero-bg-mob.webp'
@@ -190,12 +192,24 @@ import HeadAvatar from './images/FAQ/head-avatar.webp'
 import PlusCircle from './images/FAQ/plus-circle.webp'
 import MinusCircle from './images/FAQ/minus-circle.webp'
 
+import NotFoundBg from './images/not-found-bg.webp'
+import NotFoundWebBg from './images/not-found-bg-web.webp'
+
+import BrochureImg from './images/resources/brochure-left.webp'
+import ResourceImg1 from './images/resources/collections/img1.webp'
+import ResourceImg2 from './images/resources/collections/img2.webp'
+import ResourceImg3 from './images/resources/collections/img3.webp'
+import ResourceImg4 from './images/resources/collections/img4.webp'
+import ResourceImg5 from './images/resources/collections/img5.webp'
+
 export {
   Logo,
   HeroBgMobile,
   HeroBgMobile1,
   HeroBgMobile2,
   BurgerMenu,
+  CircularDownArrow,
+  LongDownArrow,
   LeftArrow,
   LeftArrowMobile,
   RightArrow,
@@ -359,4 +373,12 @@ export {
   PlusCircle,
   MinusCircle,
   Product1BannerPhoneImg,
+  NotFoundBg,
+  NotFoundWebBg,
+  BrochureImg,
+  ResourceImg1,
+  ResourceImg2,
+  ResourceImg3,
+  ResourceImg4,
+  ResourceImg5,
 }

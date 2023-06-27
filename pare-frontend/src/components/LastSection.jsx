@@ -4,7 +4,7 @@ const LastSection = ({ dark = true, mainText, btnText, btnRoute, showOnMobile = 
   return (
     <div className={` ${showOnMobile ? '' : 'hidden md:block'}`}>
       <div
-        className={`flex items-center justify-between gap-5 p-5 text-xl font-light uppercase text-white md:gap-20 md:p-10 md:px-10 md:text-4xl lg:gap-40 lg:px-28 lg:text-5xl ${
+        className={`flex items-center justify-between gap-5 p-5 text-xl font-light uppercase text-white md:gap-20 md:p-10 md:px-10 md:text-4xl lg:gap-40 lg:px-28 lg:text-5xl 2xl:px-40 ${
           dark ? 'bg-black-base' : 'bg-red-base'
         } `}
       >
