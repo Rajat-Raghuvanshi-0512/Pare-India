@@ -32,7 +32,7 @@ const FaqData = [
 const FAQSection1 = () => {
   return (
     <section>
-      <div className="p-5 pt-20 md:p-10 lg:p-20 lg:pt-32 2xl:px-40">
+      <div className="p-5 pt-20 md:p-10 md:pt-32 lg:p-20 2xl:px-40">
         <h2 className="w-[50%] font-metropolis text-3xl font-bold !leading-snug md:mx-10 md:w-full md:text-center md:text-3xl lg:text-[5rem]">
           YOU HAVE QUESTIONS <br /> WE HAVE <span className="italic text-red-base">ANSWERS.</span>
         </h2>

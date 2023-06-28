@@ -6,7 +6,6 @@ const About = () => {
     <main>
       <div className="p-5 pt-20 md:p-10 lg:p-20 2xl:px-40">
         <AboutUs />
-        {/* <Team /> */}
       </div>
       <Vision />
       <LastSection />

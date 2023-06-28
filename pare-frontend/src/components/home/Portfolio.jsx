@@ -98,7 +98,7 @@ const PortfolioLg = () => {
           to life.
         </div>
       </div>
-      <div className="-my-40 h-fit w-[200vw] origin-left overflow-hidden md:m-0 md:w-[110vw] md:scale-100">
+      <div className="-my-40 h-fit w-[200vw] origin-left overflow-hidden md:m-0 md:w-full md:scale-100">
         <div className="portfolio-slider relative -left-[200vw] flex items-end gap-3 md:gap-10" ref={slider1Ref}>
           {slider1.map((slide, idx) => (
             <img src={slide} alt="slide" key={slide + idx} className="object-contain object-bottom" />

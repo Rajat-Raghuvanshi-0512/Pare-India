@@ -17,7 +17,7 @@ const Vision = () => {
         <h6 className="pb-3 pl-5 pt-5 font-metropolis text-2xl font-medium text-white lg:pt-14 2xl:pl-32">
           Our clients include
         </h6>
-        <div className="-mt-6 flex justify-between gap-10 px-20 2xl:px-48">
+        <div className="flex justify-between gap-10 px-20 lg:-mt-6 2xl:px-48">
           {clients.map((client, idx) => {
             return (
               <div key={client + idx}>
@@ -26,7 +26,7 @@ const Vision = () => {
                   alt={'client' + idx + 1}
                   width={160}
                   height={160}
-                  className={'2xl:h-[200px] 2xl:w-[200px]'}
+                  className={'w-[100px] lg:w-[160px] 2xl:h-[200px] 2xl:w-[200px]'}
                 />
               </div>
             )

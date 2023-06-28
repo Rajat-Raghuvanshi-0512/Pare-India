@@ -52,7 +52,7 @@ const NextProject = () => {
             alt="img"
             width={500}
             height={600}
-            className="ml-auto hidden h-full object-cover md:block"
+            className="ml-auto hidden h-full object-cover md:block md:w-[350px] lg:w-[500px]"
           />
         </div>
       </div>

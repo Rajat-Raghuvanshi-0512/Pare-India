@@ -61,9 +61,9 @@ const App = () => {
         <Route path="/career-form" element={<CareerForm />} />
         <Route path="/product/1" element={<Product1 />} />
         <Route path="/product/linea" element={<Linea />} />
-        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/faq" element={<Gallery />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/resources" element={<Resources />} />
+        <Route path="/application" element={<Resources />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>

@@ -5,7 +5,7 @@ import { useModal } from '../utils/custom-hooks'
 import { useMotionValueEvent, useScroll } from 'framer-motion'
 import { useState } from 'react'
 
-const greNavRoutes = ['/about', '/products', '/careers', '/gallery', '/resources']
+const greNavRoutes = ['/about', '/products', '/careers', '/faq', '/application']
 
 const navLinks = [
   {
@@ -25,8 +25,8 @@ const navLinks = [
     path: '/gallery',
   },
   {
-    text: 'careers',
-    path: '/careers',
+    text: 'resources',
+    dropdown: ['faq', 'blog', 'application'],
   },
   {
     text: 'contact us',
@@ -102,12 +102,33 @@ const NavMd = ({ isScrolled, hide }) => {
           <Img src={Logo} width={400} height={400} alt="logo" className="h-12 w-20 object-contain" />
         </div>
         <div>
-          <ul className="flex items-center justify-center gap-8">
+          <ul className="flex items-center justify-center gap-3">
             {navLinks.map((link) => (
-              <li key={link.path}>
+              <li
+                key={link.path}
+                className={`group relative p-2 duration-200 hover:text-red-base ${
+                  link?.dropdown && 'hover:bg-[#EBEBEB]'
+                } `}
+              >
                 <Link to={link.path} className="font-montserrat text-sm uppercase">
                   {link.text}
                 </Link>
+                <div
+                  className={`pointer-events-none absolute left-0 top-[100%] w-full flex-col gap-3 p-2 pt-3 text-center text-black opacity-0 duration-200 group-hover:pointer-events-auto group-hover:opacity-100 ${
+                    link?.dropdown && 'bg-[#EBEBEB]'
+                  }`}
+                >
+                  {link?.dropdown?.map((item) => (
+                    <div key={item} className="py-1">
+                      <Link
+                        to={`/${item}`}
+                        className="cursor-pointer font-montserrat text-sm uppercase duration-200 hover:text-red-base"
+                      >
+                        {item}
+                      </Link>
+                    </div>
+                  ))}
+                </div>
               </li>
             ))}
           </ul>
@@ -134,10 +155,31 @@ const NavLg = ({ isScrolled, hide }) => {
         <div>
           <ul className="flex items-center justify-center gap-8">
             {navLinks.map((link) => (
-              <li key={link.path} className="duration-200 hover:scale-95 hover:text-red-base">
+              <li
+                key={link.path}
+                className={`group relative p-2 duration-200 hover:text-red-base ${
+                  link?.dropdown && 'hover:bg-[#EBEBEB]'
+                } `}
+              >
                 <Link to={link.path} className="font-montserrat text-xl uppercase">
                   {link.text}
                 </Link>
+                <div
+                  className={`pointer-events-none absolute left-0 top-[100%] w-full flex-col gap-3 p-2 pt-3 text-center text-black opacity-0 duration-200 group-hover:pointer-events-auto group-hover:opacity-100 ${
+                    link?.dropdown && 'bg-[#EBEBEB]'
+                  }`}
+                >
+                  {link?.dropdown?.map((item) => (
+                    <div key={item} className="py-1">
+                      <Link
+                        to={`/${item}`}
+                        className="cursor-pointer font-montserrat text-lg uppercase duration-200 hover:text-red-base"
+                      >
+                        {item}
+                      </Link>
+                    </div>
+                  ))}
+                </div>
               </li>
             ))}
           </ul>

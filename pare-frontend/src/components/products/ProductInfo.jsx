@@ -23,7 +23,7 @@ const ProductInfoSm = () => {
         alt="pare"
         width={250}
         height={800}
-        className="absolute left-2 top-0 -z-10 hidden h-full w-[200px] object-contain object-top"
+        className="absolute left-2 top-0 -z-10 h-full w-[200px] object-contain object-top"
       />
       <div className="pb-10">
         <div>
@@ -46,12 +46,12 @@ const ProductInfoSm = () => {
             </div>
             <div className=" mt-5 flex justify-end font-montserrat text-[8px] font-medium">
               <div className="flex gap-2 border-r-2 px-2 pr-4">
-                <p>First time in India</p>
                 <Img src={Medal} alt={'medal'} width={15} height={25} className={'object-contain'} />
+                <p>First time in India</p>
               </div>
               <div className="flex gap-2 px-2 pl-4">
-                <p>Usage: Walls and Ceilings</p>
                 <Img src={Wall} alt={'wall'} width={25} height={25} className={'object-contain'} />
+                <p>Usage: Walls and Ceilings</p>
               </div>
             </div>
           </div>
@@ -92,12 +92,12 @@ const ProductInfoSm = () => {
             </div>
             <div className=" mt-5 flex justify-end font-montserrat text-[8px] font-medium">
               <div className="flex gap-2 border-r-2 px-2 pr-4">
-                <p>First time in the World</p>
                 <Img src={Globe} alt={'medal'} width={15} height={25} className={'object-contain'} />
+                <p>First time in the World</p>
               </div>
               <div className="flex gap-2 px-2 pl-4">
-                <p>Usage: Walls and Ceilings</p>
                 <Img src={Wall} alt={'wall'} width={25} height={25} className={'object-contain'} />
+                <p>Usage: Walls and Ceilings</p>
               </div>
             </div>
           </div>
@@ -138,12 +138,12 @@ const ProductInfoSm = () => {
             </div>
             <div className=" mt-5 flex justify-end font-montserrat text-[8px] font-medium">
               <div className="flex gap-2 border-r-2 px-2 pr-4">
-                <p>10 Years Warranty</p>
                 <Img src={Shield} alt={'shield'} width={15} height={25} className={'object-contain'} />
+                <p>10 Years Warranty</p>
               </div>
               <div className="flex gap-2 px-2 pl-4">
-                <p>Usage: Exterior Surface</p>
                 <Img src={Wall} alt={'wall'} width={25} height={25} className={'object-contain'} />
+                <p>Usage: Exterior Surface</p>
               </div>
             </div>
           </div>
@@ -174,7 +174,7 @@ const ProductInfoLg = () => {
         alt="pare"
         width={250}
         height={800}
-        className="absolute left-2 top-0 -z-10 hidden h-full object-contain object-top md:block lg:left-20 lg:top-32 lg:w-[500px]"
+        className="absolute left-2 top-0 -z-10 hidden h-full object-contain object-top md:block md:w-[400px] lg:left-20 lg:top-32 lg:w-[500px]"
       />
       <div className="p-5  pt-20 md:p-16 lg:p-20 lg:px-28 2xl:px-40">
         <div className={`relative flex items-start gap-1 font-metropolis md:gap-2`}>
@@ -184,7 +184,13 @@ const ProductInfoLg = () => {
         <div className=" grid grid-cols-2 pb-20">
           <div className="relative">
             <div className="absolute left-3 top-0 -z-50 h-full w-full  border-2 border-red-base"></div>
-            <Img src={ProductImg1} width={550} height={415} alt="sofa" className=" mt-3 h-full w-full  lg:mt-5" />
+            <Img
+              src={ProductImg1}
+              width={550}
+              height={415}
+              alt="sofa"
+              className=" mt-3 h-full w-full object-cover  lg:mt-5"
+            />
             <div className="mr-14 lg:mr-20">
               <p className="mt-5 font-montserrat font-medium md:text-sm lg:text-[15px] 2xl:text-xl">
                 Elevate your space with PARÉ&apos;s wood-inspired
@@ -199,13 +205,13 @@ const ProductInfoLg = () => {
           </div>
           <div className="-z-10 -ml-5 md:-ml-10 lg:-ml-14">
             <div className="ml-32 mr-5 mt-5 flex justify-end font-montserrat font-medium md:text-sm lg:text-base 2xl:text-2xl">
-              <div className="flex gap-2 border-r px-2 pr-4">
-                <p>First time in India</p>
+              <div className="flex gap-5 border-r px-2 pr-4">
                 <Img src={Medal} alt={'medal'} width={30} height={45} className={'object-contain'} />
+                <p>First time in India</p>
               </div>
-              <div className="flex gap-2 px-2 pl-4">
-                <p>Usage: Walls and Ceilings</p>
+              <div className="flex gap-5 px-2 pl-4">
                 <Img src={Wall} alt={'wall'} width={50} height={45} className={'object-contain'} />
+                <p>Usage: Walls and Ceilings</p>
               </div>
             </div>
             <div className="ml-6 mt-3 h-[110%] w-full border-2 border-red-base">
@@ -220,7 +226,7 @@ const ProductInfoLg = () => {
           </div>
         </div>
       </div>
-      <div className="p-5  pt-20 md:p-16 lg:p-20 lg:px-28 lg:py-40 2xl:px-40 2xl:py-60">
+      <div className="p-5  pt-20 md:p-16 md:py-40 lg:p-20 lg:px-28 2xl:px-40 2xl:py-60">
         <div className={`relative flex items-start gap-1 font-metropolis md:gap-2`}>
           <span className={`font-montserrat text-xs font-bold md:text-xl 2xl:text-3xl`}>02</span>
           <h3 className={`  text-4xl font-bold uppercase lg:text-7xl 2xl:text-8xl`}>easy+</h3>
@@ -228,7 +234,13 @@ const ProductInfoLg = () => {
         <div className=" grid grid-cols-2 pb-20">
           <div className="relative">
             <div className="absolute left-3 top-0 -z-50 h-full w-full  border-2 border-red-base"></div>
-            <Img src={ProductImg3} width={550} height={415} alt="sofa" className=" mt-3 h-full w-full  lg:mt-5" />
+            <Img
+              src={ProductImg3}
+              width={550}
+              height={415}
+              alt="sofa"
+              className=" mt-3 h-full w-full object-cover  lg:mt-5"
+            />
             <div className="mr-14 lg:mr-20">
               <p className="mt-5 font-montserrat font-medium md:text-sm lg:text-[15px] 2xl:text-xl">
                 Revolutionize your space with PARÉ&apos;s Easy+ Locking System{' '}
@@ -243,13 +255,13 @@ const ProductInfoLg = () => {
           </div>
           <div className="-z-10 -ml-5 md:-ml-10 lg:-ml-14">
             <div className="ml-32 mr-5 mt-5 flex justify-end font-montserrat font-medium md:text-sm lg:text-base 2xl:text-2xl">
-              <div className="flex gap-2 border-r px-2 pr-4">
-                <p>First time in the World</p>
+              <div className="flex gap-5 border-r px-2 pr-4">
                 <Img src={Globe} alt={'medal'} width={30} height={45} className={'object-contain'} />
+                <p>First time in the World</p>
               </div>
-              <div className="flex gap-2 px-2 pl-4">
-                <p>Usage: Walls and Ceilings</p>
+              <div className="flex gap-5 px-2 pl-4">
                 <Img src={Wall} alt={'wall'} width={50} height={45} className={'object-contain'} />
+                <p>Usage: Walls and Ceilings</p>
               </div>
             </div>
             <div className="ml-6 mt-3 h-[110%] w-full border-2 border-red-base">
@@ -269,10 +281,16 @@ const ProductInfoLg = () => {
           <span className={`font-montserrat text-xs font-bold md:text-xl 2xl:text-3xl`}>03</span>
           <h3 className={`  text-4xl font-bold uppercase lg:text-7xl 2xl:text-8xl`}>dura+</h3>
         </div>
-        <div className=" grid grid-cols-2 pb-20">
+        <div className=" grid grid-cols-2 pb-20 md:pb-40 lg:pb-20">
           <div className="relative">
             <div className="absolute left-3 top-0 -z-50 h-full w-full  border-2 border-red-base"></div>
-            <Img src={ProductImg5} width={550} height={415} alt="sofa" className=" mt-3 h-full w-full  lg:mt-5" />
+            <Img
+              src={ProductImg5}
+              width={550}
+              height={415}
+              alt="sofa"
+              className=" mt-3 h-full w-full object-cover  lg:mt-5"
+            />
             <div className="mr-14 lg:mr-20">
               <p className="mt-5 font-montserrat font-medium md:text-sm lg:text-[15px] 2xl:text-xl">
                 PARÉ DURA+ Systems redefine durability and functionality, offering excellence in{' '}
@@ -286,13 +304,13 @@ const ProductInfoLg = () => {
           </div>
           <div className="-z-10 -ml-5 md:-ml-10 lg:-ml-14">
             <div className="ml-32 mr-5 mt-5 flex justify-end font-montserrat font-medium md:text-sm lg:text-base 2xl:text-2xl">
-              <div className="flex gap-2 border-r px-2 pr-4">
-                <p>10 Years Warranty</p>
+              <div className="flex gap-5 border-r px-2 pr-4">
                 <Img src={Shield} alt={'shield'} width={30} height={45} className={'object-contain'} />
+                <p>10 Years Warranty</p>
               </div>
-              <div className="flex gap-2 px-2 pl-4">
-                <p>Usage: Exterior Surface</p>
+              <div className="flex gap-5 px-2 pl-4">
                 <Img src={Wall} alt={'wall'} width={50} height={45} className={'object-contain'} />
+                <p>Usage: Exterior Surface</p>
               </div>
             </div>
             <div className="ml-6 mt-3 h-[110%] w-full border-2 border-red-base">
@@ -317,7 +335,7 @@ const ProductInfo = () => {
       <div className="md:hidden">
         <ProductInfoSm />
       </div>
-      <div className="hidden lg:block">
+      <div className="hidden md:block">
         <ProductInfoLg />
       </div>
     </div>

@@ -3,8 +3,8 @@ import { Logo } from '../assets'
 import { Img } from './custom'
 import { Link, useLocation } from 'react-router-dom'
 
-const darkNavLinks = ['/about', '/', '/contact', '/career-form', '/product/linea', '/gallery', '/blog', '/resources']
-const darkNavLinksSm = ['/about', '/career-form', '/product/linea', '/resources']
+const darkNavLinks = ['/about', '/', '/contact', '/career-form', '/product/linea', '/application', '/blog', '/faq']
+const darkNavLinksSm = ['/about', '/career-form', '/product/linea', '/application']
 
 const FooterSm = () => {
   const location = useLocation()
@@ -51,10 +51,10 @@ const FooterSm = () => {
 }
 const FooterLg = ({ dark }) => {
   return (
-    <section className={` ${dark ? 'bg-[#151515] text-white' : ''} px-20  md:pt-10 lg:pt-14 2xl:px-40`}>
+    <section className={` ${dark ? 'bg-[#151515] text-white' : ''} md:px-10 md:pt-10  lg:px-20 lg:pt-14 2xl:px-40`}>
       <div className="grid font-montserrat md:grid-cols-10">
         <div
-          className={`col-span-5 flex flex-col justify-between border-[0.01rem] border-opacity-50 p-10 ${
+          className={`col-span-5 flex flex-col justify-between border-[0.01rem] border-opacity-50 md:p-3 lg:p-5 ${
             dark ? 'border-white' : 'border-black-base'
           }`}
         >
@@ -66,7 +66,7 @@ const FooterLg = ({ dark }) => {
         </div>
         <div className="col-span-2 flex flex-col">
           <div
-            className={`flex h-1/2 flex-col border-t-[0.01rem] border-opacity-50 p-10 ${
+            className={`flex h-1/2 flex-col border-t-[0.01rem] border-opacity-50 text-center md:p-3 lg:p-5 ${
               dark ? 'border-white' : 'border-black-base'
             }`}
           >
@@ -83,7 +83,7 @@ const FooterLg = ({ dark }) => {
           <div
             className={`flex h-2/3 w-auto flex-col border-y-[0.01rem] ${
               dark ? 'border-white' : 'border-black-base'
-            } border-opacity-50 p-10`}
+            } border-opacity-50 text-center md:p-3 lg:p-5`}
           >
             <ul>
               <li className="mb-4 font-metropolis  font-medium tracking-wider md:text-2xl lg:text-3xl">SOCIAL</li>
@@ -102,10 +102,10 @@ const FooterLg = ({ dark }) => {
         <div
           className={`col-span-3 flex  flex-col border-[0.01rem] ${
             dark ? 'border-white' : 'border-black-base'
-          } border-opacity-50 p-10`}
+          } border-opacity-50 text-center md:p-3 lg:p-5`}
         >
           <ul>
-            <li className="mb-4 font-metropolis font-medium tracking-wider md:text-2xl lg:text-3xl">MENU</li>
+            <li className="mb-4 font-metropolis font-medium tracking-wider md:text-xl lg:text-3xl">MENU</li>
             <Link to={'/'}>
               <li className="mb-3">HOME</li>
             </Link>

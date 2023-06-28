@@ -6,7 +6,7 @@ const images = [InstaImg8, InstaImg2, InstaImg1, InstaImg4, InstaImg7, InstaImg5
 
 const PareIndiaRotatingImgSm = () => {
   return (
-    <section className="relative flex h-[70vh] w-screen flex-col items-center justify-start overflow-hidden">
+    <section className="relative flex h-[33rem] w-screen flex-col items-center justify-start overflow-hidden">
       <div className="absolute left-[50%] top-[37%] -translate-x-[50%] text-center">
         <h1 className="font-metropolis text-4xl font-bold">@pare.india</h1>
         <p className="py-2 text-center font-helvetica text-xs  opacity-60 md:text-base lg:text-lg">
@@ -36,7 +36,7 @@ const PareIndiaRotatingImgLg = () => {
     ref.current.style.transition = ' all 0.4s'
   }
   return (
-    <section className="relative flex h-[50vh] w-screen flex-col items-center justify-center overflow-hidden md:-mt-24 md:h-[170vh]">
+    <section className="relative flex w-screen flex-col items-center justify-center overflow-hidden md:-mt-24 md:h-[60rem]">
       <div className="absolute left-[50%] top-[47%] w-[40%] -translate-x-[50%] text-center">
         <h1 className="font-metropolis text-2xl font-black md:text-4xl lg:text-7xl">@pare.india</h1>
         <p className="py-2 text-center font-helvetica text-sm opacity-60 md:text-base lg:text-lg">
