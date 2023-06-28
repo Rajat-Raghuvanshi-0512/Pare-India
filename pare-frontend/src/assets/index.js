@@ -196,11 +196,18 @@ import NotFoundBg from './images/not-found-bg.webp'
 import NotFoundWebBg from './images/not-found-bg-web.webp'
 
 import BrochureImg from './images/resources/brochure-left.webp'
+import BrochurePhoneImg from './images/resources/brochure-left-mobile.webp'
 import ResourceImg1 from './images/resources/collections/img1.webp'
 import ResourceImg2 from './images/resources/collections/img2.webp'
 import ResourceImg3 from './images/resources/collections/img3.webp'
 import ResourceImg4 from './images/resources/collections/img4.webp'
 import ResourceImg5 from './images/resources/collections/img5.webp'
+
+import ResourcePhoneImg1 from './images/resources/collections/phone/img1.webp'
+import ResourcePhoneImg2 from './images/resources/collections/phone/img2.webp'
+import ResourcePhoneImg3 from './images/resources/collections/phone/img3.webp'
+import ResourcePhoneImg4 from './images/resources/collections/phone/img4.webp'
+import ResourcePhoneImg5 from './images/resources/collections/phone/img5.webp'
 
 export {
   Logo,
@@ -381,4 +388,10 @@ export {
   ResourceImg3,
   ResourceImg4,
   ResourceImg5,
+  BrochurePhoneImg,
+  ResourcePhoneImg1,
+  ResourcePhoneImg2,
+  ResourcePhoneImg3,
+  ResourcePhoneImg4,
+  ResourcePhoneImg5,
 }
