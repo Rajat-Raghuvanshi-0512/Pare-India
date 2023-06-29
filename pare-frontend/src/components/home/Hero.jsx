@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import { Helmet } from 'react-helmet'
+import { useImagePreloader } from '../../utils/custom-hooks'
 
 const HeroSm = ({ counter }) => {
   const navigate = useNavigate()
@@ -242,7 +243,9 @@ const HeroLg = ({ counter }) => {
 }
 
 const Hero = () => {
+  const images = [HeroBg, HeroBg1, HeroBg2, HeroBgMobile, HeroBgMobile1, HeroBgMobile2]
   const [counter, setCounter] = useState(0)
+  const { loading } = useImagePreloader(images)
 
   const handleNext = () => {
     if (counter !== 2) {
@@ -257,6 +260,7 @@ const Hero = () => {
     }, 3000)
     return () => clearInterval(interval)
   })
+  if (loading) return 'loading'
   return (
     <div>
       <Helmet>

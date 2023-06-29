@@ -1,7 +1,10 @@
 import { LampDesk } from '../../assets'
+import { useImagePreloader } from '../../utils/custom-hooks'
 import Img from '../custom/Img'
 
 const ContactInfo = () => {
+  const { loading } = useImagePreloader([LampDesk])
+  if (loading) return 'loading'
   return (
     <section className="mt-3">
       <div className="flex items-end gap-5 text-right">

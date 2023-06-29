@@ -3,9 +3,13 @@ import { Chair1000, Chair400, Chair700 } from '../../assets'
 import { Img } from '../custom'
 import { useInView } from 'framer-motion'
 import CountUp from 'react-countup'
+import { useImagePreloader } from '../../utils/custom-hooks'
 const AboutUs = () => {
   const numbersRef = useRef(null)
+  const { loading } = useImagePreloader([Chair1000, Chair400, Chair700])
   const numbersInView = useInView(numbersRef)
+
+  if (loading) return 'Loading...'
   return (
     <div className="md:p-10">
       <h2 className="my-10 mb-5 font-montserrat text-4xl font-bold uppercase md:mb-5 md:mt-0 md:text-3xl lg:text-4xl">
@@ -83,39 +87,6 @@ const AboutUs = () => {
             doorstep.
           </div>
         </div>
-        {/* <div className="flex justify-between gap-5"> <div className="flex justify-between gap-5">
-          <div className="flex-[0.5] text-lg font-bold uppercase text-red-base md:text-2xl lg:text-3xl">
-            Pan-India Presence{' '}
-          </div>
-          <div className="flex-[1.5] text-right text-xs md:text-left md:text-lg lg:text-xl">
-            Unlocking Possibilities, Nationwide! We are proud to announce our Pan-India Presence, a testament to our
-            commitment in serving you better, no matter where you are in this vast and diverse nation. With our
-            extensive network spanning across every corner of India, we bring our products and services right to your
-            doorstep.
-          </div>
-        </div>
-          <div className="flex-[0.5] text-lg font-bold uppercase text-red-base md:text-2xl lg:text-3xl">Quality</div>
-          <div className="flex-[1.5] text-right text-xs md:text-left md:text-lg lg:text-xl">
-            At PARÉ Innovations, we believe in delivering the highest quality interior goods that stand the test of
-            time. Our team works collaboratively to create products that not only look great but also exceed
-            expectations.
-          </div>
-        </div>
-        <div className="flex justify-between gap-5">
-          <div className="flex-[0.5] text-lg font-bold uppercase text-red-base md:text-2xl lg:text-3xl">
-            Human Centered
-          </div>
-          <div className="flex-[1.5] text-right text-xs md:text-left md:text-lg lg:text-xl">
-            Our customers are at the heart of everything we do at PARÉ Innovations.
-          </div>
-        </div>
-        <div className="flex justify-between gap-5">
-          <div className="flex-[0.5] text-lg font-bold uppercase text-red-base md:text-2xl lg:text-3xl">Integrity</div>
-          <div className="flex-[1.5] text-right text-xs md:text-left md:text-lg lg:text-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-          </div>
-        </div> */}
       </div>
     </div>
   )

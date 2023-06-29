@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { useCallback, useState } from 'react'
+import { preloadImage } from './helper'
 
 export const useModal = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -94,3 +95,38 @@ const useLocalStorage = (key, defaultValue) => {
 }
 
 export default useLocalStorage
+
+export function useImagePreloader(imageList) {
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    let isCancelled = false
+
+    async function effect() {
+      if (isCancelled) {
+        return
+      }
+
+      const imagesPromiseList = []
+      for (const i of imageList) {
+        imagesPromiseList.push(preloadImage(i))
+      }
+
+      await Promise.all(imagesPromiseList)
+
+      if (isCancelled) {
+        return
+      }
+
+      setLoading(false)
+    }
+
+    effect()
+
+    return () => {
+      isCancelled = true
+    }
+  }, [imageList])
+
+  return { loading }
+}
