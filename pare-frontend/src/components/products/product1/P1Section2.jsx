@@ -1,8 +1,80 @@
 import { useNavigate } from 'react-router-dom'
 import { Product1Img1, Product1Img11, Product1Img2, Product1Img21, Product1Img3, Product1Img31 } from '../../../assets'
 import { Button, Img } from '../../custom'
+import { useEffect, useState } from 'react'
+
+const productImgs = [Product1Img1, Product1Img2, Product1Img3]
+const productShades = [Product1Img11, Product1Img21, Product1Img31]
 
 const P1Section2 = () => {
+  const [counter, setCounter] = useState(0)
+
+  const handleNext = () => {
+    if (counter !== 2) {
+      setCounter(counter + 1)
+    } else {
+      setCounter(0)
+    }
+  }
+  useEffect(() => {
+    let interval = setInterval(() => {
+      handleNext()
+    }, 2500)
+    return () => clearInterval(interval)
+  })
+
+  // startImageTransition()
+
+  // function startImageTransition() {
+  //   var images = document.getElementsByClassName('test')
+
+  //   for (var i = 0; i < images.length; ++i) {
+  //     images[i].style.opacity = 1
+  //   }
+
+  //   var top = 1
+
+  //   var cur = images.length - 1
+
+  //   setInterval(changeImage, 3000)
+
+  //   async function changeImage() {
+  //     // Stores index of next image
+  //     var nextImage = (1 + cur) % images.length
+  //     images[cur].style.zIndex = top + 1
+  //     images[nextImage].style.zIndex = top
+
+  //     await transition()
+
+  //     images[cur].style.zIndex = top
+
+  //     images[nextImage].style.zIndex = top + 1
+
+  //     top = top + 1
+
+  //     images[cur].style.opacity = 1
+
+  //     // Set cur to nextImage
+  //     cur = nextImage
+  //   }
+
+  //   function transition() {
+  //     return new Promise(function (resolve, reject) {
+  //       var del = 0.01
+
+  //       var id = setInterval(changeOpacity, 10)
+
+  //       function changeOpacity() {
+  //         images[cur].style.opacity -= del
+  //         if (images[cur].style.opacity <= 0) {
+  //           clearInterval(id)
+  //           resolve()
+  //         }
+  //       }
+  //     })
+  //   }
+  // }
+
   const navigate = useNavigate()
   return (
     <section className="p-5 md:px-10 lg:px-20 2xl:px-40">
@@ -27,12 +99,12 @@ const P1Section2 = () => {
         </div>
         <div className="relative">
           <div className="before:absolute before:-top-5 before:left-5 before:-z-10 before:h-[50%] before:w-[80%] before:border-[3px] before:border-red-base lg:before:h-full">
-            <Img src={Product1Img1} alt={'pr1'} className={'relative w-[80%] object-contain'} />
+            <Img src={productImgs[counter]} alt={'pr1'} className={' relative w-[80%] object-contain'} />
           </div>
           <div className="relative">
             <div className="before:absolute before:-right-4 before:bottom-24 before:-z-20 before:h-[200px] before:w-[150px] before:border-[3px] before:border-red-base md:before:-bottom-16 md:before:h-[333px] md:before:w-[268px]"></div>
             <Img
-              src={Product1Img11}
+              src={productShades[counter]}
               alt={'pr1.1'}
               className={'absolute bottom-20 right-0 h-[200px] w-[150px] md:-bottom-20 md:h-[333px] md:w-[268px]'}
             />
@@ -60,12 +132,12 @@ const P1Section2 = () => {
         </div>
         <div className="relative">
           <div className="before:absolute  before:-top-5 before:left-5 before:-z-10 before:h-[50%] before:w-[80%] before:border-[3px] before:border-red-base lg:before:h-full">
-            <Img src={Product1Img2} alt={'pr2'} className={'relative w-[80%] object-contain'} />
+            <Img src={productImgs[counter]} alt={'pr2'} className={'relative w-[80%] object-contain'} />
           </div>
           <div className="relative">
             <div className="before:absolute before:-right-4 before:bottom-24 before:-z-20 before:h-[200px] before:w-[150px] before:border-[3px] before:border-red-base md:before:-bottom-16 md:before:h-[333px] md:before:w-[268px]"></div>
             <Img
-              src={Product1Img21}
+              src={productShades[counter]}
               alt={'pr2.1'}
               className={'absolute bottom-20 right-0 h-[200px] w-[150px] md:-bottom-20 md:h-[333px] md:w-[268px]'}
             />
@@ -93,12 +165,12 @@ const P1Section2 = () => {
         </div>
         <div className="relative">
           <div className="before:absolute  before:-top-5 before:left-5 before:-z-10 before:h-[50%] before:w-[80%] before:border-[3px] before:border-red-base lg:before:h-full">
-            <Img src={Product1Img3} alt={'pr3'} className={'relative w-[80%] object-contain'} />
+            <Img src={productImgs[counter]} alt={'pr3'} className={'relative w-[80%] object-contain'} />
           </div>
           <div className="relative">
             <div className="before:absolute before:-right-4 before:bottom-24 before:-z-20 before:h-[200px] before:w-[150px] before:border-[3px] before:border-red-base md:before:-bottom-16 md:before:h-[333px] md:before:w-[268px]"></div>
             <Img
-              src={Product1Img31}
+              src={productShades[counter]}
               alt={'pr3.1'}
               className={'absolute bottom-20 right-0 h-[200px] w-[150px] md:-bottom-20 md:h-[333px] md:w-[268px]'}
             />
