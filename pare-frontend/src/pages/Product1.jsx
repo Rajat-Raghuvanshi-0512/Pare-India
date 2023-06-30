@@ -4,7 +4,7 @@ import Loader from '../components/Loader'
 
 const Product1 = () => {
   return (
-    <Suspense fallback={Loader}>
+    <Suspense fallback={<Loader />}>
       <Product1Banner />
       <P1Section1 />
       <P1Section2 />

@@ -4,7 +4,7 @@ import Loader from '../components/Loader'
 
 const Products = () => {
   return (
-    <Suspense fallback={Loader}>
+    <Suspense fallback={<Loader />}>
       <IntroSection />
       <ProductInfo />
     </Suspense>

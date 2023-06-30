@@ -1,8 +1,10 @@
+import { Suspense } from 'react'
+import Loader from '../Loader'
 import { Brochure, ImgGallery, Info, LineaBanner, MoreProducts, Shades, Trims } from '../components/products'
 
 const Linea = () => {
   return (
-    <div>
+    <Suspense fallback={<Loader />}>
       <LineaBanner />
       <ImgGallery />
       <Info />
@@ -10,7 +12,7 @@ const Linea = () => {
       <Trims />
       <Brochure />
       <MoreProducts />
-    </div>
+    </Suspense>
   )
 }
 

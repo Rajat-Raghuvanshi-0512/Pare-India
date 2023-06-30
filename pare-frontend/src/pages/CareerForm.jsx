@@ -5,7 +5,7 @@ import Loader from '../components/Loader'
 
 const CareerForm = () => {
   return (
-    <Suspense fallback={Loader}>
+    <Suspense fallback={<Loader />}>
       <Banner />
       <Form />
       <LastSection
