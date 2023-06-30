@@ -1,5 +1,5 @@
-import { HeroBg, HeroBg1, HeroBg2, HeroBgMobile, HeroBgMobile1, HeroBgMobile2, InnovText } from '../../assets'
-import { Button, Img } from '../custom'
+import { HeroBg, HeroBg1, HeroBg2, HeroBgMobile, HeroBgMobile1, HeroBgMobile2 } from '../../assets'
+import { Button } from '../custom'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
@@ -109,14 +109,24 @@ const HeroMd = () => {
         alt="bg-hero"
       />
       <div className="flex h-screen flex-col items-start justify-center gap-5 px-20">
-        <Img src={InnovText} width={'350'} height={'100'} alt="hero-text" />
+        <motion.div
+          whileInView={{
+            opacity: [0, 1],
+            y: [-100, 0],
+          }}
+          transition={{ duration: 1 }}
+          className="font-metropolis font-bold text-white drop-shadow md:text-5xl"
+        >
+          <span className="text-red-base">Finest</span> Designs
+        </motion.div>
         <motion.p
           whileInView={{
             opacity: [0, 1],
           }}
-          className="font-metropolis text-4xl font-bold tracking-widest text-white"
+          transition={{ duration: 1 }}
+          className="font-metropolis text-3xl font-bold tracking-widest text-white"
         >
-          Global Innovators
+          Enhance Spaces
         </motion.p>
         <Button className={'!px-8'} onClick={() => navigate('/contact')}>
           BUILD WITH US

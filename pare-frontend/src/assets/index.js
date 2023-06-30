@@ -23,7 +23,6 @@ import HeroBgMobile2 from './images/home/home-hero-bg-mob2.webp'
 import HeroBg from './images/home/hero-bg.webp'
 import HeroBg1 from './images/home/hero-bg1.webp'
 import HeroBg2 from './images/home/hero-bg2.webp'
-import InnovText from './images/home/innov.webp'
 import sofa from './images/home/sofa.webp'
 import sofa1000 from './images/home/sofa-1000.webp'
 import desk from './images/home/desk.webp'
@@ -224,7 +223,6 @@ export {
   HeroBg,
   HeroBg1,
   HeroBg2,
-  InnovText,
   BurgerMenuBlack,
   ChatIcon,
   sofa,
