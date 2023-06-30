@@ -1,11 +1,12 @@
-import { Chair1000, Chair400, Chair700 } from '../assets'
+import { Chair1000, Chair700 } from '../assets'
 import { LastSection } from '../components'
 import Loader from '../components/Loader'
 import { AboutUs, Vision } from '../components/about'
-import { useImagePreloader } from '../utils/custom-hooks'
+import { useImagePreloader, useMediaQuery } from '../utils/custom-hooks'
 
 const About = () => {
-  const { loading } = useImagePreloader([Chair1000, Chair400, Chair700])
+  const isMobile = useMediaQuery('(max-width: 768px)')
+  const { loading } = useImagePreloader(isMobile ? [Chair700] : [Chair1000])
   if (loading) return <Loader />
   return (
     <main>
