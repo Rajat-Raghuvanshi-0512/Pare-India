@@ -40,7 +40,7 @@ const FooterSm = () => {
       </p>
       <div>
         <div className=" w-20 rounded-full bg-white px-2 py-1">
-          <Img src={Logo} alt="logo" width={60}></Img>
+          <Img src={Logo} alt="logo" width={60} height={24.27} className={'object-contain'}></Img>
         </div>
         <div className="pt-3 text-[10px]">COOKIE POLICY</div>
         <div className="py-1 text-[10px]">PRIVACY POLICY</div>
@@ -72,12 +72,12 @@ const FooterLg = ({ dark }) => {
           >
             <ul>
               <li className="mb-4 font-metropolis  font-medium tracking-wider md:text-2xl lg:text-3xl">LEGAL</li>
-              <Link to={'/'}>
-                <li className="mb-2">COOKIE POLICY</li>
-              </Link>
-              <Link to={'/'}>
-                <li>PRIVACY POLICY</li>
-              </Link>
+              <li className="mb-2">
+                <Link to={'/'}>COOKIE POLICY</Link>
+              </li>
+              <li>
+                <Link to={'/'}>PRIVACY POLICY</Link>
+              </li>
             </ul>
           </div>
           <div
@@ -87,15 +87,25 @@ const FooterLg = ({ dark }) => {
           >
             <ul>
               <li className="mb-4 font-metropolis  font-medium tracking-wider md:text-2xl lg:text-3xl">SOCIAL</li>
-              <Link to={'https://www.instagram.com/pareindia/'} target="_blank">
-                <li className="mb-2">INSTAGRAM</li>
-              </Link>
-              <Link to={'https://www.facebook.com/Pareinnov.'} target="_blank">
-                <li className="mb-2">FACEBOOK</li>
-              </Link>
-              <Link to={'https://www.linkedin.com/company/pareindia/'} target="_blank">
-                <li>LINKEDIN</li>
-              </Link>
+              <li className="mb-2">
+                <Link to={'https://www.instagram.com/pareindia/'} target="_blank" className="hover:text-red-base">
+                  INSTAGRAM
+                </Link>
+              </li>
+              <li className="mb-2">
+                <Link to={'https://www.facebook.com/Pareinnov.'} target="_blank" className="hover:text-red-base">
+                  FACEBOOK
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to={'https://www.linkedin.com/company/pareindia/'}
+                  target="_blank"
+                  className="hover:text-red-base"
+                >
+                  LINKEDIN
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -106,30 +116,46 @@ const FooterLg = ({ dark }) => {
         >
           <ul>
             <li className="mb-4 font-metropolis font-medium tracking-wider md:text-xl lg:text-3xl">MENU</li>
-            <Link to={'/'}>
-              <li className="mb-3">HOME</li>
-            </Link>
-            <Link to={'/about'}>
-              <li className="mb-3">ABOUT</li>
-            </Link>
-            <Link to={'/products'}>
-              <li className="mb-3">PRODUCTS</li>
-            </Link>
-            <Link to={'/gallery'}>
-              <li className="mb-3">GALLERY</li>
-            </Link>
-            <Link to={'/blog'}>
-              <li className="mb-3">BLOG</li>
-            </Link>
-            <Link to={'/resources'}>
-              <li className="mb-3">RESOURCES</li>
-            </Link>
-            <Link to={'/careers'}>
-              <li className="mb-3">CAREERS</li>
-            </Link>
-            <Link to={'/contact'}>
-              <li className="mb-3">CONTACTS</li>
-            </Link>
+            <li className="mb-3">
+              <Link to={'/'} className="hover:text-red-base">
+                HOME
+              </Link>
+            </li>
+            <li className="mb-3">
+              <Link to={'/about'} className="hover:text-red-base">
+                ABOUT
+              </Link>
+            </li>
+            <li className="mb-3">
+              <Link to={'/products'} className="hover:text-red-base">
+                PRODUCTS
+              </Link>
+            </li>
+            <li className="mb-3">
+              <Link to={'/gallery'} className="hover:text-red-base">
+                GALLERY
+              </Link>
+            </li>
+            <li className="mb-3">
+              <Link to={'/blog'} className="hover:text-red-base">
+                BLOG
+              </Link>
+            </li>
+            <li className="mb-3">
+              <Link to={'/resources'} className="hover:text-red-base">
+                RESOURCES
+              </Link>
+            </li>
+            <li className="mb-3">
+              <Link to={'/careers'} className="hover:text-red-base">
+                CAREERS
+              </Link>
+            </li>
+            <li className="mb-3">
+              <Link to={'/contact'} className="hover:text-red-base">
+                CONTACTS
+              </Link>
+            </li>
           </ul>
         </div>
       </div>

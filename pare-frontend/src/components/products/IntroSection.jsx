@@ -17,7 +17,7 @@ const IntroSection = () => {
           width={50}
           height={50}
           className={
-            'absolute left-[50%] top-[500%] -translate-x-[50%] -translate-y-[70%] invert md:top-[50%] md:invert-0'
+            'absolute left-[50%] top-[400%] -translate-x-[50%] -translate-y-[50%] invert md:top-[50%] md:invert-0'
           }
         />
       </div>

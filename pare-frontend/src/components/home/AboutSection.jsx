@@ -24,7 +24,7 @@ const AboutSectionSm = () => {
       <div className="mt-5 grid grid-cols-3 gap-5 lg:mt-14 lg:gap-10">
         <div>
           <div className="h-[130px] w-[100px] border border-red-base">
-            <Img src={desk} width={300} height={400} alt="desk" className="-ml-3 mt-2  h-full  w-full" />
+            <Img src={desk} width={300} height={400} alt="desk" className="-ml-3 mt-2 h-full w-full  object-contain" />
           </div>
         </div>
         <div

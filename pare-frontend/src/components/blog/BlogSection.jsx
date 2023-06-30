@@ -70,7 +70,7 @@ const BlogSection = () => {
           <BlogCard key={item.title} {...item} />
         ))}
       </div>
-      <div className="z-20 mt-5 hidden h-20 items-center justify-between overflow-visible pb-5 md:mt-10 md:flex">
+      <div className="z-20 mt-5 hidden h-20 items-center justify-between overflow-auto pb-5 md:mt-10 md:flex">
         <div className="project-btn flex cursor-pointer items-center duration-200 hover:scale-125">
           <div className="h-14 w-14 translate-x-[50%] rounded-full border"></div>
           <Img src={PrevArrowProject} alt={'prev'} width={80} height={80} className={' object-contain '} />

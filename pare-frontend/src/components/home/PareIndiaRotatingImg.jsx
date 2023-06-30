@@ -15,7 +15,7 @@ const PareIndiaRotatingImgSm = () => {
       </div>
       <div className="circle-container z-30 flex h-[100vh] flex-col items-center justify-center">
         {images.map((im, idx) => {
-          return <Img src={im} key={im + idx} id="instafeed" />
+          return <Img src={im} key={im + idx} id="instafeed" alt={'Instaphotos'} />
         })}
       </div>
     </section>

@@ -35,7 +35,7 @@ const Element = ({ image, heading, descMobile, desc }) => {
       <div className="h-24 w-24 rounded-full border border-white p-5 md:border-2 md:p-4">
         <img src={image} alt="quality" className="h-full w-full object-contain" />
       </div>
-      <h6 className="text-xl font-semibold uppercase md:font-normal">{heading}</h6>
+      <h3 className="text-xl font-semibold uppercase md:font-normal">{heading}</h3>
       <p className="text-center text-xs font-light">{isMobile ? descMobile : desc}</p>
     </div>
   )
