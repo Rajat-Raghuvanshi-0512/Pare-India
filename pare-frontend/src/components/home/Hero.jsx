@@ -1,4 +1,23 @@
-import { HeroBg, HeroBg1, HeroBg2, HeroBgMobile, HeroBgMobile1, HeroBgMobile2 } from '../../assets'
+import {
+  HeroBg,
+  HeroBg1,
+  HeroBg1_1200,
+  HeroBg1_800,
+  HeroBg2,
+  HeroBg2_1200,
+  HeroBg2_800,
+  HeroBgMobile,
+  HeroBgMobile1,
+  HeroBgMobile1_400,
+  HeroBgMobile1_800,
+  HeroBgMobile2,
+  HeroBgMobile2_400,
+  HeroBgMobile2_800,
+  HeroBgMobile_400,
+  HeroBgMobile_800,
+  HeroBg_1200,
+  HeroBg_800,
+} from '../../assets'
 import { Button } from '../custom'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
@@ -10,7 +29,12 @@ const HeroSm = ({ counter }) => {
     <>
       <section className={counter !== 0 ? 'hidden' : ''}>
         <div className="absolute -z-10 h-[100vh] w-full bg-gradient-to-r from-[#151515] to-transparent opacity-70"></div>
-        <img src={HeroBgMobile} alt="bg-mobile" className={'absolute -z-20 h-screen w-full object-cover object-top'} />
+        <img
+          src={HeroBgMobile}
+          srcSet={`${HeroBgMobile_400} 400w,${HeroBgMobile_800} 700w ,${HeroBgMobile} 1000w`}
+          alt="bg-mobile"
+          className={'absolute -z-20 h-screen w-full object-cover object-top'}
+        />
         <div className="flex h-screen flex-col items-start justify-center gap-8 px-5">
           <motion.div
             whileInView={{
@@ -38,7 +62,12 @@ const HeroSm = ({ counter }) => {
       </section>
       <section className={counter !== 1 ? 'hidden' : ''}>
         <div className="absolute -z-10 h-[100vh] w-full bg-gradient-to-r from-[#151515] to-transparent opacity-70"></div>
-        <img src={HeroBgMobile1} alt="bg-mobile" className={'absolute -z-20 h-screen w-full object-cover object-top'} />
+        <img
+          src={HeroBgMobile1}
+          alt="bg-mobile"
+          srcSet={`${HeroBgMobile1_400} 400w,${HeroBgMobile1_800} 700w ,${HeroBgMobile1} 1000w`}
+          className={'absolute -z-20 h-screen w-full object-cover object-top'}
+        />
         <div className="flex h-screen flex-col items-start justify-center gap-8 px-5">
           <motion.div
             whileInView={{
@@ -66,7 +95,12 @@ const HeroSm = ({ counter }) => {
       </section>
       <section className={counter !== 2 ? 'hidden' : ''}>
         <div className="absolute -z-10 h-[100vh] w-full bg-gradient-to-r from-[#151515] to-transparent opacity-70"></div>
-        <img src={HeroBgMobile2} alt="bg-mobile" className={'absolute -z-20 h-screen w-full object-cover object-top'} />
+        <img
+          src={HeroBgMobile2}
+          srcSet={`${HeroBgMobile2_400} 400w,${HeroBgMobile2_800} 700w ,${HeroBgMobile2} 1000w`}
+          alt="bg-mobile"
+          className={'absolute -z-20 h-screen w-full object-cover object-top'}
+        />
         <div className="flex h-screen flex-col items-start justify-center gap-8 px-5">
           <motion.div
             whileInView={{
@@ -103,6 +137,7 @@ const HeroMd = () => {
       <img
         src={HeroBg}
         width={'1900'}
+        srcSet={`${HeroBg_800} 800w,${HeroBg_1200} 1200w ,${HeroBg} 1400w`}
         height={'100'}
         className={'absolute -z-20 h-screen w-full object-cover object-top'}
         alt="bg-hero"
@@ -144,6 +179,7 @@ const HeroLg = ({ counter }) => {
           <img
             src={HeroBg}
             width={'1900'}
+            srcSet={`${HeroBg_800} 800w,${HeroBg_1200} 1200w ,${HeroBg} 1400w`}
             height={'100'}
             className={'absolute -z-20  h-screen w-full object-cover object-bottom'}
             alt="hero-bg"
@@ -180,6 +216,7 @@ const HeroLg = ({ counter }) => {
           <img
             src={HeroBg1}
             width={'1900'}
+            srcSet={`${HeroBg1_800} 800w,${HeroBg1_1200} 1200w ,${HeroBg1} 1400w`}
             height={'100'}
             className={'absolute -z-20  h-screen w-full object-cover object-bottom'}
             alt="hero-bg"
@@ -217,6 +254,7 @@ const HeroLg = ({ counter }) => {
             src={HeroBg2}
             width={'1900'}
             height={'100'}
+            srcSet={`${HeroBg2_800} 800w,${HeroBg2_1200} 1200w ,${HeroBg2} 1400w`}
             className={'absolute -z-20  h-screen w-full object-cover object-bottom'}
             alt="hero-bg"
           />

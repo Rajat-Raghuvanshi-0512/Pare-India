@@ -18,11 +18,23 @@ import LongDownArrow from './images/long-down-arrow.webp'
 
 import Logo from './images/home/logo.webp'
 import HeroBgMobile from './images/home/home-hero-bg-mob.webp'
+import HeroBgMobile_400 from './images/home/home-hero-bg-mob-400.webp'
+import HeroBgMobile_800 from './images/home/home-hero-bg-mob-800.webp'
 import HeroBgMobile1 from './images/home/home-hero-bg-mob1.webp'
+import HeroBgMobile1_400 from './images/home/home-hero-bg-mob1-400.webp'
+import HeroBgMobile1_800 from './images/home/home-hero-bg-mob1-800.webp'
 import HeroBgMobile2 from './images/home/home-hero-bg-mob2.webp'
+import HeroBgMobile2_400 from './images/home/home-hero-bg-mob2-400.webp'
+import HeroBgMobile2_800 from './images/home/home-hero-bg-mob2-800.webp'
 import HeroBg from './images/home/hero-bg.webp'
+import HeroBg_800 from './images/home/hero-bg_800.webp'
+import HeroBg_1200 from './images/home/hero-bg_1200.webp'
 import HeroBg1 from './images/home/hero-bg1.webp'
+import HeroBg1_800 from './images/home/hero-bg1_800.webp'
+import HeroBg1_1200 from './images/home/hero-bg1_1200.webp'
 import HeroBg2 from './images/home/hero-bg2.webp'
+import HeroBg2_800 from './images/home/hero-bg2_800.webp'
+import HeroBg2_1200 from './images/home/hero-bg2_1200.webp'
 import sofa from './images/home/sofa.webp'
 import sofa1000 from './images/home/sofa-1000.webp'
 import desk from './images/home/desk.webp'
@@ -211,8 +223,14 @@ import ResourcePhoneImg5 from './images/resources/collections/phone/img5.webp'
 export {
   Logo,
   HeroBgMobile,
+  HeroBgMobile1_400,
+  HeroBgMobile1_800,
   HeroBgMobile1,
+  HeroBgMobile2_400,
+  HeroBgMobile2_800,
   HeroBgMobile2,
+  HeroBgMobile_400,
+  HeroBgMobile_800,
   BurgerMenu,
   CircularDownArrow,
   LongDownArrow,
@@ -221,8 +239,14 @@ export {
   RightArrow,
   RightArrowMobile,
   HeroBg,
+  HeroBg_800,
+  HeroBg_1200,
   HeroBg1,
+  HeroBg1_1200,
+  HeroBg1_800,
   HeroBg2,
+  HeroBg2_1200,
+  HeroBg2_800,
   BurgerMenuBlack,
   ChatIcon,
   sofa,
