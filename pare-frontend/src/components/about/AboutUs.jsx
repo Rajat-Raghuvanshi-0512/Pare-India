@@ -3,13 +3,10 @@ import { Chair1000, Chair400, Chair700 } from '../../assets'
 import { Img } from '../custom'
 import { useInView } from 'framer-motion'
 import CountUp from 'react-countup'
-import { useImagePreloader } from '../../utils/custom-hooks'
 const AboutUs = () => {
   const numbersRef = useRef(null)
-  const { loading } = useImagePreloader([Chair1000, Chair400, Chair700])
   const numbersInView = useInView(numbersRef)
 
-  if (loading) return 'Loading...'
   return (
     <div className="md:p-10">
       <h2 className="my-10 mb-5 font-montserrat text-4xl font-bold uppercase md:mb-5 md:mt-0 md:text-3xl lg:text-4xl">

@@ -1,4 +1,5 @@
-import ResourceSection1 from './ResourceSection1'
-import ResourcesSection2 from './ResourcesSection2'
+import { lazy } from 'react'
+const ResourceSection1 = lazy(() => import('./ResourceSection1'))
+const ResourcesSection2 = lazy(() => import('./ResourcesSection2'))
 
 export { ResourceSection1, ResourcesSection2 }
