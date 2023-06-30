@@ -14,7 +14,7 @@ import {
 } from './pages'
 import { ContactFloatBtn, Footer, Navbar } from './components'
 import { useEffect, useMemo, useState } from 'react'
-import Blobity from 'blobity'
+import useBlobity from 'blobity/lib/react/useBlobity'
 import Loader from './Loader'
 import Blog from './pages/Blog'
 import { HeroBg, HeroBg1, HeroBg2, HeroBgMobile, HeroBgMobile1, HeroBgMobile2 } from './assets'
@@ -30,19 +30,20 @@ const App = () => {
       zIndex: 500,
       opacity: 0.1,
       licenseKey: 'jsmastery',
-      focusableElements: '',
+      focusableElements: 'none',
       size: 30,
       dotSize: 6,
     }),
     [],
   )
+  useBlobity(options)
   const imagesWeb = [HeroBg, HeroBg1, HeroBg2]
   const imagesMobile = [HeroBgMobile, HeroBgMobile1, HeroBgMobile2]
   const isMobile = useMediaQuery('(max-width: 768px)')
   const { loading } = useImagePreloader(isMobile ? imagesMobile : imagesWeb)
-  useEffect(() => {
-    new Blobity(options)
-  }, [options])
+  // useEffect(() => {
+  //   new Blobity(options)
+  // }, [options])
 
   useEffect(() => {
     scrollTo(0, 0)

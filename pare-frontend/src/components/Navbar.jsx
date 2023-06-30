@@ -70,7 +70,7 @@ const NavSm = ({ isScrolled, hide }) => {
             </div>
             <ul className="flex w-full flex-col items-end justify-center gap-12 text-white">
               {navLinks.map((link) => (
-                <li key={link.path}>
+                <li key={link.text}>
                   <Link to={link.path} className="font-montserrat text-3xl uppercase" onClick={closeModal}>
                     {link.text}
                   </Link>
@@ -105,7 +105,7 @@ const NavMd = ({ isScrolled, hide }) => {
           <ul className="flex items-center justify-center gap-3">
             {navLinks.map((link) => (
               <li
-                key={link.path}
+                key={link.text}
                 className={`group relative p-2 duration-200 ${link?.dropdown && 'hover:bg-[#EBEBEB]'} `}
               >
                 <Link to={link.path} className="font-montserrat text-sm uppercase hover:text-red-base">
@@ -154,7 +154,7 @@ const NavLg = ({ isScrolled, hide }) => {
           <ul className="flex items-center justify-center gap-8">
             {navLinks.map((link) => (
               <li
-                key={link.path}
+                key={link.text}
                 className={`group relative p-2 duration-200  ${link?.dropdown && 'hover:bg-[#EBEBEB]'} `}
               >
                 <Link to={link.path} className="font-montserrat text-xl uppercase hover:text-red-base">
