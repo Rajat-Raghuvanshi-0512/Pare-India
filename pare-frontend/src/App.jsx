@@ -56,7 +56,7 @@ const App = () => {
 
   return (
     <>
-      {(percent !== 100 || loading) && <Loader percent={percent} />}
+      {(percent < 100 || loading) && <Loader percent={percent} />}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

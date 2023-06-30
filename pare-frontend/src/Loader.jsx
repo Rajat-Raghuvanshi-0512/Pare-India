@@ -2,14 +2,14 @@ import { Line } from 'rc-progress'
 import { useEffect } from 'react'
 const Loader = ({ percent }) => {
   useEffect(() => {
-    if (percent < 100) {
+    if (percent < 99) {
       document.body.style.overflowY = 'hidden'
     } else {
       document.body.style.overflowY = 'auto'
     }
   }, [percent])
   return (
-    <div className="fixed z-[1000] flex h-screen w-screen flex-col justify-between overflow-hidden bg-white">
+    <div className={`fixed z-[1000] flex h-screen w-screen flex-col justify-between bg-white`}>
       <div className="p-5 pt-20 text-center font-montserrat text-5xl font-semibold uppercase text-red-base md:p-10 md:text-start lg:px-20">
         LOADING
       </div>
