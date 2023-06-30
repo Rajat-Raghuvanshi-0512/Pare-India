@@ -49,14 +49,14 @@ const App = () => {
   }, [pathname])
 
   useEffect(() => {
-    if (percent <= 100) {
+    if (percent < 100) {
       setTimeout(() => setPercent((prev) => prev + 1), 10)
     }
   }, [percent])
 
   return (
     <>
-      {(percent <= 100 || loading) && <Loader percent={percent} />}
+      {(percent !== 100 || loading) && <Loader percent={percent} />}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
