@@ -24,7 +24,7 @@ const AboutSectionSm = () => {
       <div className="mt-5 grid grid-cols-3 gap-5 lg:mt-14 lg:gap-10">
         <div>
           <div className="h-[130px] w-[100px] border border-red-base">
-            <Img src={desk} width={300} height={400} alt="desk" className="-ml-3 mt-2 h-full w-full  object-contain" />
+            <Img src={desk} width={265} height={327} alt="desk" className="-ml-3 mt-2 h-full w-full  object-contain" />
           </div>
         </div>
         <div
@@ -118,7 +118,7 @@ const AboutSectionLg = () => {
                   width={300}
                   height={400}
                   alt="desk"
-                  className="-ml-2 mt-2  h-full  w-full lg:-ml-3 lg:mt-3"
+                  className="-ml-2 mt-2  h-full w-full  object-contain lg:-ml-3 lg:mt-3"
                 />
               </div>
             </div>

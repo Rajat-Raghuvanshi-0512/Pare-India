@@ -128,8 +128,8 @@ const AboutSectionLg = () => {
               <div className="ml-auto h-[150px] w-[120px] border-2 border-red-base lg:h-[300px] lg:w-[250px]">
                 <Img
                   src={desk}
-                  width={246}
-                  height={296}
+                  width={265}
+                  height={327}
                   alt="desk"
                   className="-ml-2 mt-2  h-full w-full  object-contain lg:-ml-3 lg:mt-3"
                 />
