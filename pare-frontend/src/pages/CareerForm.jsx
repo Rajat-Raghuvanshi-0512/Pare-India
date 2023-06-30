@@ -1,9 +1,11 @@
+import { Suspense } from 'react'
 import { LastSection } from '../components'
 import { Form, Banner } from '../components/career'
+import Loader from '../components/Loader'
 
 const CareerForm = () => {
   return (
-    <>
+    <Suspense fallback={Loader}>
       <Banner />
       <Form />
       <LastSection
@@ -13,7 +15,7 @@ const CareerForm = () => {
         btnRoute={'mailto:hello@pareindia.com'}
         showOnMobile={true}
       />
-    </>
+    </Suspense>
   )
 }
 

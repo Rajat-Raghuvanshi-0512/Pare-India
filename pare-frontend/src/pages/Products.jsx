@@ -1,11 +1,13 @@
+import { Suspense } from 'react'
 import { IntroSection, ProductInfo } from '../components/products'
+import Loader from '../components/Loader'
 
 const Products = () => {
   return (
-    <div>
+    <Suspense fallback={Loader}>
       <IntroSection />
       <ProductInfo />
-    </div>
+    </Suspense>
   )
 }
 

@@ -106,11 +106,9 @@ const NavMd = ({ isScrolled, hide }) => {
             {navLinks.map((link) => (
               <li
                 key={link.path}
-                className={`group relative p-2 duration-200 hover:text-red-base ${
-                  link?.dropdown && 'hover:bg-[#EBEBEB]'
-                } `}
+                className={`group relative p-2 duration-200 ${link?.dropdown && 'hover:bg-[#EBEBEB]'} `}
               >
-                <Link to={link.path} className="font-montserrat text-sm uppercase">
+                <Link to={link.path} className="font-montserrat text-sm uppercase hover:text-red-base">
                   {link.text}
                 </Link>
                 <div
@@ -157,11 +155,9 @@ const NavLg = ({ isScrolled, hide }) => {
             {navLinks.map((link) => (
               <li
                 key={link.path}
-                className={`group relative p-2 duration-200 hover:text-red-base ${
-                  link?.dropdown && 'hover:bg-[#EBEBEB]'
-                } `}
+                className={`group relative p-2 duration-200  ${link?.dropdown && 'hover:bg-[#EBEBEB]'} `}
               >
-                <Link to={link.path} className="font-montserrat text-xl uppercase">
+                <Link to={link.path} className="font-montserrat text-xl uppercase hover:text-red-base">
                   {link.text}
                 </Link>
                 <div
