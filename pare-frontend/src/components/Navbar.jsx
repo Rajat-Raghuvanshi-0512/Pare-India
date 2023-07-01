@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom'
-import { BurgerMenu, BurgerMenuBlack, CloseIcon, FbIcon, InstaIcon, LinkedInIcon, Logo } from '../assets'
+import { BackButton, BurgerMenu, BurgerMenuBlack, CloseIcon, FbIcon, InstaIcon, LinkedInIcon, Logo } from '../assets'
 import { Drawer, Img } from './custom'
 import { useModal } from '../utils/custom-hooks'
 import { useMotionValueEvent, useScroll } from 'framer-motion'
@@ -25,21 +25,22 @@ const navLinks = [
     path: '/gallery',
   },
   {
-    text: 'resources',
-    dropdown: ['faq', 'blog', 'application'],
-  },
-  {
     text: 'contact us',
     path: '/contact',
+  },
+  {
+    text: 'resources',
+    dropdown: ['faq', 'blog', 'application'],
   },
 ]
 
 const NavSm = ({ isScrolled, hide }) => {
   const { isOpen, closeModal, openModal } = useModal()
+  const [resourcesOpen, setResourcesOpen] = useState(false)
   const location = useLocation()
   return (
     <nav
-      className={`fixed left-0 top-0 z-40 w-full ${
+      className={`fixed left-0 top-0 z-[100] w-full ${
         isScrolled || greNavRoutes.includes(location.pathname) ? 'bg-[#EBEBEB]' : 'text-white'
       } ${hide ? '-translate-y-[100%]' : 'translate-y-0'} duration-300 `}
     >
@@ -64,18 +65,41 @@ const NavSm = ({ isScrolled, hide }) => {
           />
         </div>
         <Drawer isOpen={isOpen}>
-          <div className="flex h-screen flex-col justify-between">
+          <div className=" flex h-screen flex-col justify-between gap-14">
             <div className="pt-5">
-              <img src={CloseIcon} alt="close" className="ml-auto h-10 w-10" onClick={closeModal} />
+              <img
+                src={resourcesOpen ? BackButton : CloseIcon}
+                alt="close"
+                className="ml-auto h-10 w-10"
+                onClick={resourcesOpen ? () => setResourcesOpen(false) : closeModal}
+              />
             </div>
-            <ul className="flex w-full flex-col items-end justify-center gap-12 text-white">
-              {navLinks.map((link) => (
-                <li key={link.text}>
-                  <Link to={link.path} className="font-montserrat text-3xl uppercase" onClick={closeModal}>
-                    {link.text}
-                  </Link>
-                </li>
-              ))}
+            <ul className={`mt-auto flex w-full flex-col items-end justify-end gap-12 text-white`}>
+              {navLinks.map((link) => {
+                if (resourcesOpen && link.text !== 'resources') return null
+                return (
+                  <li key={link.text}>
+                    {resourcesOpen && (
+                      <div className="flex flex-col items-end gap-12 pb-10">
+                        {link?.dropdown?.map((item) => (
+                          <div key={item}>
+                            <Link to={`/${item}`} className="font-montserrat text-3xl uppercase" onClick={closeModal}>
+                              {item}
+                            </Link>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                    <Link
+                      to={link.path}
+                      className="ml-10 w-full text-right font-montserrat text-3xl uppercase"
+                      onClick={link.text === 'resources' ? () => setResourcesOpen(true) : closeModal}
+                    >
+                      {link.text}
+                    </Link>
+                  </li>
+                )
+              })}
             </ul>
             <div className="mb-5 flex items-end justify-end gap-2">
               <img src={InstaIcon} alt="insta" className="h-8 w-8 object-contain" />

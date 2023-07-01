@@ -15,6 +15,7 @@ import PlayIcon from './images/play-icon.webp'
 import CloseIcon from './images/close.webp'
 import CircularDownArrow from './images/circular-down-arrow.webp'
 import LongDownArrow from './images/long-down-arrow.webp'
+import BackButton from './images/back-button.webp'
 
 import Logo from './images/home/logo.webp'
 import HeroBgMobile from './images/home/home-hero-bg-mob.webp'
@@ -416,4 +417,5 @@ export {
   ResourcePhoneImg3,
   ResourcePhoneImg4,
   ResourcePhoneImg5,
+  BackButton,
 }
