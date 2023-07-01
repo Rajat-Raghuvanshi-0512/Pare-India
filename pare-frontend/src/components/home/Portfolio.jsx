@@ -19,6 +19,11 @@ import {
   PortfolioImg9,
 } from '../../assets'
 import { Img } from '../custom'
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+// Import Swiper styles
+import 'swiper/css/bundle'
+import 'swiper/css'
 
 const slider1 = [
   PortfolioImg1,
@@ -55,17 +60,33 @@ const PortfolioSm = () => {
           to life.
         </div>
       </div>
-      <div className="z-10 -mb-32 -mt-16 w-[143%] origin-left scale-[70%] overflow-hidden">
-        <div className="portfolio-slider relative flex items-end gap-6 overflow-x-scroll">
+      <div className="] z-10 -mb-10 w-[143%] origin-left overflow-hidden">
+        <Swiper
+          spaceBetween={30}
+          slidesPerView={'auto'}
+          loop={true}
+          className="portfolio-slider relative flex items-end gap-6 overflow-x-scroll"
+          allowTouchMove={true}
+        >
           {slider1.map((slide, idx) => (
-            <img src={slide} alt="slide" key={slide + idx} className="object-contain object-bottom " />
+            <SwiperSlide key={slide + idx}>
+              <img src={slide} alt="slide" className="object-contain object-bottom " />
+            </SwiperSlide>
           ))}
-        </div>
-        <div className="portfolio-slider-1 relative my-5 flex items-start gap-6 overflow-x-scroll">
+        </Swiper>
+        <Swiper
+          spaceBetween={30}
+          slidesPerView={'auto'}
+          loop={true}
+          allowTouchMove={true}
+          className="portfolio-slider-1 relative my-6 flex items-end gap-6 overflow-x-scroll"
+        >
           {slider2.map((slide, idx) => (
-            <img src={slide} alt="slide" key={slide + idx} className="object-contain object-top" />
+            <SwiperSlide key={slide + idx}>
+              <img src={slide} alt="slide" className="object-contain object-bottom " />
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </div>
     </section>
   )
