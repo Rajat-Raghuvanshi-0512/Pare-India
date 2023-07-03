@@ -109,7 +109,7 @@ const NavSm = ({ isScrolled }) => {
                 onClick={resourcesOpen ? () => setResourcesOpen(false) : closeModal}
               />
             </div>
-            <ul className={`mt-auto flex w-full flex-col items-end justify-end gap-8 text-white`}>
+            <ul className={`flex w-full flex-col items-end justify-center gap-8 text-white`}>
               {navLinksSm.map((link) => {
                 if (resourcesOpen && link.text !== 'resources') return null
                 return (
