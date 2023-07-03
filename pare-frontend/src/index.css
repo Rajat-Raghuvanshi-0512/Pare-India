@@ -447,7 +447,7 @@ input[type='number'] {
     min-width: 178px !important;
     max-width: 280px !important;
     min-height: 205px !important;
-    max-height: 300px !important;
+    max-height: 250px !important;
   }
   .portfolio-slider .swiper-slide,
   .portfolio-slider-1 .swiper-slide {
