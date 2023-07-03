@@ -60,7 +60,7 @@ const PortfolioSm = () => {
           to life.
         </div>
       </div>
-      <div className="] z-10 -mb-10 origin-left overflow-hidden">
+      <div className="z-10 -mb-10 origin-left overflow-hidden">
         <Swiper
           spaceBetween={30}
           slidesPerView={'auto'}

@@ -1,4 +1,9 @@
 const Drawer = ({ isOpen, children }) => {
+  if (isOpen) {
+    document.body.style.overflow = 'hidden'
+  } else {
+    document.body.style.overflow = 'auto'
+  }
   return (
     <div
       className={`${
@@ -7,11 +12,10 @@ const Drawer = ({ isOpen, children }) => {
     >
       <div className={`fixed w-full `}>
         <div className="relative ml-auto h-full w-[75%]">
-          <div className="h-full w-full bg-red-base px-5 text-white shadow">{children}</div>
+          <div className="bg-red-base px-5 text-white shadow">{children}</div>
         </div>
       </div>
     </div>
-    // "bg-transform"
   )
 }
 

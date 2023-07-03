@@ -25,6 +25,41 @@ const navLinks = [
     path: '/gallery',
   },
   {
+    text: 'resources',
+    dropdown: ['faq', 'blog', 'application'],
+  },
+  {
+    text: 'contact us',
+    path: '/contact',
+  },
+]
+
+const navLinksSm = [
+  {
+    text: 'home',
+    path: '/',
+  },
+  {
+    text: 'about',
+    path: '/about',
+  },
+  {
+    text: 'products',
+    path: '/products',
+  },
+  {
+    text: 'gallery',
+    path: '/gallery',
+  },
+  {
+    text: 'blog',
+    path: '/blog',
+  },
+  {
+    text: 'careers',
+    path: '/careers',
+  },
+  {
     text: 'contact us',
     path: '/contact',
   },
@@ -34,7 +69,7 @@ const navLinks = [
   },
 ]
 
-const NavSm = ({ isScrolled, hide }) => {
+const NavSm = ({ isScrolled }) => {
   const { isOpen, closeModal, openModal } = useModal()
   const [resourcesOpen, setResourcesOpen] = useState(false)
   const location = useLocation()
@@ -42,7 +77,7 @@ const NavSm = ({ isScrolled, hide }) => {
     <nav
       className={`fixed left-0 top-0 z-[100] w-full ${
         isScrolled || greNavRoutes.includes(location.pathname) ? 'bg-[#EBEBEB]' : 'text-white'
-      } ${hide ? '-translate-y-[100%]' : 'translate-y-0'} duration-300 `}
+      } duration-300 `}
     >
       <div className="mx-4 flex items-center justify-between">
         <div className="flex items-end">
@@ -65,7 +100,7 @@ const NavSm = ({ isScrolled, hide }) => {
           />
         </div>
         <Drawer isOpen={isOpen}>
-          <div className=" flex h-screen flex-col justify-between gap-14">
+          <div className="flex h-screen flex-col justify-between gap-10 overflow-hidden">
             <div className="pt-5">
               <img
                 src={resourcesOpen ? BackButton : CloseIcon}
@@ -74,8 +109,8 @@ const NavSm = ({ isScrolled, hide }) => {
                 onClick={resourcesOpen ? () => setResourcesOpen(false) : closeModal}
               />
             </div>
-            <ul className={`mt-auto flex w-full flex-col items-end justify-end gap-12 text-white`}>
-              {navLinks.map((link) => {
+            <ul className={`mt-auto flex w-full flex-col items-end justify-end gap-8 text-white`}>
+              {navLinksSm.map((link) => {
                 if (resourcesOpen && link.text !== 'resources') return null
                 return (
                   <li key={link.text}>
