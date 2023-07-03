@@ -32,6 +32,12 @@
 }
 
 @font-face {
+  font-family: 'Metropolis';
+  src: url('./assets/fonts/metropolis/Metropolis-Black.otf') format('opentype');
+  font-weight: 900;
+}
+
+@font-face {
   font-family: 'Helvetica';
   src: url('./assets/fonts/helvetica-neue/HelveticaNeue-Thin.otf') format('opentype');
   font-weight: 300;

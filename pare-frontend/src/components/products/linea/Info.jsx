@@ -25,7 +25,7 @@ const Info = () => {
         className={'absolute left-0 top-0 -z-10 -mt-5 h-full w-screen object-cover'}
       />
       <div>
-        <h2 className="font-metropolis text-3xl font-bold !leading-snug md:text-center md:text-4xl lg:text-5xl">
+        <h2 className="font-metropolis text-4xl font-black !leading-snug md:text-center md:text-4xl lg:text-5xl">
           STAYS WITH YOU <br /> THROUGH THICK AND THIN
         </h2>
         <div className="mt-10 grid gap-10 md:grid-cols-3">
