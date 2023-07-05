@@ -221,6 +221,29 @@ import ResourcePhoneImg3 from './images/resources/collections/phone/img3.webp'
 import ResourcePhoneImg4 from './images/resources/collections/phone/img4.webp'
 import ResourcePhoneImg5 from './images/resources/collections/phone/img5.webp'
 
+import GalleryBanner from './images/gallery/banner.webp'
+import GalleryPhoneBanner from './images/gallery/banner-phone.webp'
+import BottomRightArrow from './images/gallery/arrow.webp'
+import VerticalImg1 from './images/gallery/vertical1.webp'
+import HorizontalImg1 from './images/gallery/horizontal1.webp'
+import SmallImg1 from './images/gallery/small1.webp'
+import SmallImg2 from './images/gallery/small2.webp'
+import BigImg1 from './images/gallery/big1.webp'
+import VerticalImg2 from './images/gallery/vertical2.webp'
+import HorizontalImg2 from './images/gallery/horizontal2.webp'
+import SmallImg3 from './images/gallery/small3.webp'
+import SmallImg4 from './images/gallery/small4.webp'
+import BigImg2 from './images/gallery/big2.webp'
+import VerticalImg3 from './images/gallery/vertical3.webp'
+import HorizontalImg3 from './images/gallery/horizontal3.webp'
+import SmallImg5 from './images/gallery/small5.webp'
+import SmallImg6 from './images/gallery/small6.webp'
+import BigImg3 from './images/gallery/big3.webp'
+import VerticalImg4 from './images/gallery/vertical4.webp'
+import HorizontalImg4 from './images/gallery/horizontal4.webp'
+import SmallImg7 from './images/gallery/small7.webp'
+import SmallImg8 from './images/gallery/small8.webp'
+
 export {
   Logo,
   HeroBgMobile,
@@ -418,4 +441,26 @@ export {
   ResourcePhoneImg4,
   ResourcePhoneImg5,
   BackButton,
+  GalleryBanner,
+  GalleryPhoneBanner,
+  BottomRightArrow,
+  BigImg1,
+  HorizontalImg1,
+  SmallImg1,
+  SmallImg2,
+  VerticalImg1,
+  BigImg2,
+  HorizontalImg2,
+  SmallImg3,
+  SmallImg4,
+  VerticalImg2,
+  BigImg3,
+  HorizontalImg3,
+  SmallImg5,
+  SmallImg6,
+  VerticalImg3,
+  HorizontalImg4,
+  SmallImg7,
+  SmallImg8,
+  VerticalImg4,
 }

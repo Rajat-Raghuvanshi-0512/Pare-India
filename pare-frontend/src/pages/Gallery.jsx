@@ -1,13 +1,11 @@
-import { Suspense } from 'react'
-import { AboutUsSection, FAQSection1 } from '../components/FAQ'
-import Loader from '../components/Loader'
+import { GalleryMain, GallerySection } from '../components/gallery'
 
 const Gallery = () => {
   return (
-    <Suspense fallback={<Loader />}>
-      <FAQSection1 />
-      <AboutUsSection />
-    </Suspense>
+    <>
+      <GalleryMain />
+      <GallerySection />
+    </>
   )
 }
 

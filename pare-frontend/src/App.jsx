@@ -8,9 +8,10 @@ import {
   CareerForm,
   Product1,
   Linea,
-  Gallery,
+  FAQ,
   NotFound,
   Resources,
+  Gallery,
 } from './pages'
 import { ContactFloatBtn, Footer, Navbar } from './components'
 import { useEffect, useMemo, useState } from 'react'
@@ -68,7 +69,8 @@ const App = () => {
         <Route path="/career-form" element={<CareerForm />} />
         <Route path="/product/1" element={<Product1 />} />
         <Route path="/product/linea" element={<Linea />} />
-        <Route path="/faq" element={<Gallery />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/faq" element={<FAQ />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/application" element={<Resources />} />
 

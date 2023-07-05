@@ -9,7 +9,7 @@ const Product1Banner = () => {
       <Img
         src={isMobile ? Product1BannerPhoneImg : Product1BannerImg}
         alt={'banner'}
-        className={'absolute -z-10 h-[400px] w-screen object-cover object-bottom'}
+        className={'absolute -z-10 h-[400px] w-full object-cover object-bottom'}
       />
       <div className="absolute -bottom-3 w-full p-5 md:bottom-20 md:px-10 lg:bottom-16 lg:px-20">
         <h6 className="font-montserrat text-xl text-white lg:text-lg">PARE INDIA BRINGS TO YOU</h6>

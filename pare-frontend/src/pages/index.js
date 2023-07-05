@@ -8,7 +8,8 @@ import Careers from './Careers'
 import CareerForm from './CareerForm'
 import Product1 from './Product1'
 import Linea from './Linea'
-import Gallery from './Gallery'
+import FAQ from './FAQ'
 import Resources from './Resources'
+import Gallery from './Gallery'
 
-export { Home, About, Contact, Products, Careers, CareerForm, Product1, Linea, Gallery, NotFound, Resources }
+export { Home, About, Contact, Products, Careers, CareerForm, Product1, Linea, FAQ, NotFound, Resources, Gallery }
