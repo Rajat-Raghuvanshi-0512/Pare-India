@@ -19,7 +19,7 @@ const data = [
 const CareerSection2 = () => {
   return (
     <section className="p-5 md:p-10 lg:px-20">
-      <h2 className=" font-montserrat font-bold md:text-4xl lg:text-5xl">Why Pare?</h2>
+      <h2 className=" font-montserrat text-3xl font-bold md:text-4xl lg:text-5xl">Why Pare?</h2>
       <div className="mt-5 grid grid-cols-1 gap-10 md:mt-10 md:grid-cols-3 lg:mt-16">
         {data.map((item, idx) => (
           <div className="flex gap-5 md:flex-col" key={item.text}>
@@ -33,7 +33,7 @@ const CareerSection2 = () => {
               />
             </div>
             <div className="flex-1">
-              <p className="font-montserrat leading-4 md:font-medium md:leading-5 lg:leading-6">{item.text}</p>
+              <p className="font-montserrat leading-5 md:font-medium lg:leading-6">{item.text}</p>
             </div>
           </div>
         ))}

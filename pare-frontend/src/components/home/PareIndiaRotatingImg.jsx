@@ -1,10 +1,11 @@
-import { useRef } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { InstaImg1, InstaImg2, InstaImg3, InstaImg4, InstaImg5, InstaImg6, InstaImg7, InstaImg8 } from '../../assets'
 import { Img } from '../custom'
+import axios from 'axios'
 
 const images = [InstaImg8, InstaImg2, InstaImg1, InstaImg4, InstaImg7, InstaImg5, InstaImg6, InstaImg3]
 
-const PareIndiaRotatingImgSm = () => {
+const PareIndiaRotatingImgSm = ({ images }) => {
   return (
     <section className="relative flex h-[33rem] w-screen flex-col items-center justify-start overflow-hidden">
       <div className="absolute left-[50%] top-[37%] -translate-x-[50%] text-center">
@@ -14,14 +15,14 @@ const PareIndiaRotatingImgSm = () => {
         </p>
       </div>
       <div className="circle-container z-30 flex h-[100vh] flex-col items-center justify-center">
-        {images.map((im, idx) => {
+        {images?.slice(0, 8)?.map((im, idx) => {
           return <Img src={im} key={im + idx} id="instafeed" alt={'Instaphotos'} />
         })}
       </div>
     </section>
   )
 }
-const PareIndiaRotatingImgLg = () => {
+const PareIndiaRotatingImgLg = ({ images }) => {
   const ref = useRef()
 
   const getScrollOffset = (e) => {
@@ -48,7 +49,7 @@ const PareIndiaRotatingImgLg = () => {
         ref={ref}
         onMouseMove={getScrollOffset}
       >
-        {images.map((im, idx) => {
+        {images?.slice(0, 8)?.map((im, idx) => {
           return <Img src={im} key={im + idx} id="instafeed" alt={'Instaphotos'} />
         })}
       </div>
@@ -57,13 +58,33 @@ const PareIndiaRotatingImgLg = () => {
 }
 
 const PareIndiaRotatingImg = () => {
+  // const access_token = import.meta.env.VITE_INSTA_API_KEY
+
+  // const [images, setImages] = useState([])
+
+  // const getPosts = useCallback(async () => {
+  //   const { data } = await axios.get(`https://graph.instagram.com/me/media?access_token=${access_token}`)
+  //   const finalData = data.data
+  //   for (let i = 0; i < 13; i++) {
+  //     const postId = finalData[i]
+  //     const { data } = await axios.get(
+  //       `https://graph.instagram.com/${postId.id}?access_token=${access_token}&fields=media_url,permalink,media_type`,
+  //     )
+  //     if (data.media_type == 'IMAGE') {
+  //       setImages((prev) => [...prev, data])
+  //     }
+  //   }
+  // }, [access_token])
+  // useEffect(() => {
+  //   getPosts()
+  // }, [])
   return (
     <div>
       <div className="md:hidden">
-        <PareIndiaRotatingImgSm />
+        <PareIndiaRotatingImgSm images={images} />
       </div>
       <div className="hidden md:block">
-        <PareIndiaRotatingImgLg />
+        <PareIndiaRotatingImgLg images={images} />
       </div>
     </div>
   )

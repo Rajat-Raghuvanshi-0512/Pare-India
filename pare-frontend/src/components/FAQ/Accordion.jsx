@@ -18,7 +18,7 @@ const Accordion = ({ heading, body }) => {
         </div>
       </div>
       <div
-        className={`border-b border-red-base py-5 font-montserrat text-xs md:border-b-[3px] md:py-10 md:text-base md:font-medium ${
+        className={`border-b border-red-base py-5 font-montserrat text-xs font-medium md:border-b-[3px] md:py-10 md:text-base ${
           !showBody && 'hidden'
         } `}
       >

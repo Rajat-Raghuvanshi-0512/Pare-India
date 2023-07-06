@@ -28,7 +28,7 @@ const ProductInfoSm = () => {
       <div className="pb-10">
         <div>
           <div className={`relative flex items-start gap-1 font-metropolis md:gap-2`}>
-            <span className={`font-montserrat text-xs font-bold md:text-xl 2xl:text-3xl`}>01</span>
+            <span className={`pl-1 font-montserrat text-xs font-bold md:text-xl 2xl:text-3xl`}>01</span>
             <h3 className={`  text-4xl font-bold uppercase lg:text-7xl 2xl:text-8xl`}>innov+</h3>
           </div>
         </div>
@@ -74,7 +74,7 @@ const ProductInfoSm = () => {
       <div className="pb-10">
         <div>
           <div className={`relative flex items-start gap-1 font-metropolis md:gap-2`}>
-            <span className={`font-montserrat text-xs font-bold md:text-xl 2xl:text-3xl`}>02</span>
+            <span className={`pl-1 font-montserrat text-xs font-bold md:text-xl 2xl:text-3xl`}>02</span>
             <h3 className={`  text-4xl font-bold uppercase lg:text-7xl 2xl:text-8xl`}>easy+</h3>
           </div>
         </div>
@@ -120,7 +120,7 @@ const ProductInfoSm = () => {
       <div className="pb-10">
         <div>
           <div className={`relative flex items-start gap-1 font-metropolis md:gap-2`}>
-            <span className={`font-montserrat text-xs font-bold md:text-xl 2xl:text-3xl`}>03</span>
+            <span className={`pl-1 font-montserrat text-xs font-bold md:text-xl 2xl:text-3xl`}>03</span>
             <h3 className={`  text-4xl font-bold uppercase lg:text-7xl 2xl:text-8xl`}>dura+</h3>
           </div>
         </div>
@@ -178,7 +178,7 @@ const ProductInfoLg = () => {
       />
       <div className="p-5  pt-20 md:p-16 lg:p-20 lg:px-28 2xl:px-40">
         <div className={`relative flex items-start gap-1 font-metropolis md:gap-2`}>
-          <span className={`font-montserrat text-xs font-bold md:text-xl 2xl:text-3xl`}>01</span>
+          <span className={`pl-1 font-montserrat text-xs font-bold md:text-xl 2xl:text-3xl`}>01</span>
           <h3 className={`  text-4xl font-bold uppercase lg:text-7xl 2xl:text-8xl`}>innov+</h3>
         </div>
         <div className=" grid grid-cols-2 pb-20">
@@ -228,7 +228,7 @@ const ProductInfoLg = () => {
       </div>
       <div className="p-5  pt-20 md:p-16 md:py-40 lg:p-20 lg:px-28 2xl:px-40 2xl:py-60">
         <div className={`relative flex items-start gap-1 font-metropolis md:gap-2`}>
-          <span className={`font-montserrat text-xs font-bold md:text-xl 2xl:text-3xl`}>02</span>
+          <span className={`pl-1 font-montserrat text-xs font-bold md:text-xl 2xl:text-3xl`}>02</span>
           <h3 className={`  text-4xl font-bold uppercase lg:text-7xl 2xl:text-8xl`}>easy+</h3>
         </div>
         <div className=" grid grid-cols-2 pb-20">
@@ -278,7 +278,7 @@ const ProductInfoLg = () => {
       </div>
       <div className="p-5  pt-20 md:p-16 lg:p-20 lg:px-28 lg:pb-40 2xl:px-40 2xl:pb-60">
         <div className={`relative flex items-start gap-1 font-metropolis md:gap-2`}>
-          <span className={`font-montserrat text-xs font-bold md:text-xl 2xl:text-3xl`}>03</span>
+          <span className={`pl-1 font-montserrat text-xs font-bold md:text-xl 2xl:text-3xl`}>03</span>
           <h3 className={`  text-4xl font-bold uppercase lg:text-7xl 2xl:text-8xl`}>dura+</h3>
         </div>
         <div className=" grid grid-cols-2 pb-20 md:pb-40 lg:pb-20">

@@ -10,7 +10,9 @@ const AboutSectionSm = () => {
   const numbersInView = useInView(numbersRef)
   return (
     <section className="bg-black-base p-5 text-white md:p-10 lg:px-20  ">
-      <h2 className="m-5 font-montserrat text-4xl font-bold">“Contact our team now to achieve your dream space.”</h2>
+      <h2 className="m-5 font-montserrat text-4xl font-bold leading-snug">
+        “Contact our team now to achieve your dream space.”
+      </h2>
       <div className="my-5 flex items-center justify-start md:my-10 lg:my-20">
         <div className="mt-5 flex gap-3">
           <img src={HeadAvatar} alt="arun" width={60} className="mx-auto" />

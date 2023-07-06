@@ -243,6 +243,9 @@ import VerticalImg4 from './images/gallery/vertical4.webp'
 import HorizontalImg4 from './images/gallery/horizontal4.webp'
 import SmallImg7 from './images/gallery/small7.webp'
 import SmallImg8 from './images/gallery/small8.webp'
+import BigPhoneImg1 from './images/gallery/big1-phone.webp'
+import BigPhoneImg2 from './images/gallery/big2-phone.webp'
+import BigPhoneImg3 from './images/gallery/big3-phone.webp'
 
 export {
   Logo,
@@ -463,4 +466,7 @@ export {
   SmallImg7,
   SmallImg8,
   VerticalImg4,
+  BigPhoneImg1,
+  BigPhoneImg2,
+  BigPhoneImg3,
 }

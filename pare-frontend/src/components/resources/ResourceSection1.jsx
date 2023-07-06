@@ -5,11 +5,11 @@ import { Button, Img } from '../custom'
 const ResourceSection1 = () => {
   const isMobile = useMediaQuery('(max-width: 768px)')
   return (
-    <section className="relative p-5 pt-20">
-      <h2 className="mt-10 font-metropolis text-5xl font-bold !leading-snug md:text-center lg:text-8xl 2xl:text-9xl">
+    <section className="relative p-5 pl-0 pt-20">
+      <h2 className="mt-10 pl-5 font-metropolis text-5xl font-bold !leading-snug md:text-center lg:text-8xl 2xl:text-9xl">
         LOOKING <br className="md:hidden" /> FOR <br /> <span className="text-red-base">RESOURCES?</span>
       </h2>
-      <h4 className="py-5 font-montserrat text-sm font-medium text-red-base md:text-center md:text-xl lg:text-2xl">
+      <h4 className="py-5 pl-5 font-montserrat text-sm font-medium text-red-base md:text-center md:text-xl lg:text-2xl">
         WE HAVE GOT YOU COVERED.
       </h4>
       <img src={CircularDownArrow} alt="down" className="mx-auto hidden w-[70px] md:block" />

@@ -6,7 +6,7 @@ import Img from '../custom/Img'
 const CareerSection1 = () => {
   const navigate = useNavigate()
   return (
-    <section className="p-5 pt-14 md:p-10 lg:p-20">
+    <section className="p-5 pt-20 md:p-10 lg:p-20">
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
         <div className="pt-8">
           <p className="font-montserrat text-xs font-semibold lg:text-sm">For creative Individuals</p>
@@ -27,7 +27,9 @@ const CareerSection1 = () => {
             <div className="absolute -top-3 left-3 -z-50 h-full w-full  border-2 border-red-base"></div>
             <Img src={Career1} alt={'career1'} width={550} height={415} className=" mt-3 h-full w-full  lg:mt-5" />
           </div>
-          <Button className={'mt-5 !px-14 md:mt-4 md:hidden lg:mt-6'}>apply now</Button>
+          <Button className={'mt-5 !px-14 md:mt-4 md:hidden lg:mt-6'} onClick={() => navigate('/career-form')}>
+            apply now
+          </Button>
         </div>
       </div>
     </section>

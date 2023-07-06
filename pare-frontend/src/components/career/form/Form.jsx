@@ -1,7 +1,7 @@
 import { Button } from '../../custom'
 
 const CareerForm = () => {
-  const inputStyle = 'w-full rounded-sm bg-[#D9D9D940] p-2 font-montserrat outline-none text-xs mt-1'
+  const inputStyle = 'w-full rounded-sm bg-[#D9D9D940] p-2 font-montserrat outline-none text-sm mt-1'
   const labelStyle = 'block font-montserrat font-semibold'
   return (
     <div className="mx-5 md:mx-10 md:mt-5 lg:mx-20">
