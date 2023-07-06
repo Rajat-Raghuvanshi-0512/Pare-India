@@ -1,11 +1,7 @@
 import {
   HeroBg,
   HeroBg1,
-  HeroBg1_1200,
-  HeroBg1_800,
   HeroBg2,
-  HeroBg2_1200,
-  HeroBg2_800,
   HeroBgMobile,
   HeroBgMobile1,
   HeroBgMobile1_400,
@@ -15,8 +11,6 @@ import {
   HeroBgMobile2_800,
   HeroBgMobile_400,
   HeroBgMobile_800,
-  HeroBg_1200,
-  HeroBg_800,
 } from '../../assets'
 import { Button } from '../custom'
 import { useState, useEffect } from 'react'
@@ -137,7 +131,6 @@ const HeroMd = () => {
       <img
         src={HeroBg}
         width={'1900'}
-        srcSet={`${HeroBg_800} 800w,${HeroBg_1200} 1200w ,${HeroBg} 1400w`}
         height={'100'}
         className={'absolute -z-20 h-screen w-full object-cover object-top'}
         alt="bg-hero"
@@ -179,7 +172,6 @@ const HeroLg = ({ counter }) => {
           <img
             src={HeroBg}
             width={'1900'}
-            srcSet={`${HeroBg_800} 800w,${HeroBg_1200} 1200w ,${HeroBg} 1400w`}
             height={'100'}
             className={'absolute -z-20  h-screen w-full object-cover object-bottom'}
             alt="hero-bg"
@@ -216,7 +208,6 @@ const HeroLg = ({ counter }) => {
           <img
             src={HeroBg1}
             width={'1900'}
-            srcSet={`${HeroBg1_800} 800w,${HeroBg1_1200} 1200w ,${HeroBg1} 1400w`}
             height={'100'}
             className={'absolute -z-20  h-screen w-full object-cover object-bottom'}
             alt="hero-bg"
@@ -254,7 +245,6 @@ const HeroLg = ({ counter }) => {
             src={HeroBg2}
             width={'1900'}
             height={'100'}
-            srcSet={`${HeroBg2_800} 800w,${HeroBg2_1200} 1200w ,${HeroBg2} 1400w`}
             className={'absolute -z-20  h-screen w-full object-cover object-bottom'}
             alt="hero-bg"
           />
