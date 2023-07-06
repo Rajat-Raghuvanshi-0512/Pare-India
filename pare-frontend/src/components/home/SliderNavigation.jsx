@@ -24,7 +24,7 @@ const SliderNavigation = () => {
           onClick={() => swiper.slideNext()}
         />
       </div>
-      <div className="z-20 hidden h-20 items-center justify-between overflow-auto pb-5 md:flex">
+      <div className="z-20 hidden h-20 items-center justify-between py-5 md:flex">
         <div
           className="project-btn flex cursor-pointer items-center duration-200 hover:scale-125"
           onClick={() => swiper.slidePrev()}
