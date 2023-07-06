@@ -14,7 +14,7 @@ const darkNavLinks = [
   '/faq',
   '/gallery',
 ]
-const darkNavLinksSm = ['/about', '/career-form', '/product/linea', '/application']
+const darkNavLinksSm = ['/about', '/career-form', '/product/linea', '/application', '/blog']
 
 const FooterSm = () => {
   const location = useLocation()
