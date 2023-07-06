@@ -79,7 +79,7 @@ const NavSm = ({ isScrolled }) => {
         isScrolled || greNavRoutes.includes(location.pathname) ? 'bg-[#EBEBEB]' : 'text-white'
       } duration-300 `}
     >
-      <div className="mx-4 flex items-center justify-between">
+      <div className="mx-4 flex items-end justify-between">
         <div className="flex items-end">
           <Img src={Logo} width={500} height={400} alt="logo" className="h-16 w-24 object-contain sm:h-20 sm:w-32" />
         </div>
@@ -100,7 +100,7 @@ const NavSm = ({ isScrolled }) => {
           />
         </div>
         <Drawer isOpen={isOpen}>
-          <div className="flex h-screen flex-col justify-between gap-10 overflow-hidden">
+          <div className="flex h-screen flex-col items-end gap-5 overflow-hidden">
             <div className="pt-5">
               <img
                 src={resourcesOpen ? BackButton : CloseIcon}
@@ -109,16 +109,16 @@ const NavSm = ({ isScrolled }) => {
                 onClick={resourcesOpen ? () => setResourcesOpen(false) : closeModal}
               />
             </div>
-            <ul className={`flex w-full flex-col items-end justify-center gap-8 text-white`}>
+            <ul className={` mt-auto flex w-full flex-col items-end justify-end gap-7 text-white`}>
               {navLinksSm.map((link) => {
                 if (resourcesOpen && link.text !== 'resources') return null
                 return (
                   <li key={link.text}>
                     {resourcesOpen && (
-                      <div className="flex flex-col items-end gap-12 pb-10">
+                      <div className="flex flex-col items-end gap-7 pb-10">
                         {link?.dropdown?.map((item) => (
                           <div key={item}>
-                            <Link to={`/${item}`} className="font-montserrat text-3xl uppercase" onClick={closeModal}>
+                            <Link to={`/${item}`} className="font-montserrat text-2xl uppercase" onClick={closeModal}>
                               {item}
                             </Link>
                           </div>
@@ -127,7 +127,7 @@ const NavSm = ({ isScrolled }) => {
                     )}
                     <Link
                       to={link.path}
-                      className="ml-10 w-full text-right font-montserrat text-3xl uppercase"
+                      className="ml-10 w-full text-right font-montserrat text-2xl uppercase"
                       onClick={link.text === 'resources' ? () => setResourcesOpen(true) : closeModal}
                     >
                       {link.text}
@@ -136,7 +136,7 @@ const NavSm = ({ isScrolled }) => {
                 )
               })}
             </ul>
-            <div className="mb-5 flex items-end justify-end gap-2">
+            <div className="flex items-end justify-end gap-2 pb-16 pt-5">
               <img src={InstaIcon} alt="insta" className="h-8 w-8 object-contain" />
               <img src={FbIcon} alt="fb" className="h-8 w-8 object-contain" />
               <img src={LinkedInIcon} alt="Ld" className="h-8 w-8 object-contain" />
