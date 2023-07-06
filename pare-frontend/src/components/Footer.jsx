@@ -68,7 +68,7 @@ const FooterLg = ({ dark }) => {
             dark ? 'border-white' : 'border-black-base'
           }`}
         >
-          <Img src={Logo} alt="logo" width={140} height={140} />
+          <Img src={Logo} alt="logo" width={140} height={140} className={'object-contain'} />
           <div className="w-[80%] text-base font-normal leading-5 tracking-tight">
             Transform your living spaces with PARÉ&apos;s innovative, sustainable, and high-quality products. Let&apos;s
             work together to create a space that reflects your unique style and create unforgettable memories.

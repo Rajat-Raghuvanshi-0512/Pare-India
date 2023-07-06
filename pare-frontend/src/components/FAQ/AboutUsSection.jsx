@@ -27,7 +27,13 @@ const AboutSectionSm = () => {
       </h3>
       <div className="flex">
         <div className="my-5 ml-auto mr-5 h-[200px] w-[220px] border border-red-base">
-          <Img src={sofa} width={200} height={200} alt="sofa" className="-ml-3 mt-3 h-[200px] w-[220px] " />
+          <Img
+            src={sofa}
+            width={200}
+            height={200}
+            alt="sofa"
+            className="-ml-3 mt-3 h-[200px] w-[220px] object-contain "
+          />
         </div>
         <div>
           <p className="mr-2 mt-8 font-helvetica text-xs leading-tight">

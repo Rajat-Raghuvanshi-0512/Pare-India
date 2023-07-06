@@ -43,7 +43,7 @@ const ProductsRange = () => {
           alt="pare"
           width={250}
           height={800}
-          className="absolute -top-10 left-2 -z-10 hidden md:block lg:-top-28"
+          className="absolute -top-10 left-2 -z-10 hidden object-contain md:block lg:-top-28"
         />
         {ProductsData.map((product) => (
           <div key={product.id}>
