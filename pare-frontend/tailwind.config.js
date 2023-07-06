@@ -7,6 +7,9 @@ export default {
         'red-base': '#BE1E2D',
         'black-base': '#151515',
       },
+      height: {
+        screen: '100svh',
+      },
     },
     fontFamily: {
       montserrat: ['Montserrat'],

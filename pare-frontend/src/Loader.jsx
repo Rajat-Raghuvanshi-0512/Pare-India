@@ -14,7 +14,7 @@ const Loader = ({ percent }) => {
         LOADING
       </div>
       <div>
-        <div className="mb-[10vh] md:mb-0">
+        <div className="mb-5 md:mb-0">
           <div className=" px-5 md:px-10 lg:px-20">
             <div className="text-right font-metropolis text-4xl font-medium text-red-base md:text-6xl lg:text-7xl">
               {percent}%

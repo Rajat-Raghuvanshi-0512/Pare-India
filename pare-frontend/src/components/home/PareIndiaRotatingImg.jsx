@@ -14,7 +14,7 @@ const PareIndiaRotatingImgSm = ({ images }) => {
           Follow @pare.india on Instagram to see our latest innovative designs and get inspired for your next project!
         </p>
       </div>
-      <div className="circle-container z-30 flex h-[100vh] flex-col items-center justify-center">
+      <div className="circle-container z-30 flex h-screen flex-col items-center justify-center">
         {images?.slice(0, 8)?.map((im, idx) => {
           return <Img src={im} key={im + idx} id="instafeed" alt={'Instaphotos'} />
         })}
@@ -45,7 +45,7 @@ const PareIndiaRotatingImgLg = ({ images }) => {
         </p>
       </div>
       <div
-        className="circle-container z-30 flex h-[100vh] flex-col items-center justify-center"
+        className="circle-container z-30 flex h-screen flex-col items-center justify-center"
         ref={ref}
         onMouseMove={getScrollOffset}
       >

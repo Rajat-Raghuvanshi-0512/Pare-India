@@ -28,7 +28,7 @@ const HeroSm = ({ counter }) => {
   return (
     <>
       <section className={counter !== 0 ? 'hidden' : ''}>
-        <div className="absolute -z-10 h-[100vh] w-full bg-gradient-to-r from-[#151515] to-transparent opacity-70"></div>
+        <div className="absolute -z-10 h-screen w-full bg-gradient-to-r from-[#151515] to-transparent opacity-70"></div>
         <img
           src={HeroBgMobile}
           srcSet={`${HeroBgMobile_400} 400w,${HeroBgMobile_800} 700w ,${HeroBgMobile} 1000w`}
@@ -61,7 +61,7 @@ const HeroSm = ({ counter }) => {
         </div>
       </section>
       <section className={counter !== 1 ? 'hidden' : ''}>
-        <div className="absolute -z-10 h-[100vh] w-full bg-gradient-to-r from-[#151515] to-transparent opacity-70"></div>
+        <div className="absolute -z-10 h-screen w-full bg-gradient-to-r from-[#151515] to-transparent opacity-70"></div>
         <img
           src={HeroBgMobile1}
           alt="bg-mobile"
@@ -94,7 +94,7 @@ const HeroSm = ({ counter }) => {
         </div>
       </section>
       <section className={counter !== 2 ? 'hidden' : ''}>
-        <div className="absolute -z-10 h-[100vh] w-full bg-gradient-to-r from-[#151515] to-transparent opacity-70"></div>
+        <div className="absolute -z-10 h-screen w-full bg-gradient-to-r from-[#151515] to-transparent opacity-70"></div>
         <img
           src={HeroBgMobile2}
           srcSet={`${HeroBgMobile2_400} 400w,${HeroBgMobile2_800} 700w ,${HeroBgMobile2} 1000w`}
@@ -133,7 +133,7 @@ const HeroMd = () => {
   const navigate = useNavigate()
   return (
     <section>
-      <div className="absolute -z-10 h-[100vh] w-full bg-gradient-to-r from-[#151515] to-transparent opacity-50"></div>
+      <div className="absolute -z-10 h-screen w-full bg-gradient-to-r from-[#151515] to-transparent opacity-50"></div>
       <img
         src={HeroBg}
         width={'1900'}
@@ -175,7 +175,7 @@ const HeroLg = ({ counter }) => {
     <>
       <section className={counter !== 0 ? 'hidden' : ''}>
         <div>
-          <div className="absolute -z-10 h-[100vh] w-full bg-gradient-to-r from-[#151515] to-transparent opacity-50"></div>
+          <div className="absolute -z-10 h-screen w-full bg-gradient-to-r from-[#151515] to-transparent opacity-50"></div>
           <img
             src={HeroBg}
             width={'1900'}
@@ -212,7 +212,7 @@ const HeroLg = ({ counter }) => {
       </section>
       <section className={counter !== 1 ? 'hidden' : 'fade'}>
         <div>
-          <div className="absolute -z-10 h-[100vh] w-full bg-gradient-to-r from-[#151515] to-transparent opacity-20"></div>
+          <div className="absolute -z-10 h-screen w-full bg-gradient-to-r from-[#151515] to-transparent opacity-20"></div>
           <img
             src={HeroBg1}
             width={'1900'}
@@ -249,7 +249,7 @@ const HeroLg = ({ counter }) => {
       </section>
       <section className={counter !== 2 ? 'hidden' : 'fade'}>
         <div>
-          <div className="absolute -z-10 h-[100vh] w-full bg-gradient-to-r from-[#151515] to-transparent opacity-80"></div>
+          <div className="absolute -z-10 h-screen w-full bg-gradient-to-r from-[#151515] to-transparent opacity-80"></div>
           <img
             src={HeroBg2}
             width={'1900'}

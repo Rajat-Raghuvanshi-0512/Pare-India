@@ -28,7 +28,7 @@ import { Button } from '../custom'
 const Collection = ({ verticalImg, horizontalImg, images = [], order = 'normal' }) => {
   return (
     <>
-      <div className="flex h-full w-full gap-5">
+      <div className="flex h-full w-full gap-3 md:gap-5">
         <div className={`flex-[1.3] md:flex-[0.7] ${order != 'normal' && 'order-2'} `}>
           <img src={verticalImg} alt="verticalimg" className="h-full w-full object-cover" />
         </div>
@@ -50,13 +50,13 @@ const Collection = ({ verticalImg, horizontalImg, images = [], order = 'normal' 
           </div>
         </div>
       </div>
-      <img src={horizontalImg} alt="horizontalimg" className=" w-full object-contain pt-5 md:hidden" />
+      <img src={horizontalImg} alt="horizontalimg" className=" w-full object-contain pt-3 md:hidden" />
     </>
   )
 }
 
 const BigImage = ({ imageSrc }) => {
-  return <img src={imageSrc} alt="ima" className="h-full w-full object-cover py-10" />
+  return <img src={imageSrc} alt="ima" className="h-full w-full object-cover py-4 md:py-10" />
 }
 
 const GallerySection = () => {
