@@ -1,7 +1,7 @@
 import { Suspense } from 'react'
 import { LastSection } from '../components'
 import { Form, Banner } from '../components/career'
-import Loader from '../components/Loader'
+import { Loader } from '../components'
 
 const CareerForm = () => {
   return (

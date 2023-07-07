@@ -1,6 +1,6 @@
 import { Suspense } from 'react'
 import { AboutUsSection, FAQSection1 } from '../components/FAQ'
-import Loader from '../components/Loader'
+import { Loader } from '../components'
 
 const Faq = () => {
   return (

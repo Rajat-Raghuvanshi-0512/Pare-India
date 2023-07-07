@@ -1,6 +1,6 @@
 import { Suspense } from 'react'
 import { GalleryMain, GallerySection } from '../components/gallery'
-import Loader from '../components/Loader'
+import { Loader } from '../components'
 
 const Gallery = () => {
   return (

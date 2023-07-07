@@ -1,6 +1,6 @@
 import { Suspense } from 'react'
 import { IntroSection, ProductInfo } from '../components/products'
-import Loader from '../components/Loader'
+import { Loader } from '../components'
 
 const Products = () => {
   return (

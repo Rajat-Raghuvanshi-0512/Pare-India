@@ -1,6 +1,6 @@
 import { Suspense } from 'react'
 import { CareerSection1, CareerSection2, CareerSection3 } from '../components/career'
-import Loader from '../components/Loader'
+import { Loader } from '../components'
 
 const Careers = () => {
   return (

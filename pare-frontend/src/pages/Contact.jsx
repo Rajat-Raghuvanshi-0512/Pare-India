@@ -1,5 +1,5 @@
 import { ContactBg, LampDesk } from '../assets'
-import Loader from '../components/Loader'
+import { Loader } from '../components'
 import { ContactForm, ContactInfo, Map } from '../components/contact'
 import { useImagePreloader } from '../utils/custom-hooks'
 

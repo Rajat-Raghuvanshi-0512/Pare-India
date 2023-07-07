@@ -1,5 +1,5 @@
 import { Suspense } from 'react'
-import Loader from '../components/Loader'
+import { Loader } from '../components'
 import { Brochure, ImgGallery, Info, LineaBanner, MoreProducts, Shades, Trims } from '../components/products'
 
 const Linea = () => {

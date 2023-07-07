@@ -1,7 +1,7 @@
 import { Suspense } from 'react'
-import BlogSection from '../components/blog/BlogSection'
-import Loader from '../components/Loader'
+import { Loader } from '../components'
 import { LastSection } from '../components'
+import { BlogSection } from '../components/blog'
 
 const Blog = () => {
   return (

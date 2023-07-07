@@ -3,7 +3,7 @@ import { NotFoundBg, NotFoundWebBg } from '../assets'
 import { Button } from '../components/custom'
 import { useMediaQuery } from '../utils/custom-hooks'
 import { Suspense } from 'react'
-import Loader from '../components/Loader'
+import { Loader } from '../components'
 
 const NotFound = () => {
   const Navigate = useNavigate()

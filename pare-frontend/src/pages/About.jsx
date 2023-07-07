@@ -1,6 +1,6 @@
 import { Chair1000, Chair700 } from '../assets'
 import { LastSection } from '../components'
-import Loader from '../components/Loader'
+import { Loader } from '../components'
 import { AboutUs, Vision } from '../components/about'
 import { useImagePreloader, useMediaQuery } from '../utils/custom-hooks'
 
