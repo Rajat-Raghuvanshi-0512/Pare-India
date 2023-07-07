@@ -66,14 +66,11 @@ const Projects = () => {
       >
         {projectImages.map((image) => (
           <SwiperSlide className="!flex !items-center !justify-center" key={image.small}>
-            <img
-              src={image.large}
-              alt={'project'}
-              width={300}
-              height={300}
-              className={' md:h-full md:w-full'}
-              srcSet={`${image.small} 500w,${image.large} 700w`}
-            />
+            {largeDevice ? (
+              <img src={image.large} alt={'project'} width={300} height={300} className={' md:h-full md:w-full'} />
+            ) : (
+              <img src={image.small} alt={'project'} width={300} height={300} className={' md:h-full md:w-full'} />
+            )}
           </SwiperSlide>
         ))}
 
