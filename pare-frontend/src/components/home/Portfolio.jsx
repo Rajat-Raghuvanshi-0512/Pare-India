@@ -70,7 +70,7 @@ const PortfolioSm = () => {
         >
           {slider1.map((slide, idx) => (
             <SwiperSlide key={slide + idx}>
-              <img src={slide} alt="slide" className="object-contain object-bottom " />
+              <img src={slide} alt="slide" className="object-contain object-bottom" loading="lazy" />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -83,7 +83,7 @@ const PortfolioSm = () => {
         >
           {slider2.map((slide, idx) => (
             <SwiperSlide key={slide + idx}>
-              <img src={slide} alt="slide" className="object-contain object-bottom " />
+              <img src={slide} alt="slide" className="object-contain object-bottom " loading="lazy" />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -122,7 +122,7 @@ const PortfolioLg = () => {
       <div className="-my-40 h-fit w-[200vw] origin-left overflow-hidden md:m-0 md:w-full md:scale-100">
         <div className="portfolio-slider relative -left-[200vw] flex items-end gap-3 md:gap-10" ref={slider1Ref}>
           {slider1.map((slide, idx) => (
-            <img src={slide} alt="slide" key={slide + idx} className="object-contain object-bottom" />
+            <img src={slide} alt="slide" key={slide + idx} className="object-contain object-bottom" loading="lazy" />
           ))}
         </div>
         <div
@@ -130,7 +130,7 @@ const PortfolioLg = () => {
           ref={slider2Ref}
         >
           {slider2.map((slide, idx) => (
-            <img src={slide} alt="slide" key={slide + idx} className="object-contain object-top" />
+            <img src={slide} alt="slide" key={slide + idx} className="object-contain object-top" loading="lazy" />
           ))}
         </div>
       </div>

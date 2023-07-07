@@ -16,7 +16,7 @@ const PareIndiaRotatingImgSm = ({ images }) => {
       </div>
       <div className="circle-container z-30 flex h-screen flex-col items-center justify-center">
         {images?.slice(0, 8)?.map((im, idx) => {
-          return <Img src={im} key={im + idx} id="instafeed" alt={'Instaphotos'} />
+          return <Img src={im} key={im + idx} id="instafeed" alt={'Instaphotos'} loading="lazy" />
         })}
       </div>
     </section>
@@ -50,7 +50,7 @@ const PareIndiaRotatingImgLg = ({ images }) => {
         onMouseMove={getScrollOffset}
       >
         {images?.slice(0, 8)?.map((im, idx) => {
-          return <Img src={im} key={im + idx} id="instafeed" alt={'Instaphotos'} />
+          return <Img src={im} key={im + idx} id="instafeed" alt={'Instaphotos'} loading="lazy" />
         })}
       </div>
     </section>
