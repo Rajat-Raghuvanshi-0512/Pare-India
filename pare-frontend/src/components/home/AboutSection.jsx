@@ -1,5 +1,5 @@
 import { useRef } from 'react'
-import { desk, sofa, sofa1000 } from '../../assets'
+import { desk, sofa, sofa1000, sofa1200, sofa500 } from '../../assets'
 import { Img } from '../custom'
 import { useInView } from 'framer-motion'
 import CountUp from 'react-countup'
@@ -80,6 +80,7 @@ const AboutSectionLg = () => {
               height={500}
               alt="sofa"
               className="-ml-3 mt-3 h-[300px] w-[300px] object-contain lg:-ml-4  lg:mt-4 lg:h-[500px] lg:w-[500px]"
+              srcSet={`${sofa500}, ${sofa1000}, ${sofa1200}`}
             />
           </div>
         </div>

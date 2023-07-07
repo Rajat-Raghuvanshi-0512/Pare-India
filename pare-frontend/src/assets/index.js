@@ -31,7 +31,9 @@ import HeroBg from './images/home/hero-bg.webp'
 import HeroBg1 from './images/home/hero-bg1.webp'
 import HeroBg2 from './images/home/hero-bg2.webp'
 import sofa from './images/home/sofa.webp'
+import sofa500 from './images/home/sofa-500.webp'
 import sofa1000 from './images/home/sofa-1000.webp'
+import sofa1200 from './images/home/sofa-1200.webp'
 import desk from './images/home/desk.webp'
 import PareText from './images/home/pare-text.webp'
 import NextProjectImg from './images/home/next-project.webp'
@@ -268,6 +270,8 @@ export {
   HeroBg1,
   HeroBg2,
   BurgerMenuBlack,
+  sofa500,
+  sofa1200,
   ChatIcon,
   sofa,
   sofa1000,
