@@ -82,6 +82,11 @@ import Project2Img from './images/home/projects/img2.webp'
 import Project3Img from './images/home/projects/img3.webp'
 import Project4Img from './images/home/projects/img4.webp'
 import Project5Img from './images/home/projects/img5.webp'
+import Project1PhoneImg from './images/home/projects/mobile/img1.webp'
+import Project2PhoneImg from './images/home/projects/mobile/img2.webp'
+import Project3PhoneImg from './images/home/projects/mobile/img3.webp'
+import Project4PhoneImg from './images/home/projects/mobile/img4.webp'
+import Project5PhoneImg from './images/home/projects/mobile/img5.webp'
 import PrevArrow from './images/home/projects/prev.webp'
 import NextArrow from './images/home/projects/next.webp'
 
@@ -304,6 +309,11 @@ export {
   Project3Img,
   Project4Img,
   Project5Img,
+  Project1PhoneImg,
+  Project2PhoneImg,
+  Project3PhoneImg,
+  Project4PhoneImg,
+  Project5PhoneImg,
   PortfolioBg,
   PrevArrow,
   NextArrow,

@@ -1,10 +1,15 @@
 import {
   PlayIcon,
   Project1Img,
+  Project1PhoneImg,
   Project2Img,
+  Project2PhoneImg,
   Project3Img,
+  Project3PhoneImg,
   Project4Img,
+  Project4PhoneImg,
   Project5Img,
+  Project5PhoneImg,
   testVideo2,
   testVideo3,
 } from '../../assets'
@@ -12,7 +17,6 @@ import { Img } from '../custom'
 import ReactPlayer from 'react-player'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-// Import Swiper styles
 import 'swiper/css/bundle'
 import 'swiper/css'
 import { useMediaQuery } from '../../utils/custom-hooks'
@@ -20,7 +24,13 @@ import { useState } from 'react'
 import SliderNavigation from './SliderNavigation'
 import TestimonialSlider from './TestimonialSlider'
 
-const projectImages = [Project1Img, Project2Img, Project3Img, Project4Img, Project5Img]
+const projectImages = [
+  { small: Project1PhoneImg, large: Project1Img },
+  { small: Project2PhoneImg, large: Project2Img },
+  { small: Project3PhoneImg, large: Project3Img },
+  { small: Project4PhoneImg, large: Project4Img },
+  { small: Project5PhoneImg, large: Project5Img },
+]
 
 const Projects = () => {
   const [testState, setTestState] = useState({
@@ -55,8 +65,15 @@ const Projects = () => {
         }}
       >
         {projectImages.map((image) => (
-          <SwiperSlide className="!flex !items-center !justify-center" key={image}>
-            <img src={image} alt={'project'} width={300} height={300} className={' md:h-full md:w-full'} />
+          <SwiperSlide className="!flex !items-center !justify-center" key={image.small}>
+            <img
+              src={image.large}
+              alt={'project'}
+              width={300}
+              height={300}
+              className={' md:h-full md:w-full'}
+              srcSet={`${image.small} 300w,${image.large} 700w`}
+            />
           </SwiperSlide>
         ))}
 

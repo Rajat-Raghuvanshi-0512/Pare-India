@@ -21,7 +21,6 @@ import {
 import { Img } from '../custom'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-// Import Swiper styles
 import 'swiper/css/bundle'
 import 'swiper/css'
 

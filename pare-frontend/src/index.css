@@ -79,7 +79,6 @@ body {
 }
 
 .form-dropdown li:not(.init) {
-  /* display: none; */
   background: rgb(56, 56, 56);
   position: absolute;
   width: 100%;
@@ -101,9 +100,6 @@ body {
 
 .project-btn:hover div {
   background: rgba(255, 255, 255, 0.5);
-  /* width: 70px;
-  height: 70px;
-  transition: all 0.4s; */
 }
 
 img {
@@ -128,29 +124,24 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
 input[type='number'] {
   -moz-appearance: textfield;
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 8px;
   height: 0px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #e0e0e0;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #be1e2d;
   border-radius: 10px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
@@ -185,18 +176,9 @@ input[type='number'] {
   padding: 0;
   list-style: none;
   margin: 5em auto 0;
-  /* animation: rotate 5s linear infinite; */
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
   position: relative;
   transition: all 0.4s;
 }
-/* .circle-container:hover {
-  transform: translate3d(-61.4px, -15.8px, 0px);
-  display: block;
-  left: 0px;
-  top: 0px;
-} */
 .circle-container > img {
   display: block;
   position: absolute;
