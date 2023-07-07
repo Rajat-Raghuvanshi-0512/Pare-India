@@ -1,5 +1,4 @@
 import NotFound from './404'
-
 import Home from './Home'
 import About from './About'
 import Contact from './Contact'
@@ -11,5 +10,6 @@ import Linea from './Linea'
 import FAQ from './FAQ'
 import Resources from './Resources'
 import Gallery from './Gallery'
+import Blog from './Blog'
 
-export { Home, About, Contact, Products, Careers, CareerForm, Product1, Linea, FAQ, NotFound, Resources, Gallery }
+export { Home, About, Contact, Products, Careers, CareerForm, Product1, Linea, FAQ, NotFound, Resources, Gallery, Blog }

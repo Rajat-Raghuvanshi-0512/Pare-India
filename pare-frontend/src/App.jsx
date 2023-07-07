@@ -1,3 +1,4 @@
+import { useEffect, useMemo, useState } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import {
   About,
@@ -12,12 +13,11 @@ import {
   NotFound,
   Resources,
   Gallery,
+  Blog,
 } from './pages'
 import { ContactFloatBtn, Footer, Navbar } from './components'
-import { useEffect, useMemo, useState } from 'react'
 import useBlobity from 'blobity/lib/react/useBlobity'
 import Loader from './Loader'
-import Blog from './pages/Blog'
 import { HeroBg, HeroBg1, HeroBg2, HeroBgMobile, HeroBgMobile1, HeroBgMobile2 } from './assets'
 import { useImagePreloader, useMediaQuery } from './utils/custom-hooks'
 
@@ -38,10 +38,10 @@ const App = () => {
     [],
   )
   useBlobity(options)
-  const imagesWeb = [HeroBg, HeroBg1, HeroBg2]
-  const imagesMobile = [HeroBgMobile, HeroBgMobile1, HeroBgMobile2]
   const isMobile = useMediaQuery('(max-width: 768px)')
-  const { loading } = useImagePreloader(isMobile ? imagesMobile : imagesWeb)
+  const { loading } = useImagePreloader(
+    isMobile ? [HeroBgMobile, HeroBgMobile1, HeroBgMobile2] : [HeroBg, HeroBg1, HeroBg2],
+  )
 
   useEffect(() => {
     scrollTo(0, 0)
