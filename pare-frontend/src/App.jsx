@@ -18,8 +18,6 @@ import {
 import { ContactFloatBtn, Footer, Navbar } from './components'
 import useBlobity from 'blobity/lib/react/useBlobity'
 import Loader from './Loader'
-import { HeroBg, HeroBg1, HeroBg2, HeroBgMobile, HeroBgMobile1, HeroBgMobile2 } from './assets'
-import { useImagePreloader, useMediaQuery } from './utils/custom-hooks'
 
 const App = () => {
   const { pathname } = useLocation()
@@ -38,10 +36,6 @@ const App = () => {
     [],
   )
   useBlobity(options)
-  const isMobile = useMediaQuery('(max-width: 768px)')
-  const { loading } = useImagePreloader(
-    isMobile ? [HeroBgMobile, HeroBgMobile1, HeroBgMobile2] : [HeroBg, HeroBg1, HeroBg2],
-  )
 
   useEffect(() => {
     scrollTo(0, 0)
@@ -55,7 +49,7 @@ const App = () => {
 
   return (
     <>
-      {(percent < 100 || loading == true) && <Loader percent={percent} />}
+      {percent < 100 && <Loader percent={percent} />}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

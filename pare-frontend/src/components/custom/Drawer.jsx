@@ -1,9 +1,13 @@
+import { useEffect } from 'react'
+
 const Drawer = ({ isOpen, children }) => {
-  if (isOpen) {
-    document.body.style.overflow = 'hidden'
-  } else {
-    document.body.style.overflow = 'auto'
-  }
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden'
+    } else {
+      document.body.style.overflow = 'auto'
+    }
+  }, [isOpen])
   return (
     <div
       className={`${

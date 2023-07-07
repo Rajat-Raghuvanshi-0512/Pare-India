@@ -16,6 +16,7 @@ import { Button } from '../custom'
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
+import { useMediaQuery } from '../../utils/custom-hooks'
 
 const HeroSm = ({ counter }) => {
   const navigate = useNavigate()
@@ -280,6 +281,7 @@ const HeroLg = ({ counter }) => {
 
 const Hero = () => {
   const [counter, setCounter] = useState(0)
+  const isLaptop = useMediaQuery('(min-width: 768px)')
 
   const handleNext = () => {
     if (counter !== 2) {
@@ -294,17 +296,21 @@ const Hero = () => {
     }, 3000)
     return () => clearInterval(interval)
   })
+  if (isLaptop) {
+    return (
+      <>
+        <div className="hidden md:block lg:hidden">
+          <HeroMd counter={counter} />
+        </div>
+        <div className="hidden lg:block">
+          <HeroLg counter={counter} />
+        </div>
+      </>
+    )
+  }
   return (
-    <div>
-      <div className="md:hidden">
-        <HeroSm counter={counter} />
-      </div>
-      <div className="hidden md:block lg:hidden">
-        <HeroMd counter={counter} />
-      </div>
-      <div className="hidden lg:block">
-        <HeroLg counter={counter} />
-      </div>
+    <div className="md:hidden">
+      <HeroSm counter={counter} />
     </div>
   )
 }
