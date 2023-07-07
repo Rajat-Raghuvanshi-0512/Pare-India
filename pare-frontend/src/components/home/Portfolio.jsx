@@ -72,6 +72,7 @@ const PortfolioSm = () => {
               <img
                 src={slide}
                 alt="slide"
+                height={280}
                 className="max-h-[250px] min-h-[200px] min-w-[170px] max-w-[280px] object-contain object-bottom"
                 loading="lazy"
               />
@@ -87,7 +88,13 @@ const PortfolioSm = () => {
         >
           {slider2.map((slide, idx) => (
             <SwiperSlide key={slide + idx}>
-              <img src={slide} alt="slide" className="object-contain object-bottom " loading="lazy" />
+              <img
+                src={slide}
+                alt="slide"
+                height={280}
+                className="max-h-[250px] min-h-[200px] min-w-[170px] max-w-[280px] object-contain object-top"
+                loading="lazy"
+              />
             </SwiperSlide>
           ))}
         </Swiper>
