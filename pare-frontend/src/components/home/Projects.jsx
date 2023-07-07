@@ -72,7 +72,7 @@ const Projects = () => {
               width={300}
               height={300}
               className={' md:h-full md:w-full'}
-              srcSet={`${image.small} 300w,${image.large} 700w`}
+              srcSet={`${image.small} 500w,${image.large} 700w`}
             />
           </SwiperSlide>
         ))}
