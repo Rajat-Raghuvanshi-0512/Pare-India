@@ -51,6 +51,16 @@ import P3 from './images/home/products range/p3.webp'
 import P31 from './images/home/products range/p31.webp'
 import P32 from './images/home/products range/p32.webp'
 
+import P1Phone from './images/home/products range/mobile/p1.webp'
+import P12Phone from './images/home/products range/mobile/p11.webp'
+import P13Phone from './images/home/products range/mobile/p12.webp'
+import P2Phone from './images/home/products range/mobile/p2.webp'
+import P21Phone from './images/home/products range/mobile/p21.webp'
+import P22Phone from './images/home/products range/mobile/p22.webp'
+import P3Phone from './images/home/products range/mobile/p3.webp'
+import P31Phone from './images/home/products range/mobile/p31.webp'
+import P32Phone from './images/home/products range/mobile/p32.webp'
+
 import hyundai from './images/home/companies/hyundai.webp'
 import ginger from './images/home/companies/ginger.webp'
 import minerva from './images/home/companies/minerva.webp'
@@ -286,6 +296,15 @@ export {
   P3,
   P31,
   P32,
+  P1Phone,
+  P12Phone,
+  P13Phone,
+  P2Phone,
+  P21Phone,
+  P22Phone,
+  P3Phone,
+  P31Phone,
+  P32Phone,
   PortfolioImg1,
   PortfolioImg2,
   PlayIcon,
