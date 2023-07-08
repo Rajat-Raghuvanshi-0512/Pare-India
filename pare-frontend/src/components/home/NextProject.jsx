@@ -42,17 +42,19 @@ const NextProject = () => {
         <div className="h-[550px] md:h-auto">
           <img
             src={NextProjectImg}
-            alt="img"
+            alt="next"
             width={300}
             height={300}
             className="ml-auto h-full w-[80%] object-cover md:hidden"
+            loading="lazy"
           />
           <img
             src={NextProjectImgWeb}
-            alt="img"
+            alt="next"
             width={500}
             height={600}
             className="ml-auto hidden h-full object-cover md:block md:w-[350px] lg:w-[500px]"
+            loading="lazy"
           />
         </div>
       </div>

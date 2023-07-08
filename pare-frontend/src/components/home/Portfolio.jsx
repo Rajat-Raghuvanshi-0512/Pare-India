@@ -49,7 +49,12 @@ const PortfolioSm = () => {
   return (
     <section className="relative">
       <div className="z-10 mx-3 my-5 grid grid-cols-2 gap-1 md:m-10 lg:m-16 2xl:mx-40">
-        <Img src={PortfolioBg} alt={'bg'} className={'absolute -top-20 left-0 -z-20  h-[120%] w-full object-cover'} />
+        <Img
+          src={PortfolioBg}
+          alt={'bg'}
+          className={'absolute -top-20 left-0 -z-20  h-[120%] w-full object-cover'}
+          loading="lazy"
+        />
         <div className="font-metropolis text-xl uppercase !leading-snug md:text-4xl lg:text-5xl">
           Explore our portfolio and discover some of our <span className="font-bold text-red-base">PAST WORK</span>
         </div>
@@ -120,7 +125,12 @@ const PortfolioLg = () => {
   return (
     <section className="relative">
       <div className="z-10 mx-3 my-5 grid grid-cols-2 gap-4 md:m-10 lg:m-16 2xl:mx-40">
-        <Img src={PortfolioBg} alt={'bg'} className={'absolute -top-20 left-0 -z-20  h-[120%] w-full object-cover'} />
+        <Img
+          src={PortfolioBg}
+          alt={'bg'}
+          className={'absolute -top-20 left-0 -z-20  h-[120%] w-full object-cover'}
+          loading="lazy"
+        />
         <div className="font-metropolis text-lg uppercase !leading-snug md:text-4xl lg:text-5xl">
           Explore our portfolio and discover some of our <span className="font-bold text-red-base">PAST WORK</span>
         </div>

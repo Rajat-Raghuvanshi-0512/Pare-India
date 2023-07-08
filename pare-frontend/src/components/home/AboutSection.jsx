@@ -24,6 +24,7 @@ const AboutSectionSm = () => {
             height={200}
             alt="sofa"
             className="-ml-3 mt-3 h-[240px] w-[260px] object-contain "
+            loading="lazy"
           />
         </div>
       </div>
@@ -81,6 +82,7 @@ const AboutSectionLg = () => {
               alt="sofa"
               className="-ml-3 mt-3 h-[300px] w-[300px] object-contain lg:-ml-4  lg:mt-4 lg:h-[500px] lg:w-[500px]"
               srcSet={`${sofa500}, ${sofa1000}, ${sofa1200}`}
+              loading="lazy"
             />
           </div>
         </div>
@@ -126,6 +128,7 @@ const AboutSectionLg = () => {
                   height={400}
                   alt="desk"
                   className="-ml-2 mt-2  h-full w-full  object-contain lg:-ml-3 lg:mt-3"
+                  loading="lazy"
                 />
               </div>
             </div>

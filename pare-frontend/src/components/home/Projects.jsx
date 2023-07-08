@@ -67,9 +67,23 @@ const Projects = () => {
         {projectImages.map((image) => (
           <SwiperSlide className="!flex !items-center !justify-center" key={image.small}>
             {largeDevice ? (
-              <img src={image.large} alt={'project'} width={300} height={300} className={' md:h-full md:w-full'} />
+              <img
+                src={image.large}
+                alt={'project'}
+                width={300}
+                height={300}
+                className={' md:h-full md:w-full'}
+                loading="lazy"
+              />
             ) : (
-              <img src={image.small} alt={'project'} width={300} height={300} className={' md:h-full md:w-full'} />
+              <img
+                src={image.small}
+                alt={'project'}
+                width={300}
+                height={300}
+                className={' md:h-full md:w-full'}
+                loading="lazy"
+              />
             )}
           </SwiperSlide>
         ))}
@@ -99,7 +113,7 @@ const Projects = () => {
           <SwiperSlide onClick={() => setTestState((prev) => ({ test2: !prev.test2, test1: false, test3: false }))}>
             {testState.test2 === false && (
               <div className="absolute z-10 mx-auto my-5 mr-10 flex h-[200px] w-full items-center justify-center bg-black-base bg-opacity-30 text-white md:left-14 md:my-10 md:h-[400px] md:w-[90%] lg:h-[500px]">
-                <Img src={PlayIcon} alt={'play'} className={'h-14 w-14 md:h-20 md:w-20'} />
+                <Img src={PlayIcon} alt={'play'} className={'h-14 w-14 md:h-20 md:w-20'} loading="lazy" />
               </div>
             )}
             <ReactPlayer
@@ -114,7 +128,7 @@ const Projects = () => {
           <SwiperSlide onClick={() => setTestState((prev) => ({ test3: !prev.test3, test2: false, test1: false }))}>
             {testState.test3 === false && (
               <div className="absolute z-10  mx-auto my-5 flex h-[200px] w-full items-center justify-center bg-black-base bg-opacity-30 text-white md:left-14 md:my-10 md:h-[400px] md:w-[90%] lg:h-[500px]">
-                <Img src={PlayIcon} alt={'play'} className={'h-14 w-14 md:h-20 md:w-20'} />
+                <Img src={PlayIcon} alt={'play'} className={'h-14 w-14 md:h-20 md:w-20'} loading="lazy" />
               </div>
             )}
             <ReactPlayer
