@@ -1,4 +1,5 @@
-import { hyundai, minerva, ginger, regency } from '../../assets'
+import { hyundai, minerva, ginger, regency, hyundaiphone, minervaphone, gingerphone, regencyphone } from '../../assets'
+import { useMediaQuery } from '../../utils/custom-hooks'
 
 const scrollData = [
   {
@@ -27,7 +28,35 @@ const scrollData = [
   },
 ]
 
+const scrollDataPhone = [
+  {
+    image: hyundaiphone,
+  },
+  {
+    image: minervaphone,
+  },
+  {
+    image: gingerphone,
+  },
+  {
+    image: regencyphone,
+  },
+  {
+    image: hyundaiphone,
+  },
+  {
+    image: minervaphone,
+  },
+  {
+    image: gingerphone,
+  },
+  {
+    image: regencyphone,
+  },
+]
+
 const InfiniteScroll = () => {
+  const isMobile = useMediaQuery('(max-width: 768px)')
   return (
     <section>
       <div className="relative -bottom-5 ml-5 mt-5 flex font-montserrat font-bold uppercase md:bottom-0 md:ml-10 md:mt-10 lg:text-3xl">
@@ -39,28 +68,50 @@ const InfiniteScroll = () => {
       <div className=" h-20 w-screen overflow-hidden bg-red-base md:h-28">
         <div className="animate-infinite bg-yellow-dark flex h-20 shadow-md md:h-28">
           <div className="flex items-center justify-center ">
-            {scrollData.map((item, idx) => (
-              <div className="flex w-[150px] items-center md:w-[300px]" key={idx}>
-                <img
-                  loading="lazy"
-                  src={item.image}
-                  alt="logo"
-                  className="h-20 w-full object-contain md:h-24 lg:h-28"
-                />
-              </div>
-            ))}
+            {isMobile
+              ? scrollDataPhone.map((item, idx) => (
+                  <div className="flex w-[150px] items-center md:w-[300px]" key={idx}>
+                    <img
+                      loading="lazy"
+                      src={item.image}
+                      alt="logo"
+                      className="h-20 w-full object-contain md:h-24 lg:h-28"
+                    />
+                  </div>
+                ))
+              : scrollData.map((item, idx) => (
+                  <div className="flex w-[150px] items-center md:w-[300px]" key={idx}>
+                    <img
+                      loading="lazy"
+                      src={item.image}
+                      alt="logo"
+                      className="h-20 w-full object-contain md:h-24 lg:h-28"
+                    />
+                  </div>
+                ))}
           </div>
           <div className="flex items-center justify-center ">
-            {scrollData.map((item, idx) => (
-              <div className="flex w-[150px] items-center md:w-[300px]" key={idx}>
-                <img
-                  loading="lazy"
-                  src={item.image}
-                  alt="logo"
-                  className="h-20 w-full object-contain md:h-24 lg:h-32"
-                />
-              </div>
-            ))}
+            {isMobile
+              ? scrollDataPhone.map((item, idx) => (
+                  <div className="flex w-[150px] items-center md:w-[300px]" key={idx}>
+                    <img
+                      loading="lazy"
+                      src={item.image}
+                      alt="logo"
+                      className="h-20 w-full object-contain md:h-24 lg:h-28"
+                    />
+                  </div>
+                ))
+              : scrollData.map((item, idx) => (
+                  <div className="flex w-[150px] items-center md:w-[300px]" key={idx}>
+                    <img
+                      loading="lazy"
+                      src={item.image}
+                      alt="logo"
+                      className="h-20 w-full object-contain md:h-24 lg:h-28"
+                    />
+                  </div>
+                ))}
           </div>
         </div>
       </div>

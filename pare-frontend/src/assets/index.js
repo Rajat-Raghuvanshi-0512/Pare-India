@@ -66,6 +66,11 @@ import ginger from './images/home/companies/ginger.webp'
 import minerva from './images/home/companies/minerva.webp'
 import regency from './images/home/companies/regency.webp'
 
+import hyundaiphone from './images/home/companies/mobile/hyundai.webp'
+import gingerphone from './images/home/companies/mobile/ginger.webp'
+import minervaphone from './images/home/companies/mobile/minerva.webp'
+import regencyphone from './images/home/companies/mobile/regency.webp'
+
 import PortfolioImg1 from './images/home/portfolio/img1.webp'
 import PortfolioImg2 from './images/home/portfolio/img2.webp'
 import PortfolioImg3 from './images/home/portfolio/img3.webp'
@@ -364,6 +369,10 @@ export {
   hyundai,
   ginger,
   minerva,
+  gingerphone,
+  hyundaiphone,
+  minervaphone,
+  regencyphone,
   MapMobImg,
   regency,
   PrevArrowProject,

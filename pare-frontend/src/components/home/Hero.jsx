@@ -5,12 +5,9 @@ import {
   HeroBgMobile,
   HeroBgMobile1,
   HeroBgMobile1_400,
-  HeroBgMobile1_800,
   HeroBgMobile2,
   HeroBgMobile2_400,
-  HeroBgMobile2_800,
   HeroBgMobile_400,
-  HeroBgMobile_800,
 } from '../../assets'
 import { Button } from '../custom'
 import { useState, useEffect } from 'react'
@@ -26,7 +23,7 @@ const HeroSm = ({ counter }) => {
         <div className="absolute -z-10 h-screen w-full bg-gradient-to-r from-[#151515] to-transparent opacity-70"></div>
         <img
           src={HeroBgMobile}
-          srcSet={`${HeroBgMobile_400} 400w,${HeroBgMobile_800} 700w ,${HeroBgMobile} 1000w`}
+          srcSet={`${HeroBgMobile_400} 400w, ,${HeroBgMobile} 700w`}
           alt="bg-mobile"
           className={'absolute -z-20 h-screen w-full object-cover object-top'}
         />
@@ -60,7 +57,7 @@ const HeroSm = ({ counter }) => {
         <img
           src={HeroBgMobile1}
           alt="bg-mobile"
-          srcSet={`${HeroBgMobile1_400} 400w,${HeroBgMobile1_800} 700w ,${HeroBgMobile1} 1000w`}
+          srcSet={`${HeroBgMobile1_400} 400w, ${HeroBgMobile1} 700w`}
           className={'absolute -z-20 h-screen w-full object-cover object-top'}
         />
         <div className="flex h-screen flex-col items-start justify-center gap-8 px-5">
@@ -92,7 +89,7 @@ const HeroSm = ({ counter }) => {
         <div className="absolute -z-10 h-screen w-full bg-gradient-to-r from-[#151515] to-transparent opacity-70"></div>
         <img
           src={HeroBgMobile2}
-          srcSet={`${HeroBgMobile2_400} 400w,${HeroBgMobile2_800} 700w ,${HeroBgMobile2} 1000w`}
+          srcSet={`${HeroBgMobile2_400} 400w, ${HeroBgMobile2} 7000w`}
           alt="bg-mobile"
           className={'absolute -z-20 h-screen w-full object-cover object-top'}
         />
