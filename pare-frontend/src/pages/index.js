@@ -1,3 +1,4 @@
+import { lazy } from 'react'
 import NotFound from './404'
 import Home from './Home'
 import About from './About'
@@ -11,5 +12,21 @@ import FAQ from './FAQ'
 import Resources from './Resources'
 import Gallery from './Gallery'
 import Blog from './Blog'
+const PrivacyPolicy = lazy(() => import('./PrivacyPolicy'))
 
-export { Home, About, Contact, Products, Careers, CareerForm, Product1, Linea, FAQ, NotFound, Resources, Gallery, Blog }
+export {
+  Home,
+  About,
+  Contact,
+  Products,
+  Careers,
+  CareerForm,
+  Product1,
+  Linea,
+  FAQ,
+  NotFound,
+  Resources,
+  Gallery,
+  Blog,
+  PrivacyPolicy,
+}

@@ -14,6 +14,7 @@ import {
   Resources,
   Gallery,
   Blog,
+  PrivacyPolicy,
 } from './pages'
 import { ContactFloatBtn, Footer, Navbar } from './components'
 import useBlobity from 'blobity/lib/react/useBlobity'
@@ -64,6 +65,7 @@ const App = () => {
         <Route path="/faq" element={<FAQ />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/application" element={<Resources />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>

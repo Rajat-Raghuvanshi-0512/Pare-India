@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Logo } from '../assets'
 import { Img } from './custom'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 const darkNavLinks = [
   '/about',
@@ -18,6 +18,7 @@ const darkNavLinksSm = ['/about', '/career-form', '/product/linea', '/applicatio
 
 const FooterSm = () => {
   const location = useLocation()
+  const navigate = useNavigate()
   const [dark, setDark] = useState(true)
 
   useEffect(() => {
@@ -53,7 +54,9 @@ const FooterSm = () => {
           <Img src={Logo} alt="logo" width={60} height={24.27} className={'object-contain'}></Img>
         </div>
         <div className="pt-3 text-[10px]">COOKIE POLICY</div>
-        <div className="py-1 text-[10px]">PRIVACY POLICY</div>
+        <div className="py-1 text-[10px]" onClick={() => navigate('/privacy-policy')}>
+          PRIVACY POLICY
+        </div>
       </div>
       <div className="mb-3 mt-6 text-center text-xs">© Pare India Limited 2023 | Website by Pixy Square</div>
     </section>
@@ -86,7 +89,7 @@ const FooterLg = ({ dark }) => {
                 <Link to={'/'}>COOKIE POLICY</Link>
               </li>
               <li>
-                <Link to={'/'}>PRIVACY POLICY</Link>
+                <Link to={'/privacy-policy'}>PRIVACY POLICY</Link>
               </li>
             </ul>
           </div>
