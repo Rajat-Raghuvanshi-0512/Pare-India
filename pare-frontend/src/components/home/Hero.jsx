@@ -39,6 +39,7 @@ const HeroSm = ({ counter }) => {
           src={HeroData[counter].imageSm}
           alt="bg-mobile"
           className={'absolute -z-20 h-screen w-full object-cover object-top'}
+          key={HeroData[counter].imageSm}
         />
         <div className="flex h-screen flex-col items-start justify-center gap-8 px-5">
           <motion.div
@@ -50,7 +51,7 @@ const HeroSm = ({ counter }) => {
             key={HeroData[counter].headingWhiteText}
             className="font-metropolis text-5xl font-bold text-white"
           >
-            <span className="text-red-base">{HeroData[counter].headingRedText}</span>{' '}
+            <span className="text-red-base">{HeroData[counter].headingRedText}</span>
             {HeroData[counter].headingWhiteText}
           </motion.div>
           <motion.p
@@ -82,6 +83,7 @@ const HeroMd = ({ counter }) => {
         height={'100'}
         className={'absolute -z-20 h-screen w-full object-cover object-top'}
         alt="bg-hero"
+        key={HeroData[counter].imageLg}
       />
       <div className="flex h-screen flex-col items-start justify-center gap-5 px-20">
         <motion.div
@@ -125,6 +127,7 @@ const HeroLg = ({ counter }) => {
             height={'100'}
             className={'absolute -z-20  h-screen w-full object-cover object-bottom'}
             alt="hero-bg"
+            key={HeroData[counter].imageLg}
           />
         </div>
         <div className="flex h-screen flex-col items-start justify-center gap-5 px-20 2xl:mx-60 2xl:scale-125">
