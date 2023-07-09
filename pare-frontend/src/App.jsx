@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react'
+import { useEffect, useMemo } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import {
   About,
@@ -18,11 +18,9 @@ import {
 } from './pages'
 import { ContactFloatBtn, Footer, Navbar } from './components'
 import useBlobity from 'blobity/lib/react/useBlobity'
-import Loader from './Loader'
 
 const App = () => {
   const { pathname } = useLocation()
-  const [percent, setPercent] = useState(0)
   const options = useMemo(
     () => ({
       color: 'rgb(255, 0, 0)',
@@ -41,16 +39,8 @@ const App = () => {
   useEffect(() => {
     scrollTo(0, 0)
   }, [pathname])
-
-  useEffect(() => {
-    if (percent < 100) {
-      setTimeout(() => setPercent((prev) => prev + 1), 10)
-    }
-  }, [percent])
-
   return (
     <>
-      {percent < 100 && <Loader percent={percent} />}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
