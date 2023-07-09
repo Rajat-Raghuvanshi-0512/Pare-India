@@ -39,6 +39,14 @@ const App = () => {
   useEffect(() => {
     scrollTo(0, 0)
   }, [pathname])
+
+  useEffect(() => {
+    const loaderElement = document.querySelector('.loader-container')
+    if (loaderElement) {
+      loaderElement.remove()
+    }
+  }, [])
+
   return (
     <>
       <Navbar />
