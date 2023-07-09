@@ -49,9 +49,9 @@ const HeroSm = ({ counter }) => {
             }}
             transition={{ duration: 1.4 }}
             key={HeroData[counter].headingWhiteText}
-            className="font-metropolis text-5xl font-bold text-white"
+            className="font-metropolis text-[2.8rem] font-bold text-white"
           >
-            <span className="text-red-base">{HeroData[counter].headingRedText}</span>
+            <span className="text-red-base">{HeroData[counter].headingRedText} </span>
             {HeroData[counter].headingWhiteText}
           </motion.div>
           <motion.p
@@ -59,7 +59,7 @@ const HeroSm = ({ counter }) => {
               opacity: [0, 1],
             }}
             transition={{ duration: 1 }}
-            className="font-metropolis text-3xl font-bold tracking-widest text-white sm:text-4xl"
+            className="font-metropolis text-3xl font-bold tracking-widest text-white"
             key={HeroData[counter].smallText}
           >
             {HeroData[counter].smallText}
@@ -95,7 +95,8 @@ const HeroMd = ({ counter }) => {
           key={HeroData[counter].headingWhiteText}
           className="font-metropolis font-bold text-white drop-shadow md:text-5xl"
         >
-          <span className="text-red-base">{HeroData[counter].headingRedText}</span> {HeroData[counter].headingWhiteText}
+          <span className="text-red-base">{HeroData[counter].headingRedText} </span>
+          {HeroData[counter].headingWhiteText}
         </motion.div>
         <motion.p
           whileInView={{
