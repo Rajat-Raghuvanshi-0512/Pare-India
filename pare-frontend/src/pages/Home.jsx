@@ -1,3 +1,4 @@
+import { Suspense } from 'react'
 import {
   Hero,
   AboutSection,
@@ -9,10 +10,11 @@ import {
   NextProject,
   Qualities,
 } from '../components/home'
+import Loader from '../components/Loader'
 
 const Home = () => {
   return (
-    <main>
+    <Suspense fallback={<Loader />}>
       <Hero />
       <AboutSection />
       <ProductsRange />
@@ -24,7 +26,7 @@ const Home = () => {
         <NextProject />
         <PareIndiaRotatingImg />
       </div>
-    </main>
+    </Suspense>
   )
 }
 
