@@ -1,9 +1,9 @@
-const Models = require("../db/models");
+const Models = require('../db/models');
 
 // <-----------------------------------------Development Mode Error Handler---------------------------------------->
 const sendErrorDev = async (err, res) => {
   const statusCode = err.statusCode || 500;
-  console.log("Error--------->", {
+  console.log('Error--------->', {
     statusCode,
     message: err.message,
     stack: err.stack,
@@ -31,13 +31,13 @@ const sendErrorProd = (err, res) => {
     });
   } else {
     res.status(statusCode).json({
-      message: "Something went wrong",
+      message: 'Something went wrong',
     });
   }
 };
 
-module.exports = (err, req, res) => {
-  if (process.env.NODE_ENV === "dev" || process.env.NODE_ENV === "stag") {
+module.exports = (err, req, res, next) => {
+  if (process.env.NODE_ENV === 'dev' || process.env.NODE_ENV === 'stag') {
     sendErrorDev(err, res);
   } else {
     sendErrorProd(err, res);
