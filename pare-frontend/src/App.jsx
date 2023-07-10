@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import {
   About,
@@ -18,9 +18,11 @@ import {
 } from './pages'
 import { ContactFloatBtn, Footer, Navbar } from './components'
 import useBlobity from 'blobity/lib/react/useBlobity'
+import Loader from './Loader'
 
 const App = () => {
   const { pathname } = useLocation()
+  const [percent, setPercent] = useState(0)
   const options = useMemo(
     () => ({
       color: 'rgb(255, 0, 0)',
@@ -41,14 +43,15 @@ const App = () => {
   }, [pathname])
 
   useEffect(() => {
-    const loaderElement = document.querySelector('.loader-container')
-    if (loaderElement) {
-      loaderElement.remove()
-    }
-  }, [])
+    const interval = setInterval(() => {
+      setPercent((prev) => prev + 1)
+    }, 10)
+    return () => clearInterval(interval)
+  }, [percent])
 
   return (
     <>
+      {percent < 100 && <Loader percent={percent} />}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

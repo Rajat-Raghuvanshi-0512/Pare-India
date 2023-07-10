@@ -30,75 +30,8 @@
     />
     <title>Pare India</title>
   </head>
-  <style>
-    *,
-    ::after,
-    ::before {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      border-width: 0;
-      border-style: solid;
-    }
-    .loader-container {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-      background: transparent;
-      height: 90svh;
-      width: 100%;
-    }
-    .loader {
-      width: 80px;
-      height: 80px;
-      animation: spin 1s linear infinite;
-      fill: #dc2626;
-      border: 10px solid #f3f3f3;
-      border-top: 10px solid #dc2626;
-      border-radius: 50%;
-      margin: 0 auto;
-    }
-    .loader-text {
-      padding: 20px;
-      padding-top: 80px;
-      text-align: center;
-      font-family: 'Helvetica Neue', sans-serif;
-      font-size: 50px;
-      font-weight: 600;
-      text-transform: uppercase;
-      color: rgb(190, 30, 45);
-    }
-    .copyright {
-      text-align: center;
-      width: 100%;
-      font-family: 'Helvetica Neue', sans-serif;
-      text-transform: uppercase;
-      color: rgb(190, 30, 45);
-      font-size: 14px;
-    }
-    @keyframes spin {
-      to {
-        transform: rotate(360deg);
-      }
-    }
-    @media screen and (min-width: 768px) {
-      .loader-text {
-        padding: 40px;
-        text-align: start;
-        padding-bottom: 0;
-      }
-      .copyright {
-        font-size: 20px;
-      }
-    }
-  </style>
   <body>
     <div id="root"></div>
-    <div class="loader-container">
-      <div class="loader-text">LOADING...</div>
-      <div class="loader"></div>
-      <div class="copyright">© Pare India Limited 2023</div>
-    </div>
     <script type="module" src="/src/main.jsx" defer></script>
   </body>
 </html>
