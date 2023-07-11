@@ -45,7 +45,7 @@ const App = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setPercent((prev) => prev + 1)
-    }, 10)
+    }, 5)
     return () => clearInterval(interval)
   }, [percent])
 
@@ -60,7 +60,7 @@ const App = () => {
         <Route path="/products" element={<Products />} />
         <Route path="/careers" element={<Careers />} />
         <Route path="/career-form" element={<CareerForm />} />
-        <Route path="/product/1" element={<Product1 />} />
+        <Route path="/product/:id" element={<Product1 />} />
         <Route path="/product/linea" element={<Linea />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/faq" element={<FAQ />} />

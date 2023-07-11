@@ -110,7 +110,7 @@ const ProductInfoSm = () => {
             </p>
             <div className="mt-3 flex justify-end">
               {' '}
-              <Button variant="outlined" className={'!border !text-[10px]'}>
+              <Button variant="outlined" className={'!border !text-[10px]'} onClick={() => navigate('/product/2')}>
                 view products
               </Button>
             </div>
@@ -155,7 +155,7 @@ const ProductInfoSm = () => {
             </p>
             <div className="mt-3 flex justify-end">
               {' '}
-              <Button variant="outlined" className={'!border !text-[10px]'}>
+              <Button variant="outlined" className={'!border !text-[10px]'} onClick={() => navigate('/product/3')}>
                 view products
               </Button>
             </div>
@@ -249,7 +249,7 @@ const ProductInfoLg = () => {
                 <span className="font-bold text-red-base"> world-first, quick and dust-free installation.</span>
               </p>
               <div className="mt-2 flex items-end justify-end">
-                <Button>view range</Button>
+                <Button onClick={() => navigate('/product/2')}>view range</Button>
               </div>
             </div>
           </div>
@@ -298,7 +298,7 @@ const ProductInfoLg = () => {
                 <span className="font-bold text-red-base">long-lasting facades and high-impact resistance.</span>
               </p>
               <div className="mt-2 flex items-end justify-end">
-                <Button>view range</Button>
+                <Button onClick={() => navigate('/product/3')}>view range</Button>
               </div>
             </div>
           </div>

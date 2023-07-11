@@ -158,6 +158,30 @@ import Product1Img21 from './images/products/product1/product1-img2.1.webp'
 import Product1Img3 from './images/products/product1/product1-img3.webp'
 import Product1Img31 from './images/products/product1/product1-img3.1.webp'
 
+import Product2BannerImg from './images/products/product2/banner.webp'
+import Product2BannerPhoneImg from './images/products/product2/banner.webp'
+import Product2SideImg from './images/products/product2/product2-side-img.webp'
+import Product2Img from './images/products/product2/product2-img.webp'
+import Product2Img1 from './images/products/product2/product2-img1.webp'
+import Product2Img11 from './images/products/product2/product2-img1.1.webp'
+import Product2Img2 from './images/products/product2/product2-img2.webp'
+import Product2Img21 from './images/products/product2/product2-img2.1.webp'
+
+import Product3BannerImg from './images/products/product3/banner.webp'
+import Product3BannerPhoneImg from './images/products/product3/banner.webp'
+import Product3SideImg from './images/products/product3/product3-side-img.webp'
+import Product3Img from './images/products/product3/product3-img.webp'
+import Product3Img1 from './images/products/product3/product3-img1.webp'
+import Product3Img11 from './images/products/product3/product3-img1.1.webp'
+import Product3Img2 from './images/products/product3/product3-img2.webp'
+import Product3Img21 from './images/products/product3/product3-img2.1.webp'
+import Product3Img3 from './images/products/product3/product3-img3.webp'
+import Product3Img31 from './images/products/product3/product3-img3.1.webp'
+import Product3Img4 from './images/products/product3/product3-img4.webp'
+import Product3Img41 from './images/products/product3/product3-img4.1.webp'
+import Product3Img5 from './images/products/product3/product3-img5.webp'
+import Product3Img51 from './images/products/product3/product3-img5.1.webp'
+
 import BannerBg from './images/products/linea/banner-bg.webp'
 import BannerWoodImg from './images/products/linea/banner-wood.webp'
 import EasyLineaImg from './images/products/linea/easylenia.webp'
@@ -416,6 +440,28 @@ export {
   Product1Img3,
   Product1Img31,
   Product1SideImg,
+  Product2BannerImg,
+  Product2BannerPhoneImg,
+  Product2Img1,
+  Product2Img11,
+  Product2Img2,
+  Product2Img21,
+  Product2Img,
+  Product2SideImg,
+  Product3BannerImg,
+  Product3BannerPhoneImg,
+  Product3Img,
+  Product3SideImg,
+  Product3Img1,
+  Product3Img11,
+  Product3Img2,
+  Product3Img21,
+  Product3Img3,
+  Product3Img31,
+  Product3Img4,
+  Product3Img41,
+  Product3Img5,
+  Product3Img51,
   BannerBg,
   BannerWoodImg,
   EasyLineaImg,

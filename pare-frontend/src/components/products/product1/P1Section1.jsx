@@ -1,33 +1,31 @@
-import { Product1Img1, Product1SideImg } from '../../../assets'
 import { Img } from '../../custom'
 
-const P1Section1 = () => {
+const P1Section1 = ({ data }) => {
   return (
     <>
       <section className="md:px-10 lg:px-20 2xl:px-40">
         <div className="flex gap-5">
           <div className="flex-1">
             <Img
-              src={Product1Img1}
+              src={data?.mainImage}
               alt={'img1'}
               className={'absolute -z-10 h-[350px] object-cover md:static md:h-full md:w-full'}
             />
           </div>
           <div className="flex h-[350px] flex-1 flex-col md:h-auto md:justify-end ">
             <div className="mb-16 ml-auto flex w-32 items-center justify-center bg-[#BE1E2DD9] pt-2 font-metropolis text-sm font-bold text-white md:-ml-20 md:mb-0 md:w-48 md:text-xl">
-              <p className="mx-auto w-28 md:mx-auto md:w-40">EASY+ TECHNOLOGY</p>
+              <p className="mx-auto w-28 md:mx-auto md:w-40">{data?.techName}</p>
             </div>
             <p className="ml-auto w-[80%] bg-red-base bg-opacity-80 py-5 pl-3 font-metropolis text-sm text-white md:mr-auto md:bg-transparent md:text-2xl md:text-black">
-              This technology ensures quick, dust and dirt free installations. This technology ensures quick, dust and
-              dirt free installations.
+              {data?.techDesc}
             </p>
-            <Img src={Product1SideImg} alt={'img2'} className={'hidden h-fit w-full object-cover md:flex'} />
+            <Img src={data?.sideImage} alt={'img2'} className={'hidden h-fit w-full object-cover md:flex'} />
           </div>
         </div>
-        <Img src={Product1SideImg} alt={'img3'} className={'mt-5 h-[170px] w-full object-cover md:hidden'} />
+        <Img src={data?.sideImage} alt={'img3'} className={'mt-5 h-[170px] w-full object-cover md:hidden'} />
       </section>
       <div className="my-5 bg-red-base py-3 text-center font-metropolis font-medium text-white md:my-10 md:py-7 lg:text-5xl">
-        Offered in 3 variants
+        Offered in {data?.variants} variants
       </div>
     </>
   )
