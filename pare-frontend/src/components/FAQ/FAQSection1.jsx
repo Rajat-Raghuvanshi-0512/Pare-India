@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import { ContactAvatar, DownArrow, FAQS, LongDownArrow } from '../../assets'
 import Button from '../custom/Button'
 import Accordion from './Accordion'
@@ -27,9 +28,43 @@ const FaqData = [
     heading: 'What can I expect during the design consultation?',
     body: 'Yes, absolutely! We encourage our customers to incorporate their own existing decor into the design process. It helps personalize the space and creates a sense of familiarity. Our talented designers can work with you to seamlessly integrate your beloved pieces with our design vision, ensuring a cohesive and harmonious result.',
   },
+  {
+    heading: 'How do I connect with the company?',
+    body: 'Yes, absolutely! We encourage our customers to incorporate their own existing decor into the design process. It helps personalize the space and creates a sense of familiarity. Our talented designers can work with you to seamlessly integrate your beloved pieces with our design vision, ensuring a cohesive and harmonious result.',
+  },
+  {
+    heading: 'How do I choose the right color scheme for my space?',
+    body: 'Yes, absolutely! We encourage our customers to incorporate their own existing decor into the design process. It helps personalize the space and creates a sense of familiarity. Our talented designers can work with you to seamlessly integrate your beloved pieces with our design vision, ensuring a cohesive and harmonious result.',
+  },
+  {
+    heading: 'Can I work with my own my existing decor?',
+    body: 'Yes, absolutely! We encourage our customers to incorporate their own existing decor into the design process. It helps personalize the space and creates a sense of familiarity. Our talented designers can work with you to seamlessly integrate your beloved pieces with our design vision, ensuring a cohesive and harmonious result.',
+  },
+  {
+    heading: 'What can I expect during the initial design consultation?',
+    body: 'Yes, absolutely! We encourage our customers to incorporate their own existing decor into the design process. It helps personalize the space and creates a sense of familiarity. Our talented designers can work with you to seamlessly integrate your beloved pieces with our design vision, ensuring a cohesive and harmonious result.',
+  },
+  {
+    heading: 'How do I choose the right color scheme?',
+    body: 'Yes, absolutely! We encourage our customers to incorporate their own existing decor into the design process. It helps personalize the space and creates a sense of familiarity. Our talented designers can work with you to seamlessly integrate your beloved pieces with our design vision, ensuring a cohesive and harmonious result.',
+  },
+  {
+    heading: 'What can I expect during the design consultation?',
+    body: 'Yes, absolutely! We encourage our customers to incorporate their own existing decor into the design process. It helps personalize the space and creates a sense of familiarity. Our talented designers can work with you to seamlessly integrate your beloved pieces with our design vision, ensuring a cohesive and harmonious result.',
+  },
 ]
 
 const FAQSection1 = () => {
+  const [data, setData] = useState([])
+  const [loading, setLoading] = useState(false)
+  const loadMore = () => {
+    setLoading(true)
+    setData(FaqData)
+    setLoading(false)
+  }
+  useEffect(() => {
+    setData(FaqData.slice(0, 6))
+  }, [])
   return (
     <section>
       <div className="relative p-5 pt-28 md:p-10 md:pt-32 lg:p-20 2xl:px-40">
@@ -50,13 +85,13 @@ const FAQSection1 = () => {
           <img src={FAQS} alt="faq" width={200} className="w-[130px] md:w-[200px]" />
         </div>
         <div className="w-full">
-          {FaqData.map((item) => (
+          {data.map((item) => (
             <Accordion key={item.heading} {...item} />
           ))}
         </div>
       </div>
       <div className="mt-5 flex justify-end pr-10 lg:pr-20 2xl:pr-40">
-        <Button>Load more</Button>
+        {data.length !== FaqData.length && <Button onClick={loadMore}>{loading ? 'Loading...' : 'Load more'}</Button>}
       </div>
       <div className="mt-5 flex items-center justify-between bg-red-base p-5 text-white md:mt-10 md:p-10 lg:px-20 2xl:px-40">
         <div className="flex gap-2 md:gap-5">

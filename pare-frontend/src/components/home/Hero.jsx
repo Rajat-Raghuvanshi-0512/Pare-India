@@ -1,6 +1,6 @@
 import { HeroBg, HeroBg1, HeroBg2, HeroBgMobile, HeroBgMobile1, HeroBgMobile2 } from '../../assets'
 import { Button } from '../custom'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import { useMediaQuery } from '../../utils/custom-hooks'
@@ -163,19 +163,19 @@ const Hero = () => {
   const [counter, setCounter] = useState(0)
   const isLaptop = useMediaQuery('(min-width: 768px)')
 
-  const handleNext = () => {
+  const handleNext = useCallback(() => {
     if (counter !== 2) {
       setCounter(counter + 1)
     } else {
       setCounter(0)
     }
-  }
+  }, [counter])
   useEffect(() => {
-    let interval = setInterval(() => {
+    const interval = setInterval(() => {
       handleNext()
     }, 3000)
     return () => clearInterval(interval)
-  })
+  }, [handleNext])
   if (isLaptop) {
     return (
       <>
