@@ -287,6 +287,15 @@ import BigPhoneImg1 from './images/gallery/big1-phone.webp'
 import BigPhoneImg2 from './images/gallery/big2-phone.webp'
 import BigPhoneImg3 from './images/gallery/big3-phone.webp'
 
+import Blog1BannerImg from './images/blogs/BlogImg1.webp'
+import Blog1Avatar from './images/blogs/avatar.webp'
+import Blog1Img1 from './images/blogs/blog1-img1.webp'
+import Blog1Img2 from './images/blogs/blog1-img2.webp'
+import Blog1Img3 from './images/blogs/blog1-img3.webp'
+import FacebookIcon from './images/blogs/facebook.webp'
+import TwitterIcon from './images/blogs/twitter.webp'
+import PinterestIcon from './images/blogs/pinterest.webp'
+
 export {
   Logo,
   HeroBgMobile,
@@ -545,4 +554,12 @@ export {
   BigPhoneImg1,
   BigPhoneImg2,
   BigPhoneImg3,
+  Blog1Avatar,
+  Blog1BannerImg,
+  Blog1Img1,
+  Blog1Img2,
+  Blog1Img3,
+  FacebookIcon,
+  PinterestIcon,
+  TwitterIcon,
 }

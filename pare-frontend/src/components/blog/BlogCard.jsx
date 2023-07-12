@@ -1,8 +1,10 @@
+import { useNavigate } from 'react-router-dom'
 import { Img } from '../custom'
 
-const BlogCard = ({ title, image, isRed, issuedBy, month }) => {
+const BlogCard = ({ title, image, isRed, issuedBy, month, id }) => {
+  const navigate = useNavigate()
   return (
-    <div className="relative z-0 h-[500px] overflow-hidden rounded">
+    <div className="relative z-0 h-[500px] overflow-hidden rounded" onClick={() => navigate(`/blog/1`)}>
       <Img src={image} alt={'blog'} className={'absolute left-0 top-0 -z-10 h-full w-full object-cover'} />
       <div
         className={`flex h-[500px] flex-col justify-end px-2 py-5 md:h-[400px] lg:h-[500px] 2xl:h-[600px] ${

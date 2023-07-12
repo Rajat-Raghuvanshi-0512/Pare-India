@@ -16,6 +16,7 @@ export default {
       metropolis: ['Metropolis'],
       helvetica: ['Helvetica'],
       poppins: ['Poppins'],
+      inter: ['Inter'],
     },
   },
   plugins: [require('tailwindcss-debug-screens')],

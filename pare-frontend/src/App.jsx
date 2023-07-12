@@ -15,6 +15,7 @@ import {
   Gallery,
   Blog,
   PrivacyPolicy,
+  BlogInfo,
 } from './pages'
 import { ContactFloatBtn, Footer, Navbar } from './components'
 import useBlobity from 'blobity/lib/react/useBlobity'
@@ -65,6 +66,7 @@ const App = () => {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/1" element={<BlogInfo />} />
         <Route path="/application" element={<Resources />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
 

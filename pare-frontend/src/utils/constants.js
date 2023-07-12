@@ -26,6 +26,7 @@ import {
   Product3Img41,
   Product3Img5,
   Product3Img51,
+  TrimWoodBg1,
 } from '../assets'
 
 export const productsData = {
@@ -154,3 +155,71 @@ export const productsData = {
     ],
   },
 }
+
+// Blog Data
+export const blogData = [
+  {
+    title: '5 Creative Ways to Incorporate Tiles into Your Interior Design',
+    image: TrimWoodBg1,
+    isRed: true,
+    issuedBy: 'Pare India 2023',
+    month: 'May 2023',
+    id: 1,
+  },
+  {
+    title: 'Expert Tips from Our Design Team',
+    image: TrimWoodBg1,
+    isRed: true,
+    issuedBy: 'Pare India 2023',
+    month: 'May 2023',
+    id: 2,
+  },
+  {
+    title: 'From Bold Patterns to Subtle Textures: Exploring the Versatility of Interior Design Tiles',
+    image: TrimWoodBg1,
+    isRed: true,
+    issuedBy: 'Pare India 2023',
+    month: 'May 2023',
+    id: 3,
+  },
+  {
+    title: 'Revamp Your Home with Unique and Beautiful Tile Designs: Our Top Picks',
+    image: TrimWoodBg1,
+    isRed: false,
+    issuedBy: 'Pare India 2023',
+    month: 'May 2023',
+    id: 4,
+  },
+  {
+    title: "Tile Trends 2023: What's Hot and What's Not in Interior Design",
+    image: TrimWoodBg1,
+    isRed: true,
+    issuedBy: 'Pare India 2023',
+    month: 'May 2023',
+    id: 5,
+  },
+  {
+    title: "Tile Trends 2023: What's Hot and What's Not in Interior Design",
+    image: TrimWoodBg1,
+    isRed: false,
+    issuedBy: 'Pare India 2023',
+    month: 'May 2023',
+    id: 6,
+  },
+  {
+    title: "Tile Trends 2023: What's Hot and What's Not in Interior Design",
+    image: TrimWoodBg1,
+    isRed: true,
+    issuedBy: 'Pare India 2023',
+    month: 'May 2023',
+    id: 7,
+  },
+  {
+    title: "Tile Trends 2023: What's Hot and What's Not in Interior Design",
+    image: TrimWoodBg1,
+    isRed: true,
+    issuedBy: 'Pare India 2023',
+    month: 'May 2023',
+    id: 8,
+  },
+]

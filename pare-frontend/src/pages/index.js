@@ -12,6 +12,7 @@ import FAQ from './FAQ'
 import Resources from './Resources'
 import Gallery from './Gallery'
 import Blog from './Blog'
+import BlogInfo from './BlogInfo'
 const PrivacyPolicy = lazy(() => import('./PrivacyPolicy'))
 
 export {
@@ -28,5 +29,6 @@ export {
   Resources,
   Gallery,
   Blog,
+  BlogInfo,
   PrivacyPolicy,
 }

@@ -1,4 +1,4 @@
-import { NextArrowProject, PrevArrowProject, TrimWoodBg1 } from '../../assets'
+import { NextArrowProject, PrevArrowProject } from '../../assets'
 import { Img } from '../custom'
 import BlogCard from './BlogCard'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -6,65 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css/bundle'
 import 'swiper/css'
 import { useState } from 'react'
-
-const blogData = [
-  {
-    title: '5 Creative Ways to Incorporate Tiles into Your Interior Design',
-    image: TrimWoodBg1,
-    isRed: true,
-    issuedBy: 'Pare India 2023',
-    month: 'May 2023',
-  },
-  {
-    title: 'Expert Tips from Our Design Team',
-    image: TrimWoodBg1,
-    isRed: true,
-    issuedBy: 'Pare India 2023',
-    month: 'May 2023',
-  },
-  {
-    title: 'From Bold Patterns to Subtle Textures: Exploring the Versatility of Interior Design Tiles',
-    image: TrimWoodBg1,
-    isRed: true,
-    issuedBy: 'Pare India 2023',
-    month: 'May 2023',
-  },
-  {
-    title: 'Revamp Your Home with Unique and Beautiful Tile Designs: Our Top Picks',
-    image: TrimWoodBg1,
-    isRed: false,
-    issuedBy: 'Pare India 2023',
-    month: 'May 2023',
-  },
-  {
-    title: "Tile Trends 2023: What's Hot and What's Not in Interior Design",
-    image: TrimWoodBg1,
-    isRed: true,
-    issuedBy: 'Pare India 2023',
-    month: 'May 2023',
-  },
-  {
-    title: "Tile Trends 2023: What's Hot and What's Not in Interior Design",
-    image: TrimWoodBg1,
-    isRed: false,
-    issuedBy: 'Pare India 2023',
-    month: 'May 2023',
-  },
-  {
-    title: "Tile Trends 2023: What's Hot and What's Not in Interior Design",
-    image: TrimWoodBg1,
-    isRed: true,
-    issuedBy: 'Pare India 2023',
-    month: 'May 2023',
-  },
-  {
-    title: "Tile Trends 2023: What's Hot and What's Not in Interior Design",
-    image: TrimWoodBg1,
-    isRed: true,
-    issuedBy: 'Pare India 2023',
-    month: 'May 2023',
-  },
-]
+import { blogData } from '../../utils/constants'
 
 const BlogSm = ({ setActive }) => {
   return (
