@@ -53,7 +53,7 @@ const BlogCard = ({ image, category, title, desc, creatorProfile, creatorName, c
 
 const BlogInfoCards = () => {
   return (
-    <div className="grid grid-cols-3 lg:gap-12 lg:px-20">
+    <div className="hidden grid-cols-3 md:grid lg:gap-12 lg:px-20">
       {blogCardData.map((blogdata) => (
         <BlogCard key={blogdata.id} {...blogdata} />
       ))}

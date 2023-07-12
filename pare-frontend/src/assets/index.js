@@ -288,6 +288,7 @@ import BigPhoneImg2 from './images/gallery/big2-phone.webp'
 import BigPhoneImg3 from './images/gallery/big3-phone.webp'
 
 import Blog1BannerImg from './images/blogs/BlogImg1.webp'
+import Blog1PhoneBannerImg from './images/blogs/BlogImg1-phone.webp'
 import Blog1Avatar from './images/blogs/avatar.webp'
 import Blog1Img1 from './images/blogs/blog1-img1.webp'
 import Blog1Img2 from './images/blogs/blog1-img2.webp'
@@ -556,6 +557,7 @@ export {
   BigPhoneImg3,
   Blog1Avatar,
   Blog1BannerImg,
+  Blog1PhoneBannerImg,
   Blog1Img1,
   Blog1Img2,
   Blog1Img3,
