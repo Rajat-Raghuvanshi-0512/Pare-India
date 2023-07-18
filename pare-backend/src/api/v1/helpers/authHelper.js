@@ -1,5 +1,3 @@
-const templates = require('../templates');
-const handlebars = require('handlebars');
 const { google } = require('googleapis');
 const nodemailer = require('nodemailer');
 const config = require('../../../../config');
@@ -40,6 +38,8 @@ exports.mailSender = async (email, subject) => {
         refreshToken: config.GOOGLE_REFRESH_TOKEN,
       },
     });
+    let text = 'hii';
+    let html = '<h1>Hii</h1>';
     await transporter.sendMail({
       from: `Pare India <${config.EMAIL_ID}>`,
       to: email,

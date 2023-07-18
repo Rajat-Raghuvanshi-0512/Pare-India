@@ -1,7 +1,30 @@
+import { useState } from 'react'
 import { NextProjectImg, NextProjectImgWeb } from '../../assets'
 import { Button } from '../custom'
+import Api from '../../utils/api'
+import { NEXT_PROJECT_API } from '../../utils/endpoints'
+import { toast } from 'react-toastify'
 
 const NextProject = () => {
+  const [data, setData] = useState({
+    name: '',
+    phone: '',
+    email: '',
+  })
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    try {
+      const response = await Api.post(NEXT_PROJECT_API, data, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+      toast.success(response.data.message)
+    } catch (error) {
+      toast.error(error.response.data.message)
+    }
+  }
   return (
     <section className="px-5 pb-5 pt-12 md:p-10 lg:px-16 xl:px-24 2xl:px-40">
       <div className="grid  md:grid-cols-2 md:gap-5">
@@ -13,28 +36,40 @@ const NextProject = () => {
             Let&apos;s get the ball rolling on your next project! Reach out to us at PARÉ and let&apos;s discuss how we
             can bring your vision to life. We&apos;re excited to hear from you!
           </p>
-          <form onSubmit={(e) => e.preventDefault()}>
+          <form onSubmit={handleSubmit}>
             <div className="flex flex-col gap-3">
               <input
                 type="text"
                 placeholder="Name"
                 className="border-b-2 border-[#adadad] bg-transparent p-1 font-montserrat text-white outline-none placeholder:uppercase lg:py-3 lg:text-xl"
+                required
+                name={data.name}
+                value={data.name}
+                onChange={(e) => setData((prev) => ({ ...prev, name: e.target.value }))}
               />
               <input
                 type="number"
                 placeholder="Phone number"
                 className="border-b-2 border-[#adadad] bg-transparent p-1 font-montserrat text-white outline-none placeholder:uppercase lg:py-3 lg:text-xl"
+                required
+                name={data.phone}
+                value={data.phone}
+                onChange={(e) => setData((prev) => ({ ...prev, phone: e.target.value }))}
               />
               <input
                 type="email"
                 placeholder="email"
                 className="border-b-2 border-[#adadad] bg-transparent p-1  font-montserrat text-white  outline-none placeholder:uppercase lg:py-3 lg:text-xl"
+                required
+                name={data.email}
+                value={data.email}
+                onChange={(e) => setData((prev) => ({ ...prev, email: e.target.value }))}
               />
             </div>
             <p className="mb-5 mt-3 font-montserrat text-xs md:text-base lg:mb-8 lg:mt-5 lg:text-xl">
               I AGREE TO TERMS OF THE PRIVACY POLICY
             </p>
-            <Button variant="outlined" type="buttton">
+            <Button variant="outlined" type="submit" className={'z-10'}>
               SEND REQUEST
             </Button>
           </form>

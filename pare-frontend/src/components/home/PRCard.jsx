@@ -2,9 +2,11 @@ import { useState } from 'react'
 import { Button } from '../custom'
 import { useEffect } from 'react'
 import Carousel from '../custom/Carousel'
+import { useNavigate } from 'react-router-dom'
 
 const PRCard = ({ id, heading, desc, img, img1, img2 }) => {
   const [counter, setCounter] = useState(0)
+  const navigate = useNavigate()
 
   const handleNext = () => {
     if (counter !== 2) {
@@ -39,7 +41,7 @@ const PRCard = ({ id, heading, desc, img, img1, img2 }) => {
         <p className="my-3 font-montserrat text-[10px] font-medium leading-3 md:text-sm lg:text-2xl 2xl:text-3xl">
           {desc}
         </p>
-        <Button variant="outlined" className="md:my-5">
+        <Button variant="outlined" className="md:my-5" onClick={() => navigate(`/product/${Number(id)}`)}>
           view products
         </Button>
       </div>

@@ -1,8 +1,8 @@
-import { useRef } from 'react'
-import { InstaImg1, InstaImg2, InstaImg3, InstaImg4, InstaImg5, InstaImg6, InstaImg7, InstaImg8 } from '../../assets'
+import { useCallback, useEffect, useRef, useState } from 'react'
+// import { InstaImg1, InstaImg2, InstaImg3, InstaImg4, InstaImg5, InstaImg6, InstaImg7, InstaImg8 } from '../../assets'
 import { Img } from '../custom'
 
-const images = [InstaImg8, InstaImg2, InstaImg1, InstaImg4, InstaImg7, InstaImg5, InstaImg6, InstaImg3]
+// const images = [InstaImg8, InstaImg2, InstaImg1, InstaImg4, InstaImg7, InstaImg5, InstaImg6, InstaImg3]
 
 const PareIndiaRotatingImgSm = ({ images }) => {
   return (
@@ -15,7 +15,7 @@ const PareIndiaRotatingImgSm = ({ images }) => {
       </div>
       <div className="circle-container z-30 flex h-screen flex-col items-center justify-center">
         {images?.slice(0, 8)?.map((im, idx) => {
-          return <Img src={im} key={im + idx} id="instafeed" alt={'Instaphotos'} loading="lazy" />
+          return <Img src={im.media_url} key={im.media_url + idx} id="instafeed" alt={'Instaphotos'} loading="lazy" />
         })}
       </div>
     </section>
@@ -36,7 +36,7 @@ const PareIndiaRotatingImgLg = ({ images }) => {
     ref.current.style.transition = ' all 0.4s'
   }
   return (
-    <section className="relative flex w-screen flex-col items-center justify-center overflow-hidden md:-mt-24 md:h-[60rem]">
+    <section className="relative flex w-screen flex-col items-center justify-center overflow-hidden md:-mt-10 md:h-[60rem]">
       <div className="absolute left-[50%] top-[47%] w-[40%] -translate-x-[50%] text-center">
         <h1 className="font-metropolis text-2xl font-black md:text-4xl lg:text-7xl">@pare.india</h1>
         <p className="py-2 text-center font-helvetica text-sm opacity-60 md:text-base lg:text-lg">
@@ -49,7 +49,7 @@ const PareIndiaRotatingImgLg = ({ images }) => {
         onMouseMove={getScrollOffset}
       >
         {images?.slice(0, 8)?.map((im, idx) => {
-          return <Img src={im} key={im + idx} id="instafeed" alt={'Instaphotos'} loading="lazy" />
+          return <Img src={im.media_url} key={im.media_url + idx} id="instafeed" alt={'Instaphotos'} loading="lazy" />
         })}
       </div>
     </section>
@@ -57,26 +57,31 @@ const PareIndiaRotatingImgLg = ({ images }) => {
 }
 
 const PareIndiaRotatingImg = () => {
-  // const access_token = import.meta.env.VITE_INSTA_API_KEY
+  const access_token = import.meta.env.VITE_INSTA_API_KEY
 
-  // const [images, setImages] = useState([])
+  const [images, setImages] = useState([])
 
-  // const getPosts = useCallback(async () => {
-  //   const { data } = await axios.get(`https://graph.instagram.com/me/media?access_token=${access_token}`)
-  //   const finalData = data.data
-  //   for (let i = 0; i < 13; i++) {
-  //     const postId = finalData[i]
-  //     const { data } = await axios.get(
-  //       `https://graph.instagram.com/${postId.id}?access_token=${access_token}&fields=media_url,permalink,media_type`,
-  //     )
-  //     if (data.media_type == 'IMAGE') {
-  //       setImages((prev) => [...prev, data])
-  //     }
-  //   }
-  // }, [access_token])
-  // useEffect(() => {
-  //   getPosts()
-  // }, [])
+  const getPosts = useCallback(async () => {
+    const res = await fetch(`https://graph.instagram.com/me/media?access_token=${access_token}`)
+    const data = await res.json()
+    const finalData = data.data
+    for (let i = 0; i < finalData.length; i++) {
+      let postId
+      postId = finalData[i].id
+      const res = await fetch(
+        `https://graph.instagram.com/${postId}?access_token=${access_token}&fields=media_url,permalink,media_type`,
+      )
+      const data = await res.json()
+      console.log(data)
+
+      if (data.media_type == 'IMAGE') {
+        setImages((prev) => [...prev, data])
+      }
+    }
+  }, [access_token])
+  useEffect(() => {
+    getPosts()
+  }, [])
   return (
     <div>
       <div className="md:hidden">

@@ -1,7 +1,7 @@
-const app = require("./app");
-const config = require("./config");
-const connectToDB = require("./src/api/v1/db/connection");
-const errorController = require("./src/api/v1/helpers/errorController");
+const app = require('./app');
+const config = require('./config');
+const connectToDB = require('./src/api/v1/db/connection');
+const errorController = require('./src/api/v1/helpers/errorController');
 
 connectToDB();
 
