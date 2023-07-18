@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=dev nodemon index.js",
     "stag": "cross-env NODE_ENV=stag nodemon index.js",
-    "prod": "cross-env NODE_ENV=prod nodemon index.js",
+    "prod": "cross-env NODE_ENV=prod node index.js",
     "start":"node app.js"
   },
   "keywords": [],
