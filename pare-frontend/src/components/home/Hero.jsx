@@ -1,9 +1,10 @@
+import { useState, useEffect, useCallback } from 'react'
 import { HeroBg, HeroBg1, HeroBg2, HeroBgMobile, HeroBgMobile1, HeroBgMobile2 } from '../../assets'
 import { Button } from '../custom'
-import { useState, useEffect, useCallback } from 'react'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
-import { useMediaQuery } from '../../utils/custom-hooks'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { EffectFade, Autoplay } from 'swiper'
 
 const HeroData = [
   {
@@ -29,8 +30,22 @@ const HeroData = [
   },
 ]
 
-const HeroSm = ({ counter }) => {
+const HeroSm = () => {
   const navigate = useNavigate()
+  const [counter, setCounter] = useState(0)
+  const handleNext = useCallback(() => {
+    if (counter !== 2) {
+      setCounter(counter + 1)
+    } else {
+      setCounter(0)
+    }
+  }, [counter])
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext()
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [handleNext])
   return (
     <>
       <section>
@@ -72,126 +87,108 @@ const HeroSm = ({ counter }) => {
     </>
   )
 }
-const HeroMd = ({ counter }) => {
+const HeroMd = () => {
   const navigate = useNavigate()
   return (
-    <section>
-      <div className="absolute -z-10 h-screen w-full bg-gradient-to-r from-[#151515] to-transparent opacity-50"></div>
-      <img
-        src={HeroData[counter].imageLg}
-        width={'1900'}
-        height={'100'}
-        className={'absolute -z-20 h-screen w-full object-cover object-top'}
-        alt="bg-hero"
-        key={HeroData[counter].imageLg}
-      />
-      <div className="flex h-screen flex-col items-start justify-center gap-5 px-20">
-        <motion.div
-          whileInView={{
-            opacity: [0, 1],
-            y: [-100, 0],
-          }}
-          transition={{ duration: 1.4 }}
-          key={HeroData[counter].headingWhiteText}
-          className="font-metropolis font-bold text-white drop-shadow md:text-5xl"
-        >
-          <span className="text-red-base">{HeroData[counter].headingRedText} </span>
-          {HeroData[counter].headingWhiteText}
-        </motion.div>
-        <motion.p
-          whileInView={{
-            opacity: [0, 1],
-          }}
-          transition={{ duration: 1 }}
-          className="font-metropolis text-3xl font-bold tracking-widest text-white"
-          key={HeroData[counter].smallText}
-        >
-          {HeroData[counter].smallText}
-        </motion.p>
-        <Button className={'!px-8'} onClick={() => navigate('/contact')}>
+    <section className="relative ml-10 mr-2 py-20">
+      <div className="absolute top-[120px] z-10">
+        <b className="flex w-[500px] items-center font-metropolis leading-[145%]">
+          <span className="w-full text-4xl leading-snug">
+            <span>FIRST AND INDIA&apos;S ONLY MANUFACTURER OF </span>
+            <span className="text-red-base">SOFFIT SYSTEMS.</span>
+          </span>
+        </b>
+        <p className="w-[230px] text-sm">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam.
+        </p>
+        <Button className={'mt-5 !px-8'} variant="outlined" onClick={() => navigate('/contact')}>
           BUILD WITH US
         </Button>
       </div>
+      <Swiper
+        modules={[EffectFade, Autoplay]}
+        effect="fade"
+        autoplay={{ delay: 2000, disableOnInteraction: false }}
+        noSwiping={true}
+        speed={800}
+      >
+        {HeroData.map((el, i) => {
+          return (
+            <SwiperSlide key={i} className="">
+              <img
+                src={el.imageLg}
+                width={'1900'}
+                height={'100'}
+                className="ml-auto !h-[350px] !w-[65vw] object-cover object-bottom"
+                alt="bg-hero"
+                key={el.imageLg}
+              />
+            </SwiperSlide>
+          )
+        })}
+      </Swiper>
     </section>
   )
 }
-const HeroLg = ({ counter }) => {
+const HeroLg = () => {
   const navigate = useNavigate()
   return (
-    <>
-      <section>
-        <div>
-          <div className="absolute -z-10 h-screen w-full bg-gradient-to-r from-[#151515] to-transparent opacity-50"></div>
-          <img
-            src={HeroData[counter].imageLg}
-            width={'1900'}
-            height={'100'}
-            className={'absolute -z-20  h-screen w-full object-cover object-bottom'}
-            alt="hero-bg"
-            key={HeroData[counter].imageLg}
-          />
-        </div>
-        <div className="flex h-screen flex-col items-start justify-center gap-5 px-20 2xl:mx-60 2xl:scale-125">
-          <motion.div
-            whileInView={{
-              opacity: [0, 1],
-              y: [-100, 0],
-            }}
-            transition={{ duration: 1.4 }}
-            key={HeroData[counter].headingWhiteText}
-            className="font-metropolis font-bold text-white drop-shadow md:text-5xl lg:text-6xl"
-          >
-            <span className="text-red-base">{HeroData[counter].headingRedText}</span>{' '}
-            {HeroData[counter].headingWhiteText}
-          </motion.div>
-          <motion.p
-            key={HeroData[counter].smallText}
-            className="font-metropolis text-4xl font-bold tracking-widest text-white"
-          >
-            {HeroData[counter].smallText}
-          </motion.p>
-          <Button className={'!px-8'} onClick={() => navigate('/contact')}>
-            BUILD WITH US
-          </Button>
-        </div>
-      </section>
-    </>
+    <section className="relative ml-20 mr-5 h-screen py-20 2xl:mx-40">
+      <div className="absolute top-[120px] z-10">
+        <b className="flex w-[700px] items-center font-metropolis leading-[145%]">
+          <span className="w-full text-[3.5rem] leading-snug">
+            <span>FIRST AND INDIA&apos;S ONLY MANUFACTURER OF </span>
+            <span className="text-red-base">SOFFIT SYSTEMS.</span>
+          </span>
+        </b>
+        <p className="w-[300px]">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam.
+        </p>
+        <Button className={'mt-5 !px-8'} variant="outlined" onClick={() => navigate('/contact')}>
+          BUILD WITH US
+        </Button>
+      </div>
+      <Swiper
+        modules={[EffectFade, Autoplay]}
+        effect="fade"
+        autoplay={{ delay: 2000, disableOnInteraction: false }}
+        noSwiping={true}
+        speed={800}
+      >
+        {HeroData.map((el, i) => {
+          return (
+            <SwiperSlide key={i} className="">
+              <img
+                src={el.imageLg}
+                width={'1900'}
+                height={'100'}
+                className="ml-auto !h-[450px] !w-[65vw] object-cover object-bottom"
+                alt="bg-hero"
+                key={el.imageLg}
+              />
+            </SwiperSlide>
+          )
+        })}
+      </Swiper>
+    </section>
   )
 }
 
 const Hero = () => {
-  const [counter, setCounter] = useState(0)
-  const isLaptop = useMediaQuery('(min-width: 768px)')
-
-  const handleNext = useCallback(() => {
-    if (counter !== 2) {
-      setCounter(counter + 1)
-    } else {
-      setCounter(0)
-    }
-  }, [counter])
-  useEffect(() => {
-    const interval = setInterval(() => {
-      handleNext()
-    }, 3000)
-    return () => clearInterval(interval)
-  }, [handleNext])
-  if (isLaptop) {
-    return (
-      <>
-        <div className="hidden md:block lg:hidden">
-          <HeroMd counter={counter} />
-        </div>
-        <div className="hidden lg:block">
-          <HeroLg counter={counter} />
-        </div>
-      </>
-    )
-  }
   return (
-    <div className="md:hidden">
-      <HeroSm counter={counter} />
-    </div>
+    <>
+      <div className="md:hidden">
+        <HeroSm />
+      </div>
+      <div className="hidden md:block lg:hidden">
+        <HeroMd />
+      </div>
+      <div className="hidden lg:block">
+        <HeroLg />
+      </div>
+    </>
   )
 }
 

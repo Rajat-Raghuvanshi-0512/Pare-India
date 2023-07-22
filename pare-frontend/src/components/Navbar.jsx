@@ -14,6 +14,7 @@ const greNavRoutes = [
   '/gallery',
   '/privacy-policy',
   '/blog/1',
+  '/',
 ]
 
 const navLinks = [
