@@ -134,10 +134,10 @@ const HeroMd = () => {
 const HeroLg = () => {
   const navigate = useNavigate()
   return (
-    <section className="relative ml-20 mr-5 h-screen py-20 2xl:mx-40">
+    <section className="relative ml-20 mr-5 h-screen pt-28 2xl:mx-40">
       <div className="absolute top-[120px] z-10">
         <b className="flex w-[700px] items-center font-metropolis leading-[145%]">
-          <span className="w-full text-[3.5rem] leading-snug">
+          <span className="mt-5 w-full text-[3.5rem] leading-snug">
             <span>FIRST AND INDIA&apos;S ONLY MANUFACTURER OF </span>
             <span className="text-red-base">SOFFIT SYSTEMS.</span>
           </span>

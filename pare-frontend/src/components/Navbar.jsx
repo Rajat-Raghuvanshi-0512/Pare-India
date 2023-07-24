@@ -14,7 +14,6 @@ const greNavRoutes = [
   '/gallery',
   '/privacy-policy',
   '/blog/1',
-  '/',
 ]
 
 const navLinks = [
@@ -210,11 +209,17 @@ const NavLg = ({ isScrolled, hide }) => {
   return (
     <nav
       className={`fixed z-50 w-full ${
-        isScrolled || greNavRoutes.includes(location.pathname) ? 'bg-[#EBEBEB]' : 'text-white'
+        isScrolled || greNavRoutes.includes(location.pathname)
+          ? 'bg-[#EBEBEB]'
+          : location.pathname === '/'
+          ? 'text-black'
+          : 'text-white'
       } ${hide ? '-translate-y-[100%]' : 'translate-y-0'} duration-300`}
     >
       <div
-        className={`mx-10 flex items-center justify-between 2xl:mx-40 ${isScrolled ? '' : 'border-b-2 border-white'}`}
+        className={`mx-10 flex items-center justify-between 2xl:mx-40 ${
+          isScrolled ? '' : location.pathname === '/' ? 'border-b-2 border-black' : 'border-b-2 border-white'
+        }`}
       >
         <div className="flex items-end">
           <Img src={Logo} width={500} height={400} alt="logo" className="h-16 w-28 object-contain" />
