@@ -19,11 +19,10 @@ import {
 } from './pages'
 import { ContactFloatBtn, Footer, Navbar } from './components'
 import useBlobity from 'blobity/lib/react/useBlobity'
-import Loader from './Loader'
+// import Loader from './Loader'
 
 const App = () => {
   const { pathname } = useLocation()
-  const [percent, setPercent] = useState(0)
   const options = useMemo(
     () => ({
       color: 'rgb(255, 0, 0)',
@@ -43,16 +42,9 @@ const App = () => {
     scrollTo(0, 0)
   }, [pathname])
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setPercent((prev) => prev + 1)
-    }, 5)
-    return () => clearInterval(interval)
-  }, [percent])
-
   return (
     <>
-      {percent < 100 && <Loader percent={percent} />}
+      {/* {percent < 100 && <Loader percent={percent} />} */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
