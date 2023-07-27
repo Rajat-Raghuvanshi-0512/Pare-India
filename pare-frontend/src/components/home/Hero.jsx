@@ -87,62 +87,18 @@ const HeroSm = () => {
     </>
   )
 }
-const HeroMd = () => {
-  const navigate = useNavigate()
-  return (
-    <section className="relative ml-10 mr-2 py-20">
-      <div className="absolute top-[120px] z-10">
-        <b className="flex w-[500px] items-center font-metropolis leading-[145%]">
-          <span className="w-full text-4xl leading-snug">
-            <span>FIRST AND INDIA&apos;S ONLY MANUFACTURER OF </span>
-            <span className="text-red-base">SOFFIT SYSTEMS.</span>
-          </span>
-        </b>
-        <p className="w-[230px] text-sm">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam.
-        </p>
-        <Button className={'mt-5 !px-8'} variant="outlined" onClick={() => navigate('/contact')}>
-          BUILD WITH US
-        </Button>
-      </div>
-      <Swiper
-        modules={[EffectFade, Autoplay]}
-        effect="fade"
-        autoplay={{ delay: 2000, disableOnInteraction: false }}
-        noSwiping={true}
-        speed={800}
-      >
-        {HeroData.map((el, i) => {
-          return (
-            <SwiperSlide key={i} className="">
-              <img
-                src={el.imageLg}
-                width={'1900'}
-                height={'100'}
-                className="ml-auto !h-[350px] !w-[65vw] object-cover object-bottom"
-                alt="bg-hero"
-                key={el.imageLg}
-              />
-            </SwiperSlide>
-          )
-        })}
-      </Swiper>
-    </section>
-  )
-}
 const HeroLg = () => {
   const navigate = useNavigate()
   return (
-    <section className="relative ml-20 mr-5 h-screen pt-28 2xl:mx-40">
+    <section className="relative mr-5 pt-28 md:ml-5 lg:ml-20 lg:h-screen 2xl:mx-40">
       <div className="absolute top-[120px] z-10">
-        <b className="flex w-[700px] items-center font-metropolis leading-[145%]">
-          <span className="mt-5 w-full text-[3.5rem] leading-snug">
+        <b className="flex items-center font-metropolis leading-[145%] md:w-[550px] lg:w-[700px]">
+          <span className="mt-5 w-full leading-snug md:text-[3rem] lg:text-[3.5rem]">
             <span>FIRST AND INDIA&apos;S ONLY MANUFACTURER OF </span>
             <span className="text-red-base">SOFFIT SYSTEMS.</span>
           </span>
         </b>
-        <p className="w-[300px]">
+        <p className=" md:w-[220px] lg:w-[300px]">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam.
         </p>
@@ -182,10 +138,7 @@ const Hero = () => {
       <div className="md:hidden">
         <HeroSm />
       </div>
-      <div className="hidden md:block lg:hidden">
-        <HeroMd />
-      </div>
-      <div className="hidden lg:block">
+      <div className="hidden md:block">
         <HeroLg />
       </div>
     </>

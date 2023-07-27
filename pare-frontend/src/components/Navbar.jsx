@@ -162,8 +162,12 @@ const NavMd = ({ isScrolled, hide }) => {
   return (
     <nav
       className={`fixed z-50 w-full ${
-        isScrolled || greNavRoutes.includes(location.pathname) ? 'bg-[#EBEBEB]' : 'text-white'
-      } ${hide ? '-translate-y-[100%]' : 'translate-y-0'} duration-300 `}
+        isScrolled || greNavRoutes.includes(location.pathname)
+          ? 'bg-[#EBEBEB]'
+          : location.pathname === '/'
+          ? 'text-black'
+          : 'text-white'
+      } ${hide ? '-translate-y-[100%]' : 'translate-y-0'} duration-300`}
     >
       <div className="mx-10 flex items-center justify-between border-b-2">
         <div className="flex items-end">
