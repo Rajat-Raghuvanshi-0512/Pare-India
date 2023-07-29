@@ -26,6 +26,9 @@ import {
   Product3Img41,
   Product3Img5,
   Product3Img51,
+  Product4BannerImg,
+  Product4Img,
+  Product4SideImg,
   TrimWoodBg1,
 } from '../assets'
 
@@ -149,6 +152,31 @@ export const productsData = {
         type: 'Vertica',
         desc: 'panels, the smart and easy-to-install solution for walls and ceilings. Experience a seamless and efficient installation process, while enjoying the benefits of low maintenance and reduced wastage.',
         highlights: ['Sleek Design', 'Impact Resistance', 'Unique Interlocking'],
+        productImgs: [Product3Img1, Product3Img2, Product3Img3, Product3Img4, Product3Img5],
+        productShades: [Product3Img11, Product3Img21, Product3Img31, Product3Img41, Product3Img51],
+      },
+    ],
+  },
+  4: {
+    bannerSection: {
+      bannerPhoneImg: Product4BannerImg,
+      bannerImg: Product4BannerImg,
+      headText: 'PARE INDIA BRINGS TO YOU',
+      mainText: 'FIRST TIME IN THE WORLD',
+    },
+    section1data: {
+      mainImage: Product4Img,
+      sideImage: Product4SideImg,
+      techName: 'INNOV2+ TECHNOLOGY',
+      techDesc:
+        'Presenting Innov2+, an extraordinary fusion of innovation and excellence, poised to revolutionize your spaces with contemporary elegance and state-of-the-art functionality.',
+      variants: 1,
+    },
+    section2data: [
+      {
+        type: 'Wave',
+        desc: 'panels inspired by the graceful movement of ocean waves, these innovative panels add a touch of elegance and sophistication to any interior surfaces.',
+        highlights: ['Easy to install', 'Recyclable', 'Advance Interlocking'],
         productImgs: [Product3Img1, Product3Img2, Product3Img3, Product3Img4, Product3Img5],
         productShades: [Product3Img11, Product3Img21, Product3Img31, Product3Img41, Product3Img51],
       },

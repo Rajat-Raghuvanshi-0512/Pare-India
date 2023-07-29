@@ -142,7 +142,9 @@ import ProductImg2 from './images/products/product-img2.webp'
 import ProductImg3 from './images/products/product-img3.webp'
 import ProductImg4 from './images/products/product-img4.webp'
 import ProductImg5 from './images/products/product-img5.webp'
-import ProductImg6 from './images/products/product-img6.webp'
+import ProductImg7 from './images/products/product-img6.webp'
+import ProductImg8 from './images/products/product-img7.webp'
+import ProductImg6 from './images/products/product-img8.webp'
 import Medal from './images/products/medal.webp'
 import Wall from './images/products/wall.webp'
 import Shield from './images/products/shield.webp'
@@ -181,6 +183,10 @@ import Product3Img4 from './images/products/product3/product3-img4.webp'
 import Product3Img41 from './images/products/product3/product3-img4.1.webp'
 import Product3Img5 from './images/products/product3/product3-img5.webp'
 import Product3Img51 from './images/products/product3/product3-img5.1.webp'
+
+import Product4BannerImg from './images/products/product4/banner.webp'
+import Product4SideImg from './images/products/product4/product4-side-img.webp'
+import Product4Img from './images/products/product4/product4-img.webp'
 
 import BannerBg from './images/products/linea/banner-bg.webp'
 import BannerWoodImg from './images/products/linea/banner-wood.webp'
@@ -427,6 +433,8 @@ export {
   ProductImg4,
   ProductImg5,
   ProductImg6,
+  ProductImg7,
+  ProductImg8,
   Medal,
   Wall,
   Shield,
@@ -472,6 +480,9 @@ export {
   Product3Img41,
   Product3Img5,
   Product3Img51,
+  Product4BannerImg,
+  Product4Img,
+  Product4SideImg,
   BannerBg,
   BannerWoodImg,
   EasyLineaImg,

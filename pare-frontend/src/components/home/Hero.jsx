@@ -91,14 +91,14 @@ const HeroLg = () => {
   const navigate = useNavigate()
   return (
     <section className="relative mr-5 pt-28 md:ml-5 lg:ml-20 lg:h-screen 2xl:mx-40">
-      <div className="absolute top-[120px] z-10">
-        <b className="flex items-center font-metropolis leading-[145%] md:w-[550px] lg:w-[700px]">
-          <span className="mt-5 w-full leading-snug md:text-[3rem] lg:text-[3.5rem]">
+      <div className="absolute top-[120px] z-10 2xl:top-[150px]">
+        <b className="flex items-center font-metropolis leading-[145%] md:w-[550px] lg:w-[700px] 2xl:w-[800px]">
+          <span className="mt-5 w-full leading-snug md:text-[3rem] lg:text-[3.5rem] 2xl:text-[4rem]">
             <span>FIRST AND INDIA&apos;S ONLY MANUFACTURER OF </span>
             <span className="text-red-base">SOFFIT SYSTEMS.</span>
           </span>
         </b>
-        <p className=" md:w-[220px] lg:w-[300px]">
+        <p className=" md:w-[220px] lg:w-[300px] 2xl:text-xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam.
         </p>
@@ -120,7 +120,7 @@ const HeroLg = () => {
                 src={el.imageLg}
                 width={'1900'}
                 height={'100'}
-                className="ml-auto !h-[450px] !w-[65vw] object-cover object-bottom"
+                className="ml-auto !h-[450px] !w-[65vw] object-cover object-bottom 2xl:!h-[550px] 2xl:!w-[60vw]"
                 alt="bg-hero"
                 key={el.imageLg}
               />
