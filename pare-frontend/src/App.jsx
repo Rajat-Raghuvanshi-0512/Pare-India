@@ -46,12 +46,17 @@ const App = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setPercent((prev) => prev + 1)
-    }, 5)
+    }, 10)
     return () => clearInterval(interval)
   }, [percent])
 
   if (percent <= 100) {
-    return <Loader percent={percent} />
+    return (
+      <>
+        <Loader percent={percent} />
+        <Home />
+      </>
+    )
   }
 
   return (
