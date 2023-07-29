@@ -191,6 +191,8 @@ import Product4Img from './images/products/product4/product4-img.webp'
 import BannerBg from './images/products/linea/banner-bg.webp'
 import BannerWoodImg from './images/products/linea/banner-wood.webp'
 import EasyLineaImg from './images/products/linea/easylenia.webp'
+import EasyPyramidImg from './images/products/linea/easypyramid.webp'
+import EasyArchImg from './images/products/linea/easyarch.webp'
 import BoxImg from './images/products/linea/box.webp'
 import FireExtinguisher from './images/products/linea/fire-extinguisher.webp'
 import Umbrella from './images/products/linea/umbrella.webp'
@@ -486,6 +488,8 @@ export {
   BannerBg,
   BannerWoodImg,
   EasyLineaImg,
+  EasyArchImg,
+  EasyPyramidImg,
   BoxImg,
   FireExtinguisher,
   Umbrella,

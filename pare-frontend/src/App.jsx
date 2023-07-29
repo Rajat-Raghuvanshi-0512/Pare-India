@@ -16,6 +16,8 @@ import {
   Blog,
   PrivacyPolicy,
   BlogInfo,
+  Arch,
+  Pyramid,
 } from './pages'
 import { ContactFloatBtn, Footer, Navbar } from './components'
 import useBlobity from 'blobity/lib/react/useBlobity'
@@ -71,6 +73,8 @@ const App = () => {
         <Route path="/career-form" element={<CareerForm />} />
         <Route path="/product/:id" element={<Product1 />} />
         <Route path="/product/linea" element={<Linea />} />
+        <Route path="/product/arch" element={<Arch />} />
+        <Route path="/product/pyramid" element={<Pyramid />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/blog" element={<Blog />} />

@@ -1,7 +1,7 @@
-import { BannerBg, BannerWoodImg, BoxImg, EasyLineaImg, FireExtinguisher, Umbrella } from '../../../assets'
+import { BannerBg, BannerWoodImg, BoxImg, EasyArchImg, FireExtinguisher, Umbrella } from '../../../assets'
 import { Img } from '../../custom'
 
-const LineaBanner = () => {
+const ArchBanner = () => {
   return (
     <section className="2xl:px-40">
       <Img
@@ -12,7 +12,7 @@ const LineaBanner = () => {
       <div className="grid h-[550px] grid-cols-1 pt-40 text-white md:h-screen md:grid-cols-3 md:items-center md:justify-center md:pr-20 md:pt-20 2xl:h-[80vh]">
         <div className="hidden md:block"></div>
         <div className="md:col-span-2">
-          <Img src={EasyLineaImg} alt={'easy'} width={200} className={'ml-5 md:mx-auto'} />
+          <Img src={EasyArchImg} alt={'easy'} width={240} className={'ml-5 md:mx-auto'} />
           <p className="px-5 pt-10 font-metropolis text-4xl font-bold uppercase !leading-snug md:text-center md:text-5xl lg:text-7xl">
             Premium Quality Interior Panels
           </p>
@@ -30,29 +30,30 @@ const LineaBanner = () => {
             KEY ADVANTAGES
           </h2>
           <div className="col-span-2 py-10 text-center font-montserrat text-sm font-medium text-white md:text-xl 2xl:text-2xl">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.
-            Pellentesque sit amet
+            Revitalize your space effortlessly with Easy+, the ultimate easy-to-install system, for remarkable
+            transformations. Say goodbye to complicated installations and hello to stunning results with Easy+&apos;s
+            simplicity and convenience.
           </div>
           <div className="hidden grid-cols-3 gap-10 md:grid">
             <div className="flex flex-col items-center gap-5">
               <Img src={BoxImg} alt={'box'} width={82} height={82} />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">Easy To Install</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
-                Upgrade your space effortlessly with Easy+ and enjoy a stress-free renovation experience.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
               <Img src={FireExtinguisher} alt={'box'} width={82} height={82} />
-              <h6 className="font-metropolis font-bold 2xl:text-3xl">Recyclable</h6>
+              <h6 className="font-metropolis font-bold 2xl:text-3xl">Anti Bacterial</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
-                Embrace Sustainable Design with Our Recyclable Innovation.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
               <Img src={Umbrella} alt={'box'} width={82} height={82} />
-              <h6 className="font-metropolis font-bold 2xl:text-3xl">Advance Interlocking</h6>
+              <h6 className="font-metropolis font-bold 2xl:text-3xl">Termite & Rust Proof</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
-                Seamless Perfection: Introducing Linea&apos;s Advanced Interlocking System
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
               </p>
             </div>
           </div>
@@ -60,23 +61,23 @@ const LineaBanner = () => {
         <div className="col-span-4 grid grid-cols-3 gap-3 px-3 py-5 md:hidden">
           <div className="flex flex-col items-center gap-5">
             <Img src={BoxImg} alt={'box'} width={50} height={50} />
-            <h6 className="text-center font-metropolis text-sm font-bold">Easy To Install</h6>
+            <h6 className="text-center font-metropolis text-sm font-bold">Modern Design</h6>
             <p className="text-center font-montserrat text-xs">
-              Upgrade your space effortlessly with Easy+ and enjoy a stress-free renovation experience.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
             <Img src={FireExtinguisher} alt={'box'} width={50} height={50} />
-            <h6 className="text-center font-metropolis text-sm font-bold">Recyclable</h6>
+            <h6 className="text-center font-metropolis text-sm font-bold">Fire Resistant</h6>
             <p className="text-center font-montserrat text-xs">
-              Embrace Sustainable Design with Our Recyclable Innovation.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
             <Img src={Umbrella} alt={'box'} width={50} height={50} />
-            <h6 className="text-center font-metropolis text-sm font-bold">Advance Interlocking</h6>
+            <h6 className="text-center font-metropolis text-sm font-bold">100% Waterproof</h6>
             <p className="text-center font-montserrat text-xs">
-              Seamless Perfection: Introducing Linea&apos;s Advanced Interlocking System
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
           </div>
         </div>
@@ -85,4 +86,4 @@ const LineaBanner = () => {
   )
 }
 
-export default LineaBanner
+export default ArchBanner

@@ -1,4 +1,6 @@
 import { lazy } from 'react'
+const PyramidBanner = lazy(() => import('./pyramid/PyramidBanner'))
+const ArchBanner = lazy(() => import('./arch/ArchBanner'))
 const IntroSection = lazy(() => import('./IntroSection'))
 const ProductInfo = lazy(() => import('./ProductInfo'))
 const Brochure = lazy(() => import('./linea/Brochure'))
@@ -25,4 +27,6 @@ export {
   Brochure,
   MoreProducts,
   Trims,
+  ArchBanner,
+  PyramidBanner,
 }

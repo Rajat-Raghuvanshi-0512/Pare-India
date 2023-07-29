@@ -8,6 +8,8 @@ import Careers from './Careers'
 import CareerForm from './CareerForm'
 import Product1 from './Product1'
 import Linea from './Linea'
+import Pyramid from './Pyramid'
+import Arch from './Arch'
 import FAQ from './FAQ'
 import Resources from './Resources'
 import Gallery from './Gallery'
@@ -24,6 +26,8 @@ export {
   CareerForm,
   Product1,
   Linea,
+  Arch,
+  Pyramid,
   FAQ,
   NotFound,
   Resources,

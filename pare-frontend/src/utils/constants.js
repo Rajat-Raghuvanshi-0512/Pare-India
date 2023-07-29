@@ -55,6 +55,7 @@ export const productsData = {
         highlights: ['Easy to install', 'Recyclable', 'Advance Interlocking'],
         productImgs: [Product1Img1, Product1Img2, Product1Img3],
         productShades: [Product1Img11, Product1Img21, Product1Img31],
+        pageLink: '/linea',
       },
       {
         type: 'Pyramid',
@@ -62,6 +63,7 @@ export const productsData = {
         highlights: ['Easy to install', 'Anti-bacterial', 'Termite Proof & Rust Proof'],
         productImgs: [Product1Img1, Product1Img2, Product1Img3],
         productShades: [Product1Img11, Product1Img21, Product1Img31],
+        pageLink: '/pyramid',
       },
       {
         type: 'Arch',
@@ -69,6 +71,7 @@ export const productsData = {
         highlights: ['Easy to install', 'Advance Interlocking', 'No Ply required Can Be Screwed Directly on the walls'],
         productImgs: [Product1Img1, Product1Img2, Product1Img3],
         productShades: [Product1Img11, Product1Img21, Product1Img31],
+        pageLink: '/arch',
       },
     ],
   },
@@ -94,6 +97,7 @@ export const productsData = {
         highlights: ['Superior Quality', 'Long Life', 'UV Resistant'],
         productImgs: [Product2Img1, Product2Img2],
         productShades: [Product2Img11, Product2Img21],
+        pageLink: '/linea',
       },
       {
         type: 'Stretta',
@@ -101,6 +105,7 @@ export const productsData = {
         highlights: ['High Impact Resistance', 'Recyclable', 'Termite Proof & Rust Proof'],
         productImgs: [Product2Img1, Product2Img2],
         productShades: [Product2Img11, Product2Img21],
+        pageLink: '/linea',
       },
     ],
   },
@@ -126,6 +131,7 @@ export const productsData = {
         highlights: ['Easy to install', 'Recyclable', 'Advance Interlocking'],
         productImgs: [Product3Img1, Product3Img2, Product3Img3, Product3Img4, Product3Img5],
         productShades: [Product3Img11, Product3Img21, Product3Img31, Product3Img41, Product3Img51],
+        pageLink: '/linea',
       },
       {
         type: 'Duo',
@@ -133,6 +139,7 @@ export const productsData = {
         highlights: ['Unique Interlocking', 'Fire Retardant', 'Light Weight'],
         productImgs: [Product3Img1, Product3Img2, Product3Img3, Product3Img4, Product3Img5],
         productShades: [Product3Img11, Product3Img21, Product3Img31, Product3Img41, Product3Img51],
+        pageLink: '/linea',
       },
       {
         type: 'Soffit',
@@ -140,6 +147,7 @@ export const productsData = {
         highlights: ['No VOC Emission', 'Waterproof', 'Real Wood Feel'],
         productImgs: [Product3Img1, Product3Img2, Product3Img3, Product3Img4, Product3Img5],
         productShades: [Product3Img11, Product3Img21, Product3Img31, Product3Img41, Product3Img51],
+        pageLink: '/linea',
       },
       {
         type: 'Louvers',
@@ -147,6 +155,7 @@ export const productsData = {
         highlights: ['Fire Retardant', 'Maintenance Free', '10 Years Warranty'],
         productImgs: [Product3Img1, Product3Img2, Product3Img3, Product3Img4, Product3Img5],
         productShades: [Product3Img11, Product3Img21, Product3Img31, Product3Img41, Product3Img51],
+        pageLink: '/linea',
       },
       {
         type: 'Vertica',
@@ -154,6 +163,7 @@ export const productsData = {
         highlights: ['Sleek Design', 'Impact Resistance', 'Unique Interlocking'],
         productImgs: [Product3Img1, Product3Img2, Product3Img3, Product3Img4, Product3Img5],
         productShades: [Product3Img11, Product3Img21, Product3Img31, Product3Img41, Product3Img51],
+        pageLink: '/linea',
       },
     ],
   },
@@ -179,6 +189,7 @@ export const productsData = {
         highlights: ['Easy to install', 'Recyclable', 'Advance Interlocking'],
         productImgs: [Product3Img1, Product3Img2, Product3Img3, Product3Img4, Product3Img5],
         productShades: [Product3Img11, Product3Img21, Product3Img31, Product3Img41, Product3Img51],
+        pageLink: '/linea',
       },
     ],
   },
