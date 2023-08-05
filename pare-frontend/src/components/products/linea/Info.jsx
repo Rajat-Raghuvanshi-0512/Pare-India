@@ -2,18 +2,14 @@ import { LineaBlurBg } from '../../../assets'
 import { Img } from '../../custom'
 
 const data = [
-  {
-    heading: 'HISTORY',
-    desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit adipisci sed enim asperiores. Beatae cumque culpa fugiat nam magnam voluptate maxime ratione pariatur repellendus!',
-  },
-  {
-    heading: 'features',
-    desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit adipisci sed enim asperiores. Beatae cumque culpa fugiat nam magnam voluptate maxime ratione pariatur repellendus!',
-  },
-  {
-    heading: 'trims',
-    desc: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit adipisci sed enim asperiores. Beatae cumque culpa fugiat nam magnam voluptate maxime ratione pariatur repellendus!',
-  },
+  'Impact resistance: No deformation observed. (Tested at 50 LBS)',
+  'Tensile strength, MPa: >37.0',
+  'Tensile modulus, MPa: >2000',
+  'Surface distortion: None at 120F',
+  " Squareness: <1/8' of square",
+  " Length: Within 1/4' of specification",
+  'Lock control: Complies',
+  'Color Change: <2 grayscales (16 hrs under 1200W/m2 UV radiation at 50 degrees)',
 ]
 
 const Info = () => {
@@ -28,16 +24,31 @@ const Info = () => {
         <h2 className="font-metropolis text-4xl font-black !leading-snug md:text-center md:text-4xl lg:text-5xl">
           STAYS WITH YOU <br /> THROUGH THICK AND THIN
         </h2>
-        <div className="mt-10 grid gap-10 md:grid-cols-3">
-          {data.map((item, idx) => (
-            <div
-              key={item.heading}
-              className={`w-[80%] md:w-full ${idx === 1 ? 'ml-auto text-right md:text-left' : ''}`}
-            >
-              <h5 className="font-metropolis text-3xl font-bold uppercase text-red-base">{item.heading}</h5>
-              <p className="mt-5 font-montserrat text-lg font-medium drop-shadow-2xl">{item.desc}</p>
-            </div>
-          ))}
+        <div className="mt-10 grid gap-10 md:grid-cols-2">
+          <div>
+            <h4 className="font-metropolis text-xl font-bold uppercase text-red-base drop-shadow-lg md:text-3xl">
+              Product Details
+            </h4>
+            <p className="mt-4 font-montserrat font-semibold lg:text-xl">PRODUCT CODE-112</p>
+            <p className="mt-4 font-montserrat font-semibold lg:text-xl">
+              SIZING <br /> 180mm x 3060mm
+            </p>
+            <p className="mt-4 font-montserrat font-semibold lg:text-xl">
+              AVAILABLE IN <br /> 13 Shades <br /> 4 Collections
+            </p>
+          </div>
+          <div>
+            <h4 className="font-metropolis text-xl font-bold uppercase text-red-base drop-shadow-lg md:text-3xl">
+              TECHNICAL DECLARATIONS
+            </h4>
+            <ul className="mt-3 list-disc">
+              {data.map((item) => (
+                <li key={item} className="lg:text-lg">
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </div>

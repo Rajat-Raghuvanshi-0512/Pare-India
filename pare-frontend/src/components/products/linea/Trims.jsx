@@ -11,8 +11,8 @@ const Trims = () => {
   return (
     <div className="relative  h-[400px] w-full font-montserrat text-white md:h-[500px]">
       <Swiper spaceBetween={0} slidesPerView={1} className="z-auto h-[400px] w-full md:h-[500px] 2xl:px-40">
-        {images.map((image) => (
-          <SwiperSlide className="!-z-50" key={image}>
+        {images.map((image, idx) => (
+          <SwiperSlide className="!-z-50" key={image + idx}>
             <img
               src={image}
               alt={'bg'}

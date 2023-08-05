@@ -1,20 +1,4 @@
-import { ArchImg, ArchSideImg, PyramidImg, PyramidSideImg } from '../../../assets'
 import { Img } from '../../custom'
-
-const data = [
-  {
-    image: PyramidImg,
-    smallImg: PyramidSideImg,
-    heading: 'EASY+ Pyramid',
-    desc: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.',
-  },
-  {
-    image: ArchImg,
-    smallImg: ArchSideImg,
-    heading: 'EASY+ Arch',
-    desc: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.',
-  },
-]
 
 const ImageBox = ({ image, smallImg, heading, desc, idx }) => {
   return (
@@ -33,7 +17,7 @@ const ImageBox = ({ image, smallImg, heading, desc, idx }) => {
   )
 }
 
-const MoreProducts = () => {
+const MoreProducts = ({ data }) => {
   return (
     <section className="bg-red-base p-5 font-montserrat text-white md:p-10 lg:px-20 2xl:px-40">
       <h2 className="text-center text-2xl font-bold md:text-left md:text-3xl lg:text-5xl">

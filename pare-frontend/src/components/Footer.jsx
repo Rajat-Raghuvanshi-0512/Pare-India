@@ -34,7 +34,7 @@ const FooterSm = () => {
         Let&apos;s work together to create the space of your dreams.
       </div>
       <p className="py-5 text-3xl font-semibold">LET’S CONNECT.</p>
-      <div className="flex gap-5 uppercase">
+      <div className="flex gap-7 text-xs uppercase">
         <Link to={'https://www.instagram.com/pareindia/'} target="_blank">
           Instagram
         </Link>
@@ -45,7 +45,7 @@ const FooterSm = () => {
           Linkedin
         </Link>
       </div>
-      <p className="mr-14 py-4 text-[10px]">
+      <p className="mr-14 py-4 text-xs">
         Transform your living spaces with PARÉ&apos;s innovative, sustainable, and high-quality products . Let&apos;s
         work together to create a space that reflects your unique style and create unforgettable memories.
       </p>
@@ -53,8 +53,8 @@ const FooterSm = () => {
         <div className=" w-20 rounded-full bg-white px-2 py-1">
           <Img src={Logo} alt="logo" width={60} height={24.27} className={'object-contain'}></Img>
         </div>
-        <div className="pt-3 text-[10px]">COOKIE POLICY</div>
-        <div className="py-1 text-[10px]" onClick={() => navigate('/privacy-policy')}>
+        <div className="pt-3 text-xs">COOKIE POLICY</div>
+        <div className="py-1 text-xs" onClick={() => navigate('/privacy-policy')}>
           PRIVACY POLICY
         </div>
       </div>

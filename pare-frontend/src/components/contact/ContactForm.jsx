@@ -127,6 +127,7 @@ const ContactForm = () => {
                 className="resize-none border-b-2 border-[#adadad] bg-transparent  p-1 font-montserrat  text-white outline-none placeholder:uppercase lg:py-3 lg:text-xl"
                 name={data.message}
                 value={data.message}
+                rows={3}
                 onChange={(e) => setData((prev) => ({ ...prev, message: e.target.value }))}
                 required
               />

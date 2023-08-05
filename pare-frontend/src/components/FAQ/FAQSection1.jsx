@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { ContactAvatar, DownArrow, FAQS, LongDownArrow } from '../../assets'
 import Button from '../custom/Button'
 import Accordion from './Accordion'
+import { useNavigate } from 'react-router-dom'
 
 const FaqData = [
   {
@@ -57,6 +58,7 @@ const FaqData = [
 const FAQSection1 = () => {
   const [data, setData] = useState([])
   const [loading, setLoading] = useState(false)
+  const navigate = useNavigate()
   const loadMore = () => {
     setLoading(true)
     setData(FaqData)
@@ -110,7 +112,12 @@ const FAQSection1 = () => {
           </div>
         </div>
         <div>
-          <Button className={'w-32 !bg-white !text-red-base hover:!scale-105 md:w-full'}>Contact Us</Button>
+          <Button
+            className={'w-32 !bg-white !text-red-base hover:!scale-105 md:w-full'}
+            onClick={() => navigate('/contact')}
+          >
+            Contact Us
+          </Button>
         </div>
       </div>
     </section>

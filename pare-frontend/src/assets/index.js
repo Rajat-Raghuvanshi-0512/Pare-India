@@ -198,33 +198,49 @@ import FireExtinguisher from './images/products/linea/fire-extinguisher.webp'
 import Umbrella from './images/products/linea/umbrella.webp'
 import LineaBlurBg from './images/products/linea/blur-bg.webp'
 
-import LineaImg1 from './images/products/linea/gallery/img1.webp'
-import LineaImg2 from './images/products/linea/gallery/img2.webp'
-import LineaImg3 from './images/products/linea/gallery/img3.webp'
-import LineaImg4 from './images/products/linea/gallery/img4.webp'
+import LineaImg1 from './images/products/linea/gallery/img1.png'
+import LineaImg2 from './images/products/linea/gallery/img2.png'
+import LineaImg3 from './images/products/linea/gallery/img3.png'
+import LineaImg4 from './images/products/linea/gallery/img4.png'
 
-import LineaMetallicImg1 from './images/products/linea/metallic/img1.webp'
-import LineaMetallicImg2 from './images/products/linea/metallic/img2.webp'
-import LineaMetallicImg3 from './images/products/linea/metallic/img3.webp'
-import LineaMetallicShade1 from './images/products/linea/metallic/shade1.webp'
-import LineaMetallicShade2 from './images/products/linea/metallic/shade2.webp'
-import LineaMetallicShade3 from './images/products/linea/metallic/shade3.webp'
+import EasyImg1 from './images/products/easy/gallery/img1.png'
+import EasyImg2 from './images/products/easy/gallery/img2.png'
+import EasyImg3 from './images/products/easy/gallery/img3.png'
+import EasyImg4 from './images/products/easy/gallery/img4.png'
 
-import LineaMarbleImg1 from './images/products/linea/marble/img1.webp'
-import LineaMarbleImg2 from './images/products/linea/marble/img2.webp'
-import LineaMarbleImg3 from './images/products/linea/marble/img3.webp'
-import LineaMarbleShade1 from './images/products/linea/marble/shade1.webp'
-import LineaMarbleShade2 from './images/products/linea/marble/shade2.webp'
-import LineaMarbleShade3 from './images/products/linea/marble/shade3.webp'
+import PyramidImg1 from './images/products/pyramid/gallery/img1.png'
+import PyramidImg2 from './images/products/pyramid/gallery/img2.png'
+import PyramidImg3 from './images/products/pyramid/gallery/img3.png'
+import PyramidImg4 from './images/products/pyramid/gallery/img4.png'
 
-import LineaNatureImg1 from './images/products/linea/nature/img1.webp'
-import LineaNatureImg2 from './images/products/linea/nature/img2.webp'
-import LineaNatureImg3 from './images/products/linea/nature/img3.webp'
-import LineaNatureShade1 from './images/products/linea/nature/shade1.webp'
-import LineaNatureShade2 from './images/products/linea/nature/shade2.webp'
-import LineaNatureShade3 from './images/products/linea/nature/shade3.webp'
+import LineaMetallicImg1 from './images/products/linea/metallic/img1.png'
+import LineaMetallicImg2 from './images/products/linea/metallic/img2.png'
+import LineaMetallicImg3 from './images/products/linea/metallic/img3.png'
+import LineaMetallicShade1 from './images/products/linea/metallic/shade1.png'
+import LineaMetallicShade2 from './images/products/linea/metallic/shade2.png'
+import LineaMetallicShade3 from './images/products/linea/metallic/shade3.png'
 
-import TrimWoodBg1 from './images/products/linea/trim-wood.webp'
+import LineaMarbleImg1 from './images/products/linea/marble/img1.png'
+import LineaMarbleImg2 from './images/products/linea/marble/img2.png'
+import LineaMarbleImg3 from './images/products/linea/marble/img3.png'
+import LineaMarbleShade1 from './images/products/linea/marble/shade1.png'
+import LineaMarbleShade2 from './images/products/linea/marble/shade2.png'
+import LineaMarbleShade3 from './images/products/linea/marble/shade3.png'
+
+import LineaNatureImg1 from './images/products/linea/nature/img1.png'
+import LineaNatureImg2 from './images/products/linea/nature/img2.png'
+import LineaNatureImg3 from './images/products/linea/nature/img3.png'
+import LineaNatureImg4 from './images/products/linea/nature/img4.png'
+import LineaNatureImg5 from './images/products/linea/nature/img5.png'
+import LineaNatureImg6 from './images/products/linea/nature/img6.png'
+import LineaNatureShade1 from './images/products/linea/nature/shade1.png'
+import LineaNatureShade2 from './images/products/linea/nature/shade2.png'
+import LineaNatureShade3 from './images/products/linea/nature/shade3.png'
+import LineaNatureShade4 from './images/products/linea/nature/shade4.png'
+import LineaNatureShade5 from './images/products/linea/nature/shade5.png'
+import LineaNatureShade6 from './images/products/linea/nature/shade6.png'
+
+import TrimWoodBg1 from './images/products/linea/trim-wood.png'
 import BrochureBg from './images/products/linea/brochure-bg.webp'
 import PyramidImg from './images/products/linea/pyramid-img.webp'
 import PyramidSideImg from './images/products/linea/pyramid-side-img.webp'
@@ -497,6 +513,14 @@ export {
   LineaImg2,
   LineaImg3,
   LineaImg4,
+  EasyImg1,
+  EasyImg2,
+  EasyImg3,
+  EasyImg4,
+  PyramidImg1,
+  PyramidImg2,
+  PyramidImg3,
+  PyramidImg4,
   LineaBlurBg,
   LineaMetallicImg1,
   LineaMetallicImg2,
@@ -513,9 +537,15 @@ export {
   LineaNatureImg1,
   LineaNatureImg2,
   LineaNatureImg3,
+  LineaNatureImg4,
+  LineaNatureImg5,
+  LineaNatureImg6,
   LineaNatureShade1,
   LineaNatureShade2,
   LineaNatureShade3,
+  LineaNatureShade4,
+  LineaNatureShade5,
+  LineaNatureShade6,
   ArchImg,
   ArchSideImg,
   BrochureBg,

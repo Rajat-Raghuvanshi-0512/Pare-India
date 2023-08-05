@@ -233,7 +233,9 @@ const NavLg = ({ isScrolled, hide }) => {
             {navLinks.map((link) => (
               <li
                 key={link.text}
-                className={`group relative p-2 duration-200  ${link?.dropdown && 'hover:bg-[#EBEBEB]'} `}
+                className={`group relative p-2 duration-200  ${
+                  link?.dropdown && 'hover:bg-[#EBEBEB] hover:text-red-base'
+                } `}
               >
                 <Link to={link.path} className="font-montserrat text-xl uppercase hover:text-red-base">
                   {link.text}

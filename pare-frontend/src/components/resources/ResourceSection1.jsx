@@ -25,13 +25,12 @@ const ResourceSection1 = () => {
         <div className="flex flex-col gap-5 text-right lg:gap-7 2xl:gap-12">
           <h4 className="font-metropolis text-xl font-bold md:mt-5 lg:text-6xl 2xl:mt-10 2xl:text-7xl">BROCHURES</h4>
           <p className="pl-5 font-montserrat text-xs md:pl-0 md:text-xl 2xl:text-3xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-            ea commodo consequat.{' '}
-            <span className="hidden md:block">
+            Dive into a world of design possibilities as you explore our range of stunning brochures, filled with
+            captivating imagery and detailed product information. From innovative surfaces to creative design ideas, our
+            brochures are your ultimate resource for envisioning the perfect space.
+            <span className="hidden md:inline">
               {' '}
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non{' '}
+              Immerse yourself in inspiration and let our brochures guide you on your design journey.
             </span>
           </p>
           <Button className={'ml-auto w-fit'}>Download all</Button>
