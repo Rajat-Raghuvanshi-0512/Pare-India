@@ -98,10 +98,10 @@ const HeroLg = () => {
             <span className="text-red-base">SOFFIT SYSTEMS.</span>
           </span>
         </b>
-        <p className=" md:w-[220px] lg:w-[300px] 2xl:text-xl">
+        {/* <p className=" md:w-[220px] lg:w-[300px] 2xl:text-xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam.
-        </p>
+        </p> */}
         <Button className={'mt-5 !px-8'} variant="outlined" onClick={() => navigate('/contact')}>
           BUILD WITH US
         </Button>

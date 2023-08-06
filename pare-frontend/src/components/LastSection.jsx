@@ -8,7 +8,7 @@ const LastSection = ({ dark = true, mainText, btnText, btnRoute, showOnMobile = 
           dark ? 'bg-black-base' : 'bg-red-base'
         } ${showonDesktop ? '' : 'md:hidden'} `}
       >
-        <div className="w-[70%] font-montserrat text-base leading-snug md:text-xl">
+        <div className="w-[70%] font-montserrat text-base leading-snug md:text-3xl lg:text-5xl lg:leading-snug">
           {mainText ? mainText : "Let's work together to create the space of your dreams."}
         </div>
         <div>

@@ -66,18 +66,21 @@ const otherProducts = [
     smallImg: LouverSideImg,
     heading: 'INNOV+ Soffit',
     desc: 'Discover Soffit, the perfect blend of aesthetic appeal and convenience, providing the charm of real wood without the drawbacks. Effortlessly transform your space with quick and easy installation, achieving a seamless finish that leaves a lasting impression.',
+    redirect: '/soffit',
   },
   {
     image: ArchImg,
     smallImg: SoffitSideImg,
     heading: 'INNOV+ Louvers',
     desc: 'Experience the unmatched durability and waterproof capabilities of Louvers, making them perfect for diverse applications. With a seamless interlocking system, they effortlessly integrate with other PARÉ products, ensuring a flawless finish for your projects.',
+    redirect: '/louvers',
   },
   {
     image: VerticaImg,
     smallImg: VerticaSideImg,
     heading: 'INNOV+ Vertica',
     desc: 'Transform your walls and ceilings with Vertica panels, the smart and hassle-free solution. Enjoy seamless installation, low maintenance, and reduced wastage, making your experience efficient and rewarding.',
+    redirect: '/vertica',
   },
 ]
 const Louvers = () => {

@@ -65,12 +65,14 @@ const otherProducts = [
     smallImg: LouverSideImg,
     heading: 'EASY+ Linea',
     desc: "Revitalize your space effortlessly with Easy+, the ultimate easy-to-install system, for remarkable transformations. Say goodbye to complicated installations and hello to stunning results with Easy+'s simplicity and convenience.",
+    redirect: '/linea',
   },
   {
     image: ArchImg,
     smallImg: SoffitSideImg,
     heading: 'EASY+ Arch',
     desc: 'Experience the beauty of graceful curves and flowing lines with EASY+ Arch. Elevate your space with the timeless allure of arched designs that creates a sense of elegance and architectural intrigue.',
+    redirect: '/arch',
   },
 ]
 

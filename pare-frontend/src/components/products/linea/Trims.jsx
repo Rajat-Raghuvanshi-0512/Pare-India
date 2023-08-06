@@ -25,7 +25,7 @@ const Trims = () => {
         <Img
           alt={'bg'}
           src={JLarge}
-          className={'absolute right-0 top-10 z-10 w-[70%] object-cover md:top-10 md:h-full'}
+          className={'absolute right-0 top-10 z-10 w-[70%] object-cover md:top-10 md:h-full md:w-[60%]'}
         />
         <div className="absolute top-0 !z-10 text-center">
           <h2 className="py-5 text-3xl font-bold md:py-10 md:text-4xl lg:text-5xl">AVAILABLE TRIMS</h2>

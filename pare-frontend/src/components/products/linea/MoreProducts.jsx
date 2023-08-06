@@ -4,12 +4,15 @@ import { Img } from '../../custom'
 const ImageBox = ({ image, smallImg, heading, desc, idx, redirect }) => {
   const navigate = useNavigate()
   return (
-    <div className={`relative drop-shadow-lg ${idx == 0 ? 'z-10' : 'z-0'}`} onClick={() => navigate(redirect)}>
+    <div
+      className={`relative drop-shadow-lg ${idx == 0 ? 'z-10' : 'z-0'}`}
+      onClick={() => navigate(`/product${redirect}`)}
+    >
       <Img alt={heading} src={image} className={'h-[250px] w-full md:h-[300px]'} />
       <Img
         alt={heading}
         src={smallImg}
-        className={`absolute left-0 top-[30%] h-[240px] -translate-x-[40%] -translate-y-[50%] md:left-0 md:top-[35%] md:h-[320px]`}
+        className={`absolute -left-10 top-[30%] h-[300px] -translate-x-[50%] -translate-y-[50%] md:left-0 md:top-[35%] md:h-[380px]`}
       />
       <div className="bg-white p-5 text-black md:p-10">
         <h6 className="text-xl font-bold">{heading}</h6>

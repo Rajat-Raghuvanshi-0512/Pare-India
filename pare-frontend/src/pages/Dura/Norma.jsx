@@ -32,6 +32,7 @@ const otherProducts = [
     smallImg: SoffitSideImg,
     heading: 'DURA+ Stretta',
     desc: 'Experience a flawless and refined exterior wall cladding with Stretta Apanels, designed to perfection. Enjoy a smooth and resilient surface that stands strong against scratches and impacts, ensuring lasting beauty for your space.',
+    redirect: '/stretta',
   },
 ]
 const Norma = () => {

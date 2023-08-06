@@ -31,6 +31,7 @@ const otherProducts = [
     smallImg: LouverSideImg,
     heading: 'DURA+ Norma',
     desc: 'Discover the epitome of durability and aesthetics with Norma panels, meticulously crafted to elevate your exterior facades. Embrace a long-lasting, decorative solution that stands the test of time.',
+    redirect: '/norma',
   },
 ]
 
