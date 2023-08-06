@@ -7,6 +7,6 @@ connectToDB();
 
 app.use(errorController);
 
-app.listen(config.PORT, config.HOST, () => {
+app.listen(config.PORT, () => {
   console.log(`APP LISTENING ON https://${config.HOST}:${config.PORT}`);
 });

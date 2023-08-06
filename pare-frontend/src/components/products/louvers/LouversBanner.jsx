@@ -1,4 +1,4 @@
-import { BannerBg, BoxImg, FireExtinguisher, StrettaTitleImg, StrettaWoodImg, Umbrella } from '../../../assets'
+import { BannerBg, BoxImg, FireExtinguisher, LouverBannerWoodImg, LouverTitleImg, Umbrella } from '../../../assets'
 import { Img } from '../../custom'
 
 const StrettaBanner = () => {
@@ -12,14 +12,14 @@ const StrettaBanner = () => {
       <div className="grid h-[550px] grid-cols-1 pt-40 text-white md:h-screen md:grid-cols-3 md:items-center md:justify-center md:pr-20 md:pt-20 2xl:h-[80vh]">
         <div className="hidden md:block"></div>
         <div className="md:col-span-2">
-          <Img src={StrettaTitleImg} alt={'easy'} width={300} className={'ml-5 md:mx-auto'} />
+          <Img src={LouverTitleImg} alt={'easy'} width={300} className={'ml-5 md:mx-auto'} />
           <p className="px-5 pt-10 font-metropolis text-4xl font-bold uppercase !leading-snug md:text-center md:text-5xl lg:text-7xl">
             Premium Quality Interior Panels
           </p>
         </div>
       </div>
       <Img
-        src={StrettaWoodImg}
+        src={LouverBannerWoodImg}
         alt={'banner-wood'}
         className="absolute top-[450px] w-[170px] md:top-[30%] md:w-[300px] lg:w-[400px]"
       />

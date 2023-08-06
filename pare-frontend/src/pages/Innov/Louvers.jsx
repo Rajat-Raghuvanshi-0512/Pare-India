@@ -35,7 +35,7 @@ import {
   louverShade3Shade6,
   louverShade3Img6,
 } from '../../assets'
-import LouversBanner from '../../components/products/soffit/SoffitBanner'
+import LouversBanner from '../../components/products/louvers/LouversBanner'
 
 const metallicData = [
   { img: louverShade1Img1, shade: louverShade1Shade1 },

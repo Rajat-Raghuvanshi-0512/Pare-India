@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const cors = require('cors');
+const path = require('path');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const { AppError } = require('./src/api/v1/helpers/appError');
@@ -35,10 +36,10 @@ app.use((req, res, next) => {
 
 // Routes Api ----------> {{BASE_URL}}/v1...
 app.use('/v1', route);
+app.use(express.static(path.join(__dirname, '../pare-frontend/dist')));
 
-// For invalid routes
-app.all('*', (req) => {
-  throw new AppError(`Requested URL ${req.path} not found`, 404);
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, '../pare-frontend/dist/index.html'));
 });
 
 // Log the NODE Environment
