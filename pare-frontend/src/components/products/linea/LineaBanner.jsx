@@ -1,4 +1,4 @@
-import { BannerBg, BannerWoodImg, BoxImg, EasyLineaImg, FireExtinguisher, Umbrella } from '../../../assets'
+import { BannerBg, BannerWoodImg, EasyLineaImg, GlobeImg, InterlockImg, MechanicImg } from '../../../assets'
 import { Img } from '../../custom'
 
 const LineaBanner = () => {
@@ -30,26 +30,27 @@ const LineaBanner = () => {
             KEY ADVANTAGES
           </h2>
           <div className="col-span-2 py-10 text-center font-montserrat text-sm font-medium text-white md:text-xl 2xl:text-2xl">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.
-            Pellentesque sit amet
+            Revitalize your space effortlessly with Easy+, the ultimate easy-to-install system, for remarkable
+            transformations. Say goodbye to complicated installations and hello to stunning results with Easy+&apos;s
+            simplicity and convenience.
           </div>
           <div className="hidden grid-cols-3 gap-10 md:grid">
             <div className="flex flex-col items-center gap-5">
-              <Img src={BoxImg} alt={'box'} width={82} height={82} />
+              <Img src={MechanicImg} alt={'box'} width={82} height={82} />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">Easy To Install</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
                 Upgrade your space effortlessly with Easy+ and enjoy a stress-free renovation experience.
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={FireExtinguisher} alt={'box'} width={82} height={82} />
+              <Img src={GlobeImg} alt={'box'} width={82} height={82} />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">Recyclable</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
                 Embrace Sustainable Design with Our Recyclable Innovation.
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={Umbrella} alt={'box'} width={82} height={82} />
+              <Img src={InterlockImg} alt={'box'} width={82} height={82} />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">Advance Interlocking</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
                 Seamless Perfection: Introducing Linea&apos;s Advanced Interlocking System
@@ -59,21 +60,21 @@ const LineaBanner = () => {
         </div>
         <div className="col-span-4 grid grid-cols-3 gap-3 px-3 py-5 md:hidden">
           <div className="flex flex-col items-center gap-5">
-            <Img src={BoxImg} alt={'box'} width={50} height={50} />
+            <Img src={MechanicImg} alt={'box'} width={50} height={50} />
             <h6 className="text-center font-metropolis text-sm font-bold">Easy To Install</h6>
             <p className="text-center font-montserrat text-xs">
               Upgrade your space effortlessly with Easy+ and enjoy a stress-free renovation experience.
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={FireExtinguisher} alt={'box'} width={50} height={50} />
+            <Img src={GlobeImg} alt={'box'} width={50} height={50} />
             <h6 className="text-center font-metropolis text-sm font-bold">Recyclable</h6>
             <p className="text-center font-montserrat text-xs">
               Embrace Sustainable Design with Our Recyclable Innovation.
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={Umbrella} alt={'box'} width={50} height={50} />
+            <Img src={InterlockImg} alt={'box'} width={50} height={50} />
             <h6 className="text-center font-metropolis text-sm font-bold">Advance Interlocking</h6>
             <p className="text-center font-montserrat text-xs">
               Seamless Perfection: Introducing Linea&apos;s Advanced Interlocking System

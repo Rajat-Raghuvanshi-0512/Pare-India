@@ -18,6 +18,13 @@ import {
   BlogInfo,
   Arch,
   Pyramid,
+  Norma,
+  Stretta,
+  Wave,
+  Duo,
+  Louvers,
+  Soffit,
+  Vertica,
 } from './pages'
 import { ContactFloatBtn, Footer, Navbar } from './components'
 import useBlobity from 'blobity/lib/react/useBlobity'
@@ -75,6 +82,13 @@ const App = () => {
         <Route path="/product/linea" element={<Linea />} />
         <Route path="/product/arch" element={<Arch />} />
         <Route path="/product/pyramid" element={<Pyramid />} />
+        <Route path="/product/norma" element={<Norma />} />
+        <Route path="/product/stretta" element={<Stretta />} />
+        <Route path="/product/wave" element={<Wave />} />
+        <Route path="/product/duo" element={<Duo />} />
+        <Route path="/product/louvers" element={<Louvers />} />
+        <Route path="/product/soffit" element={<Soffit />} />
+        <Route path="/product/vertica" element={<Vertica />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/blog" element={<Blog />} />

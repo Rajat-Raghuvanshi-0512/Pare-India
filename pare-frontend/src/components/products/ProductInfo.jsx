@@ -164,6 +164,50 @@ const ProductInfoSm = () => {
           </div>
         </div>
       </div>
+      <div className="pb-10">
+        <div>
+          <div className={`relative flex items-start gap-1 font-metropolis md:gap-2`}>
+            <span className={`pl-1 font-montserrat text-xs font-bold md:text-xl 2xl:text-3xl`}>04</span>
+            <h3 className={`  text-4xl font-bold uppercase lg:text-7xl 2xl:text-8xl`}>innov2+</h3>
+          </div>
+        </div>
+        <div className="flex gap-3">
+          <div className=" flex-[1.2]">
+            <div className="relative">
+              <div className="absolute -top-2 left-2 -z-50 h-full w-full  border-2 border-red-base"></div>
+              <Img
+                src={ProductImg6}
+                width={550}
+                height={415}
+                alt="sofa"
+                className=" mt-3 h-full w-full object-contain lg:mt-5"
+              />
+            </div>
+            <div className=" mt-5 flex justify-end font-montserrat text-[8px] font-medium">
+              <div className="flex gap-2 border-r-2 px-2 pr-4">
+                <Img src={Globe} alt={'shield'} width={15} height={25} className={'object-contain'} />
+                <p>First time in the world</p>
+              </div>
+              <div className="flex gap-2 px-2 pl-4">
+                <Img src={Wall} alt={'wall'} width={25} height={25} className={'object-contain'} />
+                <p>Usage: Exterior Surface</p>
+              </div>
+            </div>
+          </div>
+          <div className="flex-[0.8] pr-3">
+            <p className="mt-5 text-right font-montserrat text-xs font-medium">
+              Presenting Innov2+, an extraordinary fusion of innovation and excellence, poised to revolutionize your
+              spaces with contemporary elegance and state-of-the-art functionality.
+            </p>
+            <div className="mt-3 flex justify-end">
+              {' '}
+              <Button variant="outlined" className={'!border !text-[10px]'} onClick={() => navigate('/product/4')}>
+                view products
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   )
 }

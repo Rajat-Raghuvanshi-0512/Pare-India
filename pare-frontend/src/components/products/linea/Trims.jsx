@@ -26,8 +26,7 @@ const Trims = () => {
         <div className="absolute top-0 !z-10 text-center">
           <h2 className="py-5 text-3xl font-bold md:py-10 md:text-4xl lg:text-5xl">AVAILABLE TRIMS</h2>
           <p className="px-5 text-xs font-medium md:mx-32 md:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa mi. Aliquam in hendrerit urna.
-            Pellentesque sit amet
+            Our trims are the key to achieving a seamless and flawless look that radiates sophistication.
           </p>
         </div>
         <div className="absolute top-32 z-10 m-5 mt-auto flex h-[60%] w-fit flex-col justify-end md:top-44 md:m-14 md:h-full md:justify-start">

@@ -12,7 +12,7 @@ const data = [
   'Color Change: <2 grayscales (16 hrs under 1200W/m2 UV radiation at 50 degrees)',
 ]
 
-const Info = () => {
+const Info = ({ code = '112', size = '180mm x 3060mm', shades = 13, collections = 4 }) => {
   return (
     <div className="relative -mb-7 px-5 py-10 text-white md:h-[600px] md:p-20">
       <Img
@@ -26,22 +26,22 @@ const Info = () => {
         </h2>
         <div className="mt-10 grid gap-10 md:grid-cols-2">
           <div>
-            <h4 className="font-metropolis text-xl font-bold uppercase text-red-base drop-shadow-lg md:text-3xl">
+            <h4 className="font-metropolis text-3xl font-bold uppercase text-red-base drop-shadow-lg">
               Product Details
             </h4>
-            <p className="mt-4 font-montserrat font-semibold lg:text-xl">PRODUCT CODE-112</p>
+            <p className="mt-4 font-montserrat font-semibold lg:text-xl">PRODUCT CODE-{code}</p>
             <p className="mt-4 font-montserrat font-semibold lg:text-xl">
-              SIZING <br /> 180mm x 3060mm
+              SIZING <br /> {size}
             </p>
             <p className="mt-4 font-montserrat font-semibold lg:text-xl">
-              AVAILABLE IN <br /> 13 Shades <br /> 4 Collections
+              AVAILABLE IN <br /> {shades} Shades <br /> {collections} Collections
             </p>
           </div>
           <div>
-            <h4 className="font-metropolis text-xl font-bold uppercase text-red-base drop-shadow-lg md:text-3xl">
+            <h4 className="font-metropolis text-3xl font-bold uppercase text-red-base drop-shadow-lg">
               TECHNICAL DECLARATIONS
             </h4>
-            <ul className="mt-3 list-disc">
+            <ul className="ml-20 mt-3 list-disc md:ml-0">
               {data.map((item) => (
                 <li key={item} className="lg:text-lg">
                   {item}

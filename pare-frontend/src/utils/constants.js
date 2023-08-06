@@ -33,7 +33,7 @@ import {
 } from '../assets'
 
 export const productsData = {
-  1: {
+  2: {
     bannerSection: {
       bannerPhoneImg: Product1BannerPhoneImg,
       bannerImg: Product1BannerImg,
@@ -75,7 +75,7 @@ export const productsData = {
       },
     ],
   },
-  2: {
+  3: {
     bannerSection: {
       bannerPhoneImg: Product2BannerPhoneImg,
       bannerImg: Product2BannerImg,
@@ -97,7 +97,7 @@ export const productsData = {
         highlights: ['Superior Quality', 'Long Life', 'UV Resistant'],
         productImgs: [Product2Img1, Product2Img2],
         productShades: [Product2Img11, Product2Img21],
-        pageLink: '/linea',
+        pageLink: '/norma',
       },
       {
         type: 'Stretta',
@@ -105,11 +105,11 @@ export const productsData = {
         highlights: ['High Impact Resistance', 'Recyclable', 'Termite Proof & Rust Proof'],
         productImgs: [Product2Img1, Product2Img2],
         productShades: [Product2Img11, Product2Img21],
-        pageLink: '/linea',
+        pageLink: '/stretta',
       },
     ],
   },
-  3: {
+  1: {
     bannerSection: {
       bannerPhoneImg: Product1BannerPhoneImg,
       bannerImg: Product1BannerImg,
@@ -122,24 +122,16 @@ export const productsData = {
       techName: 'INNOV+ TECHNOLOGY',
       techDesc:
         'Experience transformative spaces with Innov+, the ultimate wall and ceiling system. Enhance aesthetics and functionality seamlessly with cutting-edge innovation. Elevate your space and embrace the future of interior design.',
-      variants: 5,
+      variants: 4,
     },
     section2data: [
-      {
-        type: 'Grande',
-        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, ligula non ullamcorper condimentum, lectus ex viverra dolor,',
-        highlights: ['Easy to install', 'Recyclable', 'Advance Interlocking'],
-        productImgs: [Product3Img1, Product3Img2, Product3Img3, Product3Img4, Product3Img5],
-        productShades: [Product3Img11, Product3Img21, Product3Img31, Product3Img41, Product3Img51],
-        pageLink: '/linea',
-      },
       {
         type: 'Duo',
         desc: "- India's first polymer-based wall and ceiling system. Easy installation, maintenance-free, waterproof, and fire retardant. Elevate your space with our versatile collections and enjoy a seamless, hassle-free solution.",
         highlights: ['Unique Interlocking', 'Fire Retardant', 'Light Weight'],
         productImgs: [Product3Img1, Product3Img2, Product3Img3, Product3Img4, Product3Img5],
         productShades: [Product3Img11, Product3Img21, Product3Img31, Product3Img41, Product3Img51],
-        pageLink: '/linea',
+        pageLink: '/duo',
       },
       {
         type: 'Soffit',
@@ -147,7 +139,7 @@ export const productsData = {
         highlights: ['No VOC Emission', 'Waterproof', 'Real Wood Feel'],
         productImgs: [Product3Img1, Product3Img2, Product3Img3, Product3Img4, Product3Img5],
         productShades: [Product3Img11, Product3Img21, Product3Img31, Product3Img41, Product3Img51],
-        pageLink: '/linea',
+        pageLink: '/soffit',
       },
       {
         type: 'Louvers',
@@ -155,7 +147,7 @@ export const productsData = {
         highlights: ['Fire Retardant', 'Maintenance Free', '10 Years Warranty'],
         productImgs: [Product3Img1, Product3Img2, Product3Img3, Product3Img4, Product3Img5],
         productShades: [Product3Img11, Product3Img21, Product3Img31, Product3Img41, Product3Img51],
-        pageLink: '/linea',
+        pageLink: '/louvers',
       },
       {
         type: 'Vertica',
@@ -163,7 +155,7 @@ export const productsData = {
         highlights: ['Sleek Design', 'Impact Resistance', 'Unique Interlocking'],
         productImgs: [Product3Img1, Product3Img2, Product3Img3, Product3Img4, Product3Img5],
         productShades: [Product3Img11, Product3Img21, Product3Img31, Product3Img41, Product3Img51],
-        pageLink: '/linea',
+        pageLink: '/vertica',
       },
     ],
   },
@@ -189,7 +181,7 @@ export const productsData = {
         highlights: ['Easy to install', 'Recyclable', 'Advance Interlocking'],
         productImgs: [Product3Img1, Product3Img2, Product3Img3, Product3Img4, Product3Img5],
         productShades: [Product3Img11, Product3Img21, Product3Img31, Product3Img41, Product3Img51],
-        pageLink: '/linea',
+        pageLink: '/wave',
       },
     ],
   },

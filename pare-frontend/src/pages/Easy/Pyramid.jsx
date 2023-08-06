@@ -1,6 +1,6 @@
 import { Suspense } from 'react'
-import { Loader } from '../components'
-import { Brochure, ImgGallery, Info, MoreProducts, PyramidBanner, Shades, Trims } from '../components/products'
+import { Loader } from '../../components'
+import { Brochure, ImgGallery, Info, MoreProducts, PyramidBanner, Shades, Trims } from '../../components/products'
 import {
   LineaMarbleImg1,
   LineaMarbleImg2,
@@ -34,7 +34,7 @@ import {
   PyramidSideImg,
   ArchImg,
   ArchSideImg,
-} from '../assets'
+} from '../../assets'
 
 const metallicData = [
   { img: LineaMetallicImg1, shade: LineaMetallicShade1 },

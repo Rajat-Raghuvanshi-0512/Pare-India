@@ -1,4 +1,4 @@
-import { BannerBg, BannerWoodImg, BoxImg, EasyPyramidImg, FireExtinguisher, Umbrella } from '../../../assets'
+import { BacterialImg, BannerBg, BannerWoodImg, CheckImg, EasyPyramidImg, MechanicImg } from '../../../assets'
 import { Img } from '../../custom'
 
 const PyramidBanner = () => {
@@ -36,48 +36,50 @@ const PyramidBanner = () => {
           </div>
           <div className="hidden grid-cols-3 gap-10 md:grid">
             <div className="flex flex-col items-center gap-5">
-              <Img src={BoxImg} alt={'box'} width={82} height={82} />
+              <Img src={MechanicImg} alt={'box'} width={82} height={82} />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">Easy To Install</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Upgrade your space effortlessly with Easy+ and enjoy a stress-free renovation experience.
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={FireExtinguisher} alt={'box'} width={82} height={82} />
+              <Img src={BacterialImg} alt={'box'} width={82} height={82} />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">Anti Bacterial</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                A captivating design with depth and texture, now fortified with anti-bacterial properties for added
+                cleanliness and safety.
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={Umbrella} alt={'box'} width={82} height={82} />
+              <Img src={CheckImg} alt={'box'} width={82} height={82} />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">Termite & Rust Proof</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Stay tension free with our termite-proof and rust-proof features for long-lasting durability.
               </p>
             </div>
           </div>
         </div>
         <div className="col-span-4 grid grid-cols-3 gap-3 px-3 py-5 md:hidden">
           <div className="flex flex-col items-center gap-5">
-            <Img src={BoxImg} alt={'box'} width={50} height={50} />
-            <h6 className="text-center font-metropolis text-sm font-bold">Modern Design</h6>
+            <Img src={MechanicImg} alt={'box'} width={50} height={50} />
+            <h6 className="text-center font-metropolis text-sm font-bold">Easy To Install</h6>
             <p className="text-center font-montserrat text-xs">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Upgrade your space effortlessly with Easy+ and enjoy a stress-free renovation experience.
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={FireExtinguisher} alt={'box'} width={50} height={50} />
-            <h6 className="text-center font-metropolis text-sm font-bold">Fire Resistant</h6>
+            <Img src={BacterialImg} alt={'box'} width={50} height={50} />
+            <h6 className="text-center font-metropolis text-sm font-bold">Anti Bacterial</h6>
             <p className="text-center font-montserrat text-xs">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              A captivating design with depth and texture, now fortified with anti-bacterial properties for added
+              cleanliness and safety.
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={Umbrella} alt={'box'} width={50} height={50} />
-            <h6 className="text-center font-metropolis text-sm font-bold">100% Waterproof</h6>
+            <Img src={CheckImg} alt={'box'} width={50} height={50} />
+            <h6 className="text-center font-metropolis text-sm font-bold">Termite & Rust Proof</h6>
             <p className="text-center font-montserrat text-xs">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Stay tension free with our termite-proof and rust-proof features for long-lasting durability.
             </p>
           </div>
         </div>

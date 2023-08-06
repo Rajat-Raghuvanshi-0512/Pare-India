@@ -208,10 +208,216 @@ import EasyImg2 from './images/products/easy/gallery/img2.png'
 import EasyImg3 from './images/products/easy/gallery/img3.png'
 import EasyImg4 from './images/products/easy/gallery/img4.png'
 
+import NormaImg1 from './images/products/norma/gallery/img1.png'
+import NormaImg2 from './images/products/norma/gallery/img2.png'
+import NormaImg3 from './images/products/norma/gallery/img3.png'
+import NormaImg4 from './images/products/norma/gallery/img4.png'
+
+import LouverImg1 from './images/products/louver/gallery/img1.png'
+import LouverImg2 from './images/products/louver/gallery/img2.png'
+import LouverImg3 from './images/products/louver/gallery/img3.png'
+import LouverImg4 from './images/products/louver/gallery/img4.png'
+
+import SoffitImg1 from './images/products/soffit/gallery/img1.png'
+import SoffitImg2 from './images/products/soffit/gallery/img2.png'
+import SoffitImg3 from './images/products/soffit/gallery/img3.png'
+import SoffitImg4 from './images/products/soffit/gallery/img4.png'
+
+import StrettaImg1 from './images/products/stretta/gallery/img1.png'
+import StrettaImg2 from './images/products/stretta/gallery/img2.png'
+import StrettaImg3 from './images/products/stretta/gallery/img3.png'
+import StrettaImg4 from './images/products/stretta/gallery/img4.png'
+
+import VerticaImg1 from './images/products/vertica/gallery/img1.png'
+import VerticaImg2 from './images/products/vertica/gallery/img2.png'
+import VerticaImg3 from './images/products/vertica/gallery/img3.png'
+import VerticaImg4 from './images/products/vertica/gallery/img4.png'
+
+import WaveImg1 from './images/products/wave/gallery/img1.png'
+import WaveImg2 from './images/products/wave/gallery/img2.png'
+import WaveImg3 from './images/products/wave/gallery/img3.png'
+import WaveImg4 from './images/products/wave/gallery/img4.png'
+
+import DuoImg1 from './images/products/Duo/gallery/img1.png'
+import DuoImg2 from './images/products/Duo/gallery/img2.png'
+import DuoImg3 from './images/products/Duo/gallery/img3.png'
+import DuoImg4 from './images/products/Duo/gallery/img4.png'
+
+import DuoBannerWoodImg from './images/products/Duo/banner.png'
+import LouverBannerWoodImg from './images/products/louver/banner.png'
+import StrettaWoodImg from './images/products/stretta/banner.png'
+import SofitBannerWoodImg from './images/products/soffit/banner.png'
+import VerficaBannerWoodImg from './images/products/vertica/banner.png'
+import WaveBannerWoodImg from './images/products/wave/banner.png'
+import NormaBannerWoodImg from './images/products/norma/banner.png'
+
+import NormaTitleImg from './images/products/norma/main-img.png'
+import DuoTitleImg from './images/products/Duo/main-img.png'
+import LouverTitleImg from './images/products/louver/main-img.png'
+import StrettaTitleImg from './images/products/stretta/main-img.png'
+import SoffitTitleImg from './images/products/soffit/main-img.png'
+import VerticaTitleImg from './images/products/vertica/main-img.png'
+import WaveTitleImg from './images/products/wave/main-img.png'
+
 import PyramidImg1 from './images/products/pyramid/gallery/img1.png'
 import PyramidImg2 from './images/products/pyramid/gallery/img2.png'
 import PyramidImg3 from './images/products/pyramid/gallery/img3.png'
 import PyramidImg4 from './images/products/pyramid/gallery/img4.png'
+
+import NormaShade1Img1 from './images/products/norma/shade1/img1.png'
+import NormaShade1Img2 from './images/products/norma/shade1/img2.png'
+import NormaShade1Img3 from './images/products/norma/shade1/img3.png'
+import NormaShade1Img4 from './images/products/norma/shade1/img4.png'
+import NormaShade1Shade1 from './images/products/norma/shade1/shade1.png'
+import NormaShade1Shade2 from './images/products/norma/shade1/shade2.png'
+import NormaShade1Shade3 from './images/products/norma/shade1/shade3.png'
+import NormaShade1Shade4 from './images/products/norma/shade1/shade4.png'
+
+import StrettaShade1Img1 from './images/products/stretta/shade1/img1.png'
+import StrettaShade1Img2 from './images/products/stretta/shade1/img2.png'
+import StrettaShade1Img3 from './images/products/stretta/shade1/img3.png'
+import StrettaShade1Img4 from './images/products/stretta/shade1/img4.png'
+import StrettaShade1Shade1 from './images/products/stretta/shade1/shade1.png'
+import StrettaShade1Shade2 from './images/products/stretta/shade1/shade2.png'
+import StrettaShade1Shade3 from './images/products/stretta/shade1/shade3.png'
+import StrettaShade1Shade4 from './images/products/stretta/shade1/shade4.png'
+
+import WaveShade1Img1 from './images/products/wave/shade1/img1.png'
+import WaveShade1Img2 from './images/products/wave/shade1/img2.png'
+import WaveShade1Img3 from './images/products/wave/shade1/img3.png'
+import WaveShade1Img4 from './images/products/wave/shade1/img4.png'
+import WaveShade1Img5 from './images/products/wave/shade1/img5.png'
+import WaveShade1Img6 from './images/products/wave/shade1/img6.png'
+import WaveShade1Shade1 from './images/products/wave/shade1/shade1.png'
+import WaveShade1Shade2 from './images/products/wave/shade1/shade2.png'
+import WaveShade1Shade3 from './images/products/wave/shade1/shade3.png'
+import WaveShade1Shade4 from './images/products/wave/shade1/shade4.png'
+import WaveShade1Shade5 from './images/products/wave/shade1/shade5.png'
+import WaveShade1Shade6 from './images/products/wave/shade1/shade6.png'
+
+import WaveShade2Img1 from './images/products/wave/shade2/img1.png'
+import WaveShade2Img2 from './images/products/wave/shade2/img2.png'
+import WaveShade2Img3 from './images/products/wave/shade2/img3.png'
+import WaveShade2Img4 from './images/products/wave/shade2/img4.png'
+import WaveShade2Img5 from './images/products/wave/shade2/img5.png'
+import WaveShade2Img6 from './images/products/wave/shade2/img6.png'
+import WaveShade2Shade1 from './images/products/wave/shade2/shade1.png'
+import WaveShade2Shade2 from './images/products/wave/shade2/shade2.png'
+import WaveShade2Shade3 from './images/products/wave/shade2/shade3.png'
+import WaveShade2Shade4 from './images/products/wave/shade2/shade4.png'
+import WaveShade2Shade5 from './images/products/wave/shade2/shade5.png'
+import WaveShade2Shade6 from './images/products/wave/shade2/shade6.png'
+
+import SoffitShade1Img1 from './images/products/soffit/shade1/img1.png'
+import SoffitShade1Img2 from './images/products/soffit/shade1/img2.png'
+import SoffitShade1Img3 from './images/products/soffit/shade1/img3.png'
+import SoffitShade1Img4 from './images/products/soffit/shade1/img4.png'
+import SoffitShade1Img5 from './images/products/soffit/shade1/img5.png'
+import SoffitShade1Img6 from './images/products/soffit/shade1/img6.png'
+import SoffitShade1Shade1 from './images/products/soffit/shade1/shade1.png'
+import SoffitShade1Shade2 from './images/products/soffit/shade1/shade2.png'
+import SoffitShade1Shade3 from './images/products/soffit/shade1/shade3.png'
+import SoffitShade1Shade4 from './images/products/soffit/shade1/shade4.png'
+import SoffitShade1Shade5 from './images/products/soffit/shade1/shade5.png'
+import SoffitShade1Shade6 from './images/products/soffit/shade1/shade6.png'
+
+import SoffitShade2Img1 from './images/products/soffit/shade2/img1.png'
+import SoffitShade2Img2 from './images/products/soffit/shade2/img2.png'
+import SoffitShade2Img3 from './images/products/soffit/shade2/img3.png'
+import SoffitShade2Img4 from './images/products/soffit/shade2/img4.png'
+import SoffitShade2Img5 from './images/products/soffit/shade2/img5.png'
+import SoffitShade2Img6 from './images/products/soffit/shade2/img6.png'
+import SoffitShade2Shade1 from './images/products/soffit/shade2/shade1.png'
+import SoffitShade2Shade2 from './images/products/soffit/shade2/shade2.png'
+import SoffitShade2Shade3 from './images/products/soffit/shade2/shade3.png'
+import SoffitShade2Shade4 from './images/products/soffit/shade2/shade4.png'
+import SoffitShade2Shade5 from './images/products/soffit/shade2/shade5.png'
+import SoffitShade2Shade6 from './images/products/soffit/shade2/shade6.png'
+
+import SoffitShade3Img1 from './images/products/soffit/shade3/img1.png'
+import SoffitShade3Img2 from './images/products/soffit/shade3/img2.png'
+import SoffitShade3Shade5 from './images/products/soffit/shade3/shade1.png'
+import SoffitShade3Shade6 from './images/products/soffit/shade3/shade2.png'
+
+import DuoShade1Img1 from './images/products/Duo/shade1/img1.png'
+import DuoShade1Img2 from './images/products/Duo/shade1/img2.png'
+import DuoShade1Img3 from './images/products/Duo/shade1/img3.png'
+import DuoShade1Img4 from './images/products/Duo/shade1/img4.png'
+import DuoShade1Img5 from './images/products/Duo/shade1/img5.png'
+import DuoShade1Img6 from './images/products/Duo/shade1/img6.png'
+import DuoShade1Shade1 from './images/products/Duo/shade1/shade1.png'
+import DuoShade1Shade2 from './images/products/Duo/shade1/shade2.png'
+import DuoShade1Shade3 from './images/products/Duo/shade1/shade3.png'
+import DuoShade1Shade4 from './images/products/Duo/shade1/shade4.png'
+import DuoShade1Shade5 from './images/products/Duo/shade1/shade5.png'
+import DuoShade1Shade6 from './images/products/Duo/shade1/shade6.png'
+
+import DuoShade2Img1 from './images/products/Duo/shade2/img1.png'
+import DuoShade2Img2 from './images/products/Duo/shade2/img2.png'
+import DuoShade2Img3 from './images/products/Duo/shade2/img3.png'
+import DuoShade2Img4 from './images/products/Duo/shade2/img4.png'
+import DuoShade2Img5 from './images/products/Duo/shade2/img5.png'
+import DuoShade2Img6 from './images/products/Duo/shade2/img6.png'
+import DuoShade2Shade1 from './images/products/Duo/shade2/shade1.png'
+import DuoShade2Shade2 from './images/products/Duo/shade2/shade2.png'
+import DuoShade2Shade3 from './images/products/Duo/shade2/shade3.png'
+import DuoShade2Shade4 from './images/products/Duo/shade2/shade4.png'
+import DuoShade2Shade5 from './images/products/Duo/shade2/shade5.png'
+import DuoShade2Shade6 from './images/products/Duo/shade2/shade6.png'
+
+import louverShade1Img1 from './images/products/louver/shade1/img1.png'
+import louverShade1Img2 from './images/products/louver/shade1/img2.png'
+import louverShade1Img3 from './images/products/louver/shade1/img3.png'
+import louverShade1Shade1 from './images/products/louver/shade1/shade1.png'
+import louverShade1Shade2 from './images/products/louver/shade1/shade2.png'
+import louverShade1Shade3 from './images/products/louver/shade1/shade3.png'
+
+import louverShade2Img1 from './images/products/louver/shade2/img1.png'
+import louverShade2Img2 from './images/products/louver/shade2/img2.png'
+import louverShade2Img3 from './images/products/louver/shade2/img3.png'
+import louverShade2Shade1 from './images/products/louver/shade2/shade1.png'
+import louverShade2Shade2 from './images/products/louver/shade2/shade2.png'
+import louverShade2Shade3 from './images/products/louver/shade2/shade3.png'
+
+import louverShade3Img1 from './images/products/louver/shade3/img1.png'
+import louverShade3Img2 from './images/products/louver/shade3/img2.png'
+import louverShade3Img3 from './images/products/louver/shade3/img3.png'
+import louverShade3Img4 from './images/products/louver/shade3/img4.png'
+import louverShade3Img5 from './images/products/louver/shade3/img5.png'
+import louverShade3Img6 from './images/products/louver/shade3/img6.png'
+import louverShade3Shade1 from './images/products/louver/shade3/shade1.png'
+import louverShade3Shade2 from './images/products/louver/shade3/shade2.png'
+import louverShade3Shade3 from './images/products/louver/shade3/shade3.png'
+import louverShade3Shade4 from './images/products/louver/shade3/shade4.png'
+import louverShade3Shade5 from './images/products/louver/shade3/shade5.png'
+import louverShade3Shade6 from './images/products/louver/shade3/shade6.png'
+
+import verticaShade1Img1 from './images/products/vertica/shade1/img1.png'
+import verticaShade1Img2 from './images/products/vertica/shade1/img2.png'
+import verticaShade1Img3 from './images/products/vertica/shade1/img3.png'
+import verticaShade1Shade1 from './images/products/vertica/shade1/shade1.png'
+import verticaShade1Shade2 from './images/products/vertica/shade1/shade2.png'
+import verticaShade1Shade3 from './images/products/vertica/shade1/shade3.png'
+
+import verticaShade2Img1 from './images/products/vertica/shade2/img1.png'
+import verticaShade2Img2 from './images/products/vertica/shade2/img2.png'
+import verticaShade2Img3 from './images/products/vertica/shade2/img3.png'
+import verticaShade2Shade1 from './images/products/vertica/shade2/shade1.png'
+import verticaShade2Shade2 from './images/products/vertica/shade2/shade2.png'
+import verticaShade2Shade3 from './images/products/vertica/shade2/shade3.png'
+
+import verticaShade3Img1 from './images/products/vertica/shade3/img1.png'
+import verticaShade3Img2 from './images/products/vertica/shade3/img2.png'
+import verticaShade3Img3 from './images/products/vertica/shade3/img3.png'
+import verticaShade3Img4 from './images/products/vertica/shade3/img4.png'
+import verticaShade3Img5 from './images/products/vertica/shade3/img5.png'
+import verticaShade3Img6 from './images/products/vertica/shade3/img6.png'
+import verticaShade3Shade1 from './images/products/vertica/shade3/shade1.png'
+import verticaShade3Shade2 from './images/products/vertica/shade3/shade2.png'
+import verticaShade3Shade3 from './images/products/vertica/shade3/shade3.png'
+import verticaShade3Shade4 from './images/products/vertica/shade3/shade4.png'
+import verticaShade3Shade5 from './images/products/vertica/shade3/shade5.png'
+import verticaShade3Shade6 from './images/products/vertica/shade3/shade6.png'
 
 import LineaMetallicImg1 from './images/products/linea/metallic/img1.png'
 import LineaMetallicImg2 from './images/products/linea/metallic/img2.png'
@@ -320,6 +526,21 @@ import Blog1Img3 from './images/blogs/blog1-img3.webp'
 import FacebookIcon from './images/blogs/facebook.webp'
 import TwitterIcon from './images/blogs/twitter.webp'
 import PinterestIcon from './images/blogs/pinterest.webp'
+
+import SunImg from './images/products/sun.png'
+import BacterialImg from './images/products/bacterial.png'
+import CheckImg from './images/products/check.png'
+import DropImg from './images/products/drop.png'
+import GlobeImg from './images/products/globe.png'
+import FireImg from './images/products/fire.png'
+import LeafImg from './images/products/leaf.png'
+import MechanicImg from './images/products/mechanic.png'
+import StarImg from './images/products/star.png'
+import InterlockImg from './images/products/interlock.png'
+import TimeImg from './images/products/time.png'
+
+import VerticaImg from './images/products/vertica/vertica.png'
+import VerticaSideImg from './images/products/vertica/vertica-side-img.png'
 
 export {
   Logo,
@@ -546,6 +767,20 @@ export {
   LineaNatureShade4,
   LineaNatureShade5,
   LineaNatureShade6,
+  DuoBannerWoodImg,
+  LouverBannerWoodImg,
+  NormaBannerWoodImg,
+  SofitBannerWoodImg,
+  StrettaWoodImg,
+  VerficaBannerWoodImg,
+  WaveBannerWoodImg,
+  DuoTitleImg,
+  LouverTitleImg,
+  NormaTitleImg,
+  SoffitTitleImg,
+  StrettaTitleImg,
+  VerticaTitleImg,
+  WaveTitleImg,
   ArchImg,
   ArchSideImg,
   BrochureBg,
@@ -609,4 +844,185 @@ export {
   FacebookIcon,
   PinterestIcon,
   TwitterIcon,
+  DuoImg1,
+  DuoImg2,
+  DuoImg3,
+  DuoImg4,
+  LouverImg1,
+  LouverImg2,
+  LouverImg3,
+  LouverImg4,
+  NormaImg1,
+  NormaImg2,
+  NormaImg3,
+  NormaImg4,
+  SoffitImg1,
+  SoffitImg2,
+  SoffitImg3,
+  SoffitImg4,
+  StrettaImg1,
+  StrettaImg2,
+  StrettaImg3,
+  StrettaImg4,
+  VerticaImg1,
+  VerticaImg2,
+  VerticaImg3,
+  VerticaImg4,
+  WaveImg1,
+  WaveImg2,
+  WaveImg3,
+  WaveImg4,
+  NormaShade1Img1,
+  NormaShade1Img2,
+  NormaShade1Img3,
+  NormaShade1Img4,
+  NormaShade1Shade1,
+  NormaShade1Shade2,
+  NormaShade1Shade3,
+  NormaShade1Shade4,
+  StrettaShade1Img1,
+  StrettaShade1Img2,
+  StrettaShade1Img3,
+  StrettaShade1Img4,
+  StrettaShade1Shade1,
+  StrettaShade1Shade2,
+  StrettaShade1Shade3,
+  StrettaShade1Shade4,
+  WaveShade1Img1,
+  WaveShade1Img2,
+  WaveShade1Img3,
+  WaveShade1Img4,
+  WaveShade1Img5,
+  WaveShade1Img6,
+  WaveShade1Shade1,
+  WaveShade1Shade2,
+  WaveShade1Shade3,
+  WaveShade1Shade4,
+  WaveShade1Shade5,
+  WaveShade1Shade6,
+  WaveShade2Img1,
+  WaveShade2Img2,
+  WaveShade2Img3,
+  WaveShade2Img4,
+  WaveShade2Img5,
+  WaveShade2Img6,
+  WaveShade2Shade1,
+  WaveShade2Shade2,
+  WaveShade2Shade3,
+  WaveShade2Shade4,
+  WaveShade2Shade5,
+  WaveShade2Shade6,
+  SoffitShade1Img1,
+  SoffitShade1Img2,
+  SoffitShade1Img3,
+  SoffitShade1Img4,
+  SoffitShade1Img5,
+  SoffitShade1Img6,
+  SoffitShade1Shade1,
+  SoffitShade1Shade2,
+  SoffitShade1Shade3,
+  SoffitShade1Shade4,
+  SoffitShade1Shade5,
+  SoffitShade1Shade6,
+  SoffitShade2Img1,
+  SoffitShade2Img2,
+  SoffitShade2Img3,
+  SoffitShade2Img4,
+  SoffitShade2Img5,
+  SoffitShade2Img6,
+  SoffitShade2Shade1,
+  SoffitShade2Shade2,
+  SoffitShade2Shade3,
+  SoffitShade2Shade4,
+  SoffitShade2Shade5,
+  SoffitShade2Shade6,
+  SoffitShade3Img1,
+  SoffitShade3Img2,
+  SoffitShade3Shade5,
+  SoffitShade3Shade6,
+  DuoShade1Img1,
+  DuoShade1Img2,
+  DuoShade1Img3,
+  DuoShade1Img4,
+  DuoShade1Img5,
+  DuoShade1Img6,
+  DuoShade1Shade1,
+  DuoShade1Shade2,
+  DuoShade1Shade3,
+  DuoShade1Shade4,
+  DuoShade1Shade5,
+  DuoShade1Shade6,
+  DuoShade2Img1,
+  DuoShade2Img2,
+  DuoShade2Img3,
+  DuoShade2Img4,
+  DuoShade2Img5,
+  DuoShade2Img6,
+  DuoShade2Shade1,
+  DuoShade2Shade2,
+  DuoShade2Shade3,
+  DuoShade2Shade4,
+  DuoShade2Shade5,
+  DuoShade2Shade6,
+  BacterialImg,
+  CheckImg,
+  DropImg,
+  FireImg,
+  GlobeImg,
+  LeafImg,
+  MechanicImg,
+  StarImg,
+  SunImg,
+  TimeImg,
+  louverShade1Img1,
+  louverShade1Img2,
+  louverShade1Img3,
+  louverShade1Shade1,
+  louverShade1Shade2,
+  louverShade1Shade3,
+  louverShade2Img1,
+  louverShade2Img2,
+  louverShade2Img3,
+  louverShade2Shade1,
+  louverShade2Shade2,
+  louverShade2Shade3,
+  louverShade3Img1,
+  louverShade3Img2,
+  louverShade3Img3,
+  louverShade3Img4,
+  louverShade3Img5,
+  louverShade3Img6,
+  louverShade3Shade1,
+  louverShade3Shade2,
+  louverShade3Shade3,
+  louverShade3Shade4,
+  louverShade3Shade5,
+  louverShade3Shade6,
+  verticaShade1Img1,
+  verticaShade1Img2,
+  verticaShade1Img3,
+  verticaShade1Shade1,
+  verticaShade1Shade2,
+  verticaShade1Shade3,
+  verticaShade2Img1,
+  verticaShade2Img2,
+  verticaShade2Img3,
+  verticaShade2Shade1,
+  verticaShade2Shade2,
+  verticaShade2Shade3,
+  verticaShade3Img1,
+  verticaShade3Img2,
+  verticaShade3Img3,
+  verticaShade3Img4,
+  verticaShade3Img5,
+  verticaShade3Img6,
+  verticaShade3Shade1,
+  verticaShade3Shade2,
+  verticaShade3Shade3,
+  verticaShade3Shade4,
+  verticaShade3Shade5,
+  verticaShade3Shade6,
+  VerticaImg,
+  VerticaSideImg,
+  InterlockImg,
 }
