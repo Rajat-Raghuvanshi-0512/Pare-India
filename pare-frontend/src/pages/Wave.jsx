@@ -1,11 +1,7 @@
 import { Suspense } from 'react'
 import { Loader } from '../components'
-import { Brochure, ImgGallery, Info, MoreProducts, Shades, Trims } from '../components/products'
+import { Brochure, ImgGallery, Info, Shades, Trims } from '../components/products'
 import {
-  PyramidImg,
-  PyramidSideImg,
-  ArchImg,
-  ArchSideImg,
   WaveImg1,
   WaveImg2,
   WaveImg3,
@@ -54,21 +50,6 @@ const shade2Data = [
   { img: WaveShade2Img5, shade: WaveShade2Shade5 },
   { img: WaveShade2Img6, shade: WaveShade2Shade6 },
 ]
-
-const otherProducts = [
-  {
-    image: PyramidImg,
-    smallImg: PyramidSideImg,
-    heading: 'EASY+ Pyramid',
-    desc: 'Unleash the power of sharp angles and captivating lines with EASY+ Pyramid. Elevate your space with architectural depth and a visually stunning design that adds a touch of modern sophistication.',
-  },
-  {
-    image: ArchImg,
-    smallImg: ArchSideImg,
-    heading: 'EASY+ Arch',
-    desc: 'Experience the beauty of graceful curves and flowing lines with EASY+ Arch. Elevate your space with the timeless allure of arched designs that creates a sense of elegance and architectural intrigue.',
-  },
-]
 const Wave = () => {
   return (
     <Suspense fallback={<Loader />}>
@@ -78,7 +59,6 @@ const Wave = () => {
       <Shades firstTitle="WOODEN" firstData={metallicData} secondTitle="FOREST" secondData={shade2Data} />
       <Trims />
       <Brochure />
-      <MoreProducts data={otherProducts} />
     </Suspense>
   )
 }

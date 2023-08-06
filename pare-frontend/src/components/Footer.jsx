@@ -15,6 +15,13 @@ const darkNavLinks = [
   '/gallery',
   '/product/duo',
   '/product/arch',
+  '/product/linea',
+  '/product/soffit',
+  '/product/pyramid',
+  '/product/norma',
+  '/product/vertica',
+  '/product/wave',
+  '/product/louvers',
 ]
 const darkNavLinksSm = [
   '/about',
@@ -25,6 +32,13 @@ const darkNavLinksSm = [
   '/product/linea',
   '/product/duo',
   '/product/arch',
+  '/product/linea',
+  '/product/soffit',
+  '/product/pyramid',
+  '/product/norma',
+  '/product/vertica',
+  '/product/wave',
+  '/product/louvers',
 ]
 
 const FooterSm = () => {

@@ -3,9 +3,6 @@ import { Loader } from '../../components'
 import { Brochure, ImgGallery, Info, MoreProducts, Shades, Trims } from '../../components/products'
 import {
   PyramidImg,
-  PyramidSideImg,
-  ArchImg,
-  ArchSideImg,
   NormaImg1,
   NormaImg2,
   NormaImg3,
@@ -18,6 +15,7 @@ import {
   NormaShade1Shade3,
   NormaShade1Shade4,
   NormaShade1Img4,
+  SoffitSideImg,
 } from '../../assets'
 import NormaBanner from '../../components/products/norma/NormaBanner'
 
@@ -31,15 +29,9 @@ const metallicData = [
 const otherProducts = [
   {
     image: PyramidImg,
-    smallImg: PyramidSideImg,
-    heading: 'EASY+ Pyramid',
-    desc: 'Unleash the power of sharp angles and captivating lines with EASY+ Pyramid. Elevate your space with architectural depth and a visually stunning design that adds a touch of modern sophistication.',
-  },
-  {
-    image: ArchImg,
-    smallImg: ArchSideImg,
-    heading: 'EASY+ Arch',
-    desc: 'Experience the beauty of graceful curves and flowing lines with EASY+ Arch. Elevate your space with the timeless allure of arched designs that creates a sense of elegance and architectural intrigue.',
+    smallImg: SoffitSideImg,
+    heading: 'DURA+ Stretta',
+    desc: 'Experience a flawless and refined exterior wall cladding with Stretta Apanels, designed to perfection. Enjoy a smooth and resilient surface that stands strong against scratches and impacts, ensuring lasting beauty for your space.',
   },
 ]
 const Norma = () => {

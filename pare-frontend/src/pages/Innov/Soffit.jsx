@@ -3,9 +3,7 @@ import { Loader } from '../../components'
 import { Brochure, ImgGallery, Info, MoreProducts, Shades, Trims } from '../../components/products'
 import {
   PyramidImg,
-  PyramidSideImg,
   ArchImg,
-  ArchSideImg,
   SoffitImg1,
   SoffitImg2,
   SoffitImg3,
@@ -38,6 +36,10 @@ import {
   SoffitShade3Img2,
   SoffitShade3Shade5,
   SoffitShade3Shade6,
+  LouverSideImg,
+  SoffitSideImg,
+  VerticaImg,
+  VerticaSideImg,
 } from '../../assets'
 import SoffitBanner from '../../components/products/soffit/SoffitBanner'
 
@@ -63,18 +65,25 @@ const shade3Data = [
   { img: SoffitShade3Img1, shade: SoffitShade3Shade5 },
   { img: SoffitShade3Img2, shade: SoffitShade3Shade6 },
 ]
+
 const otherProducts = [
   {
     image: PyramidImg,
-    smallImg: PyramidSideImg,
-    heading: 'EASY+ Pyramid',
-    desc: 'Unleash the power of sharp angles and captivating lines with EASY+ Pyramid. Elevate your space with architectural depth and a visually stunning design that adds a touch of modern sophistication.',
+    smallImg: LouverSideImg,
+    heading: 'INNOV+ Soffit',
+    desc: 'Discover Soffit, the perfect blend of aesthetic appeal and convenience, providing the charm of real wood without the drawbacks. Effortlessly transform your space with quick and easy installation, achieving a seamless finish that leaves a lasting impression.',
   },
   {
     image: ArchImg,
-    smallImg: ArchSideImg,
-    heading: 'EASY+ Arch',
-    desc: 'Experience the beauty of graceful curves and flowing lines with EASY+ Arch. Elevate your space with the timeless allure of arched designs that creates a sense of elegance and architectural intrigue.',
+    smallImg: SoffitSideImg,
+    heading: 'INNOV+ Louvers',
+    desc: 'Experience the unmatched durability and waterproof capabilities of Louvers, making them perfect for diverse applications. With a seamless interlocking system, they effortlessly integrate with other PARÉ products, ensuring a flawless finish for your projects.',
+  },
+  {
+    image: VerticaImg,
+    smallImg: VerticaSideImg,
+    heading: 'INNOV+ Vertica',
+    desc: 'Transform your walls and ceilings with Vertica panels, the smart and hassle-free solution. Enjoy seamless installation, low maintenance, and reduced wastage, making your experience efficient and rewarding.',
   },
 ]
 const Soffit = () => {

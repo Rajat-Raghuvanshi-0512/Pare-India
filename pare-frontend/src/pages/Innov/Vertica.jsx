@@ -3,7 +3,6 @@ import { Loader } from '../../components'
 import { Brochure, ImgGallery, Info, MoreProducts, Shades, Trims } from '../../components/products'
 import {
   PyramidImg,
-  PyramidSideImg,
   VerticaImg1,
   VerticaImg2,
   VerticaImg3,
@@ -34,6 +33,9 @@ import {
   VerticaImg4,
   VerticaImg,
   VerticaSideImg,
+  LouverSideImg,
+  ArchImg,
+  SoffitSideImg,
 } from '../../assets'
 import VerticaBanner from '../../components/products/vertica/VerticaBanner'
 
@@ -61,15 +63,21 @@ const natureData = [
 const otherProducts = [
   {
     image: PyramidImg,
-    smallImg: PyramidSideImg,
-    heading: 'EASY+ Pyramid',
-    desc: 'Unleash the power of sharp angles and captivating lines with EASY+ Pyramid. Elevate your space with architectural depth and a visually stunning design that adds a touch of modern sophistication.',
+    smallImg: LouverSideImg,
+    heading: 'INNOV+ Soffit',
+    desc: 'Discover Soffit, the perfect blend of aesthetic appeal and convenience, providing the charm of real wood without the drawbacks. Effortlessly transform your space with quick and easy installation, achieving a seamless finish that leaves a lasting impression.',
+  },
+  {
+    image: ArchImg,
+    smallImg: SoffitSideImg,
+    heading: 'INNOV+ Louvers',
+    desc: 'Experience the unmatched durability and waterproof capabilities of Louvers, making them perfect for diverse applications. With a seamless interlocking system, they effortlessly integrate with other PARÉ products, ensuring a flawless finish for your projects.',
   },
   {
     image: VerticaImg,
     smallImg: VerticaSideImg,
-    heading: 'EASY+ Arch',
-    desc: 'Experience the beauty of graceful curves and flowing lines with EASY+ Arch. Elevate your space with the timeless allure of arched designs that creates a sense of elegance and architectural intrigue.',
+    heading: 'INNOV+ Vertica',
+    desc: 'Transform your walls and ceilings with Vertica panels, the smart and hassle-free solution. Enjoy seamless installation, low maintenance, and reduced wastage, making your experience efficient and rewarding.',
   },
 ]
 const Vertica = () => {

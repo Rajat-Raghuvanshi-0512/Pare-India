@@ -1,7 +1,7 @@
 import ShadeBox from '../ShadeBox'
 const Shades = ({ firstTitle, secondTitle, thirdTitle, firstData, secondData, thirdData }) => {
   return (
-    <section className="bg-black-base py-10 font-montserrat">
+    <section className="bg-black-base pt-10 font-montserrat">
       <h2 className="mx-auto w-fit border-b-2 border-red-base py-2 text-center text-3xl font-bold text-white lg:text-4xl">
         AVAILABLE SHADES
       </h2>

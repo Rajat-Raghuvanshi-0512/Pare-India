@@ -1,13 +1,15 @@
+import { useNavigate } from 'react-router-dom'
 import { Img } from '../../custom'
 
-const ImageBox = ({ image, smallImg, heading, desc, idx }) => {
+const ImageBox = ({ image, smallImg, heading, desc, idx, redirect }) => {
+  const navigate = useNavigate()
   return (
-    <div className={`relative drop-shadow-lg ${idx == 0 ? 'z-10' : 'z-0'}`}>
-      <Img alt={heading} src={image} className={'h-[200px] w-full md:h-[300px]'} />
+    <div className={`relative drop-shadow-lg ${idx == 0 ? 'z-10' : 'z-0'}`} onClick={() => navigate(redirect)}>
+      <Img alt={heading} src={image} className={'h-[250px] w-full md:h-[300px]'} />
       <Img
         alt={heading}
         src={smallImg}
-        className={`absolute left-3 top-[40%] h-[300px] -translate-x-[40%] -translate-y-[50%] md:left-0 md:top-[50%] md:h-[420px]`}
+        className={`absolute left-0 top-[30%] h-[240px] -translate-x-[40%] -translate-y-[50%] md:left-0 md:top-[35%] md:h-[320px]`}
       />
       <div className="bg-white p-5 text-black md:p-10">
         <h6 className="text-xl font-bold">{heading}</h6>

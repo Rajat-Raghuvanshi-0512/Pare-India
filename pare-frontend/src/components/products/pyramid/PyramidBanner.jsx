@@ -29,7 +29,7 @@ const PyramidBanner = () => {
           <h2 className="w-full pt-5 text-center font-metropolis text-2xl font-bold uppercase leading-10 text-white md:text-5xl lg:text-6xl 2xl:text-7xl">
             KEY ADVANTAGES
           </h2>
-          <div className="col-span-2 py-10 text-center font-montserrat text-sm font-medium text-white md:text-xl 2xl:text-2xl">
+          <div className="col-span-2 py-10 pr-2 text-center font-montserrat text-sm font-medium text-white md:text-xl 2xl:text-2xl">
             Revitalize your space effortlessly with Easy+, the ultimate easy-to-install system, for remarkable
             transformations. Say goodbye to complicated installations and hello to stunning results with Easy+&apos;s
             simplicity and convenience.

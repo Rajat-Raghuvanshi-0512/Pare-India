@@ -3,9 +3,7 @@ import { Loader } from '../../components'
 import { Brochure, ImgGallery, Info, MoreProducts, Shades, Trims } from '../../components/products'
 import {
   PyramidImg,
-  PyramidSideImg,
   ArchImg,
-  ArchSideImg,
   DuoImg1,
   DuoImg2,
   DuoImg3,
@@ -35,6 +33,9 @@ import {
   DuoShade2Shade5,
   DuoShade2Shade6,
   VerticaImg,
+  VerticaSideImg,
+  SoffitSideImg,
+  LouverSideImg,
 } from '../../assets'
 import DuoBanner from '../../components/products/duo/DuoBanner'
 const metallicData = [
@@ -57,19 +58,19 @@ const shade2Data = [
 const otherProducts = [
   {
     image: PyramidImg,
-    smallImg: PyramidSideImg,
+    smallImg: LouverSideImg,
     heading: 'INNOV+ Soffit',
     desc: 'Discover Soffit, the perfect blend of aesthetic appeal and convenience, providing the charm of real wood without the drawbacks. Effortlessly transform your space with quick and easy installation, achieving a seamless finish that leaves a lasting impression.',
   },
   {
     image: ArchImg,
-    smallImg: ArchSideImg,
+    smallImg: SoffitSideImg,
     heading: 'INNOV+ Louvers',
     desc: 'Experience the unmatched durability and waterproof capabilities of Louvers, making them perfect for diverse applications. With a seamless interlocking system, they effortlessly integrate with other PARÉ products, ensuring a flawless finish for your projects.',
   },
   {
     image: VerticaImg,
-    smallImg: PyramidSideImg,
+    smallImg: VerticaSideImg,
     heading: 'INNOV+ Vertica',
     desc: 'Transform your walls and ceilings with Vertica panels, the smart and hassle-free solution. Enjoy seamless installation, low maintenance, and reduced wastage, making your experience efficient and rewarding.',
   },

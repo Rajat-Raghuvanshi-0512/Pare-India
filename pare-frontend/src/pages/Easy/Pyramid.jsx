@@ -31,9 +31,9 @@ import {
   LineaNatureShade6,
   LineaNatureImg6,
   PyramidImg,
-  PyramidSideImg,
   ArchImg,
-  ArchSideImg,
+  LouverSideImg,
+  SoffitSideImg,
 } from '../../assets'
 
 const metallicData = [
@@ -62,13 +62,13 @@ const natureData = [
 const otherProducts = [
   {
     image: PyramidImg,
-    smallImg: PyramidSideImg,
+    smallImg: LouverSideImg,
     heading: 'EASY+ Linea',
     desc: "Revitalize your space effortlessly with Easy+, the ultimate easy-to-install system, for remarkable transformations. Say goodbye to complicated installations and hello to stunning results with Easy+'s simplicity and convenience.",
   },
   {
     image: ArchImg,
-    smallImg: ArchSideImg,
+    smallImg: SoffitSideImg,
     heading: 'EASY+ Arch',
     desc: 'Experience the beauty of graceful curves and flowing lines with EASY+ Arch. Elevate your space with the timeless allure of arched designs that creates a sense of elegance and architectural intrigue.',
   },

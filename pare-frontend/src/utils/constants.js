@@ -51,7 +51,7 @@ export const productsData = {
     section2data: [
       {
         type: 'Linea',
-        desc: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        desc: "Revitalize your space effortlessly with Easy+, the ultimate easy-to-install system, for remarkable transformations. Say goodbye to complicated installations and hello to stunning results with Easy+'s simplicity and convenience.",
         highlights: ['Easy to install', 'Recyclable', 'Advance Interlocking'],
         productImgs: [Product1Img1, Product1Img2, Product1Img3],
         productShades: [Product1Img11, Product1Img21, Product1Img31],
@@ -59,7 +59,7 @@ export const productsData = {
       },
       {
         type: 'Pyramid',
-        desc: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        desc: "Revitalize your space effortlessly with Easy+, the ultimate easy-to-install system, for remarkable transformations. Say goodbye to complicated installations and hello to stunning results with Easy+'s simplicity and convenience.",
         highlights: ['Easy to install', 'Anti-bacterial', 'Termite Proof & Rust Proof'],
         productImgs: [Product1Img1, Product1Img2, Product1Img3],
         productShades: [Product1Img11, Product1Img21, Product1Img31],
@@ -67,7 +67,7 @@ export const productsData = {
       },
       {
         type: 'Arch',
-        desc: 'lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        desc: "Revitalize your space effortlessly with Easy+, the ultimate easy-to-install system, for remarkable transformations. Say goodbye to complicated installations and hello to stunning results with Easy+'s simplicity and convenience.",
         highlights: ['Easy to install', 'Advance Interlocking', 'No Ply required Can Be Screwed Directly on the walls'],
         productImgs: [Product1Img1, Product1Img2, Product1Img3],
         productShades: [Product1Img11, Product1Img21, Product1Img31],

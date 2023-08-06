@@ -2,10 +2,7 @@ import { Suspense } from 'react'
 import { Loader } from '../../components'
 import { Brochure, ImgGallery, Info, MoreProducts, Shades, Trims } from '../../components/products'
 import {
-  PyramidImg,
-  PyramidSideImg,
   ArchImg,
-  ArchSideImg,
   StrettaImg1,
   StrettaImg2,
   StrettaImg3,
@@ -18,6 +15,7 @@ import {
   StrettaShade1Shade2,
   StrettaShade1Shade3,
   StrettaShade1Shade4,
+  LouverSideImg,
 } from '../../assets'
 import StrettaBanner from '../../components/products/stretta/StrettaBanner'
 
@@ -29,16 +27,10 @@ const metallicData = [
 ]
 const otherProducts = [
   {
-    image: PyramidImg,
-    smallImg: PyramidSideImg,
-    heading: 'EASY+ Pyramid',
-    desc: 'Unleash the power of sharp angles and captivating lines with EASY+ Pyramid. Elevate your space with architectural depth and a visually stunning design that adds a touch of modern sophistication.',
-  },
-  {
     image: ArchImg,
-    smallImg: ArchSideImg,
-    heading: 'EASY+ Arch',
-    desc: 'Experience the beauty of graceful curves and flowing lines with EASY+ Arch. Elevate your space with the timeless allure of arched designs that creates a sense of elegance and architectural intrigue.',
+    smallImg: LouverSideImg,
+    heading: 'DURA+ Norma',
+    desc: 'Discover the epitome of durability and aesthetics with Norma panels, meticulously crafted to elevate your exterior facades. Embrace a long-lasting, decorative solution that stands the test of time.',
   },
 ]
 

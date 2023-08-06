@@ -541,6 +541,8 @@ import TimeImg from './images/products/time.png'
 
 import VerticaImg from './images/products/vertica/vertica.png'
 import VerticaSideImg from './images/products/vertica/vertica-side-img.png'
+import SoffitSideImg from './images/products/soffit/soffit-side-img.png'
+import LouverSideImg from './images/products/louver/louvers-side-img.png'
 
 export {
   Logo,
@@ -1025,4 +1027,6 @@ export {
   VerticaImg,
   VerticaSideImg,
   InterlockImg,
+  LouverSideImg,
+  SoffitSideImg,
 }
