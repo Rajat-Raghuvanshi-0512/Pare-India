@@ -47,7 +47,7 @@ const P1Section2 = ({ data }) => {
               ))}
             </ul>
             <div className="flex w-full justify-end md:justify-start">
-              <Button onClick={() => navigate(`/product${item.pageLink}`)}>View range</Button>
+              <Button onClick={() => navigate(`/product${item.pageLink}`)}>View More</Button>
             </div>
           </div>
           <div className="relative h-full w-full">

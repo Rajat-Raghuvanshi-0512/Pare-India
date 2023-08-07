@@ -1,5 +1,5 @@
 import ShadeBox from '../ShadeBox'
-const Shades = ({ firstTitle, secondTitle, thirdTitle, firstData, secondData, thirdData }) => {
+const Shades = ({ firstTitle, secondTitle, thirdTitle, firstData, secondData, thirdData, fourthData, fourthTitle }) => {
   return (
     <section className="bg-black-base pt-10 font-montserrat">
       <h2 className="mx-auto w-fit border-b-2 border-red-base py-2 text-center text-3xl font-bold text-white lg:text-4xl">
@@ -37,6 +37,18 @@ const Shades = ({ firstTitle, secondTitle, thirdTitle, firstData, secondData, th
             </h5>
             <div className="ml-28 flex min-w-[80vw] gap-10 overflow-y-hidden overflow-x-scroll md:ml-40 md:gap-10 lg:gap-20">
               {thirdData.map((item, idx) => (
+                <ShadeBox item={item} idx={idx} key={item.img + idx} />
+              ))}
+            </div>
+          </div>
+        )}
+        {fourthData && (
+          <div className="flex items-center bg-red-base md:pl-10">
+            <h5 className="absolute w-fit -rotate-90 text-xl font-medium text-white">
+              {fourthTitle} <br /> COLLECTION
+            </h5>
+            <div className="ml-28 flex  min-w-[80vw] gap-10 overflow-y-hidden overflow-x-scroll md:ml-40 md:gap-10 lg:gap-20">
+              {fourthData.map((item, idx) => (
                 <ShadeBox item={item} idx={idx} key={item.img + idx} />
               ))}
             </div>

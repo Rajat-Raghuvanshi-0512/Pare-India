@@ -50,6 +50,9 @@ import P22 from './images/home/products range/p22.webp'
 import P3 from './images/home/products range/p3.webp'
 import P31 from './images/home/products range/p31.webp'
 import P32 from './images/home/products range/p32.webp'
+import P4 from './images/home/products range/p4.png'
+import P41 from './images/home/products range/p41.png'
+import P42 from './images/home/products range/p42.png'
 
 import P1Phone from './images/home/products range/mobile/p1.webp'
 import P12Phone from './images/home/products range/mobile/p11.webp'
@@ -546,6 +549,104 @@ import LouverSideImg from './images/products/louver/louvers-side-img.png'
 
 import JtrimLarge from './images/products/J-trim-large.png'
 import JtrimPro from './images/products/J-trim-pro.png'
+import InsideTrim from './images/products/inside-corner-trim.png'
+import OutsideTrim from './images/products/outside-corner-trim.png'
+import LTrim from './images/products/l-trim.png'
+import TTrim from './images/products/t-trim.png'
+import JTrim from './images/products/j-trim.png'
+import StarterTrim from './images/products/starter-trim.png'
+import FinishedTrim from './images/products/finished-trim.png'
+
+import LineaLastSection from './images/products/linea/last-section.png'
+import SoffitLastSection from './images/products/soffit/last-section.png'
+import DuoLastSection from './images/products/Duo/last-section.png'
+import ArchLastSection from './images/products/easy/last-section.png'
+import LouverLastSection from './images/products/louver/last-section.png'
+import NormaLastSection from './images/products/norma/last-section.png'
+import PyramidLastSection from './images/products/pyramid/last-section.png'
+import VerticaLastSection from './images/products/vertica/last-section.png'
+import StrettaLastSection from './images/products/stretta/last-section.png'
+
+import SilverLinea from './images/products/linea/fabric/img1.png'
+import SilverLineaShade from './images/products/linea/fabric/shade1.png'
+import SilverPyramid from './images/products/pyramid/img1.png'
+import SilverPyramidShade from './images/products/pyramid/shade1.png'
+import DuoSideImage from './images/products/Duo/duo-side-img.png'
+import StrettaSideImage from './images/products/stretta/stretta-side-img.png'
+import LouversImg1 from './images/products/louver/louvers-img.png'
+import LouversShadeImg1 from './images/products/louver/louvers-shade.png'
+import UniqueSideImg from './images/products/unique-side-img.png'
+import EasySideImg from './images/products/easy-side-img.png'
+
+import LineaVerticaImg1 from './images/products/linea/vertica/img1.png'
+import LineaVerticaImg2 from './images/products/linea/vertica/img2.png'
+import LineaVerticaImg3 from './images/products/linea/vertica/img3.png'
+import LineaVerticaShade1 from './images/products/linea/vertica/shade1.png'
+import LineaVerticaShade2 from './images/products/linea/vertica/shade2.png'
+import LineaVerticaShade3 from './images/products/linea/vertica/shade3.png'
+
+import LineaLouverImg1 from './images/products/linea/louver/img1.png'
+import LineaLouverImg2 from './images/products/linea/louver/img2.png'
+import LineaLouverImg3 from './images/products/linea/louver/img3.png'
+import LineaLouverShade1 from './images/products/linea/louver/shade1.png'
+import LineaLouverShade2 from './images/products/linea/louver/shade2.png'
+import LineaLouverShade3 from './images/products/linea/louver/shade3.png'
+
+import LineaSoffitImg1 from './images/products/linea/soffit/img1.png'
+import LineaSoffitImg2 from './images/products/linea/soffit/img2.png'
+import LineaSoffitImg3 from './images/products/linea/soffit/img3.png'
+import LineaSoffitShade1 from './images/products/linea/soffit/shade1.png'
+import LineaSoffitShade2 from './images/products/linea/soffit/shade2.png'
+import LineaSoffitShade3 from './images/products/linea/soffit/shade3.png'
+
+import LineaDuoImg1 from './images/products/linea/duo/img1.png'
+import LineaDuoImg2 from './images/products/linea/duo/img2.png'
+import LineaDuoImg3 from './images/products/linea/duo/img3.png'
+import LineaDuoShade1 from './images/products/linea/duo/shade1.png'
+import LineaDuoShade2 from './images/products/linea/duo/shade2.png'
+import LineaDuoShade3 from './images/products/linea/duo/shade3.png'
+
+import DuraNormaImg1 from './images/products/dura/norma/img1.png'
+import DuraNormaImg2 from './images/products/dura/norma/img2.png'
+import DuraNormaImg3 from './images/products/dura/norma/img3.png'
+import DuraNormaShade1 from './images/products/dura/norma/shade1.png'
+import DuraNormaShade2 from './images/products/dura/norma/shade2.png'
+import DuraNormaShade3 from './images/products/dura/norma/shade3.png'
+
+import DuraStrettaImg1 from './images/products/dura/stretta/img1.png'
+import DuraStrettaImg2 from './images/products/dura/stretta/img2.png'
+import DuraStrettaImg3 from './images/products/dura/stretta/img3.png'
+import DuraStrettaShade1 from './images/products/dura/stretta/shade1.png'
+import DuraStrettaShade2 from './images/products/dura/stretta/shade2.png'
+import DuraStrettaShade3 from './images/products/dura/stretta/shade3.png'
+
+import EasyLineaImg1 from './images/products/easy/linea/img1.png'
+import EasyLineaImg2 from './images/products/easy/linea/img2.png'
+import EasyLineaImg3 from './images/products/easy/linea/img3.png'
+import EasyLineaShade1 from './images/products/easy/linea/shade1.png'
+import EasyLineaShade2 from './images/products/easy/linea/shade2.png'
+import EasyLineaShade3 from './images/products/easy/linea/shade3.png'
+
+import EasyArchImg1 from './images/products/easy/arch/img1.png'
+import EasyArchImg2 from './images/products/easy/arch/img2.png'
+import EasyArchImg3 from './images/products/easy/arch/img3.png'
+import EasyArchShade1 from './images/products/easy/arch/shade1.png'
+import EasyArchShade2 from './images/products/easy/arch/shade2.png'
+import EasyArchShade3 from './images/products/easy/arch/shade3.png'
+
+import EasyPyramidImg1 from './images/products/easy/pyramid/img1.png'
+import EasyPyramidImg2 from './images/products/easy/pyramid/img2.png'
+import EasyPyramidImg3 from './images/products/easy/pyramid/img3.png'
+import EasyPyramidShade1 from './images/products/easy/pyramid/shade1.png'
+import EasyPyramidShade2 from './images/products/easy/pyramid/shade2.png'
+import EasyPyramidShade3 from './images/products/easy/pyramid/shade3.png'
+
+import Innov2WaveImg1 from './images/products/innov2/wave/img1.png'
+import Innov2WaveImg2 from './images/products/innov2/wave/img2.png'
+import Innov2WaveImg3 from './images/products/innov2/wave/img3.png'
+import Innov2WaveShade1 from './images/products/innov2/wave/shade1.png'
+import Innov2WaveShade2 from './images/products/innov2/wave/shade2.png'
+import Innov2WaveShade3 from './images/products/innov2/wave/shade3.png'
 
 export {
   Logo,
@@ -1034,4 +1135,93 @@ export {
   SoffitSideImg,
   JtrimLarge,
   JtrimPro,
+  P4,
+  P41,
+  P42,
+  ArchLastSection,
+  DuoLastSection,
+  LineaLastSection,
+  LouverLastSection,
+  NormaLastSection,
+  PyramidLastSection,
+  SoffitLastSection,
+  StrettaLastSection,
+  VerticaLastSection,
+  SilverLinea,
+  SilverLineaShade,
+  SilverPyramid,
+  SilverPyramidShade,
+  DuoSideImage,
+  StrettaSideImage,
+  LouversImg1,
+  LouversShadeImg1,
+  EasySideImg,
+  UniqueSideImg,
+  LineaVerticaImg1,
+  LineaVerticaImg2,
+  LineaVerticaImg3,
+  LineaVerticaShade1,
+  LineaVerticaShade2,
+  LineaVerticaShade3,
+  LineaLouverImg1,
+  LineaLouverImg2,
+  LineaLouverImg3,
+  LineaLouverShade1,
+  LineaLouverShade2,
+  LineaLouverShade3,
+  LineaSoffitImg1,
+  LineaSoffitImg2,
+  LineaSoffitImg3,
+  LineaSoffitShade1,
+  LineaSoffitShade2,
+  LineaSoffitShade3,
+  LineaDuoImg1,
+  LineaDuoImg2,
+  LineaDuoImg3,
+  LineaDuoShade1,
+  LineaDuoShade2,
+  LineaDuoShade3,
+  DuraNormaImg1,
+  DuraNormaImg2,
+  DuraNormaImg3,
+  DuraNormaShade1,
+  DuraNormaShade2,
+  DuraNormaShade3,
+  DuraStrettaImg1,
+  DuraStrettaImg2,
+  DuraStrettaImg3,
+  DuraStrettaShade1,
+  DuraStrettaShade2,
+  DuraStrettaShade3,
+  EasyArchImg1,
+  EasyArchImg2,
+  EasyArchImg3,
+  EasyArchShade1,
+  EasyArchShade2,
+  EasyArchShade3,
+  EasyLineaImg1,
+  EasyLineaImg2,
+  EasyLineaImg3,
+  EasyLineaShade1,
+  EasyLineaShade2,
+  EasyLineaShade3,
+  EasyPyramidImg1,
+  EasyPyramidImg2,
+  EasyPyramidImg3,
+  EasyPyramidShade1,
+  EasyPyramidShade2,
+  EasyPyramidShade3,
+  Innov2WaveImg1,
+  Innov2WaveImg2,
+  Innov2WaveImg3,
+  Innov2WaveShade1,
+  Innov2WaveShade2,
+  Innov2WaveShade3,
+  FinishedTrim,
+  InsideTrim,
+  JTrim,
+  LTrim,
+  OutsideTrim,
+  StarterTrim,
+  TTrim,
 }

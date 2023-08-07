@@ -23,14 +23,18 @@ const PRCard = ({ id, heading, desc, img, img1, img2 }) => {
   return (
     <div
       className={`lg:gap:20 my-10 grid grid-cols-2 gap-3 md:gap-10 lg:gap-20 ${
-        id === '02' ? 'mr-3 text-right md:mr-10 lg:mr-16 2xl:mr-40' : 'md:ml-10 lg:ml-16 2xl:ml-40'
+        id === '02' || id === '04' ? 'mr-3 text-right md:mr-10 lg:mr-16 2xl:mr-40' : 'md:ml-10 lg:ml-16 2xl:ml-40'
       }`}
     >
-      <div className={`ml-5 ${id === '02' ? 'order-3' : ''} `}>
-        <div className={`relative flex items-start gap-1 font-metropolis md:gap-2 ${id === '02' ? 'justify-end' : ''}`}>
+      <div className={`ml-5 ${id === '02' || id === '04' ? 'order-3' : ''} `}>
+        <div
+          className={`relative flex items-start gap-1 font-metropolis md:gap-2 ${
+            id === '02' || id === '04' ? 'justify-end' : ''
+          }`}
+        >
           <span
             className={` ${
-              id !== '02' ? 'absolute -left-4 md:-left-8 2xl:-left-12' : ''
+              id !== '02' && id !== '04' ? 'absolute -left-4 md:-left-8 2xl:-left-12' : ''
             }  font-montserrat text-xs font-bold md:text-xl 2xl:text-3xl`}
           >
             {id}
@@ -44,8 +48,12 @@ const PRCard = ({ id, heading, desc, img, img1, img2 }) => {
           view products
         </Button>
       </div>
-      <div className={`flex items-end ${id === '02' ? 'justify-start' : 'justify-end'}`}>
-        <Carousel images={[img, img1, img2]} left={id === '02' ? false : true} alignLeft={id === '02' ? true : false} />
+      <div className={`flex items-end ${id === '02' || id === '04' ? 'justify-start' : 'justify-end'}`}>
+        <Carousel
+          images={[img, img1, img2]}
+          left={id === '02' || id === '04' ? false : true}
+          alignLeft={id === '02' || id === '04' ? true : false}
+        />
       </div>
     </div>
   )

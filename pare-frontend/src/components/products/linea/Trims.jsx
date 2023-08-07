@@ -1,42 +1,33 @@
-import { JLarge, JtrimLarge, JtrimPro, TrimWoodBg1 } from '../../../assets'
-import { Img } from '../../custom'
+import { TrimWoodBg1 } from '../../../assets'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 import 'swiper/css/bundle'
 import 'swiper/css'
 import TrimBgNavigation from './TrimBgNavigation'
-import { useState } from 'react'
-const images = [TrimWoodBg1, TrimWoodBg1, TrimWoodBg1]
-const Jimages = [JLarge, JtrimLarge, JtrimPro]
 
-const Trims = () => {
-  const [currSlide, setCurrSlide] = useState(0)
+const Trims = ({ Jimages, trim }) => {
   return (
-    <div className="relative  h-[400px] w-full font-montserrat text-white md:h-[500px]">
-      <Swiper
-        spaceBetween={0}
-        onSlideChange={(x) => setCurrSlide(x.activeIndex)}
-        slidesPerView={1}
-        className="z-auto h-[400px] w-full md:h-[500px] 2xl:px-40"
-      >
-        {images.map((image, idx) => (
+    <div className="relative  h-[400px] w-full font-montserrat text-white md:h-screen">
+      <Swiper spaceBetween={0} slidesPerView={1} className="z-auto h-[400px] !w-full md:h-full 2xl:px-40">
+        {Jimages.map((image, idx) => (
           <SwiperSlide className="!-z-50" key={image + idx}>
+            <img src={TrimWoodBg1} alt="" />
             <img
               src={image}
               alt={'bg'}
               width={300}
               height={300}
-              className={'absolute left-0 top-0 !-z-50 h-full w-full object-cover'}
+              className={'absolute right-0 top-0 ml-auto h-full w-[70%] object-contain object-right'}
             />
           </SwiperSlide>
         ))}
-        <Img
+        {/* <Img
           alt={'bg'}
           src={Jimages[currSlide]}
           className={
             'absolute -right-10 top-20 z-10 !h-48 w-[100%] object-contain object-right md:top-[40%] md:h-full md:w-[60%]'
           }
-        />
+        /> */}
         <div className="absolute top-0 !z-10 text-center">
           <h2 className="py-5 text-3xl font-bold md:py-10 md:text-4xl lg:text-5xl">AVAILABLE TRIMS</h2>
           <p className="px-5 text-xs font-medium md:mx-32 md:text-xl">
@@ -45,7 +36,7 @@ const Trims = () => {
         </div>
         <div className="absolute top-32 z-10 m-5 mt-auto flex h-[60%] w-fit flex-col justify-end md:top-44 md:m-14 md:h-full md:justify-start">
           <h5 className="text-center font-metropolis text-2xl font-bold uppercase lg:text-3xl">trim options</h5>
-          <TrimBgNavigation />
+          <TrimBgNavigation trims={trim} />
         </div>
       </Swiper>
     </div>

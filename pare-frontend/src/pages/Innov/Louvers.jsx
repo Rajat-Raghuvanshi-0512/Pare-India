@@ -2,8 +2,6 @@ import { Suspense } from 'react'
 import { Loader } from '../../components'
 import { Brochure, ImgGallery, Info, MoreProducts, Shades, Trims } from '../../components/products'
 import {
-  PyramidImg,
-  ArchImg,
   LouverImg1,
   LouverImg2,
   LouverImg3,
@@ -33,9 +31,18 @@ import {
   louverShade3Shade6,
   louverShade3Img6,
   LouverSideImg,
-  SoffitSideImg,
-  VerticaImg,
   VerticaSideImg,
+  SoffitLastSection,
+  LouverLastSection,
+  VerticaLastSection,
+  LouversImg1,
+  LouversShadeImg1,
+  LTrim,
+  JtrimLarge,
+  JtrimPro,
+  JLarge,
+  TTrim,
+  InsideTrim,
 } from '../../assets'
 import LouversBanner from '../../components/products/louvers/LouversBanner'
 
@@ -60,28 +67,40 @@ const natureData = [
   { img: louverShade3Img6, shade: louverShade3Shade6, fname: 'beech wood' },
 ]
 
+const fourthData = [{ img: LouversImg1, shade: LouversShadeImg1, fname: 'PEARL' }]
+
 const otherProducts = [
   {
-    image: PyramidImg,
+    image: SoffitLastSection,
     smallImg: LouverSideImg,
     heading: 'INNOV+ Soffit',
     desc: 'Discover Soffit, the perfect blend of aesthetic appeal and convenience, providing the charm of real wood without the drawbacks. Effortlessly transform your space with quick and easy installation, achieving a seamless finish that leaves a lasting impression.',
     redirect: '/soffit',
   },
   {
-    image: ArchImg,
-    smallImg: SoffitSideImg,
-    heading: 'INNOV+ Louvers',
+    image: LouverLastSection,
+    smallImg: LouverSideImg,
+    heading: 'INNOV+ Duo',
     desc: 'Experience the unmatched durability and waterproof capabilities of Louvers, making them perfect for diverse applications. With a seamless interlocking system, they effortlessly integrate with other PARÉ products, ensuring a flawless finish for your projects.',
-    redirect: '/louvers',
+    redirect: '/duo',
   },
   {
-    image: VerticaImg,
+    image: VerticaLastSection,
     smallImg: VerticaSideImg,
     heading: 'INNOV+ Vertica',
     desc: 'Transform your walls and ceilings with Vertica panels, the smart and hassle-free solution. Enjoy seamless installation, low maintenance, and reduced wastage, making your experience efficient and rewarding.',
     redirect: '/vertica',
   },
+]
+
+const Jimages = [LTrim, JtrimLarge, JtrimPro, JLarge, TTrim, InsideTrim]
+const trim = [
+  { fname: 'L TRIM' },
+  { fname: 'J TRIM', lname: 'LARGE' },
+  { fname: 'J TRIM', lname: 'PRO' },
+  { fname: 'J TRIM' },
+  { fname: 'T TRIM' },
+  { fname: 'INSIDE', lname: 'CORNER' },
 ]
 const Louvers = () => {
   return (
@@ -96,10 +115,12 @@ const Louvers = () => {
         secondData={marbleData}
         thirdTitle="NATURE"
         thirdData={natureData}
+        fourthTitle={'FABRIC'}
+        fourthData={fourthData}
       />
-      <Trims />
+      <Trims Jimages={Jimages} trim={trim} />
       <Brochure />
-      <MoreProducts data={otherProducts} />
+      <MoreProducts data={otherProducts} type="Innov+" />
     </Suspense>
   )
 }

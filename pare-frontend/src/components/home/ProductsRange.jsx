@@ -18,6 +18,9 @@ import {
   P3Phone,
   P31Phone,
   P32Phone,
+  P41,
+  P4,
+  P42,
 } from '../../assets'
 import { useMediaQuery } from '../../utils/custom-hooks'
 import { Img } from '../custom'
@@ -38,6 +41,11 @@ const mainData = [
     id: '03',
     heading: 'Dura+',
     desc: "PARÉ DURA+ Systems redefine durability and functionality, ensuring a smooth and flexible experience. Elevate exteriors with Norma panels for long-lasting exterior facades, and enhance wall cladding with Stretta panels' high impact resistance. Experience excellence with PARÉ DURA+.",
+  },
+  {
+    id: '04',
+    heading: 'Innov2+',
+    desc: 'Discover the unparalleled transformation with Innov2+ Wall & Ceiling Panels! Prepare to be captivated by our latest breakthrough in interior design. Innov2+ brings you an unmatched blend of innovation and excellence, elevating your spaces to a realm of contemporary elegance and cutting-edge functionality.',
   },
 ]
 
@@ -60,6 +68,12 @@ const ProductsData = [
     img2: P32,
     ...mainData[2],
   },
+  {
+    img: P4,
+    img1: P41,
+    img2: P42,
+    ...mainData[3],
+  },
 ]
 
 const ProductsDataPhone = [
@@ -80,6 +94,12 @@ const ProductsDataPhone = [
     img1: P31Phone,
     img2: P32Phone,
     ...mainData[2],
+  },
+  {
+    img: P4,
+    img1: P41,
+    img2: P42,
+    ...mainData[3],
   },
 ]
 

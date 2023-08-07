@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { BrochureBg } from '../../../assets'
 import { Button, Img } from '../../custom'
 
@@ -12,7 +13,11 @@ const Brochure = () => {
           </h2>
         </div>
         <div className="flex justify-end md:flex-[0.7]">
-          <Button>Download Brochure</Button>
+          <Button>
+            <Link to="forest.pdf" target="_blank" download>
+              Download Brochure
+            </Link>
+          </Button>
         </div>
       </div>
     </div>

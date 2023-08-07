@@ -19,7 +19,11 @@ const P1Section1 = ({ data }) => {
             <p className="ml-auto w-[80%] bg-red-base bg-opacity-80 py-5 pl-3 font-metropolis text-sm text-white md:mr-auto md:bg-transparent md:text-2xl md:text-black">
               {data?.techDesc}
             </p>
-            <Img src={data?.sideImage} alt={'img2'} className={'hidden h-fit w-full object-cover md:flex'} />
+            <Img
+              src={data?.sideImage}
+              alt={'img2'}
+              className={'hidden h-fit w-full object-contain object-bottom md:flex md:min-h-[300px]'}
+            />
           </div>
         </div>
         <Img src={data?.sideImage} alt={'img3'} className={'mt-5 h-[170px] w-full object-cover md:hidden'} />

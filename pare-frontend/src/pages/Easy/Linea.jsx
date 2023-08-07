@@ -30,10 +30,15 @@ import {
   LineaNatureShade1,
   LineaNatureShade2,
   LineaNatureShade3,
-  PyramidImg,
-  ArchImg,
   LouverSideImg,
   SoffitSideImg,
+  PyramidLastSection,
+  ArchLastSection,
+  SilverLinea,
+  SilverLineaShade,
+  LTrim,
+  JtrimLarge,
+  JtrimPro,
 } from '../../assets'
 
 const metallicData = [
@@ -57,22 +62,26 @@ const natureData = [
   { img: LineaNatureImg6, shade: LineaNatureShade6, fname: 'beech', lname: 'wood' },
 ]
 
+const fourthData = [{ img: SilverLinea, shade: SilverLineaShade, fname: 'PEARL' }]
+
 const otherProducts = [
   {
-    image: PyramidImg,
+    image: PyramidLastSection,
     smallImg: LouverSideImg,
     heading: 'EASY+ Pyramid',
     desc: 'Unleash the power of sharp angles and captivating lines with EASY+ Pyramid. Elevate your space with architectural depth and a visually stunning design that adds a touch of modern sophistication.',
     redirect: '/pyramid',
   },
   {
-    image: ArchImg,
+    image: ArchLastSection,
     smallImg: SoffitSideImg,
     heading: 'EASY+ Arch',
     desc: 'Experience the beauty of graceful curves and flowing lines with EASY+ Arch. Elevate your space with the timeless allure of arched designs that creates a sense of elegance and architectural intrigue.',
     redirect: '/arch',
   },
 ]
+const Jimages = [LTrim, JtrimLarge, JtrimPro]
+const trim = [{ fname: 'L TRIM' }, { fname: 'J TRIM', lname: 'LARGE' }, { fname: 'J TRIM', lname: 'PRO' }]
 const Linea = () => {
   return (
     <Suspense fallback={<Loader />}>
@@ -86,8 +95,10 @@ const Linea = () => {
         secondData={marbleData}
         thirdTitle="NATURE"
         thirdData={natureData}
+        fourthData={fourthData}
+        fourthTitle={'FABRIC'}
       />
-      <Trims />
+      <Trims Jimages={Jimages} trim={trim} />
       <Brochure />
       <MoreProducts data={otherProducts} />
     </Suspense>

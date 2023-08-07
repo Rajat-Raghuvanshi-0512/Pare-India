@@ -2,7 +2,6 @@ import { Suspense } from 'react'
 import { Loader } from '../../components'
 import { Brochure, ImgGallery, Info, MoreProducts, Shades, Trims } from '../../components/products'
 import {
-  ArchImg,
   StrettaImg1,
   StrettaImg2,
   StrettaImg3,
@@ -16,6 +15,13 @@ import {
   StrettaShade1Shade3,
   StrettaShade1Shade4,
   LouverSideImg,
+  NormaLastSection,
+  JTrim,
+  TTrim,
+  InsideTrim,
+  OutsideTrim,
+  StarterTrim,
+  FinishedTrim,
 } from '../../assets'
 import StrettaBanner from '../../components/products/stretta/StrettaBanner'
 
@@ -27,7 +33,7 @@ const metallicData = [
 ]
 const otherProducts = [
   {
-    image: ArchImg,
+    image: NormaLastSection,
     smallImg: LouverSideImg,
     heading: 'DURA+ Norma',
     desc: 'Discover the epitome of durability and aesthetics with Norma panels, meticulously crafted to elevate your exterior facades. Embrace a long-lasting, decorative solution that stands the test of time.',
@@ -35,6 +41,15 @@ const otherProducts = [
   },
 ]
 
+const Jimages = [JTrim, TTrim, InsideTrim, OutsideTrim, StarterTrim, FinishedTrim]
+const trim = [
+  { fname: 'J TRIM' },
+  { fname: 'T TRIM' },
+  { fname: 'INSIDE', lname: 'CORNER' },
+  { fname: 'OUTSIDE', lname: 'CORNER' },
+  { fname: 'STARTER', lname: 'TRIM' },
+  { fname: 'FINISH', lname: 'TRIM' },
+]
 const Stretta = () => {
   return (
     <Suspense fallback={<Loader />}>
@@ -42,7 +57,7 @@ const Stretta = () => {
       <ImgGallery img1={StrettaImg1} img2={StrettaImg2} img3={StrettaImg3} img4={StrettaImg4} />
       <Info code="104" size="265mm X 3660mm" shades={4} collections={1} />
       <Shades firstTitle="REALWOOD" firstData={metallicData} />
-      <Trims />
+      <Trims Jimages={Jimages} trim={trim} />
       <Brochure />
       <MoreProducts data={otherProducts} />
     </Suspense>

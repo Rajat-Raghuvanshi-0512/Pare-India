@@ -2,8 +2,6 @@ import { Suspense } from 'react'
 import { Loader } from '../../components'
 import { Brochure, ImgGallery, Info, MoreProducts, Shades, Trims } from '../../components/products'
 import {
-  PyramidImg,
-  ArchImg,
   DuoImg1,
   DuoImg2,
   DuoImg3,
@@ -32,10 +30,18 @@ import {
   DuoShade2Shade4,
   DuoShade2Shade5,
   DuoShade2Shade6,
-  VerticaImg,
   VerticaSideImg,
   SoffitSideImg,
   LouverSideImg,
+  SoffitLastSection,
+  LouverLastSection,
+  VerticaLastSection,
+  JLarge,
+  JtrimLarge,
+  JtrimPro,
+  LTrim,
+  TTrim,
+  InsideTrim,
 } from '../../assets'
 import DuoBanner from '../../components/products/duo/DuoBanner'
 const metallicData = [
@@ -57,26 +63,36 @@ const shade2Data = [
 ]
 const otherProducts = [
   {
-    image: PyramidImg,
+    image: SoffitLastSection,
     smallImg: LouverSideImg,
     heading: 'INNOV+ Soffit',
     desc: 'Discover Soffit, the perfect blend of aesthetic appeal and convenience, providing the charm of real wood without the drawbacks. Effortlessly transform your space with quick and easy installation, achieving a seamless finish that leaves a lasting impression.',
     redirect: '/soffit',
   },
   {
-    image: ArchImg,
+    image: LouverLastSection,
     smallImg: SoffitSideImg,
     heading: 'INNOV+ Louvers',
     desc: 'Experience the unmatched durability and waterproof capabilities of Louvers, making them perfect for diverse applications. With a seamless interlocking system, they effortlessly integrate with other PARÉ products, ensuring a flawless finish for your projects.',
     redirect: '/louvers',
   },
   {
-    image: VerticaImg,
+    image: VerticaLastSection,
     smallImg: VerticaSideImg,
     heading: 'INNOV+ Vertica',
     desc: 'Transform your walls and ceilings with Vertica panels, the smart and hassle-free solution. Enjoy seamless installation, low maintenance, and reduced wastage, making your experience efficient and rewarding.',
     redirect: '/vertica',
   },
+]
+
+const Jimages = [LTrim, JtrimLarge, JtrimPro, JLarge, TTrim, InsideTrim]
+const trim = [
+  { fname: 'L TRIM' },
+  { fname: 'J TRIM', lname: 'LARGE' },
+  { fname: 'J TRIM', lname: 'PRO' },
+  { fname: 'J TRIM' },
+  { fname: 'T TRIM' },
+  { fname: 'INSIDE', lname: 'CORNER' },
 ]
 const Duo = () => {
   return (
@@ -85,9 +101,9 @@ const Duo = () => {
       <ImgGallery img1={DuoImg1} img2={DuoImg2} img3={DuoImg3} img4={DuoImg4} />
       <Info code="104" size="340mm X 3060mm" shades={12} collections={2} />
       <Shades firstTitle="WOODEN" firstData={metallicData} secondTitle="FOREST" secondData={shade2Data} />
-      <Trims />
+      <Trims Jimages={Jimages} trim={trim} />
       <Brochure />
-      <MoreProducts data={otherProducts} />
+      <MoreProducts data={otherProducts} type="Innov+" />
     </Suspense>
   )
 }

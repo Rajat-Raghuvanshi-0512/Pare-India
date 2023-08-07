@@ -2,7 +2,6 @@ import { Suspense } from 'react'
 import { Loader } from '../../components'
 import { Brochure, ImgGallery, Info, MoreProducts, Shades, Trims } from '../../components/products'
 import {
-  PyramidImg,
   VerticaImg1,
   VerticaImg2,
   VerticaImg3,
@@ -31,11 +30,17 @@ import {
   verticaShade3Shade6,
   verticaShade3Img6,
   VerticaImg4,
-  VerticaImg,
   VerticaSideImg,
   LouverSideImg,
-  ArchImg,
   SoffitSideImg,
+  SoffitLastSection,
+  LouverLastSection,
+  LouversImg1,
+  LouversShadeImg1,
+  DuoLastSection,
+  LTrim,
+  JtrimLarge,
+  JtrimPro,
 } from '../../assets'
 import VerticaBanner from '../../components/products/vertica/VerticaBanner'
 
@@ -60,29 +65,34 @@ const natureData = [
   { img: verticaShade3Img6, shade: verticaShade3Shade6, fname: 'beech wood' },
 ]
 
+const fourthData = [{ img: LouversImg1, shade: LouversShadeImg1, fname: 'PEARL' }]
+
 const otherProducts = [
   {
-    image: PyramidImg,
+    image: DuoLastSection,
     smallImg: LouverSideImg,
-    heading: 'INNOV+ Soffit',
-    desc: 'Discover Soffit, the perfect blend of aesthetic appeal and convenience, providing the charm of real wood without the drawbacks. Effortlessly transform your space with quick and easy installation, achieving a seamless finish that leaves a lasting impression.',
-    redirect: '/soffit',
+    heading: 'INNOV+ Duo',
+    desc: "India's revolutionary polymer-based wall and ceiling system - an installation and maintenance-free marvel that's waterproof and fire retardant. Elevate your space effortlessly with its versatile collections, offering a seamless, hassle-free solution like never before.",
+    redirect: '/duo',
   },
   {
-    image: ArchImg,
+    image: LouverLastSection,
     smallImg: SoffitSideImg,
     heading: 'INNOV+ Louvers',
     desc: 'Experience the unmatched durability and waterproof capabilities of Louvers, making them perfect for diverse applications. With a seamless interlocking system, they effortlessly integrate with other PARÉ products, ensuring a flawless finish for your projects.',
     redirect: '/louvers',
   },
   {
-    image: VerticaImg,
+    image: SoffitLastSection,
     smallImg: VerticaSideImg,
-    heading: 'INNOV+ Stretta',
-    desc: 'Transform your walls and ceilings with Stretta panels, the smart and hassle-free solution. Enjoy seamless installation, low maintenance, and reduced wastage, making your experience efficient and rewarding.',
-    redirect: '/stretta',
+    heading: 'INNOV+ Soffit',
+    desc: 'Discover Soffit, the perfect blend of aesthetic appeal and convenience, providing the charm of real wood without the drawbacks. Effortlessly transform your space with quick and easy installation, achieving a seamless finish that leaves a lasting impression.',
+    redirect: '/soffit',
   },
 ]
+
+const Jimages = [LTrim, JtrimLarge, JtrimPro]
+const trim = [{ fname: 'L TRIM' }, { fname: 'J TRIM', lname: 'LARGE' }, { fname: 'J TRIM', lname: 'PRO' }]
 const Vertica = () => {
   return (
     <Suspense fallback={<Loader />}>
@@ -96,10 +106,12 @@ const Vertica = () => {
         secondData={marbleData}
         thirdTitle="NATURE"
         thirdData={natureData}
+        fourthTitle={'FABRIC'}
+        fourthData={fourthData}
       />
-      <Trims />
+      <Trims Jimages={Jimages} trim={trim} />
       <Brochure />
-      <MoreProducts data={otherProducts} />
+      <MoreProducts data={otherProducts} type="Innov+" />
     </Suspense>
   )
 }

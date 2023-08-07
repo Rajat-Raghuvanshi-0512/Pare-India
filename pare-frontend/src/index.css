@@ -79,6 +79,9 @@ body {
   scroll-behavior: smooth;
 }
 
+.box-shadow {
+  filter: drop-shadow(-10px 10px 10px rgba(0, 0, 0, 0.8));
+}
 .form-dropdown li:not(.init) {
   background: rgb(56, 56, 56);
   position: absolute;
