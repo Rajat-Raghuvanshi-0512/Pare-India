@@ -1,16 +1,24 @@
-import { JLarge, TrimWoodBg1 } from '../../../assets'
+import { JLarge, JtrimLarge, JtrimPro, TrimWoodBg1 } from '../../../assets'
 import { Img } from '../../custom'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 import 'swiper/css/bundle'
 import 'swiper/css'
 import TrimBgNavigation from './TrimBgNavigation'
+import { useState } from 'react'
 const images = [TrimWoodBg1, TrimWoodBg1, TrimWoodBg1]
+const Jimages = [JLarge, JtrimLarge, JtrimPro]
 
 const Trims = () => {
+  const [currSlide, setCurrSlide] = useState(0)
   return (
     <div className="relative  h-[400px] w-full font-montserrat text-white md:h-[500px]">
-      <Swiper spaceBetween={0} slidesPerView={1} className="z-auto h-[400px] w-full md:h-[500px] 2xl:px-40">
+      <Swiper
+        spaceBetween={0}
+        onSlideChange={(x) => setCurrSlide(x.activeIndex)}
+        slidesPerView={1}
+        className="z-auto h-[400px] w-full md:h-[500px] 2xl:px-40"
+      >
         {images.map((image, idx) => (
           <SwiperSlide className="!-z-50" key={image + idx}>
             <img
@@ -24,8 +32,10 @@ const Trims = () => {
         ))}
         <Img
           alt={'bg'}
-          src={JLarge}
-          className={'absolute right-0 top-10 z-10 w-[70%] object-cover md:top-10 md:h-full md:w-[60%]'}
+          src={Jimages[currSlide]}
+          className={
+            'absolute -right-10 top-20 z-10 !h-48 w-[100%] object-contain object-right md:top-[40%] md:h-full md:w-[60%]'
+          }
         />
         <div className="absolute top-0 !z-10 text-center">
           <h2 className="py-5 text-3xl font-bold md:py-10 md:text-4xl lg:text-5xl">AVAILABLE TRIMS</h2>

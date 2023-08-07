@@ -93,9 +93,10 @@ const HeroLg = () => {
     <section className="relative mr-5 pt-28 md:ml-5 lg:ml-20 lg:h-screen 2xl:mx-40">
       <div className="absolute top-[120px] z-10 2xl:top-[150px]">
         <b className="flex items-center font-metropolis leading-[145%] md:w-[550px] lg:w-[700px] 2xl:w-[800px]">
-          <span className="mt-5 w-full leading-snug md:text-[3rem] lg:text-[3.5rem] 2xl:text-[4rem]">
-            <span>FIRST AND INDIA&apos;S ONLY MANUFACTURER OF </span>
-            <span className="text-red-base">SOFFIT SYSTEMS.</span>
+          <span className="mt-5 w-full uppercase leading-snug md:text-[3rem] lg:text-[3.5rem] 2xl:text-[4rem]">
+            <span>FIRST AND ONLY MANUFACTURER OF </span>
+            <span className="upper text-red-base">Innovative Surfaces</span>
+            <span> in INDIA.</span>
           </span>
         </b>
         {/* <p className=" md:w-[220px] lg:w-[300px] 2xl:text-xl">

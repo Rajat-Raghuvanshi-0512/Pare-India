@@ -1,8 +1,8 @@
 import { Img } from '../custom'
 
-const DownloadSlider = ({ image, text }) => {
+const DownloadSlider = ({ image, text, link }) => {
   return (
-    <div className="download relative w-full duration-300">
+    <div className="download relative w-full duration-300" onClick={() => window.open(link)}>
       <Img src={image} alt={'resource'} className={'-z-10 w-full'} />
       <div className="bg-gradient absolute left-0 top-0 h-full w-full"></div>
       <div className="absolute left-0 top-0 flex h-full w-full items-center px-5 font-metropolis font-bold text-white lg:text-4xl">

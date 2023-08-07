@@ -1,7 +1,6 @@
 import { useNavigate } from 'react-router-dom'
 import {
   Globe,
-  Medal,
   PareText,
   ProductImg1,
   ProductImg2,
@@ -11,7 +10,6 @@ import {
   ProductImg6,
   ProductImg7,
   ProductImg8,
-  Shield,
   Wall,
 } from '../../assets'
 import { Button, Img } from '../custom'
@@ -48,7 +46,7 @@ const ProductInfoSm = () => {
             </div>
             <div className=" mt-5 flex justify-end font-montserrat text-[8px] font-medium">
               <div className="flex gap-2 border-r-2 px-2 pr-4">
-                <Img src={Medal} alt={'medal'} width={15} height={25} className={'object-contain'} />
+                <Img src={Globe} alt={'medal'} width={15} height={25} className={'object-contain'} />
                 <p>First time in India</p>
               </div>
               <div className="flex gap-2 px-2 pl-4">
@@ -140,8 +138,8 @@ const ProductInfoSm = () => {
             </div>
             <div className=" mt-5 flex justify-end font-montserrat text-[8px] font-medium">
               <div className="flex gap-2 border-r-2 px-2 pr-4">
-                <Img src={Shield} alt={'shield'} width={15} height={25} className={'object-contain'} />
-                <p>10 Years Warranty</p>
+                <Img src={Globe} alt={'shield'} width={15} height={25} className={'object-contain'} />
+                <p>First time in India</p>
               </div>
               <div className="flex gap-2 px-2 pl-4">
                 <Img src={Wall} alt={'wall'} width={25} height={25} className={'object-contain'} />
@@ -252,7 +250,7 @@ const ProductInfoLg = () => {
           <div className="-z-10 -ml-5 md:-ml-10 lg:-ml-14">
             <div className="ml-32 mr-5 mt-5 flex justify-end font-montserrat font-medium md:text-sm lg:text-base 2xl:text-2xl">
               <div className="flex gap-5 border-r px-2 pr-4">
-                <Img src={Medal} alt={'medal'} width={30} height={45} className={'object-contain'} />
+                <Img src={Globe} alt={'medal'} width={30} height={45} className={'object-contain'} />
                 <p>First time in India</p>
               </div>
               <div className="flex gap-5 px-2 pl-4">
@@ -351,8 +349,8 @@ const ProductInfoLg = () => {
           <div className="-z-10 -ml-5 md:-ml-10 lg:-ml-14">
             <div className="ml-32 mr-5 mt-5 flex justify-end font-montserrat font-medium md:text-sm lg:text-base 2xl:text-2xl">
               <div className="flex gap-5 border-r px-2 pr-4">
-                <Img src={Shield} alt={'shield'} width={30} height={45} className={'object-contain'} />
-                <p>10 Years Warranty</p>
+                <Img src={Globe} alt={'shield'} width={30} height={45} className={'object-contain'} />
+                <p>First time in India</p>
               </div>
               <div className="flex gap-5 px-2 pl-4">
                 <Img src={Wall} alt={'wall'} width={50} height={45} className={'object-contain'} />
@@ -401,7 +399,7 @@ const ProductInfoLg = () => {
           <div className="-z-10 -ml-5 md:-ml-10 lg:-ml-14">
             <div className="ml-32 mr-5 mt-5 flex justify-end font-montserrat font-medium md:text-sm lg:text-base 2xl:text-2xl">
               <div className="flex gap-5 border-r px-2 pr-4">
-                <Img src={Shield} alt={'shield'} width={30} height={45} className={'object-contain'} />
+                <Img src={Globe} alt={'shield'} width={30} height={45} className={'object-contain'} />
                 <p>First time in the world</p>
               </div>
               <div className="flex gap-5 px-2 pl-4">

@@ -49,7 +49,7 @@ const WaveBanner = () => {
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={InterlockImg} alt={'box'} width={82} height={82} />
+              <Img src={InterlockImg} alt={'box'} width={82} height={82} className="invert" />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">Advance Interlocking</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
                 Seamless Perfection: Introducing Linea&apos;s Advanced Interlocking System
@@ -73,7 +73,7 @@ const WaveBanner = () => {
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={InterlockImg} alt={'box'} width={50} height={50} />
+            <Img src={InterlockImg} alt={'box'} width={50} height={50} className="invert" />
             <h6 className="text-center font-metropolis text-sm font-bold">Advance Interlocking</h6>
             <p className="text-center font-montserrat text-xs">
               Seamless Perfection: Introducing Linea&apos;s Advanced Interlocking System

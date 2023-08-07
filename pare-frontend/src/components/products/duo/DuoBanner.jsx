@@ -42,15 +42,15 @@ const DuoBanner = () => {
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={DropImg} alt={'box'} width={82} height={82} />
+              <Img src={DropImg} alt={'box'} width={82} height={82} className={'invert'} />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">Waterproof</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
                 Embrace Sustainable Design with Our Recyclable Innovation.
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={FireImg} alt={'box'} width={82} height={82} />
-              <h6 className="font-metropolis font-bold 2xl:text-3xl">Fire retardnd</h6>
+              <Img src={FireImg} alt={'box'} width={82} height={82} className={'invert'} />
+              <h6 className="font-metropolis font-bold 2xl:text-3xl">Fire Retardant</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
                 Seamless Perfection: Introducing Linea&apos;s Advanced Interlocking System
               </p>
@@ -66,14 +66,14 @@ const DuoBanner = () => {
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={DropImg} alt={'box'} width={50} height={50} />
+            <Img src={DropImg} alt={'box'} width={50} className={'invert'} height={50} />
             <h6 className="text-center font-metropolis text-sm font-bold">Waterproof</h6>
             <p className="text-center font-montserrat text-xs">
               Embrace Sustainable Design with Our Recyclable Innovation.
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={FireImg} alt={'box'} width={50} height={50} />
+            <Img src={FireImg} alt={'box'} width={50} height={50} className={'invert'} />
             <h6 className="text-center font-metropolis text-sm font-bold">Fire Retardant</h6>
             <p className="text-center font-montserrat text-xs">
               Seamless Perfection: Introducing Linea&apos;s Advanced Interlocking System

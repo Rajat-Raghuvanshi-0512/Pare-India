@@ -20,10 +20,10 @@ import {
 import StrettaBanner from '../../components/products/stretta/StrettaBanner'
 
 const metallicData = [
-  { img: StrettaShade1Img1, shade: StrettaShade1Shade1 },
-  { img: StrettaShade1Img2, shade: StrettaShade1Shade2 },
-  { img: StrettaShade1Img3, shade: StrettaShade1Shade3 },
-  { img: StrettaShade1Img4, shade: StrettaShade1Shade4 },
+  { img: StrettaShade1Img1, shade: StrettaShade1Shade1, fname: 'ARTISAN', lname: 'OAK' },
+  { img: StrettaShade1Img2, shade: StrettaShade1Shade2, fname: 'IMPERIAL', lname: 'NUT' },
+  { img: StrettaShade1Img3, shade: StrettaShade1Shade3, fname: 'LARCH' },
+  { img: StrettaShade1Img4, shade: StrettaShade1Shade4, fname: 'DARK', lname: 'TEAK' },
 ]
 const otherProducts = [
   {
@@ -40,7 +40,7 @@ const Stretta = () => {
     <Suspense fallback={<Loader />}>
       <StrettaBanner />
       <ImgGallery img1={StrettaImg1} img2={StrettaImg2} img3={StrettaImg3} img4={StrettaImg4} />
-      <Info />
+      <Info code="104" size="265mm X 3660mm" shades={4} collections={1} />
       <Shades firstTitle="REALWOOD" firstData={metallicData} />
       <Trims />
       <Brochure />

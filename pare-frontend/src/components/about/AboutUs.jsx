@@ -18,7 +18,7 @@ const AboutUs = () => {
         introducing groundbreaking surfaces that have never been seen before in India.
       </p>
       <p className="mt-2 font-montserrat text-base">
-        With our commercial base in Mumbai and our state-of-the-art manufacturing facility located in Vapi, Gujarat,
+        With our commercial base in Mumbai and our state-of-the-art manufacturing facility located near Vapi, Gujarat,
         PARÉ is strategically positioned to serve the needs of our valued customers. Our founders have deep roots in the
         building material industry, which has propelled us to become pioneers in the Innovative Products revolution.
       </p>

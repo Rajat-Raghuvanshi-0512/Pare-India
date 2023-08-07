@@ -20,10 +20,10 @@ import {
 import NormaBanner from '../../components/products/norma/NormaBanner'
 
 const metallicData = [
-  { img: NormaShade1Img1, shade: NormaShade1Shade1 },
-  { img: NormaShade1Img2, shade: NormaShade1Shade2 },
-  { img: NormaShade1Img3, shade: NormaShade1Shade3 },
-  { img: NormaShade1Img4, shade: NormaShade1Shade4 },
+  { img: NormaShade1Img1, shade: NormaShade1Shade1, fname: 'ARTISAN', lname: 'OAK' },
+  { img: NormaShade1Img2, shade: NormaShade1Shade2, fname: 'IMPERIAL', lname: 'NUT' },
+  { img: NormaShade1Img3, shade: NormaShade1Shade3, fname: 'LARCH' },
+  { img: NormaShade1Img4, shade: NormaShade1Shade4, fname: 'DARK', lname: 'TEAK' },
 ]
 
 const otherProducts = [
@@ -40,7 +40,7 @@ const Norma = () => {
     <Suspense fallback={<Loader />}>
       <NormaBanner />
       <ImgGallery img1={NormaImg1} img2={NormaImg2} img3={NormaImg3} img4={NormaImg4} />
-      <Info />
+      <Info code="105" size="340mm X 3660mm" shades={4} collections={1} />
       <Shades firstTitle="REALWOOD" firstData={metallicData} />
       <Trims />
       <Brochure />

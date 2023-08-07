@@ -40,24 +40,24 @@ import {
 import LouversBanner from '../../components/products/louvers/LouversBanner'
 
 const metallicData = [
-  { img: louverShade1Img1, shade: louverShade1Shade1 },
-  { img: louverShade1Img2, shade: louverShade1Shade2 },
-  { img: louverShade1Img3, shade: louverShade1Shade3 },
+  { img: louverShade1Img1, shade: louverShade1Shade1, fname: 'GOLD' },
+  { img: louverShade1Img2, shade: louverShade1Shade2, fname: 'SILVER' },
+  { img: louverShade1Img3, shade: louverShade1Shade3, fname: 'Copper' },
 ]
 
 const marbleData = [
-  { img: louverShade2Img1, shade: louverShade2Shade1 },
-  { img: louverShade2Img2, shade: louverShade2Shade2 },
-  { img: louverShade2Img3, shade: louverShade2Shade3 },
+  { img: louverShade2Img1, shade: louverShade2Shade1, fname: 'armani grey' },
+  { img: louverShade2Img2, shade: louverShade2Shade2, fname: 'STATUARIO' },
+  { img: louverShade2Img3, shade: louverShade2Shade3, fname: 'PORTORO' },
 ]
 
 const natureData = [
-  { img: louverShade3Img1, shade: louverShade3Shade1 },
-  { img: louverShade3Img2, shade: louverShade3Shade2 },
-  { img: louverShade3Img3, shade: louverShade3Shade3 },
-  { img: louverShade3Img4, shade: louverShade3Shade4 },
-  { img: louverShade3Img5, shade: louverShade3Shade5 },
-  { img: louverShade3Img6, shade: louverShade3Shade6 },
+  { img: louverShade3Img1, shade: louverShade3Shade1, fname: 'oakwood ocre' },
+  { img: louverShade3Img2, shade: louverShade3Shade2, fname: 'spiced walnut' },
+  { img: louverShade3Img3, shade: louverShade3Shade3, fname: 'mahogany' },
+  { img: louverShade3Img4, shade: louverShade3Shade4, fname: 'chestnut' },
+  { img: louverShade3Img5, shade: louverShade3Shade5, fname: 'ashwood grey' },
+  { img: louverShade3Img6, shade: louverShade3Shade6, fname: 'beech wood' },
 ]
 
 const otherProducts = [
@@ -88,7 +88,7 @@ const Louvers = () => {
     <Suspense fallback={<Loader />}>
       <LouversBanner />
       <ImgGallery img1={LouverImg1} img2={LouverImg2} img3={LouverImg3} img4={LouverImg4} />
-      <Info />
+      <Info code="103" size="265mm X 3060mm" shades={13} collections={4} />
       <Shades
         firstTitle="METALLIC"
         firstData={metallicData}

@@ -544,6 +544,9 @@ import VerticaSideImg from './images/products/vertica/vertica-side-img.png'
 import SoffitSideImg from './images/products/soffit/soffit-side-img.png'
 import LouverSideImg from './images/products/louver/louvers-side-img.png'
 
+import JtrimLarge from './images/products/J-trim-large.png'
+import JtrimPro from './images/products/J-trim-pro.png'
+
 export {
   Logo,
   HeroBgMobile,
@@ -1029,4 +1032,6 @@ export {
   InterlockImg,
   LouverSideImg,
   SoffitSideImg,
+  JtrimLarge,
+  JtrimPro,
 }

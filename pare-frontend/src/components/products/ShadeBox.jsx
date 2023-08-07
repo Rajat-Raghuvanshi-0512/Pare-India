@@ -13,6 +13,8 @@ const ShadeBox = ({ item }) => {
           'absolute bottom-0 right-0 h-[70px] w-[70px] translate-x-[40%] translate-y-[40%] md:h-[100px] md:w-[100px]'
         }
       />
+      <div className="mt-1 text-center font-montserrat font-light uppercase text-white">{item?.fname}</div>
+      <div className="text-center font-montserrat font-light uppercase text-white">{item?.lname}</div>
     </div>
   )
 }

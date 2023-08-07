@@ -51,7 +51,7 @@ const VerticaBanner = () => {
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={InterlockImg} alt={'box'} width={82} height={82} />
+              <Img src={InterlockImg} alt={'box'} width={82} height={82} className="invert" />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">Unique Interlocking</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
                 Elevate your spaces with the unparalleled charm of a real wood feel, seamlessly blending aesthetics and
@@ -78,7 +78,7 @@ const VerticaBanner = () => {
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={InterlockImg} alt={'box'} width={50} height={50} />
+            <Img src={InterlockImg} alt={'box'} width={50} height={50} className="invert" />
             <h6 className="text-center font-metropolis text-sm font-bold">Unique Interlocking</h6>
             <p className="text-center font-montserrat text-xs">
               Elevate your spaces with the unparalleled charm of a real wood feel, seamlessly blending aesthetics and

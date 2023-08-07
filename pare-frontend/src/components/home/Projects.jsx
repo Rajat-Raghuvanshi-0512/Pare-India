@@ -63,6 +63,7 @@ const Projects = () => {
         onSlideChange={(swiper) => {
           setprojectsActiveNo(swiper.activeIndex)
         }}
+        loop={true}
       >
         {projectImages.map((image) => (
           <SwiperSlide className="!flex !items-center !justify-center" key={image.small}>
@@ -109,6 +110,7 @@ const Projects = () => {
           onSlideChange={(swiper) => {
             settestmonialActive(swiper.activeIndex)
           }}
+          loop={true}
         >
           <SwiperSlide onClick={() => setTestState((prev) => ({ test2: !prev.test2, test1: false, test3: false }))}>
             {testState.test2 === false && (

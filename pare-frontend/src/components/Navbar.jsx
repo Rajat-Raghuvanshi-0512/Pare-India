@@ -5,16 +5,7 @@ import { useModal } from '../utils/custom-hooks'
 import { useMotionValueEvent, useScroll } from 'framer-motion'
 import { useState } from 'react'
 
-const greNavRoutes = [
-  '/about',
-  '/products',
-  '/careers',
-  '/faq',
-  '/application',
-  '/gallery',
-  '/privacy-policy',
-  '/blog/1',
-]
+const greNavRoutes = ['/about', '/products', '/careers', '/faq', '/downloads', '/gallery', '/privacy-policy', '/blog/1']
 
 const navLinks = [
   {
@@ -35,7 +26,7 @@ const navLinks = [
   },
   {
     text: 'resources',
-    dropdown: ['faq', 'blog', 'application'],
+    dropdown: ['faq', 'blog', 'downloads'],
   },
   {
     text: 'contact us',
@@ -74,7 +65,7 @@ const navLinksSm = [
   },
   {
     text: 'resources',
-    dropdown: ['faq', 'blog', 'application'],
+    dropdown: ['faq', 'blog', 'downloads'],
   },
 ]
 

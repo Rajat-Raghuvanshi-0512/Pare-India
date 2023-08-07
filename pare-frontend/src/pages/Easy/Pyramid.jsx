@@ -37,28 +37,25 @@ import {
 } from '../../assets'
 
 const metallicData = [
-  { img: LineaMetallicImg1, shade: LineaMetallicShade1 },
-  { img: LineaMetallicImg2, shade: LineaMetallicShade2 },
-  { img: LineaMetallicImg3, shade: LineaMetallicShade3 },
-  { img: LineaMetallicImg1, shade: LineaMetallicShade1 },
+  { img: LineaMetallicImg1, shade: LineaMetallicShade1, fname: 'GOLD' },
+  { img: LineaMetallicImg2, shade: LineaMetallicShade2, fname: 'SILVER' },
+  { img: LineaMetallicImg3, shade: LineaMetallicShade3, fname: 'COPPER' },
 ]
 
 const marbleData = [
-  { img: LineaMarbleImg1, shade: LineaMarbleShade1 },
-  { img: LineaMarbleImg2, shade: LineaMarbleShade2 },
-  { img: LineaMarbleImg3, shade: LineaMarbleShade3 },
-  { img: LineaMarbleImg1, shade: LineaMarbleShade1 },
+  { img: LineaMarbleImg1, shade: LineaMarbleShade1, fname: 'armani', lname: 'grey' },
+  { img: LineaMarbleImg2, shade: LineaMarbleShade2, fname: 'STATUARIO' },
+  { img: LineaMarbleImg3, shade: LineaMarbleShade3, fname: 'PORTORO' },
 ]
 
 const natureData = [
-  { img: LineaNatureImg1, shade: LineaNatureShade1 },
-  { img: LineaNatureImg2, shade: LineaNatureShade2 },
-  { img: LineaNatureImg3, shade: LineaNatureShade3 },
-  { img: LineaNatureImg4, shade: LineaNatureShade4 },
-  { img: LineaNatureImg5, shade: LineaNatureShade5 },
-  { img: LineaNatureImg6, shade: LineaNatureShade6 },
+  { img: LineaNatureImg1, shade: LineaNatureShade1, fname: 'OAK WOOD', lname: 'OCRE' },
+  { img: LineaNatureImg2, shade: LineaNatureShade2, fname: 'SPICED', lname: 'WALNUT' },
+  { img: LineaNatureImg3, shade: LineaNatureShade3, fname: 'MAHOGANY' },
+  { img: LineaNatureImg4, shade: LineaNatureShade4, fname: 'royal', lname: 'nut' },
+  { img: LineaNatureImg5, shade: LineaNatureShade5, fname: 'ash wood', lname: 'grey' },
+  { img: LineaNatureImg6, shade: LineaNatureShade6, fname: 'beech', lname: 'wood' },
 ]
-
 const otherProducts = [
   {
     image: PyramidImg,
@@ -81,7 +78,7 @@ const Pyramid = () => {
     <Suspense fallback={<Loader />}>
       <PyramidBanner />
       <ImgGallery img1={PyramidImg1} img2={PyramidImg2} img3={PyramidImg3} img4={PyramidImg4} />
-      <Info />
+      <Info code="108" size="140mm X 3060mm" shades={13} collections={4} />
       <Shades
         firstTitle="METALLIC"
         firstData={metallicData}

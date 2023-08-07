@@ -11,7 +11,7 @@ const Shades = ({ firstTitle, secondTitle, thirdTitle, firstData, secondData, th
             <h5 className="absolute w-fit -rotate-90 text-xl font-medium text-red-base">
               {firstTitle} <br /> COLLECTION
             </h5>
-            <div className="ml-28 flex gap-10 overflow-x-auto overflow-y-hidden md:ml-40 md:gap-10 lg:gap-20">
+            <div className="ml-28 flex min-w-[80vw] gap-10 overflow-x-auto overflow-y-hidden md:ml-40 md:gap-10 lg:gap-20">
               {firstData.map((item, idx) => (
                 <ShadeBox item={item} idx={idx} key={item.img + idx} />
               ))}
@@ -23,7 +23,7 @@ const Shades = ({ firstTitle, secondTitle, thirdTitle, firstData, secondData, th
             <h5 className="absolute w-fit -rotate-90 text-xl font-medium text-white">
               {secondTitle} <br /> COLLECTION
             </h5>
-            <div className="ml-28 flex  gap-10 overflow-y-hidden overflow-x-scroll md:ml-40 md:gap-10 lg:gap-20">
+            <div className="ml-28 flex  min-w-[80vw] gap-10 overflow-y-hidden overflow-x-scroll md:ml-40 md:gap-10 lg:gap-20">
               {secondData.map((item, idx) => (
                 <ShadeBox item={item} idx={idx} key={item.img + idx} />
               ))}
@@ -35,7 +35,7 @@ const Shades = ({ firstTitle, secondTitle, thirdTitle, firstData, secondData, th
             <h5 className="absolute w-fit -rotate-90 text-xl font-medium text-red-base">
               {thirdTitle} <br /> COLLECTION
             </h5>
-            <div className="ml-28 flex gap-10 overflow-y-hidden overflow-x-scroll md:ml-40 md:gap-10 lg:gap-20">
+            <div className="ml-28 flex min-w-[80vw] gap-10 overflow-y-hidden overflow-x-scroll md:ml-40 md:gap-10 lg:gap-20">
               {thirdData.map((item, idx) => (
                 <ShadeBox item={item} idx={idx} key={item.img + idx} />
               ))}

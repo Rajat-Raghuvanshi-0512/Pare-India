@@ -40,24 +40,24 @@ import {
 import VerticaBanner from '../../components/products/vertica/VerticaBanner'
 
 const metallicData = [
-  { img: verticaShade1Img1, shade: verticaShade1Shade1 },
-  { img: verticaShade1Img2, shade: verticaShade1Shade2 },
-  { img: verticaShade1Img3, shade: verticaShade1Shade3 },
+  { img: verticaShade1Img1, shade: verticaShade1Shade1, fname: 'GOLD' },
+  { img: verticaShade1Img2, shade: verticaShade1Shade2, fname: 'SILVER' },
+  { img: verticaShade1Img3, shade: verticaShade1Shade3, fname: 'Copper' },
 ]
 
 const marbleData = [
-  { img: verticaShade2Img1, shade: verticaShade2Shade1 },
-  { img: verticaShade2Img2, shade: verticaShade2Shade2 },
-  { img: verticaShade2Img3, shade: verticaShade2Shade3 },
+  { img: verticaShade2Img1, shade: verticaShade2Shade1, fname: 'armani grey' },
+  { img: verticaShade2Img2, shade: verticaShade2Shade2, fname: 'STATUARIO' },
+  { img: verticaShade2Img3, shade: verticaShade2Shade3, fname: 'PORTORO' },
 ]
 
 const natureData = [
-  { img: verticaShade3Img1, shade: verticaShade3Shade1 },
-  { img: verticaShade3Img2, shade: verticaShade3Shade2 },
-  { img: verticaShade3Img3, shade: verticaShade3Shade3 },
-  { img: verticaShade3Img4, shade: verticaShade3Shade4 },
-  { img: verticaShade3Img5, shade: verticaShade3Shade5 },
-  { img: verticaShade3Img6, shade: verticaShade3Shade6 },
+  { img: verticaShade3Img1, shade: verticaShade3Shade1, fname: 'oakwood ocre' },
+  { img: verticaShade3Img2, shade: verticaShade3Shade2, fname: 'spiced walnut' },
+  { img: verticaShade3Img3, shade: verticaShade3Shade3, fname: 'mahogany' },
+  { img: verticaShade3Img4, shade: verticaShade3Shade4, fname: 'chestnut' },
+  { img: verticaShade3Img5, shade: verticaShade3Shade5, fname: 'ashwood grey' },
+  { img: verticaShade3Img6, shade: verticaShade3Shade6, fname: 'beech wood' },
 ]
 
 const otherProducts = [
@@ -88,7 +88,7 @@ const Vertica = () => {
     <Suspense fallback={<Loader />}>
       <VerticaBanner />
       <ImgGallery img1={VerticaImg1} img2={VerticaImg2} img3={VerticaImg3} img4={VerticaImg4} />
-      <Info />
+      <Info code="109" size="240mm X 3060mm" shades={13} collections={4} />
       <Shades
         firstTitle="METALLIC"
         firstData={metallicData}

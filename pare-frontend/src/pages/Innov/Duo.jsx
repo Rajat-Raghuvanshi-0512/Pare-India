@@ -39,21 +39,21 @@ import {
 } from '../../assets'
 import DuoBanner from '../../components/products/duo/DuoBanner'
 const metallicData = [
-  { img: DuoShade1Img1, shade: DuoShade1Shade1 },
-  { img: DuoShade1Img2, shade: DuoShade1Shade2 },
-  { img: DuoShade1Img3, shade: DuoShade1Shade3 },
-  { img: DuoShade1Img4, shade: DuoShade1Shade4 },
-  { img: DuoShade1Img5, shade: DuoShade1Shade5 },
-  { img: DuoShade1Img6, shade: DuoShade1Shade6 },
+  { img: DuoShade1Img1, shade: DuoShade1Shade1, fname: 'GOLDen oak' },
+  { img: DuoShade1Img2, shade: DuoShade1Shade2, fname: 'maple wood' },
+  { img: DuoShade1Img3, shade: DuoShade1Shade3, fname: 'birch' },
+  { img: DuoShade1Img4, shade: DuoShade1Shade4, fname: 'walnut' },
+  { img: DuoShade1Img5, shade: DuoShade1Shade5, fname: 'pinewood' },
+  { img: DuoShade1Img6, shade: DuoShade1Shade6, fname: 'weathred', lname: 'grey' },
 ]
 
 const shade2Data = [
-  { img: DuoShade2Img1, shade: DuoShade2Shade1 },
-  { img: DuoShade2Img2, shade: DuoShade2Shade2 },
-  { img: DuoShade2Img3, shade: DuoShade2Shade3 },
-  { img: DuoShade2Img4, shade: DuoShade2Shade4 },
-  { img: DuoShade2Img5, shade: DuoShade2Shade5 },
-  { img: DuoShade2Img6, shade: DuoShade2Shade6 },
+  { img: DuoShade2Img1, shade: DuoShade2Shade1, fname: 'spiced walnut' },
+  { img: DuoShade2Img2, shade: DuoShade2Shade2, fname: 'oakwood ocre' },
+  { img: DuoShade2Img3, shade: DuoShade2Shade3, fname: 'chestnut' },
+  { img: DuoShade2Img4, shade: DuoShade2Shade4, fname: 'mahogany' },
+  { img: DuoShade2Img5, shade: DuoShade2Shade5, fname: 'royalnut' },
+  { img: DuoShade2Img6, shade: DuoShade2Shade6, fname: 'ashwood grey' },
 ]
 const otherProducts = [
   {
@@ -83,8 +83,8 @@ const Duo = () => {
     <Suspense fallback={<Loader />}>
       <DuoBanner />
       <ImgGallery img1={DuoImg1} img2={DuoImg2} img3={DuoImg3} img4={DuoImg4} />
-      <Info />
-      <Shades firstTitle="METALLIC" firstData={metallicData} secondTitle="MARBLE" secondData={shade2Data} />
+      <Info code="104" size="340mm X 3060mm" shades={12} collections={2} />
+      <Shades firstTitle="WOODEN" firstData={metallicData} secondTitle="FOREST" secondData={shade2Data} />
       <Trims />
       <Brochure />
       <MoreProducts data={otherProducts} />

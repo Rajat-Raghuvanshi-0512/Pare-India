@@ -13,19 +13,19 @@ import {
 import DownloadSlider from './DownloadSlider'
 
 const phoneImages = [
-  { image: ResourcePhoneImg1, text: 'Forest Collection' },
-  { image: ResourcePhoneImg2, text: 'Real Wood Collection' },
-  { image: ResourcePhoneImg3, text: 'Wooden Collection' },
-  { image: ResourcePhoneImg4, text: 'Soffit Louvers' },
-  { image: ResourcePhoneImg5, text: 'Art Stone Panels' },
+  { image: ResourcePhoneImg1, text: 'Forest Collection', link: 'forest.pdf' },
+  { image: ResourcePhoneImg2, text: 'Real Wood Collection', link: 'realwood.pdf' },
+  { image: ResourcePhoneImg3, text: 'Wooden Collection', link: 'wooden.pdf' },
+  { image: ResourcePhoneImg4, text: 'Soffit Louvers', link: 'forest.pdf' },
+  { image: ResourcePhoneImg5, text: 'Art Stone Panels', link: 'forest.pdf' },
 ]
 
 const images = [
-  { image: ResourceImg1, text: 'Forest Collection' },
-  { image: ResourceImg2, text: 'Real Wood Collection' },
-  { image: ResourceImg3, text: 'Wooden Collection' },
-  { image: ResourceImg4, text: 'Soffit Louvers' },
-  { image: ResourceImg5, text: 'Art Stone Panels' },
+  { image: ResourceImg1, text: 'Forest Collection', link: 'forest.pdf' },
+  { image: ResourceImg2, text: 'Real Wood Collection', link: 'realwood.pdf' },
+  { image: ResourceImg3, text: 'Wooden Collection', link: 'wooden.pdf' },
+  { image: ResourceImg4, text: 'Soffit Louvers', link: 'forest.pdf' },
+  { image: ResourceImg5, text: 'Art Stone Panels', link: 'forest.pdf' },
 ]
 
 const ResourcesSm = () => {
@@ -39,6 +39,7 @@ const ResourcesSm = () => {
             className={`relative flex h-[120px] items-center justify-center overflow-hidden rounded-lg ${
               idx == 4 ? 'col-span-2 w-full' : ''
             }`}
+            onClick={() => window.open(imgObj.link)}
           >
             <div className="absolute left-0 right-0 -z-10 h-full w-full bg-black/25"></div>
             <img src={imgObj.image} alt="resources" className="absolute left-0 top-0 -z-20 h-full w-full" />

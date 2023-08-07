@@ -1,4 +1,4 @@
-import { BannerBg, FireExtinguisher, GlobeImg, LouverBannerWoodImg, SoffitTitleImg, LeafImg } from '../../../assets'
+import { BannerBg, GlobeImg, LouverBannerWoodImg, SoffitTitleImg, LeafImg, DropImg } from '../../../assets'
 import { Img } from '../../custom'
 
 const SoffitBanner = () => {
@@ -43,7 +43,7 @@ const SoffitBanner = () => {
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={FireExtinguisher} alt={'box'} width={82} height={82} />
+              <Img src={DropImg} alt={'box'} width={82} height={82} className={'invert'} />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">Waterproof</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
                 Elevate your spaces with confidence as the ultimate wall and ceiling system that offers seamless
@@ -70,7 +70,7 @@ const SoffitBanner = () => {
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={FireExtinguisher} alt={'box'} width={50} height={50} />
+            <Img src={DropImg} alt={'box'} width={50} height={50} className={'invert'} />
             <h6 className="text-center font-metropolis text-sm font-bold">Waterproof</h6>
             <p className="text-center font-montserrat text-xs">
               Elevate your spaces with confidence as the ultimate wall and ceiling system that offers seamless
