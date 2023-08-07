@@ -1,5 +1,4 @@
-import { useEffect } from 'react'
-import { useCallback, useState } from 'react'
+import { useCallback, useState, useEffect } from 'react'
 import { preloadImage } from './helper'
 
 export const useModal = () => {

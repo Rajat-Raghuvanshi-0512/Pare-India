@@ -16,7 +16,7 @@ const phoneImages = [
   { image: ResourcePhoneImg1, text: 'Forest Collection', link: 'forest.pdf' },
   { image: ResourcePhoneImg2, text: 'Real Wood Collection', link: 'realwood.pdf' },
   { image: ResourcePhoneImg3, text: 'Wooden Collection', link: 'wooden.pdf' },
-  { image: ResourcePhoneImg4, text: 'Soffit Louvers', link: 'forest.pdf' },
+  { image: ResourcePhoneImg4, text: 'Soffit Louvers', link: 'louvers.pdf' },
   { image: ResourcePhoneImg5, text: 'Art Stone Panels', link: 'forest.pdf' },
 ]
 
@@ -24,7 +24,7 @@ const images = [
   { image: ResourceImg1, text: 'Forest Collection', link: 'forest.pdf' },
   { image: ResourceImg2, text: 'Real Wood Collection', link: 'realwood.pdf' },
   { image: ResourceImg3, text: 'Wooden Collection', link: 'wooden.pdf' },
-  { image: ResourceImg4, text: 'Soffit Louvers', link: 'forest.pdf' },
+  { image: ResourceImg4, text: 'Soffit Louvers', link: 'louvers.pdf' },
   { image: ResourceImg5, text: 'Art Stone Panels', link: 'forest.pdf' },
 ]
 

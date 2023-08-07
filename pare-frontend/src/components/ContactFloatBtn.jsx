@@ -1,8 +1,6 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { ChatIcon, MailIcon, PhoneIcon, WhatsappIcon } from '../assets'
 import { Img } from './custom'
-import { useRef } from 'react'
-import { useEffect } from 'react'
 
 const ContactFloatBtn = () => {
   const [open, setOpen] = useState(false)

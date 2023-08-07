@@ -1,5 +1,4 @@
-import { useEffect } from 'react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const Carousel = ({ images = [], left = false, alignLeft = false }) => {
   const [activeImg, setactiveImg] = useState(0)

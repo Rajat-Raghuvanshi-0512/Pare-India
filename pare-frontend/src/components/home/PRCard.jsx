@@ -1,6 +1,5 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Button } from '../custom'
-import { useEffect } from 'react'
 import Carousel from '../custom/Carousel'
 import { useNavigate } from 'react-router-dom'
 
