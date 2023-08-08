@@ -36,7 +36,7 @@ const VerticaBanner = () => {
           <div className="hidden grid-cols-3 gap-10 md:grid">
             <div className="flex flex-col items-center gap-5">
               <Img src={LeafImg} alt={'box'} width={82} height={82} />
-              <h6 className="font-metropolis font-bold 2xl:text-3xl">Sleek Design</h6>
+              <h6 className="text-center font-metropolis font-bold 2xl:text-3xl">Sleek Design</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
                 Where cutting-edge innovation meets eco-consciousness, offering NO VOC emission for a healthier
                 environment
@@ -44,7 +44,7 @@ const VerticaBanner = () => {
             </div>
             <div className="flex flex-col items-center gap-5">
               <Img src={StarImg} alt={'box'} width={82} height={82} />
-              <h6 className="font-metropolis font-bold 2xl:text-3xl">High Impact Resistance</h6>
+              <h6 className="text-center font-metropolis font-bold 2xl:text-3xl">High Impact Resistance</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
                 Experience flawless innovation with high impact resistance, ensuring enduring beauty in the face of wear
                 and tear.
@@ -52,7 +52,7 @@ const VerticaBanner = () => {
             </div>
             <div className="flex flex-col items-center gap-5">
               <Img src={InterlockImg} alt={'box'} width={82} height={82} className="invert" />
-              <h6 className="font-metropolis font-bold 2xl:text-3xl">Unique Interlocking</h6>
+              <h6 className="text-center font-metropolis font-bold 2xl:text-3xl">Unique Interlocking</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
                 Elevate your spaces with the unparalleled charm of a real wood feel, seamlessly blending aesthetics and
                 functionality in the ultimate wall and ceiling system.

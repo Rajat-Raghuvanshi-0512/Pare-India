@@ -39,7 +39,7 @@ const Projects = () => {
     test3: false,
   })
   const largeDevice = useMediaQuery('(min-width: 768px)')
-  const [testmonialActiveNo, settestmonialActive] = useState(0)
+  const [testmonialActiveNo, settestmonialActive] = useState(1)
   const [projectsActiveNo, setprojectsActiveNo] = useState(0)
   return (
     <section className="p-5 md:p-10 lg:px-20 ">
@@ -57,16 +57,9 @@ const Projects = () => {
       </div>
 
       <hr className="hidden md:m-5 md:block lg:m-8" />
-      <Swiper
-        spaceBetween={50}
-        slidesPerView={largeDevice ? 3 : 1}
-        onSlideChange={(swiper) => {
-          setprojectsActiveNo(swiper.activeIndex)
-        }}
-        loop={true}
-      >
-        {projectImages.map((image) => (
-          <SwiperSlide className="!flex !items-center !justify-center" key={image.small}>
+      <Swiper spaceBetween={50} slidesPerView={largeDevice ? 3 : 1} loop={true}>
+        {projectImages.map((image, i) => (
+          <SwiperSlide className="!flex !items-center !justify-center" key={image.small + i}>
             {largeDevice ? (
               <img
                 src={image.large}
@@ -90,7 +83,7 @@ const Projects = () => {
         ))}
 
         <hr className="hidden md:m-5 md:block lg:m-8" />
-        <SliderNavigation />
+        <SliderNavigation projectsActiveNo={projectsActiveNo} setprojectsActiveNo={setprojectsActiveNo} />
       </Swiper>
       <div className="mt-5 text-center font-metropolis font-light md:hidden">0{projectsActiveNo + 1}/05</div>
 
@@ -104,14 +97,7 @@ const Projects = () => {
         </div>
       </div>
       <div>
-        <Swiper
-          spaceBetween={50}
-          slidesPerView={1}
-          onSlideChange={(swiper) => {
-            settestmonialActive(swiper.activeIndex)
-          }}
-          loop={true}
-        >
+        <Swiper spaceBetween={50} slidesPerView={1} loop={true}>
           <SwiperSlide onClick={() => setTestState((prev) => ({ test2: !prev.test2, test1: false, test3: false }))}>
             {testState.test2 === false && (
               <div className="absolute z-10 mx-auto my-5 mr-10 flex h-[200px] w-full items-center justify-center bg-black-base bg-opacity-30 text-white md:left-14 md:my-10 md:h-[400px] md:w-[90%] lg:h-[500px]">
@@ -142,7 +128,7 @@ const Projects = () => {
               playing={testState.test3}
             />
           </SwiperSlide>
-          <TestimonialSlider testmonialActiveNo={testmonialActiveNo} />
+          <TestimonialSlider testmonialActiveNo={testmonialActiveNo} settestmonialActive={settestmonialActive} />
         </Swiper>
       </div>
     </section>

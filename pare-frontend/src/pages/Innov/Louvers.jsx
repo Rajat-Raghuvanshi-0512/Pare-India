@@ -43,6 +43,7 @@ import {
   JLarge,
   TTrim,
   InsideTrim,
+  OutsideTrim,
 } from '../../assets'
 import LouversBanner from '../../components/products/louvers/LouversBanner'
 
@@ -93,7 +94,7 @@ const otherProducts = [
   },
 ]
 
-const Jimages = [LTrim, JtrimLarge, JtrimPro, JLarge, TTrim, InsideTrim]
+const Jimages = [LTrim, JtrimLarge, JtrimPro, JLarge, TTrim, InsideTrim, OutsideTrim]
 const trim = [
   { fname: 'L TRIM' },
   { fname: 'J TRIM', lname: 'LARGE' },
@@ -101,6 +102,7 @@ const trim = [
   { fname: 'J TRIM' },
   { fname: 'T TRIM' },
   { fname: 'INSIDE', lname: 'CORNER' },
+  { fname: 'OUTSIDE', lname: 'CORNER' },
 ]
 const Louvers = () => {
   return (

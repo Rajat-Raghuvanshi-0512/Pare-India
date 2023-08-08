@@ -6,7 +6,7 @@ const TrimBgNavigation = ({ trims }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
   return (
     <div>
-      <div className="z-20 mt-5 grid grid-cols-3 gap-5">
+      <div className="z-20 mt-5 grid grid-cols-4 gap-5">
         {trims.map((trim, id) => (
           <div key={trim.fname + id}>
             <div

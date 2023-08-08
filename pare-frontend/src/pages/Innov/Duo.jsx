@@ -42,6 +42,7 @@ import {
   LTrim,
   TTrim,
   InsideTrim,
+  OutsideTrim,
 } from '../../assets'
 import DuoBanner from '../../components/products/duo/DuoBanner'
 const metallicData = [
@@ -85,7 +86,7 @@ const otherProducts = [
   },
 ]
 
-const Jimages = [LTrim, JtrimLarge, JtrimPro, JLarge, TTrim, InsideTrim]
+const Jimages = [LTrim, JtrimLarge, JtrimPro, JLarge, TTrim, InsideTrim, OutsideTrim]
 const trim = [
   { fname: 'L TRIM' },
   { fname: 'J TRIM', lname: 'LARGE' },
@@ -93,6 +94,7 @@ const trim = [
   { fname: 'J TRIM' },
   { fname: 'T TRIM' },
   { fname: 'INSIDE', lname: 'CORNER' },
+  { fname: 'OUTSIDE', lname: 'CORNER' },
 ]
 const Duo = () => {
   return (
