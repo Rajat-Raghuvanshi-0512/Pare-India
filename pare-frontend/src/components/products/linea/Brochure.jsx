@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
 import { BrochureBg } from '../../../assets'
 import { Button, Img } from '../../custom'
+import { downloadFile } from '../../../utils/helper'
 
 const Brochure = () => {
   return (
@@ -13,11 +13,7 @@ const Brochure = () => {
           </h2>
         </div>
         <div className="flex justify-end md:flex-[0.7]">
-          <Button>
-            <Link to="forest.pdf" target="_blank" download>
-              Download Brochure
-            </Link>
-          </Button>
+          <Button onClick={() => downloadFile('/brochures.zip')}>Download Brochure</Button>
         </div>
       </div>
     </div>

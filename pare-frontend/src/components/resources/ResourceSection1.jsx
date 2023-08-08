@@ -1,5 +1,6 @@
 import { BrochureImg, BrochurePhoneImg, CircularDownArrow, LongDownArrow } from '../../assets'
 import { useMediaQuery } from '../../utils/custom-hooks'
+import { downloadFile } from '../../utils/helper'
 import { Button, Img } from '../custom'
 
 const ResourceSection1 = () => {
@@ -33,7 +34,9 @@ const ResourceSection1 = () => {
               Immerse yourself in inspiration and let our brochures guide you on your design journey.
             </span>
           </p>
-          <Button className={'ml-auto w-fit'}>Download all</Button>
+          <Button className={'ml-auto w-fit'} onClick={() => downloadFile('/brochures.zip')}>
+            Download all
+          </Button>
         </div>
       </div>
     </section>
