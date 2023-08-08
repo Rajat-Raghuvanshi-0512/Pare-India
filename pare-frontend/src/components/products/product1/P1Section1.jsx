@@ -16,7 +16,7 @@ const P1Section1 = ({ data }) => {
             <div className="mb-16 ml-auto flex w-32 items-center justify-center bg-[#BE1E2DD9] pt-2 font-metropolis text-sm font-bold text-white md:-ml-20 md:mb-0 md:w-48 md:text-xl">
               <p className="mx-auto w-28 md:mx-auto md:w-40">{data?.techName}</p>
             </div>
-            <p className="ml-auto w-[80%] bg-red-base bg-opacity-80 py-5 pl-3 font-metropolis text-sm text-white md:mr-auto md:bg-transparent md:text-2xl md:text-black">
+            <p className="ml-auto w-full bg-red-base bg-opacity-80 py-5 pl-3 font-metropolis text-sm text-white md:mr-auto md:bg-transparent md:text-2xl md:text-black">
               {data?.techDesc}
             </p>
             <Img

@@ -12,7 +12,7 @@ const ImageBox = ({ image, smallImg, heading, desc, idx, redirect }) => {
       <Img
         alt={heading}
         src={smallImg}
-        className={`box-shadow absolute -left-10 top-[30%] h-[300px] -translate-x-[50%] -translate-y-[50%]  md:left-0 md:top-[35%] md:h-[380px]`}
+        className={`box-shadow absolute left-0 top-[30%] h-[300px] -translate-x-[50%] -translate-y-[50%]  md:left-0 md:top-[35%] md:h-[380px]`}
       />
       <div className="bg-white p-5 text-black md:p-10">
         <h6 className="text-xl font-bold">{heading}</h6>

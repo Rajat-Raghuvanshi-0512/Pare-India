@@ -11,7 +11,7 @@ const Trims = ({ Jimages, trim }) => {
       <Swiper spaceBetween={0} slidesPerView={1} className="z-auto h-[400px] !w-full md:h-full 2xl:px-40">
         {Jimages.map((image, idx) => (
           <SwiperSlide className="!-z-50" key={image + idx}>
-            <img src={TrimWoodBg1} alt="" />
+            <img src={TrimWoodBg1} alt="" className="h-full w-full" />
             <img
               src={image}
               alt={'bg'}
@@ -21,13 +21,6 @@ const Trims = ({ Jimages, trim }) => {
             />
           </SwiperSlide>
         ))}
-        {/* <Img
-          alt={'bg'}
-          src={Jimages[currSlide]}
-          className={
-            'absolute -right-10 top-20 z-10 !h-48 w-[100%] object-contain object-right md:top-[40%] md:h-full md:w-[60%]'
-          }
-        /> */}
         <div className="absolute top-0 !z-10 text-center">
           <h2 className="py-5 text-3xl font-bold md:py-10 md:text-4xl lg:text-5xl">AVAILABLE TRIMS</h2>
           <p className="px-5 text-xs font-medium md:mx-32 md:text-xl">

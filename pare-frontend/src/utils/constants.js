@@ -375,3 +375,5 @@ export const blogData = [
     id: 19,
   },
 ]
+
+export const blogsCount = blogData.length

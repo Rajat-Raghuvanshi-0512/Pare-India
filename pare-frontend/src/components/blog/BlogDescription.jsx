@@ -1,4 +1,6 @@
 import { FacebookIcon, PinterestIcon, TwitterIcon } from '../../assets'
+import { useNavigate, useParams } from 'react-router-dom'
+import { blogsCount } from '../../utils/constants'
 
 const SubscribeForm = () => {
   return (
@@ -60,6 +62,16 @@ const SmallDescription = () => {
 }
 
 const BlogDescription = () => {
+  const navigate = useNavigate()
+  const { id } = useParams()
+  const handlePrev = () => {
+    if (id <= 1) return
+    navigate(`/blog/${Number(id) - 1}`)
+  }
+  const handleNext = () => {
+    if (id == blogsCount) return
+    navigate(`/blog/${Number(id) + 1}`)
+  }
   return (
     <section className="p-5 md:px-20 lg:px-60 lg:pb-20">
       <h2 className="text-3xl font-bold !leading-snug text-[#1C1C1C] lg:text-4xl lg:text-[2.5rem]">
@@ -113,13 +125,19 @@ const BlogDescription = () => {
       </div>
       <div className="flex justify-between gap-5 pt-10 md:gap-20 lg:gap-40">
         <div className="flex-1">
-          <div className="relative font-bold uppercase after:absolute after:-bottom-2 after:left-0 after:h-1 after:w-4 after:bg-black after:content-[''] md:after:h-[3px] md:after:w-5">
+          <div
+            className="relative font-bold uppercase after:absolute after:-bottom-2 after:left-0 after:h-1 after:w-4 after:bg-black after:content-[''] md:after:h-[3px] md:after:w-5"
+            onClick={handlePrev}
+          >
             Prev
           </div>
           <p className="pt-5">Life insurance beneficiary rules—and other burning FAQs</p>
         </div>
         <div className="flex-1 text-right">
-          <div className="relative font-bold uppercase after:absolute after:-bottom-2 after:right-0 after:h-1 after:w-4 after:bg-black after:content-[''] md:after:h-[3px] md:after:w-5">
+          <div
+            className="relative font-bold uppercase after:absolute after:-bottom-2 after:right-0 after:h-1 after:w-4 after:bg-black after:content-[''] md:after:h-[3px] md:after:w-5"
+            onClick={handleNext}
+          >
             Next
           </div>
           <p className="pt-5">How much life insurance do I need?</p>
