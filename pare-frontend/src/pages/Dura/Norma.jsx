@@ -60,7 +60,7 @@ const Norma = () => {
       <Shades firstTitle="REALWOOD" firstData={metallicData} />
       <Trims Jimages={Jimages} trim={trim} />
       <Brochure />
-      <MoreProducts data={otherProducts} />
+      <MoreProducts data={otherProducts} type="Dura+" />
     </Suspense>
   )
 }

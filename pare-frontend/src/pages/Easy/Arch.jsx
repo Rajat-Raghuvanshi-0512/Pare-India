@@ -87,7 +87,7 @@ const Arch = () => {
     <Suspense fallback={<Loader />}>
       <ArchBanner />
       <ImgGallery img1={EasyImg1} img2={EasyImg2} img3={EasyImg3} img4={EasyImg4} />
-      <Info />
+      <Info code="112" size="180mm X 3060mm" />
       <Shades
         firstTitle="METALLIC"
         firstData={metallicData}

@@ -325,7 +325,7 @@ import SoffitShade1Shade5 from './images/products/soffit/shade1/shade5.png'
 import SoffitShade1Shade6 from './images/products/soffit/shade1/shade6.png'
 
 import SoffitShade2Img1 from './images/products/soffit/shade2/img1.png'
-import SoffitShade2Img2 from './images/products/soffit/shade2/img2.png'
+import SoffitShade2Img2 from './images/products/soffit/shade2/img2.webp'
 import SoffitShade2Img3 from './images/products/soffit/shade2/img3.png'
 import SoffitShade2Img4 from './images/products/soffit/shade2/img4.png'
 import SoffitShade2Img5 from './images/products/soffit/shade2/img5.png'

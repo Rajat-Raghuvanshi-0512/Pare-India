@@ -98,7 +98,7 @@ const Vertica = () => {
     <Suspense fallback={<Loader />}>
       <VerticaBanner />
       <ImgGallery img1={VerticaImg1} img2={VerticaImg2} img3={VerticaImg3} img4={VerticaImg4} />
-      <Info code="109" size="240mm X 3060mm" shades={13} collections={4} />
+      <Info code="109" size="230mm X 3060mm" shades={13} collections={4} />
       <Shades
         firstTitle="METALLIC"
         firstData={metallicData}

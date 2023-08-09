@@ -55,11 +55,11 @@ const Stretta = () => {
     <Suspense fallback={<Loader />}>
       <StrettaBanner />
       <ImgGallery img1={StrettaImg1} img2={StrettaImg2} img3={StrettaImg3} img4={StrettaImg4} />
-      <Info code="104" size="265mm X 3660mm" shades={4} collections={1} />
+      <Info code="106" size="265mm X 3660mm" shades={4} collections={1} />
       <Shades firstTitle="REALWOOD" firstData={metallicData} />
       <Trims Jimages={Jimages} trim={trim} />
       <Brochure />
-      <MoreProducts data={otherProducts} />
+      <MoreProducts data={otherProducts} type="Dura+" />
     </Suspense>
   )
 }
