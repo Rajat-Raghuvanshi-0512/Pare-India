@@ -31,7 +31,7 @@ const WaveBanner = () => {
             KEY ADVANTAGES
           </h2>
           <div className="col-span-2 py-10 pr-2 text-center font-montserrat text-sm font-medium text-white md:text-xl 2xl:text-2xl">
-            Experience the ultimate fusion of durability and beauty with Dura+ panels. Meticulously crafted, these
+            Experience the ultimate fusion of durability and beauty with Innov2+ panels. Meticulously crafted, these
             exterior facades offer a timeless and long-lasting solution for your decorative needs.
           </div>
           <div className="hidden grid-cols-3 gap-10 md:grid">

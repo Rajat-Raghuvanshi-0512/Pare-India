@@ -1,4 +1,4 @@
-import { BannerBg, FireImg, InterlockImg, LouverBannerWoodImg, LouverTitleImg, MaintainanceImg } from '../../../assets'
+import { BannerBg, FireImg, GlobeImg, LouverBannerWoodImg, LouverTitleImg, MaintainanceImg } from '../../../assets'
 import { points } from '../../../utils/constants'
 import { Img } from '../../custom'
 
@@ -46,9 +46,9 @@ const StrettaBanner = () => {
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">{points.free_maintainance.desc}</p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={InterlockImg} alt={'box'} width={82} height={82} className="invert" />
-              <h6 className="font-metropolis font-bold 2xl:text-3xl">Unique Interlocking</h6>
-              <p className="text-center font-montserrat md:text-sm 2xl:text-xl">{points.interlock.desc}</p>
+              <Img src={GlobeImg} alt={'box'} width={82} height={82} />
+              <h6 className="font-metropolis font-bold 2xl:text-3xl">10 Years Warrenty</h6>
+              <p className="text-center font-montserrat md:text-sm 2xl:text-xl">{points.warranty.desc}</p>
             </div>
           </div>
         </div>
@@ -64,9 +64,9 @@ const StrettaBanner = () => {
             <p className="text-center font-montserrat text-xs">{points.free_maintainance.desc}</p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={InterlockImg} alt={'box'} width={50} height={50} className="invert" />
-            <h6 className="text-center font-metropolis text-sm font-bold">Unique Interlocking</h6>
-            <p className="text-center font-montserrat text-xs">{points.interlock.desc}</p>
+            <Img src={GlobeImg} alt={'box'} width={50} height={50} />
+            <h6 className="text-center font-metropolis text-sm font-bold">10 Years Warrenty</h6>
+            <p className="text-center font-montserrat text-xs">{points.warranty.desc}</p>
           </div>
         </div>
       </div>

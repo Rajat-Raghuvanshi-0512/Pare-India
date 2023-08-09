@@ -398,8 +398,8 @@ export const points = {
     desc: 'Designed to prioritize safety without compromising on style. ',
   },
   free_maintainance: {
-    title: 'Fire Retardant',
-    desc: 'Simplify your life with our maintenance-free wall and Ceiling systems. ',
+    title: 'Maintenance Free',
+    desc: 'Simplify your life with our maintenance-free wall and Ceiling systems.',
   },
   warranty: {
     title: '10 Years Warranty',

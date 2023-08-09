@@ -657,6 +657,7 @@ import UVResistanceImg from './images/products/uv resistance.png'
 import SuperQualityImg from './images/products/superior quality.png'
 import ImpactResistanceImg from './images/products/impact-resistance.png'
 import SeamlessImg from './images/products/seamless.png'
+import NoPlyImg from './images/products/ply.png'
 
 export {
   Logo,
@@ -1243,4 +1244,5 @@ export {
   UVResistanceImg,
   ImpactResistanceImg,
   SeamlessImg,
+  NoPlyImg,
 }

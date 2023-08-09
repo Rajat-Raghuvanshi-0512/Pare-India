@@ -1,4 +1,5 @@
-import { BacterialImg, BannerBg, BannerWoodImg, EasyArchImg, MechanicImg, TermiteImg } from '../../../assets'
+import { BannerBg, BannerWoodImg, EasyArchImg, InterlockImg, MechanicImg, NoPlyImg } from '../../../assets'
+import { points } from '../../../utils/constants'
 import { Img } from '../../custom'
 
 const ArchBanner = () => {
@@ -43,18 +44,16 @@ const ArchBanner = () => {
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={BacterialImg} alt={'box'} width={82} height={82} />
-              <h6 className="font-metropolis font-bold 2xl:text-3xl">Anti Bacterial</h6>
+              <Img src={InterlockImg} className="invert" alt={'box'} width={82} height={82} />
+              <h6 className="font-metropolis font-bold 2xl:text-3xl">Advance Interlocking</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
-                Specifically engineered to inhibit the growth of harmful bacteria.
+                Revolutionary system that effortlessly connects wall panels for a sleek, flawless finish.
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={TermiteImg} alt={'box'} width={82} height={82} />
-              <h6 className="font-metropolis font-bold 2xl:text-3xl">Termite & Rust Proof</h6>
-              <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
-                Fortified with a dual-layer defence, making them impervious to both termites and rust.
-              </p>
+              <Img src={NoPlyImg} alt={'box'} width={82} height={82} />
+              <h6 className="font-metropolis font-bold 2xl:text-3xl">{points.no_ply.title}</h6>
+              <p className="text-center font-montserrat md:text-sm 2xl:text-xl">{points.no_ply.desc}</p>
             </div>
           </div>
         </div>
@@ -67,18 +66,16 @@ const ArchBanner = () => {
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={BacterialImg} alt={'box'} width={50} height={50} />
-            <h6 className="text-center font-metropolis text-sm font-bold">Anti Bacterial</h6>
+            <Img src={InterlockImg} className="invert" alt={'box'} width={50} height={50} />
+            <h6 className="text-center font-metropolis text-sm font-bold">Advance Interlocking</h6>
             <p className="text-center font-montserrat text-xs">
-              Specifically engineered to inhibit the growth of harmful bacteria.
+              Revolutionary system that effortlessly connects wall panels for a sleek, flawless finish.
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={TermiteImg} alt={'box'} width={50} height={50} />
-            <h6 className="text-center font-metropolis text-sm font-bold">Termite & Rust Proof</h6>
-            <p className="text-center font-montserrat text-xs">
-              Fortified with a dual-layer defence, making them impervious to both termites and rust.
-            </p>
+            <Img src={NoPlyImg} alt={'box'} width={50} height={50} />
+            <h6 className="text-center font-metropolis text-sm font-bold">{points.no_ply.title}</h6>
+            <p className="text-center font-montserrat text-xs">{points.no_ply.desc}</p>
           </div>
         </div>
       </div>

@@ -1,4 +1,11 @@
-import { BannerBg, InterlockImg, LeafImg, StarImg, VerficaBannerWoodImg, VerticaTitleImg } from '../../../assets'
+import {
+  BannerBg,
+  ImpactResistanceImg,
+  InterlockImg,
+  LeafImg,
+  VerficaBannerWoodImg,
+  VerticaTitleImg,
+} from '../../../assets'
 import { points } from '../../../utils/constants'
 import { Img } from '../../custom'
 
@@ -43,7 +50,7 @@ const VerticaBanner = () => {
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={StarImg} alt={'box'} width={82} height={82} />
+              <Img src={ImpactResistanceImg} className="invert" alt={'box'} width={82} height={82} />
               <h6 className="text-center font-metropolis font-bold 2xl:text-3xl">High Impact Resistance</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
                 Panels with exceptional durability, ensuring your walls withstand daily wear and tear with ease.
@@ -65,7 +72,7 @@ const VerticaBanner = () => {
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={StarImg} alt={'box'} width={50} height={50} />
+            <Img src={ImpactResistanceImg} className="invert" alt={'box'} width={50} height={50} />
             <h6 className="text-center font-metropolis text-sm font-bold">High Impact Resistance</h6>
             <p className="text-center font-montserrat text-xs">
               Panels with exceptional durability, ensuring your walls withstand daily wear and tear with ease.
