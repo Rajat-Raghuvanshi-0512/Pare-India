@@ -40,7 +40,7 @@ const Projects = () => {
   })
   const largeDevice = useMediaQuery('(min-width: 768px)')
   const [testmonialActiveNo, settestmonialActive] = useState(1)
-  const [projectsActiveNo, setprojectsActiveNo] = useState(0)
+  const [projectsActiveNo, setprojectsActiveNo] = useState(1)
   return (
     <section className="p-5 md:p-10 lg:px-20 ">
       <div className="flex justify-between">
@@ -57,27 +57,21 @@ const Projects = () => {
       </div>
 
       <hr className="hidden md:m-5 md:block lg:m-8" />
-      <Swiper spaceBetween={50} slidesPerView={largeDevice ? 3 : 1} loop={true}>
+      <Swiper
+        spaceBetween={50}
+        slidesPerView={largeDevice ? 3 : 1}
+        onSlideChange={(swiper) => {
+          setprojectsActiveNo(swiper.realIndex + 1)
+        }}
+        loop={true}
+        allowTouchMove={!largeDevice}
+      >
         {projectImages.map((image, i) => (
           <SwiperSlide className="!flex !items-center !justify-center" key={image.small + i}>
             {largeDevice ? (
-              <img
-                src={image.large}
-                alt={'project'}
-                width={300}
-                height={300}
-                className={' md:h-full md:w-full'}
-                loading="lazy"
-              />
+              <img src={image.large} alt={'project'} width={300} height={300} className={' md:h-full md:w-full'} />
             ) : (
-              <img
-                src={image.small}
-                alt={'project'}
-                width={300}
-                height={300}
-                className={' md:h-full md:w-full'}
-                loading="lazy"
-              />
+              <img src={image.small} alt={'project'} width={300} height={300} className={' md:h-full md:w-full'} />
             )}
           </SwiperSlide>
         ))}
@@ -85,7 +79,7 @@ const Projects = () => {
         <hr className="hidden md:m-5 md:block lg:m-8" />
         <SliderNavigation projectsActiveNo={projectsActiveNo} setprojectsActiveNo={setprojectsActiveNo} />
       </Swiper>
-      <div className="mt-5 text-center font-metropolis font-light md:hidden">0{projectsActiveNo + 1}/05</div>
+      <div className="mt-5 text-center font-metropolis font-light md:hidden">0{projectsActiveNo}/05</div>
 
       <div className="mt-10 flex flex-col justify-between gap-5 md:flex-row md:gap-10 lg:gap-20">
         <div className="flex-1 font-metropolis text-4xl !leading-snug lg:text-[3.4rem]">
@@ -97,7 +91,14 @@ const Projects = () => {
         </div>
       </div>
       <div>
-        <Swiper spaceBetween={50} slidesPerView={1} loop={true}>
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={1}
+          loop={true}
+          onSlideChange={(swiper) => {
+            settestmonialActive(swiper.realIndex + 1)
+          }}
+        >
           <SwiperSlide onClick={() => setTestState((prev) => ({ test2: !prev.test2, test1: false, test3: false }))}>
             {testState.test2 === false && (
               <div className="absolute z-10 mx-auto my-5 mr-10 flex h-[200px] w-full items-center justify-center bg-black-base bg-opacity-30 text-white md:left-14 md:my-10 md:h-[400px] md:w-[90%] lg:h-[500px]">
@@ -124,7 +125,7 @@ const Projects = () => {
               height="500"
               url={testVideo3}
               className="mx-auto my-5 h-[200px] md:my-10 md:h-[400px] lg:h-[500px]"
-              title="test1"
+              title="test2"
               playing={testState.test3}
             />
           </SwiperSlide>

@@ -35,21 +35,27 @@ const StrettaBanner = () => {
           </div>
           <div className="hidden grid-cols-3 gap-10 md:grid">
             <div className="flex flex-col items-center gap-5">
-              <Img src={ImpactResistanceImg} alt={'box'} width={82} height={82} className="invert" />
+              <Img
+                src={ImpactResistanceImg}
+                alt={'box'}
+                width={82}
+                height={82}
+                className="h-[82px] object-contain invert"
+              />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">High Impact Resistance</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
                 Panels with exceptional durability, ensuring your walls withstand daily wear and tear with ease.
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={GlobeImg} alt={'box'} width={82} height={82} />
+              <Img src={GlobeImg} alt={'box'} width={82} height={82} className="h-[82px] object-contain" />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">Recyclable</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
                 A sustainable solution that combines style and environmental consciousness.
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={TermiteImg} alt={'box'} width={82} height={82} />
+              <Img src={TermiteImg} alt={'box'} width={82} height={82} className="h-[82px] object-contain" />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">Termite and Rust Proof</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
                 Fortified with a dual-layer defence, making them impervious to both termites and rust.
@@ -59,21 +65,27 @@ const StrettaBanner = () => {
         </div>
         <div className="col-span-4 grid grid-cols-3 gap-3 px-3 py-5 md:hidden">
           <div className="flex flex-col items-center gap-5">
-            <Img src={ImpactResistanceImg} alt={'box'} width={50} height={50} className="invert" />
+            <Img
+              src={ImpactResistanceImg}
+              alt={'box'}
+              width={50}
+              height={50}
+              className="h-[50px] object-contain invert"
+            />
             <h6 className="text-center font-metropolis text-sm font-bold">High Impact Resistance</h6>
             <p className="text-center font-montserrat text-xs">
               Panels with exceptional durability, ensuring your walls withstand daily wear and tear with ease.
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={GlobeImg} alt={'box'} width={50} height={50} />
+            <Img src={GlobeImg} alt={'box'} width={50} height={50} className="h-[50px] object-contain" />
             <h6 className="text-center font-metropolis text-sm font-bold">Recyclable</h6>
             <p className="text-center font-montserrat text-xs">
               A sustainable solution that combines style and environmental consciousness.
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={TermiteImg} alt={'box'} width={50} height={50} />
+            <Img src={TermiteImg} alt={'box'} width={50} height={50} className="h-[50px] object-contain" />
             <h6 className="text-center font-metropolis text-sm font-bold">Termite and Rust Proof</h6>
             <p className="text-center font-montserrat text-xs">
               Fortified with a dual-layer defence, making them impervious to both termites and rust.

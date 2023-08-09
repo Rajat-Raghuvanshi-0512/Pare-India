@@ -36,17 +36,17 @@ const SoffitBanner = () => {
           </div>
           <div className="hidden grid-cols-3 gap-10 md:grid">
             <div className="flex flex-col items-center gap-5">
-              <Img src={NoVOCImg} alt={'box'} width={82} height={82} className={'rounded-full'} />
+              <Img src={NoVOCImg} alt={'box'} width={82} height={82} className="h-[82px] rounded-full object-contain" />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">No VOC Emission</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">{points.no_voc.desc}</p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={DropImg} alt={'box'} width={82} height={82} className={'invert'} />
+              <Img src={DropImg} alt={'box'} width={82} height={82} className="h-[82px] object-contain invert" />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">{points.waterproof.title}</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">{points.waterproof.desc}</p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={RealwoodImg} alt={'box'} width={82} height={82} />
+              <Img src={RealwoodImg} alt={'box'} width={82} height={82} className="h-[82px] object-contain" />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">Real Wood Feel</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">{points.realwood.desc}</p>
             </div>
@@ -54,17 +54,17 @@ const SoffitBanner = () => {
         </div>
         <div className="col-span-4 grid grid-cols-3 gap-3 px-3 py-5 md:hidden">
           <div className="flex flex-col items-center gap-5">
-            <Img src={NoVOCImg} alt={'box'} width={50} height={50} />
+            <Img src={NoVOCImg} alt={'box'} width={50} height={50} className="h-[50px] rounded-full object-contain" />
             <h6 className="text-center font-metropolis text-sm font-bold">No VOC Emission</h6>
             <p className="text-center font-montserrat text-xs">{points.no_voc.desc}</p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={DropImg} alt={'box'} width={50} height={50} className={'invert'} />
+            <Img src={DropImg} alt={'box'} width={50} height={50} className="h-[50px] object-contain invert" />
             <h6 className="text-center font-metropolis text-sm font-bold">{points.waterproof.title}</h6>
             <p className="text-center font-montserrat text-xs">{points.waterproof.desc}</p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={RealwoodImg} alt={'box'} width={50} height={50} />
+            <Img src={RealwoodImg} alt={'box'} width={50} height={50} className="h-[50px] object-contain" />
             <h6 className="text-center font-metropolis text-sm font-bold">Real Wood Feel</h6>
             <p className="text-center font-montserrat text-xs">{points.realwood.desc}</p>
           </div>

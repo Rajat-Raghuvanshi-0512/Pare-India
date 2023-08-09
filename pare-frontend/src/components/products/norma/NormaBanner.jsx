@@ -42,21 +42,21 @@ const NormaBanner = () => {
           </div>
           <div className="hidden grid-cols-3 gap-10 md:grid">
             <div className="flex flex-col items-center gap-5">
-              <Img src={SuperQualityImg} alt={'box'} width={82} height={82} />
+              <Img src={SuperQualityImg} alt={'box'} width={82} height={82} className="h-[82px] object-contain" />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">Superior Quality</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
                 Meticulously crafted to bring durability and elegance together.
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={MaintainanceImg} alt={'box'} width={82} height={82} />
+              <Img src={MaintainanceImg} alt={'box'} width={82} height={82} className="h-[82px] object-contain" />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">Long Life</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
                 Designed to stand the test of time, ensuring longevity and reduced maintenance.
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={UVResistanceImg} alt={'box'} width={82} height={82} />
+              <Img src={UVResistanceImg} alt={'box'} width={82} height={82} className="h-[82px] object-contain" />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">UV Resistant</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
                 System to withstand the harshest elements and protect against UV radiation.
@@ -66,21 +66,21 @@ const NormaBanner = () => {
         </div>
         <div className="col-span-4 grid grid-cols-3 gap-3 px-3 py-5 md:hidden">
           <div className="flex flex-col items-center gap-5">
-            <Img src={SuperQualityImg} alt={'box'} width={50} height={50} />
+            <Img src={SuperQualityImg} alt={'box'} width={50} height={50} className="h-[50px] object-contain" />
             <h6 className="text-center font-metropolis text-sm font-bold">Superior Quality</h6>
             <p className="text-center font-montserrat text-xs">
               Meticulously crafted to bring durability and elegance together.
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={MaintainanceImg} alt={'box'} width={50} height={50} />
+            <Img src={MaintainanceImg} alt={'box'} width={50} height={50} className="h-[50px] object-contain" />
             <h6 className="text-center font-metropolis text-sm font-bold">Long Life</h6>
             <p className="text-center font-montserrat text-xs">
               Designed to stand the test of time, ensuring longevity and reduced maintenance.
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={UVResistanceImg} alt={'box'} width={50} height={50} />
+            <Img src={UVResistanceImg} alt={'box'} width={50} height={50} className="h-[50px] object-contain" />
             <h6 className="text-center font-metropolis text-sm font-bold">UV Resistant</h6>
             <p className="text-center font-montserrat text-xs">
               System to withstand the harshest elements and protect against UV radiation.

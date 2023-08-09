@@ -36,17 +36,17 @@ const StrettaBanner = () => {
           </div>
           <div className="hidden grid-cols-3 gap-10 md:grid">
             <div className="flex flex-col items-center gap-5">
-              <Img src={FireImg} className={'invert'} alt={'box'} width={82} height={82} />
+              <Img src={FireImg} alt={'box'} width={82} height={82} className="h-[82px] object-contain invert" />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">{points.fire_retardant.title}</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">{points.fire_retardant.desc}</p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={MaintainanceImg} alt={'box'} width={82} height={82} />
+              <Img src={MaintainanceImg} alt={'box'} width={82} height={82} className="h-[82px] object-contain" />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">{points.free_maintainance.title}</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">{points.free_maintainance.desc}</p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={GlobeImg} alt={'box'} width={82} height={82} />
+              <Img src={GlobeImg} alt={'box'} width={82} height={82} className="h-[82px] object-contain" />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">10 Years Warrenty</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">{points.warranty.desc}</p>
             </div>
@@ -54,17 +54,17 @@ const StrettaBanner = () => {
         </div>
         <div className="col-span-4 grid grid-cols-3 gap-3 px-3 py-5 md:hidden">
           <div className="flex flex-col items-center gap-5">
-            <Img src={FireImg} className={'invert'} alt={'box'} width={50} height={50} />
+            <Img src={FireImg} alt={'box'} width={50} height={50} className="h-[50px] object-contain invert" />
             <h6 className="text-center font-metropolis text-sm font-bold">{points.fire_retardant.title}</h6>
             <p className="text-center font-montserrat text-xs">{points.fire_retardant.desc}</p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={MaintainanceImg} alt={'box'} width={50} height={50} />
+            <Img src={MaintainanceImg} alt={'box'} width={50} height={50} className="h-[50px] object-contain" />
             <h6 className="text-center font-metropolis text-sm font-bold">{points.free_maintainance.title}</h6>
             <p className="text-center font-montserrat text-xs">{points.free_maintainance.desc}</p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={GlobeImg} alt={'box'} width={50} height={50} />
+            <Img src={GlobeImg} alt={'box'} width={50} height={50} className="h-[50px] object-contain" />
             <h6 className="text-center font-metropolis text-sm font-bold">10 Years Warrenty</h6>
             <p className="text-center font-montserrat text-xs">{points.warranty.desc}</p>
           </div>

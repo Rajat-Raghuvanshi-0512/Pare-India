@@ -43,21 +43,27 @@ const VerticaBanner = () => {
           </div>
           <div className="hidden grid-cols-3 gap-10 md:grid">
             <div className="flex flex-col items-center gap-5">
-              <Img src={LeafImg} alt={'box'} width={82} height={82} />
+              <Img src={LeafImg} alt={'box'} width={82} height={82} className="h-[82px] object-contain" />
               <h6 className="text-center font-metropolis font-bold 2xl:text-3xl">Sleek Design</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
                 Elegant design for a visually stunning environment that exudes style and sophistication.
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={ImpactResistanceImg} className="invert" alt={'box'} width={82} height={82} />
+              <Img
+                src={ImpactResistanceImg}
+                alt={'box'}
+                width={82}
+                height={82}
+                className="h-[82px] object-contain invert"
+              />
               <h6 className="text-center font-metropolis font-bold 2xl:text-3xl">High Impact Resistance</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
                 Panels with exceptional durability, ensuring your walls withstand daily wear and tear with ease.
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={InterlockImg} alt={'box'} width={82} height={82} className="invert" />
+              <Img src={InterlockImg} alt={'box'} width={82} height={82} className="h-[82px] object-contain invert" />
               <h6 className="text-center font-metropolis font-bold 2xl:text-3xl">Unique Interlocking</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">{points.interlock.desc}</p>
             </div>
@@ -65,21 +71,27 @@ const VerticaBanner = () => {
         </div>
         <div className="col-span-4 grid grid-cols-3 gap-3 px-3 py-5 md:hidden">
           <div className="flex flex-col items-center gap-5">
-            <Img src={LeafImg} alt={'box'} width={50} height={50} />
+            <Img src={LeafImg} alt={'box'} width={50} height={50} className="h-[50px] object-contain" />
             <h6 className="text-center font-metropolis text-sm font-bold">Sleek Design</h6>
             <p className="text-center font-montserrat text-xs">
               Elegant design for a visually stunning environment that exudes style and sophistication.
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={ImpactResistanceImg} className="invert" alt={'box'} width={50} height={50} />
+            <Img
+              src={ImpactResistanceImg}
+              alt={'box'}
+              width={50}
+              height={50}
+              className="h-[50px] object-contain invert"
+            />
             <h6 className="text-center font-metropolis text-sm font-bold">High Impact Resistance</h6>
             <p className="text-center font-montserrat text-xs">
               Panels with exceptional durability, ensuring your walls withstand daily wear and tear with ease.
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={InterlockImg} alt={'box'} width={50} height={50} className="invert" />
+            <Img src={InterlockImg} alt={'box'} width={50} height={50} className="h-[50px] object-contain invert" />
             <h6 className="text-center font-metropolis text-sm font-bold">Unique Interlocking</h6>
             <p className="text-center font-montserrat text-xs">{points.interlock.desc}</p>
           </div>

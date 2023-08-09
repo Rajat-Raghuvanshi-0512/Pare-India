@@ -15,7 +15,6 @@ const TestimonialSlider = ({ testmonialActiveNo, settestmonialActive }) => {
           className={'hidden cursor-pointer md:block'}
           onClick={() => {
             swiper.slidePrev()
-            testmonialActiveNo == 1 ? settestmonialActive(2) : settestmonialActive(1)
           }}
         />
         <div className="font-metropolis text-base font-light md:text-xl">0{testmonialActiveNo}/02</div>
@@ -27,7 +26,6 @@ const TestimonialSlider = ({ testmonialActiveNo, settestmonialActive }) => {
           className={'hidden cursor-pointer md:block'}
           onClick={() => {
             swiper.slideNext()
-            testmonialActiveNo == 1 ? settestmonialActive(2) : settestmonialActive(1)
           }}
         />
       </div>

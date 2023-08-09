@@ -37,21 +37,21 @@ const ArchBanner = () => {
           </div>
           <div className="hidden grid-cols-3 gap-10 md:grid">
             <div className="flex flex-col items-center gap-5">
-              <Img src={MechanicImg} alt={'box'} width={82} height={82} />
+              <Img src={MechanicImg} alt={'box'} width={82} height={82} className="h-[82px] object-contain" />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">Easy To Install</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
                 Transform your space effortlessly with our easy-to-install wall panel system.
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={InterlockImg} className="invert" alt={'box'} width={82} height={82} />
+              <Img src={InterlockImg} alt={'box'} width={82} height={82} className="h-[82px] object-contain invert" />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">Advance Interlocking</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
                 Revolutionary system that effortlessly connects wall panels for a sleek, flawless finish.
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={NoPlyImg} alt={'box'} width={82} height={82} />
+              <Img src={NoPlyImg} alt={'box'} width={82} height={82} className="h-[82px] object-contain" />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">{points.no_ply.title}</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">{points.no_ply.desc}</p>
             </div>
@@ -59,21 +59,21 @@ const ArchBanner = () => {
         </div>
         <div className="col-span-4 grid grid-cols-3 gap-3 px-3 py-5 md:hidden">
           <div className="flex flex-col items-center gap-5">
-            <Img src={MechanicImg} alt={'box'} width={50} height={50} />
+            <Img src={MechanicImg} alt={'box'} width={50} height={50} className="h-[50px] object-contain" />
             <h6 className="text-center font-metropolis text-sm font-bold">Easy To Install</h6>
             <p className="text-center font-montserrat text-xs">
               Transform your space effortlessly with our easy-to-install wall panel system.
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={InterlockImg} className="invert" alt={'box'} width={50} height={50} />
+            <Img src={InterlockImg} alt={'box'} width={50} height={50} className="h-[50px] object-contain invert" />
             <h6 className="text-center font-metropolis text-sm font-bold">Advance Interlocking</h6>
             <p className="text-center font-montserrat text-xs">
               Revolutionary system that effortlessly connects wall panels for a sleek, flawless finish.
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={NoPlyImg} alt={'box'} width={50} height={50} />
+            <Img src={NoPlyImg} alt={'box'} width={50} height={50} className="h-[50px] object-contain" />
             <h6 className="text-center font-metropolis text-sm font-bold">{points.no_ply.title}</h6>
             <p className="text-center font-montserrat text-xs">{points.no_ply.desc}</p>
           </div>

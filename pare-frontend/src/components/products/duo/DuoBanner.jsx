@@ -54,7 +54,7 @@ const DuoBanner = () => {
         </div>
         <div className="col-span-4 grid grid-cols-3 gap-3 px-3 py-5 md:hidden">
           <div className="flex flex-col items-center gap-5">
-            <img src={InterlockImg} className="invert" alt={'box'} width={50} height={50} />
+            <img src={InterlockImg} alt={'box'} width={50} height={50} className="h-[50px] object-contain invert" />
             <h6 className="text-center font-metropolis text-sm font-bold">Unique Interlocking</h6>
             <p className="text-center font-montserrat text-xs">
               Upgrade your space effortlessly with Easy+ and enjoy a stress-free renovation experience.
@@ -66,7 +66,7 @@ const DuoBanner = () => {
             <p className="text-center font-montserrat text-xs">{points.fire_retardant.desc}</p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={LightWeightImg} alt={'box'} width={50} height={50} />
+            <Img src={LightWeightImg} alt={'box'} width={50} height={50} className="h-[50px] object-contain" />
             <h6 className="text-center font-metropolis text-sm font-bold">{points.light_weight.title}</h6>
             <p className="text-center font-montserrat text-xs">{points.light_weight.desc}</p>
           </div>
