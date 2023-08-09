@@ -39,21 +39,21 @@ const LineaBanner = () => {
               <Img src={MechanicImg} alt={'box'} width={82} height={82} />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">Easy To Install</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
-                Upgrade your space effortlessly with Easy+ and enjoy a stress-free renovation experience.
+                Transform your space effortlessly with our easy-to-install wall panel system.
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
               <Img src={GlobeImg} alt={'box'} width={82} height={82} />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">Recyclable</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
-                Embrace Sustainable Design with Our Recyclable Innovation.
+                A sustainable solution that combines style and environmental consciousness.
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
               <Img src={InterlockImg} alt={'box'} width={82} height={82} className="invert" />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">Advance Interlocking</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
-                Seamless Perfection: Introducing Linea&apos;s Advanced Interlocking System
+                Revolutionary system that effortlessly connects wall panels for a sleek, flawless finish.
               </p>
             </div>
           </div>
@@ -63,21 +63,21 @@ const LineaBanner = () => {
             <Img src={MechanicImg} alt={'box'} width={50} height={50} />
             <h6 className="text-center font-metropolis text-sm font-bold">Easy To Install</h6>
             <p className="text-center font-montserrat text-xs">
-              Upgrade your space effortlessly with Easy+ and enjoy a stress-free renovation experience.
+              Transform your space effortlessly with our easy-to-install wall panel system.
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
             <Img src={GlobeImg} alt={'box'} width={50} height={50} />
             <h6 className="text-center font-metropolis text-sm font-bold">Recyclable</h6>
             <p className="text-center font-montserrat text-xs">
-              Embrace Sustainable Design with Our Recyclable Innovation.
+              A sustainable solution that combines style and environmental consciousness.
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
             <Img src={InterlockImg} alt={'box'} width={50} height={50} className="invert" />
             <h6 className="text-center font-metropolis text-sm font-bold">Advance Interlocking</h6>
             <p className="text-center font-montserrat text-xs">
-              Seamless Perfection: Introducing Linea&apos;s Advanced Interlocking System
+              Revolutionary system that effortlessly connects wall panels for a sleek, flawless finish.
             </p>
           </div>
         </div>

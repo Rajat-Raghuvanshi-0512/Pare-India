@@ -1,5 +1,6 @@
-import { BannerBg, DropImg, DuoBannerWoodImg, DuoTitleImg, FireImg, MechanicImg } from '../../../assets'
+import { BannerBg, DuoBannerWoodImg, DuoTitleImg, FireImg, InterlockImg, LightWeightImg } from '../../../assets'
 import { Img } from '../../custom'
+import { points } from '../../../utils/constants'
 
 const DuoBanner = () => {
   return (
@@ -35,49 +36,39 @@ const DuoBanner = () => {
           </div>
           <div className="hidden grid-cols-3 gap-10 md:grid">
             <div className="flex flex-col items-center gap-5">
-              <Img src={MechanicImg} alt={'box'} width={82} height={82} />
-              <h6 className="font-metropolis font-bold 2xl:text-3xl">Easy To Install</h6>
-              <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
-                Upgrade your space effortlessly with Innov+ and enjoy a stress-free renovation experience.
-              </p>
-            </div>
-            <div className="flex flex-col items-center gap-5">
-              <Img src={DropImg} alt={'box'} width={82} height={82} className={'invert'} />
-              <h6 className="font-metropolis font-bold 2xl:text-3xl">Waterproof</h6>
-              <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
-                Embrace Sustainable Design with Our Recyclable Innovation.
-              </p>
+              <img src={InterlockImg} className="invert" alt={'box'} width={82} height={82} />
+              <h6 className="font-metropolis font-bold 2xl:text-3xl">{points.interlock.title}</h6>
+              <p className="text-center font-montserrat md:text-sm 2xl:text-xl">{points.interlock.desc}</p>
             </div>
             <div className="flex flex-col items-center gap-5">
               <Img src={FireImg} alt={'box'} width={82} height={82} className={'invert'} />
-              <h6 className="font-metropolis font-bold 2xl:text-3xl">Fire Retardant</h6>
-              <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
-                Seamless Perfection: Introducing Linea&apos;s Advanced Interlocking System
-              </p>
+              <h6 className="font-metropolis font-bold 2xl:text-3xl">{points.fire_retardant.title}</h6>
+              <p className="text-center font-montserrat md:text-sm 2xl:text-xl">{points.fire_retardant.desc}</p>
+            </div>
+            <div className="flex flex-col items-center gap-5">
+              <Img src={LightWeightImg} alt={'box'} width={82} height={82} />
+              <h6 className="font-metropolis font-bold 2xl:text-3xl">{points.light_weight.title}</h6>
+              <p className="text-center font-montserrat md:text-sm 2xl:text-xl">{points.light_weight.desc}</p>
             </div>
           </div>
         </div>
         <div className="col-span-4 grid grid-cols-3 gap-3 px-3 py-5 md:hidden">
           <div className="flex flex-col items-center gap-5">
-            <Img src={MechanicImg} alt={'box'} width={50} height={50} />
-            <h6 className="text-center font-metropolis text-sm font-bold">Easy To Install</h6>
+            <img src={InterlockImg} className="invert" alt={'box'} width={50} height={50} />
+            <h6 className="text-center font-metropolis text-sm font-bold">Unique Interlocking</h6>
             <p className="text-center font-montserrat text-xs">
               Upgrade your space effortlessly with Easy+ and enjoy a stress-free renovation experience.
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={DropImg} alt={'box'} width={50} className={'invert'} height={50} />
-            <h6 className="text-center font-metropolis text-sm font-bold">Waterproof</h6>
-            <p className="text-center font-montserrat text-xs">
-              Embrace Sustainable Design with Our Recyclable Innovation.
-            </p>
+            <Img src={FireImg} alt={'box'} width={50} className={'invert'} height={50} />
+            <h6 className="text-center font-metropolis text-sm font-bold">{points.fire_retardant.title}</h6>
+            <p className="text-center font-montserrat text-xs">{points.fire_retardant.desc}</p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={FireImg} alt={'box'} width={50} height={50} className={'invert'} />
-            <h6 className="text-center font-metropolis text-sm font-bold">Fire Retardant</h6>
-            <p className="text-center font-montserrat text-xs">
-              Seamless Perfection: Introducing Linea&apos;s Advanced Interlocking System
-            </p>
+            <Img src={LightWeightImg} alt={'box'} width={50} height={50} />
+            <h6 className="text-center font-metropolis text-sm font-bold">{points.light_weight.title}</h6>
+            <p className="text-center font-montserrat text-xs">{points.light_weight.desc}</p>
           </div>
         </div>
       </div>

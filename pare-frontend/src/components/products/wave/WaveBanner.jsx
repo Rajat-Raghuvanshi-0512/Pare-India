@@ -1,4 +1,5 @@
-import { BannerBg, GlobeImg, InterlockImg, MechanicImg, WaveBannerWoodImg, WaveTitleImg } from '../../../assets'
+import { BannerBg, NoVOCImg, RealwoodImg, SeamlessImg, WaveBannerWoodImg, WaveTitleImg } from '../../../assets'
+import { points } from '../../../utils/constants'
 import { Img } from '../../custom'
 
 const WaveBanner = () => {
@@ -35,48 +36,40 @@ const WaveBanner = () => {
           </div>
           <div className="hidden grid-cols-3 gap-10 md:grid">
             <div className="flex flex-col items-center gap-5">
-              <Img src={MechanicImg} alt={'box'} width={82} height={82} />
-              <h6 className="font-metropolis font-bold 2xl:text-3xl">Easy To Install</h6>
-              <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
-                Upgrade your space effortlessly with Easy+ and enjoy a stress-free renovation experience.
-              </p>
+              <Img src={NoVOCImg} className={'rounded-full'} alt={'box'} width={82} height={82} />
+              <h6 className="font-metropolis font-bold 2xl:text-3xl">{points.no_voc.title}</h6>
+              <p className="text-center font-montserrat md:text-sm 2xl:text-xl">{points.no_voc.desc}</p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={GlobeImg} alt={'box'} width={82} height={82} />
-              <h6 className="font-metropolis font-bold 2xl:text-3xl">Recyclable</h6>
-              <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
-                Embrace Sustainable Design with Our Recyclable Innovation.
-              </p>
+              <Img src={RealwoodImg} alt={'box'} width={82} height={82} />
+              <h6 className="font-metropolis font-bold 2xl:text-3xl">{points.realwood.title}</h6>
+              <p className="text-center font-montserrat md:text-sm 2xl:text-xl">{points.realwood.desc}</p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={InterlockImg} alt={'box'} width={82} height={82} className="invert" />
-              <h6 className="font-metropolis font-bold 2xl:text-3xl">Advance Interlocking</h6>
+              <Img src={SeamlessImg} alt={'box'} width={82} height={82} />
+              <h6 className="font-metropolis font-bold 2xl:text-3xl">Seamless Look</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
-                Seamless Perfection: Introducing Linea&apos;s Advanced Interlocking System
+                Seamless Perfection: Introducing Linea&apos;s Advanced Seamless look
               </p>
             </div>
           </div>
         </div>
         <div className="col-span-4 grid grid-cols-3 gap-3 px-3 py-5 md:hidden">
           <div className="flex flex-col items-center gap-5">
-            <Img src={MechanicImg} alt={'box'} width={50} height={50} />
-            <h6 className="text-center font-metropolis text-sm font-bold">Easy To Install</h6>
-            <p className="text-center font-montserrat text-xs">
-              Upgrade your space effortlessly with Easy+ and enjoy a stress-free renovation experience.
-            </p>
+            <Img src={NoVOCImg} className={'rounded-full'} alt={'box'} width={50} height={50} />
+            <h6 className="text-center font-metropolis text-sm font-bold">{points.no_voc.title}</h6>
+            <p className="text-center font-montserrat text-xs">{points.no_voc.desc}</p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={GlobeImg} alt={'box'} width={50} height={50} />
-            <h6 className="text-center font-metropolis text-sm font-bold">Recyclable</h6>
-            <p className="text-center font-montserrat text-xs">
-              Embrace Sustainable Design with Our Recyclable Innovation.
-            </p>
+            <Img src={RealwoodImg} alt={'box'} width={50} height={50} />
+            <h6 className="text-center font-metropolis text-sm font-bold">{points.realwood.title}</h6>
+            <p className="text-center font-montserrat text-xs">{points.realwood.desc}</p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={InterlockImg} alt={'box'} width={50} height={50} className="invert" />
-            <h6 className="text-center font-metropolis text-sm font-bold">Advance Interlocking</h6>
+            <Img src={SeamlessImg} alt={'box'} width={50} height={50} />
+            <h6 className="text-center font-metropolis text-sm font-bold">Seamless Look</h6>
             <p className="text-center font-montserrat text-xs">
-              Seamless Perfection: Introducing Linea&apos;s Advanced Interlocking System
+              Seamless Perfection: Introducing Linea&apos;s Advanced Seamless look
             </p>
           </div>
         </div>

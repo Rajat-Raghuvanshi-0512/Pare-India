@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-// import { InstaImg1, InstaImg2, InstaImg3, InstaImg4, InstaImg5, InstaImg6, InstaImg7, InstaImg8 } from '../../assets'
+import { InstaImg1, InstaImg2, InstaImg3, InstaImg4, InstaImg5, InstaImg6, InstaImg7, InstaImg8 } from '../../assets'
 import { Img } from '../custom'
 
-// const images = [InstaImg8, InstaImg2, InstaImg1, InstaImg4, InstaImg7, InstaImg5, InstaImg6, InstaImg3]
+const tempImg = [InstaImg8, InstaImg2, InstaImg1, InstaImg4, InstaImg7, InstaImg5, InstaImg6, InstaImg3]
 
 const PareIndiaRotatingImgSm = ({ images }) => {
   return (
@@ -14,9 +14,13 @@ const PareIndiaRotatingImgSm = ({ images }) => {
         </p>
       </div>
       <div className="circle-container z-30 flex h-screen flex-col items-center justify-center">
-        {images?.slice(0, 8)?.map((im, idx) => {
-          return <Img src={im.media_url} key={im.media_url + idx} id="instafeed" alt={'Instaphotos'} loading="lazy" />
-        })}
+        {images
+          ? images?.slice(0, 8)?.map((im, idx) => {
+              return (
+                <Img src={im.media_url} key={im.media_url + idx} id="instafeed" alt={'Instaphotos'} loading="lazy" />
+              )
+            })
+          : tempImg.map((img) => <Img src={img} key={img} id="instafeed" alt={'Instaphotos'} loading="lazy" />)}
       </div>
     </section>
   )
@@ -48,9 +52,13 @@ const PareIndiaRotatingImgLg = ({ images }) => {
         ref={ref}
         onMouseMove={getScrollOffset}
       >
-        {images?.slice(0, 8)?.map((im, idx) => {
-          return <Img src={im.media_url} key={im.media_url + idx} id="instafeed" alt={'Instaphotos'} loading="lazy" />
-        })}
+        {images
+          ? images?.slice(0, 8)?.map((im, idx) => {
+              return (
+                <Img src={im.media_url} key={im.media_url + idx} id="instafeed" alt={'Instaphotos'} loading="lazy" />
+              )
+            })
+          : tempImg.map((img) => <Img src={img} key={img} id="instafeed" alt={'Instaphotos'} loading="lazy" />)}
       </div>
     </section>
   )
@@ -65,6 +73,9 @@ const PareIndiaRotatingImg = () => {
     const res = await fetch(`https://graph.instagram.com/me/media?access_token=${access_token}`)
     const data = await res.json()
     const finalData = data.data
+    if (!finalData) {
+      return setImages(null)
+    }
     for (let i = 0; i < finalData.length; i++) {
       let postId
       postId = finalData[i].id
@@ -81,7 +92,7 @@ const PareIndiaRotatingImg = () => {
   }, [access_token])
   useEffect(() => {
     getPosts()
-  }, [])
+  }, [getPosts])
   return (
     <div>
       <div className="md:hidden">

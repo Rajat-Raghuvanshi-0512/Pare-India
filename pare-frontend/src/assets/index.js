@@ -648,6 +648,16 @@ import Innov2WaveShade1 from './images/products/innov2/wave/shade1.webp'
 import Innov2WaveShade2 from './images/products/innov2/wave/shade2.webp'
 import Innov2WaveShade3 from './images/products/innov2/wave/shade3.webp'
 
+import LightWeightImg from './images/products/light-weight.png'
+import RealwoodImg from './images/products/real-wood.png'
+import TermiteImg from './images/products/termite.png'
+import NoVOCImg from './images/products/no-voc.jpg'
+import MaintainanceImg from './images/products/maintainance.png'
+import UVResistanceImg from './images/products/uv resistance.png'
+import SuperQualityImg from './images/products/superior quality.png'
+import ImpactResistanceImg from './images/products/impact-resistance.png'
+import SeamlessImg from './images/products/seamless.png'
+
 export {
   Logo,
   HeroBgMobile,
@@ -1224,4 +1234,13 @@ export {
   OutsideTrim,
   StarterTrim,
   TTrim,
+  LightWeightImg,
+  NoVOCImg,
+  RealwoodImg,
+  TermiteImg,
+  MaintainanceImg,
+  SuperQualityImg,
+  UVResistanceImg,
+  ImpactResistanceImg,
+  SeamlessImg,
 }

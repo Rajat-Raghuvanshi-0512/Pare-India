@@ -1,4 +1,4 @@
-import { BannerBg, InterlockImg, LeafImg, StarImg, StrettaTitleImg, StrettaWoodImg } from '../../../assets'
+import { BannerBg, GlobeImg, ImpactResistanceImg, StrettaTitleImg, StrettaWoodImg, TermiteImg } from '../../../assets'
 import { Img } from '../../custom'
 
 const StrettaBanner = () => {
@@ -35,54 +35,48 @@ const StrettaBanner = () => {
           </div>
           <div className="hidden grid-cols-3 gap-10 md:grid">
             <div className="flex flex-col items-center gap-5">
-              <Img src={LeafImg} alt={'box'} width={82} height={82} />
-              <h6 className="font-metropolis font-bold 2xl:text-3xl">Sleek Design</h6>
-              <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
-                Where cutting-edge innovation meets eco-consciousness, offering NO VOC emission for a healthier
-                environment
-              </p>
-            </div>
-            <div className="flex flex-col items-center gap-5">
-              <Img src={StarImg} alt={'box'} width={82} height={82} />
+              <Img src={ImpactResistanceImg} alt={'box'} width={82} height={82} className="invert" />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">High Impact Resistance</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
-                Experience flawless innovation with high impact resistance, ensuring enduring beauty in the face of wear
-                and tear.
+                Panels with exceptional durability, ensuring your walls withstand daily wear and tear with ease.
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={InterlockImg} alt={'box'} width={82} height={82} className="invert" />
-              <h6 className="font-metropolis font-bold 2xl:text-3xl">Unique Interlocking</h6>
+              <Img src={GlobeImg} alt={'box'} width={82} height={82} />
+              <h6 className="font-metropolis font-bold 2xl:text-3xl">Recyclable</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
-                Elevate your spaces with the unparalleled charm of a real wood feel, seamlessly blending aesthetics and
-                functionality in the ultimate wall and ceiling system.
+                A sustainable solution that combines style and environmental consciousness.
+              </p>
+            </div>
+            <div className="flex flex-col items-center gap-5">
+              <Img src={TermiteImg} alt={'box'} width={82} height={82} />
+              <h6 className="font-metropolis font-bold 2xl:text-3xl">Termite and Rust Proof</h6>
+              <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
+                Fortified with a dual-layer defence, making them impervious to both termites and rust.
               </p>
             </div>
           </div>
         </div>
         <div className="col-span-4 grid grid-cols-3 gap-3 px-3 py-5 md:hidden">
           <div className="flex flex-col items-center gap-5">
-            <Img src={LeafImg} alt={'box'} width={50} height={50} />
-            <h6 className="text-center font-metropolis text-sm font-bold">Sleek Design</h6>
-            <p className="text-center font-montserrat text-xs">
-              Where cutting-edge innovation meets eco-consciousness, offering NO VOC emission for a healthier
-              environment
-            </p>
-          </div>
-          <div className="flex flex-col items-center gap-5">
-            <Img src={StarImg} alt={'box'} width={50} height={50} />
+            <Img src={ImpactResistanceImg} alt={'box'} width={50} height={50} className="invert" />
             <h6 className="text-center font-metropolis text-sm font-bold">High Impact Resistance</h6>
             <p className="text-center font-montserrat text-xs">
-              Experience flawless innovation with high impact resistance, ensuring enduring beauty in the face of wear
-              and tear.
+              Panels with exceptional durability, ensuring your walls withstand daily wear and tear with ease.
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={InterlockImg} alt={'box'} width={50} height={50} className="invert" />
-            <h6 className="text-center font-metropolis text-sm font-bold">Unique Interlocking</h6>
+            <Img src={GlobeImg} alt={'box'} width={50} height={50} />
+            <h6 className="text-center font-metropolis text-sm font-bold">Recyclable</h6>
             <p className="text-center font-montserrat text-xs">
-              Elevate your spaces with the unparalleled charm of a real wood feel, seamlessly blending aesthetics and
-              functionality in the ultimate wall and ceiling system.
+              A sustainable solution that combines style and environmental consciousness.
+            </p>
+          </div>
+          <div className="flex flex-col items-center gap-5">
+            <Img src={TermiteImg} alt={'box'} width={50} height={50} />
+            <h6 className="text-center font-metropolis text-sm font-bold">Termite and Rust Proof</h6>
+            <p className="text-center font-montserrat text-xs">
+              Fortified with a dual-layer defence, making them impervious to both termites and rust.
             </p>
           </div>
         </div>

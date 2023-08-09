@@ -1,4 +1,5 @@
-import { BannerBg, GlobeImg, LouverBannerWoodImg, SoffitTitleImg, LeafImg, DropImg } from '../../../assets'
+import { BannerBg, NoVOCImg, LouverBannerWoodImg, SoffitTitleImg, DropImg, RealwoodImg } from '../../../assets'
+import { points } from '../../../utils/constants'
 import { Img } from '../../custom'
 
 const SoffitBanner = () => {
@@ -35,55 +36,37 @@ const SoffitBanner = () => {
           </div>
           <div className="hidden grid-cols-3 gap-10 md:grid">
             <div className="flex flex-col items-center gap-5">
-              <Img src={GlobeImg} alt={'box'} width={82} height={82} />
+              <Img src={NoVOCImg} alt={'box'} width={82} height={82} className={'rounded-full'} />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">No VOC Emission</h6>
-              <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
-                Where cutting-edge innovation meets eco-consciousness, offering NO VOC emission for a healthier
-                environment.
-              </p>
+              <p className="text-center font-montserrat md:text-sm 2xl:text-xl">{points.no_voc.desc}</p>
             </div>
             <div className="flex flex-col items-center gap-5">
               <Img src={DropImg} alt={'box'} width={82} height={82} className={'invert'} />
-              <h6 className="font-metropolis font-bold 2xl:text-3xl">Waterproof</h6>
-              <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
-                Elevate your spaces with confidence as the ultimate wall and ceiling system that offers seamless
-                aesthetics and functionality, backed by waterproof durability.
-              </p>
+              <h6 className="font-metropolis font-bold 2xl:text-3xl">{points.waterproof.title}</h6>
+              <p className="text-center font-montserrat md:text-sm 2xl:text-xl">{points.waterproof.desc}</p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={LeafImg} alt={'box'} width={82} height={82} />
+              <Img src={RealwoodImg} alt={'box'} width={82} height={82} />
               <h6 className="font-metropolis font-bold 2xl:text-3xl">Real Wood Feel</h6>
-              <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
-                Elevate your spaces with the unparalleled charm of a real wood feel, seamlessly blending aesthetics and
-                functionality in the ultimate wall and ceiling system.
-              </p>
+              <p className="text-center font-montserrat md:text-sm 2xl:text-xl">{points.realwood.desc}</p>
             </div>
           </div>
         </div>
         <div className="col-span-4 grid grid-cols-3 gap-3 px-3 py-5 md:hidden">
           <div className="flex flex-col items-center gap-5">
-            <Img src={GlobeImg} alt={'box'} width={50} height={50} />
+            <Img src={NoVOCImg} alt={'box'} width={50} height={50} />
             <h6 className="text-center font-metropolis text-sm font-bold">No VOC Emission</h6>
-            <p className="text-center font-montserrat text-xs">
-              Where cutting-edge innovation meets eco-consciousness, offering NO VOC emission for a healthier
-              environment.
-            </p>
+            <p className="text-center font-montserrat text-xs">{points.no_voc.desc}</p>
           </div>
           <div className="flex flex-col items-center gap-5">
             <Img src={DropImg} alt={'box'} width={50} height={50} className={'invert'} />
-            <h6 className="text-center font-metropolis text-sm font-bold">Waterproof</h6>
-            <p className="text-center font-montserrat text-xs">
-              Elevate your spaces with confidence as the ultimate wall and ceiling system that offers seamless
-              aesthetics and functionality, backed by waterproof durability.
-            </p>
+            <h6 className="text-center font-metropolis text-sm font-bold">{points.waterproof.title}</h6>
+            <p className="text-center font-montserrat text-xs">{points.waterproof.desc}</p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={LeafImg} alt={'box'} width={50} height={50} />
+            <Img src={RealwoodImg} alt={'box'} width={50} height={50} />
             <h6 className="text-center font-metropolis text-sm font-bold">Real Wood Feel</h6>
-            <p className="text-center font-montserrat text-xs">
-              Elevate your spaces with the unparalleled charm of a real wood feel, seamlessly blending aesthetics and
-              functionality in the ultimate wall and ceiling system.
-            </p>
+            <p className="text-center font-montserrat text-xs">{points.realwood.desc}</p>
           </div>
         </div>
       </div>

@@ -94,7 +94,7 @@ const HeroLg = () => {
       <div className="absolute top-[120px] z-10 2xl:top-[150px]">
         <b className="flex items-center font-metropolis leading-[145%] md:w-[550px] lg:w-[700px] 2xl:w-[800px]">
           <span className="mt-5 w-full uppercase leading-snug md:text-[3rem] lg:text-[3.5rem] 2xl:text-[4rem]">
-            <span>FIRST AND ONLY MANUFACTURER OF </span>
+            <span>MANUFACTURERS OF </span>
             <span className="upper text-red-base">Innovative Surfaces</span>
             <span> in INDIA.</span>
           </span>

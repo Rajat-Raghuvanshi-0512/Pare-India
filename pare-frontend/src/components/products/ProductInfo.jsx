@@ -143,7 +143,7 @@ const ProductInfoSm = () => {
               </div>
               <div className="flex gap-2 px-2 pl-4">
                 <Img src={Wall} alt={'wall'} width={25} height={25} className={'object-contain'} />
-                <p>Usage: Exterior Surface</p>
+                <p>Usage: Exterior Facade Surface</p>
               </div>
             </div>
           </div>
@@ -354,7 +354,7 @@ const ProductInfoLg = () => {
               </div>
               <div className="flex gap-5 px-2 pl-4">
                 <Img src={Wall} alt={'wall'} width={50} height={45} className={'object-contain'} />
-                <p>Usage: Exterior Surface</p>
+                <p>Usage: Exterior Facade Surface</p>
               </div>
             </div>
             <div className="ml-6 mt-3 h-full w-full border-2 border-red-base">

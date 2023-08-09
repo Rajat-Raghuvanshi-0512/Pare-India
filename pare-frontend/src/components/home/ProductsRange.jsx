@@ -30,22 +30,22 @@ const mainData = [
   {
     id: '01',
     heading: 'Innov+',
-    desc: 'Elevate your space with PARÉ Soffit Systems. Embrace the allure of wood, minus the drawbacks. Transform effortlessly with our versatile Soffit Louvers or sleek Vertica Soffit Panels. Discover our first-time-in-India products for walls and ceilings.',
+    desc: 'Discover the World of INNOV+, where innovative interior design meets convenience and style. Our products feature a unique tongue and groove interlocking system, ensuring easy installation and a seamless, polished finish. Embrace the versatility of INNOV+ and bring your dream interiors to life, where form and function coalesce effortlessly.',
   },
   {
     id: '02',
     heading: 'Easy+',
-    desc: "PARÉ's Easy+ Locking System revolutionizes wall and ceiling panel integration with a seamless, hassle-free installation. Embrace the Pyramid design for added texture or choose Linea panels for clean lines and easy flexibility. Experience effortless, dust-free installation with PARÉ's world-first innovation.",
+    desc: 'Welcome to the world of Easy+, where simplicity meets elegance in interior design. Embrace the convenience of our revolutionary Easy+ system, designed to make your interior installations a breeze. With its user-friendly features and versatile applications, Easy+ transforms the mundane task of installing interior elements into an enjoyable experience, enabling you to create stunning spaces effortlessly.',
   },
   {
     id: '03',
     heading: 'Dura+',
-    desc: "PARÉ DURA+ Systems redefine durability and functionality, ensuring a smooth and flexible experience. Elevate exteriors with Norma panels for long-lasting exterior facades, and enhance wall cladding with Stretta panels' high impact resistance. Experience excellence with PARÉ DURA+.",
+    desc: "Dura+ is the epitome of strength and durability for your exterior facade needs. With its robust construction and weather-resistant properties, Dura+ offers long-lasting protection and stunning aesthetics. Stand strong against the elements while enhancing the architectural beauty of your building. Whether it's a residential or commercial projects.",
   },
   {
     id: '04',
     heading: 'Innov2+',
-    desc: 'Discover the unparalleled transformation with Innov2+ Wall & Ceiling Panels! Prepare to be captivated by our latest breakthrough in interior design. Innov2+ brings you an unmatched blend of innovation and excellence, elevating your spaces to a realm of contemporary elegance and cutting-edge functionality.',
+    desc: "We're thrilled to unveil our latest breakthrough in interior design - Innov2+ Wall & Ceiling Panels! With an unmatched blend of innovation and excellence, Innov2+ is here to transform your spaces into a realm of contemporary elegance and cutting-edge functionality.",
   },
 ]
 

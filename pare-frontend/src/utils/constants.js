@@ -84,7 +84,7 @@ export const productsData = {
     section2data: [
       {
         type: 'Linea',
-        desc: "Revitalize your space effortlessly with Easy+, the ultimate easy-to-install system, for remarkable transformations. Say goodbye to complicated installations and hello to stunning results with Easy+'s simplicity and convenience.",
+        desc: '- Transform your space into a masterpiece with Linea Shape Wall Panels. Embrace the art of elegant design as sleek lines harmonize, creating a stunning backdrop that captures the essence of modern sophistication.',
         highlights: ['Easy to install', 'Recyclable', 'Advance Interlocking'],
         productImgs: [EasyLineaImg1, EasyLineaImg2, EasyLineaImg3],
         productShades: [EasyLineaShade1, EasyLineaShade2, EasyLineaShade3],
@@ -92,7 +92,7 @@ export const productsData = {
       },
       {
         type: 'Pyramid',
-        desc: "Revitalize your space effortlessly with Easy+, the ultimate easy-to-install system, for remarkable transformations. Say goodbye to complicated installations and hello to stunning results with Easy+'s simplicity and convenience.",
+        desc: "- Transform your space with the timeless allure of pyramid shape wall panels, where geometric elegance converges with architectural intrigue, igniting a symphony of form and function that captivates the eye. Let each panel's meticulously crafted angles and shadows breathe life into your surroundings, showcasing the boundless potential of geometric artistry.",
         highlights: ['Easy to install', 'Anti-bacterial', 'Termite Proof & Rust Proof'],
         productImgs: [EasyPyramidImg1, EasyPyramidImg2, EasyPyramidImg3],
         productShades: [EasyPyramidShade1, EasyPyramidShade2, EasyPyramidShade3],
@@ -100,8 +100,8 @@ export const productsData = {
       },
       {
         type: 'Arch',
-        desc: "Revitalize your space effortlessly with Easy+, the ultimate easy-to-install system, for remarkable transformations. Say goodbye to complicated installations and hello to stunning results with Easy+'s simplicity and convenience.",
-        highlights: ['Easy to install', 'Advance Interlocking', 'No Ply required Can Be Screwed Directly on the walls'],
+        desc: '- Designed to prioritize a streamlined and straightforward structure, seamlessly integrating them into the EASY+ System. The circular shape of the panels not only adds visual appeal but also plays a critical role in enhancing the overall aesthetic and functionality.',
+        highlights: ['Easy to install', 'Advance Interlocking', 'No Ply required'],
         productImgs: [EasyLineaImg1, EasyLineaImg2, EasyLineaImg3],
         productShades: [EasyLineaShade1, EasyLineaShade2, EasyLineaShade3],
         pageLink: '/arch',
@@ -126,7 +126,7 @@ export const productsData = {
     section2data: [
       {
         type: 'Norma',
-        desc: 'panels make you experience the perfect blend of durability and aesthetics with Norma. These decorative panels are meticulously crafted to provide a long-lasting solution for your exterior facades.',
+        desc: '- panels make you experience the perfect blend of durability and aesthetics with Norma. These decorative panels are meticulously crafted to provide a long-lasting solution for your exterior facades.',
         highlights: ['Superior Quality', 'Long Life', 'UV Resistant'],
         productImgs: [DuraNormaImg1, DuraNormaImg2, DuraNormaImg3],
         productShades: [DuraNormaShade1, DuraNormaShade2, DuraNormaShade3],
@@ -134,7 +134,7 @@ export const productsData = {
       },
       {
         type: 'Stretta',
-        desc: 'panels help you achieve a flawless and refined look for your exterior wall cladding with Stretta. These panels boast a smooth and resilient surface, engineered to withstand scratches and impacts.',
+        desc: '- panels help you achieve a flawless and refined look for your exterior wall cladding with Stretta. These panels boast a smooth and resilient surface, engineered to withstand scratches and impacts.',
         highlights: ['High Impact Resistance', 'Recyclable', 'Termite Proof & Rust Proof'],
         productImgs: [DuraStrettaImg1, DuraStrettaImg2, DuraStrettaImg3],
         productShades: [DuraStrettaShade1, DuraStrettaShade2, DuraStrettaShade3],
@@ -160,7 +160,7 @@ export const productsData = {
     section2data: [
       {
         type: 'Duo',
-        desc: "- India's first polymer-based wall and ceiling system. Easy installation, maintenance-free, waterproof, and fire retardant. Elevate your space with our versatile collections and enjoy a seamless, hassle-free solution.",
+        desc: 'an ingenious ceiling and wall system that celebrates the beauty of contrast. By combining two distinct materials, textures, or colours, Duo adds a captivating visual depth that sets it apart from conventional panels. Let your imagination run wild as you mix and match, creating personalized patterns and designs that transform your interiors into a work of art.',
         highlights: ['Unique Interlocking', 'Fire Retardant', 'Light Weight'],
         productImgs: [LineaDuoImg1, LineaDuoImg2, LineaDuoImg3],
         productShades: [LineaDuoShade1, LineaDuoShade2, LineaDuoShade3],
@@ -168,7 +168,7 @@ export const productsData = {
       },
       {
         type: 'Soffit',
-        desc: 'offer the visual appeal of real wood without the drawbacks. Enjoy quick and easy installation with a seamless finish, transforming your space effortlessly.',
+        desc: 'an innovative wall and ceiling panel that exudes modern sophistication. Its seamless integration creates a sleek and clean look, while its versatility allows for concealed lighting and air conditioning, adding both function and style to any room. Embrace the beauty of minimalist design with Soffit, as it effortlessly complements any interior theme.',
         highlights: ['No VOC Emission', 'Waterproof', 'Real Wood Feel'],
         productImgs: [LineaSoffitImg1, LineaSoffitImg2, LineaSoffitImg3],
         productShades: [LineaSoffitShade1, LineaSoffitImg2, LineaSoffitShade3],
@@ -176,7 +176,7 @@ export const productsData = {
       },
       {
         type: 'Louvers',
-        desc: '- with their durability and waterproof features, they are perfect for various applications. The seamless interlocking system ensures a flawless finish, allowing them to integrate seamlessly with other PARÉ products.',
+        desc: 'a captivating wall and ceiling panel that brings a touch of architectural artistry to your living spaces. These adjustable slats not only create a dynamic visual appeal but also enable precise control over light and airflow, ensuring a comfortable and well-lit ambiance. Let Louvers redefine your interiors by infusing a harmonious blend of aesthetics and functionality.',
         highlights: ['Fire Retardant', 'Maintenance Free', '10 Years Warranty'],
         productImgs: [LineaLouverImg1, LineaLouverImg2, LineaLouverImg3],
         productShades: [LineaLouverShade1, LineaLouverShade2, LineaLouverShade3],
@@ -184,7 +184,7 @@ export const productsData = {
       },
       {
         type: 'Vertica',
-        desc: 'panels, the smart and easy-to-install solution for walls and ceilings. Experience a seamless and efficient installation process, while enjoying the benefits of low maintenance and reduced wastage.',
+        desc: 'an avant-garde wall and ceiling panel designed to make a striking statement. Its vertical orientation accentuates the height of your space while adding a sense of grandeur. Crafted from premium materials, Vertica offers a wide range of customizable options, enabling you to curate a space that reflects your unique style and refined taste.',
         highlights: ['Sleek Design', 'Impact Resistance', 'Unique Interlocking'],
         productImgs: [LineaVerticaImg1, LineaVerticaImg2, LineaVerticaImg3],
         productShades: [LineaVerticaShade1, LineaVerticaShade2, LineaVerticaShade3],
@@ -211,7 +211,7 @@ export const productsData = {
       {
         type: 'Wave',
         desc: 'panels inspired by the graceful movement of ocean waves, these innovative panels add a touch of elegance and sophistication to any interior surfaces.',
-        highlights: ['Easy to install', 'Recyclable', 'Advance Interlocking'],
+        highlights: ['No VOC Emission', 'Real Wood Look', 'Seamless Look'],
         productImgs: [Innov2WaveImg1, Innov2WaveImg2, Innov2WaveImg3],
         productShades: [Innov2WaveShade1, Innov2WaveShade2, Innov2WaveShade3],
         pageLink: '/wave',
@@ -376,4 +376,58 @@ export const blogData = [
   },
 ]
 
+export const points = {
+  interlock: {
+    title: 'Unique Interlocking',
+    desc: 'One-of-a-kind interlocking system, ensuring a secure and tight fit.',
+  },
+  waterproof: {
+    title: 'Waterproof',
+    desc: 'Built to endure the toughest conditions with superior water resistance.',
+  },
+  no_voc: {
+    title: 'No VOC Emission',
+    desc: 'A greener future with our innovative wall panels, boasting no VOC emissions.',
+  },
+  realwood: {
+    title: 'Real Wood Feel',
+    desc: 'Achieve the timeless elegance of real wood without compromising on durability.',
+  },
+  fire_retardant: {
+    title: 'Fire Retardant',
+    desc: 'Designed to prioritize safety without compromising on style. ',
+  },
+  free_maintainance: {
+    title: 'Fire Retardant',
+    desc: 'Simplify your life with our maintenance-free wall and Ceiling systems. ',
+  },
+  warranty: {
+    title: '10 Years Warranty',
+    desc: 'Our quality panels a worry-free decade of reliable performance and durability.',
+  },
+  recycle: {
+    title: 'Recyclable',
+    desc: 'A sustainable solution that combines style and environmental consciousness.',
+  },
+  easy_to_install: {
+    title: 'Easy to install',
+    desc: 'Transform your space effortlessly with our easy-to-install wall panel system.',
+  },
+  anti_bacterial: {
+    title: 'Anti-bacterial',
+    desc: 'Specifically engineered to inhibit the growth of harmful bacteria.',
+  },
+  termite_proof: {
+    title: 'Termite Proof & Rust Proof',
+    desc: 'Fortified with a dual-layer defence, making them impervious to both termites and rust.',
+  },
+  no_ply: {
+    title: 'No Ply required',
+    desc: 'Panels that Can Be Screwed Directly onto the walls.',
+  },
+  light_weight: {
+    title: 'Light Weight',
+    desc: 'the perfect balance of strength and convenience with our lightweight wall panels.',
+  },
+}
 export const blogsCount = blogData.length

@@ -1,4 +1,11 @@
-import { BannerBg, InterlockImg, LeafImg, NormaBannerWoodImg, NormaTitleImg, StarImg } from '../../../assets'
+import {
+  BannerBg,
+  MaintainanceImg,
+  NormaBannerWoodImg,
+  NormaTitleImg,
+  SuperQualityImg,
+  UVResistanceImg,
+} from '../../../assets'
 import { Img } from '../../custom'
 
 const NormaBanner = () => {
@@ -35,54 +42,48 @@ const NormaBanner = () => {
           </div>
           <div className="hidden grid-cols-3 gap-10 md:grid">
             <div className="flex flex-col items-center gap-5">
-              <Img src={LeafImg} alt={'box'} width={82} height={82} />
-              <h6 className="font-metropolis font-bold 2xl:text-3xl">Sleek Design</h6>
+              <Img src={SuperQualityImg} alt={'box'} width={82} height={82} />
+              <h6 className="font-metropolis font-bold 2xl:text-3xl">Superior Quality</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
-                Where cutting-edge innovation meets eco-consciousness, offering NO VOC emission for a healthier
-                environment
+                Meticulously crafted to bring durability and elegance together.
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={StarImg} alt={'box'} width={82} height={82} />
-              <h6 className="font-metropolis font-bold 2xl:text-3xl">High Impact Resistance</h6>
+              <Img src={MaintainanceImg} alt={'box'} width={82} height={82} />
+              <h6 className="font-metropolis font-bold 2xl:text-3xl">Long Life</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
-                Experience flawless innovation with high impact resistance, ensuring enduring beauty in the face of wear
-                and tear.
+                Designed to stand the test of time, ensuring longevity and reduced maintenance.
               </p>
             </div>
             <div className="flex flex-col items-center gap-5">
-              <Img src={InterlockImg} alt={'box'} width={82} height={82} className="invert" />
-              <h6 className="font-metropolis font-bold 2xl:text-3xl">Unique Interlocking</h6>
+              <Img src={UVResistanceImg} alt={'box'} width={82} height={82} />
+              <h6 className="font-metropolis font-bold 2xl:text-3xl">UV Resistant</h6>
               <p className="text-center font-montserrat md:text-sm 2xl:text-xl">
-                Elevate your spaces with the unparalleled charm of a real wood feel, seamlessly blending aesthetics and
-                functionality in the ultimate wall and ceiling system.
+                System to withstand the harshest elements and protect against UV radiation.
               </p>
             </div>
           </div>
         </div>
         <div className="col-span-4 grid grid-cols-3 gap-3 px-3 py-5 md:hidden">
           <div className="flex flex-col items-center gap-5">
-            <Img src={LeafImg} alt={'box'} width={50} height={50} />
-            <h6 className="text-center font-metropolis text-sm font-bold">Sleek Design</h6>
+            <Img src={SuperQualityImg} alt={'box'} width={50} height={50} />
+            <h6 className="text-center font-metropolis text-sm font-bold">Superior Quality</h6>
             <p className="text-center font-montserrat text-xs">
-              Where cutting-edge innovation meets eco-consciousness, offering NO VOC emission for a healthier
-              environment
+              Meticulously crafted to bring durability and elegance together.
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={StarImg} alt={'box'} width={50} height={50} />
-            <h6 className="text-center font-metropolis text-sm font-bold">High Impact Resistance</h6>
+            <Img src={MaintainanceImg} alt={'box'} width={50} height={50} />
+            <h6 className="text-center font-metropolis text-sm font-bold">Long Life</h6>
             <p className="text-center font-montserrat text-xs">
-              Experience flawless innovation with high impact resistance, ensuring enduring beauty in the face of wear
-              and tear.
+              Designed to stand the test of time, ensuring longevity and reduced maintenance.
             </p>
           </div>
           <div className="flex flex-col items-center gap-5">
-            <Img src={InterlockImg} alt={'box'} width={50} height={50} className="invert" />
-            <h6 className="text-center font-metropolis text-sm font-bold">Unique Interlocking</h6>
+            <Img src={UVResistanceImg} alt={'box'} width={50} height={50} />
+            <h6 className="text-center font-metropolis text-sm font-bold">UV Resistant</h6>
             <p className="text-center font-montserrat text-xs">
-              Elevate your spaces with the unparalleled charm of a real wood feel, seamlessly blending aesthetics and
-              functionality in the ultimate wall and ceiling system.
+              System to withstand the harshest elements and protect against UV radiation.
             </p>
           </div>
         </div>
