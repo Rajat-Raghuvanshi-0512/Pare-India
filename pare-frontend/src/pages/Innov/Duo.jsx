@@ -47,8 +47,8 @@ import {
 import DuoBanner from '../../components/products/duo/DuoBanner'
 const metallicData = [
   { img: DuoShade1Img1, shade: DuoShade1Shade1, fname: 'GOLDen oak' },
-  { img: DuoShade1Img2, shade: DuoShade1Shade2, fname: 'maple wood' },
   { img: DuoShade1Img3, shade: DuoShade1Shade3, fname: 'birch' },
+  { img: DuoShade1Img2, shade: DuoShade1Shade2, fname: 'maple wood' },
   { img: DuoShade1Img4, shade: DuoShade1Shade4, fname: 'walnut' },
   { img: DuoShade1Img5, shade: DuoShade1Shade5, fname: 'pinewood' },
   { img: DuoShade1Img6, shade: DuoShade1Shade6, fname: 'weathred', lname: 'grey' },

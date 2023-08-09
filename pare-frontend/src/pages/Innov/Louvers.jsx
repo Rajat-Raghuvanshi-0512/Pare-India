@@ -63,7 +63,7 @@ const natureData = [
   { img: louverShade3Img1, shade: louverShade3Shade1, fname: 'oakwood ocre' },
   { img: louverShade3Img2, shade: louverShade3Shade2, fname: 'spiced walnut' },
   { img: louverShade3Img3, shade: louverShade3Shade3, fname: 'mahogany' },
-  { img: louverShade3Img4, shade: louverShade3Shade4, fname: 'chestnut' },
+  { img: louverShade3Img4, shade: louverShade3Shade4, fname: 'Royal nut' },
   { img: louverShade3Img5, shade: louverShade3Shade5, fname: 'ashwood grey' },
   { img: louverShade3Img6, shade: louverShade3Shade6, fname: 'beech wood' },
 ]
@@ -111,12 +111,12 @@ const Louvers = () => {
       <ImgGallery img1={LouverImg1} img2={LouverImg2} img3={LouverImg3} img4={LouverImg4} />
       <Info code="103" size="265mm X 3060mm" shades={13} collections={4} />
       <Shades
-        firstTitle="METALLIC"
-        firstData={metallicData}
-        secondTitle="MARBLE"
-        secondData={marbleData}
-        thirdTitle="NATURE"
-        thirdData={natureData}
+        firstTitle="NATURE"
+        firstData={natureData}
+        secondTitle="METALLIC"
+        secondData={metallicData}
+        thirdTitle="MARBLE"
+        thirdData={marbleData}
         fourthTitle={'FABRIC'}
         fourthData={fourthData}
       />

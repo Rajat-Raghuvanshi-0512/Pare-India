@@ -89,14 +89,14 @@ const Linea = () => {
       <ImgGallery img1={LineaImg1} img2={LineaImg2} img3={LineaImg3} img4={LineaImg4} />
       <Info code="107" size="150mm X 3060mm" shades={12} collections={2} />
       <Shades
-        firstTitle="METALLIC"
-        firstData={metallicData}
-        secondTitle="MARBLE"
-        secondData={marbleData}
-        thirdTitle="NATURE"
-        thirdData={natureData}
-        fourthData={fourthData}
+        firstTitle="NATURE"
+        firstData={natureData}
+        secondTitle="METALLIC"
+        secondData={metallicData}
+        thirdTitle="MARBLE"
+        thirdData={marbleData}
         fourthTitle={'FABRIC'}
+        fourthData={fourthData}
       />
       <Trims Jimages={Jimages} trim={trim} />
       <Brochure />

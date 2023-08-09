@@ -88,14 +88,14 @@ const Pyramid = () => {
       <ImgGallery img1={PyramidImg1} img2={PyramidImg2} img3={PyramidImg3} img4={PyramidImg4} />
       <Info code="108" size="140mm X 3060mm" shades={13} collections={4} />
       <Shades
-        firstTitle="METALLIC"
-        firstData={metallicData}
-        secondTitle="MARBLE"
-        secondData={marbleData}
-        thirdTitle="NATURE"
-        thirdData={natureData}
-        fourthData={fourthData}
+        firstTitle="NATURE"
+        firstData={natureData}
+        secondTitle="METALLIC"
+        secondData={metallicData}
+        thirdTitle="MARBLE"
+        thirdData={marbleData}
         fourthTitle={'FABRIC'}
+        fourthData={fourthData}
       />
       <Trims Jimages={Jimages} trim={trim} />
       <Brochure />

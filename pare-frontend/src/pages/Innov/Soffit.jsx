@@ -52,8 +52,8 @@ import SoffitBanner from '../../components/products/soffit/SoffitBanner'
 
 const metallicData = [
   { img: SoffitShade1Img1, shade: SoffitShade1Shade1, fname: 'GOLDen oak' },
-  { img: SoffitShade1Img2, shade: SoffitShade1Shade2, fname: 'maple wood' },
   { img: SoffitShade1Img3, shade: SoffitShade1Shade3, fname: 'birch' },
+  { img: SoffitShade1Img2, shade: SoffitShade1Shade2, fname: 'maple wood' },
   { img: SoffitShade1Img4, shade: SoffitShade1Shade4, fname: 'walnut' },
   { img: SoffitShade1Img5, shade: SoffitShade1Shade5, fname: 'pinewood' },
   { img: SoffitShade1Img6, shade: SoffitShade1Shade6, fname: 'weathred', lname: 'grey' },

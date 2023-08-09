@@ -38,8 +38,8 @@ import WaveBanner from '../components/products/wave/WaveBanner'
 
 const metallicData = [
   { img: WaveShade1Img1, shade: WaveShade1Shade1, fname: 'GOLDen oak' },
-  { img: WaveShade1Img2, shade: WaveShade1Shade2, fname: 'maple wood' },
   { img: WaveShade1Img3, shade: WaveShade1Shade3, fname: 'birch' },
+  { img: WaveShade1Img2, shade: WaveShade1Shade2, fname: 'maple wood' },
   { img: WaveShade1Img4, shade: WaveShade1Shade4, fname: 'walnut' },
   { img: WaveShade1Img5, shade: WaveShade1Shade5, fname: 'pinewood' },
   { img: WaveShade1Img6, shade: WaveShade1Shade6, fname: 'weathred', lname: 'grey' },

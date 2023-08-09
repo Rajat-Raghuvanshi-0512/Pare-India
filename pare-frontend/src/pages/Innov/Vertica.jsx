@@ -60,7 +60,7 @@ const natureData = [
   { img: verticaShade3Img1, shade: verticaShade3Shade1, fname: 'oakwood ocre' },
   { img: verticaShade3Img2, shade: verticaShade3Shade2, fname: 'spiced walnut' },
   { img: verticaShade3Img3, shade: verticaShade3Shade3, fname: 'mahogany' },
-  { img: verticaShade3Img4, shade: verticaShade3Shade4, fname: 'chestnut' },
+  { img: verticaShade3Img4, shade: verticaShade3Shade4, fname: 'royal nut' },
   { img: verticaShade3Img5, shade: verticaShade3Shade5, fname: 'ashwood grey' },
   { img: verticaShade3Img6, shade: verticaShade3Shade6, fname: 'beech wood' },
 ]
@@ -100,12 +100,12 @@ const Vertica = () => {
       <ImgGallery img1={VerticaImg1} img2={VerticaImg2} img3={VerticaImg3} img4={VerticaImg4} />
       <Info code="109" size="230mm X 3060mm" shades={13} collections={4} />
       <Shades
-        firstTitle="METALLIC"
-        firstData={metallicData}
-        secondTitle="MARBLE"
-        secondData={marbleData}
-        thirdTitle="NATURE"
-        thirdData={natureData}
+        firstTitle="NATURE"
+        firstData={natureData}
+        secondTitle="METALLIC"
+        secondData={metallicData}
+        thirdTitle="MARBLE"
+        thirdData={marbleData}
         fourthTitle={'FABRIC'}
         fourthData={fourthData}
       />
