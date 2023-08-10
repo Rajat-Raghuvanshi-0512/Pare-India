@@ -63,6 +63,7 @@ import {
   Innov2WaveShade1,
   Innov2WaveShade2,
   Innov2WaveShade3,
+  LineaSoffitShade2,
 } from '../assets'
 
 export const productsData = {
@@ -171,7 +172,7 @@ export const productsData = {
         desc: 'an innovative wall and ceiling panel that exudes modern sophistication. Its seamless integration creates a sleek and clean look, while its versatility allows for concealed lighting and air conditioning, adding both function and style to any room. Embrace the beauty of minimalist design with Soffit, as it effortlessly complements any interior theme.',
         highlights: ['No VOC Emission', 'Waterproof', 'Real Wood Feel'],
         productImgs: [LineaSoffitImg1, LineaSoffitImg2, LineaSoffitImg3],
-        productShades: [LineaSoffitShade1, LineaSoffitImg2, LineaSoffitShade3],
+        productShades: [LineaSoffitShade1, LineaSoffitShade2, LineaSoffitShade3],
         pageLink: '/soffit',
       },
       {

@@ -87,7 +87,7 @@ const Linea = () => {
     <Suspense fallback={<Loader />}>
       <LineaBanner />
       <ImgGallery img1={LineaImg1} img2={LineaImg2} img3={LineaImg3} img4={LineaImg4} />
-      <Info code="107" size="150mm X 3060mm" shades={12} collections={2} />
+      <Info code="107" size="150mm X 3060mm" shades={13} collections={4} />
       <Shades
         firstTitle="NATURE"
         firstData={natureData}
