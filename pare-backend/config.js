@@ -8,7 +8,7 @@ dotenv.config({
 module.exports = {
   NODE_ENV: process.env.NODE_ENV || './dev',
   HOST: process.env.HOST || 'localhost',
-  PORT: process.env.PORT || 2001,
+  PORT: process.env.PORT || 3001,
   DB_URL: process.env.DB_URL || 'mongodb://127.0.0.1:27017/pare-backend',
   GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID,
   GOOGLE_CLIENT_SECRET: process.env.GOOGLE_CLIENT_SECRET,
