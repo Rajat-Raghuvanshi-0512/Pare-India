@@ -33,7 +33,7 @@ const ContactFloatBtn = () => {
           target="_blank"
           rel="noreferrer"
           className={`absolute -z-10 flex h-16 w-16 cursor-pointer items-center justify-center rounded-full bg-green-500 text-white duration-500 ${
-            open ? '-top-20 left-0' : 'left-0 top-0'
+            open ? '-top-20 left-0' : 'left-0 top-0 scale-0'
           } `}
         >
           <Img src={WhatsappIcon} alt={'whatsapp'} width={50} height={50} />
@@ -41,7 +41,7 @@ const ContactFloatBtn = () => {
         <a
           href="mailto:hello@pareindia.com"
           className={`absolute -z-10 flex h-16 w-16 cursor-pointer items-center justify-center rounded-full bg-white text-black duration-500 ${
-            open ? '-top-40 left-0' : 'left-0 top-0'
+            open ? '-top-40 left-0' : 'left-0 top-0 scale-0'
           }`}
         >
           <Img src={MailIcon} alt={'mail'} width={30} height={30} />
@@ -49,7 +49,7 @@ const ContactFloatBtn = () => {
         <a
           href="tel:+918356954856"
           className={`absolute -z-10 flex h-16 w-16 cursor-pointer items-center justify-center rounded-full bg-white text-black duration-500 ${
-            open ? '-top-60 left-0' : 'left-0 top-0'
+            open ? '-top-60 left-0' : 'left-0 top-0 scale-0'
           }`}
         >
           <Img src={PhoneIcon} alt={'phone'} width={30} height={30} />
