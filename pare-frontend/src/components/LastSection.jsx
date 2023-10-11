@@ -13,7 +13,7 @@ const LastSection = ({ dark = true, mainText, btnText, btnRoute, showOnMobile = 
         </div>
         <div>
           <Link
-            className="flex h-16 w-16 cursor-pointer items-center justify-center break-words rounded-full border border-white text-center font-metropolis text-[8px] font-bold md:h-28 md:w-28 md:text-sm md:font-normal"
+            className="flex h-16 w-16 cursor-pointer items-center justify-center break-words rounded-full border border-white text-center font-metropolis text-[8px] font-bold duration-300 hover:scale-125 hover:bg-white hover:text-black md:h-28 md:w-28 md:text-sm md:font-normal"
             to={btnRoute ? btnRoute : '/contact'}
           >
             {btnText ? btnText : 'Contact us'}

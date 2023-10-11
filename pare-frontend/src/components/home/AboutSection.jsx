@@ -72,15 +72,14 @@ const AboutSectionLg = () => {
   return (
     <section className="m-10 lg:m-16 2xl:mx-48">
       <div className="grid grid-cols-2 gap-10 lg:gap-5">
-        <div className="mt-20 flex flex-col justify-end">
-          <h3 className="mb-3 font-metropolis text-xl font-bold uppercase lg:text-4xl">About Us</h3>
-          <div className="ml-6 h-[300px] w-[300px] border-2 border-red-base lg:h-[500px] lg:w-[500px]">
+        <div className="mt-0 flex flex-col justify-end">
+          <div className="ml-6 h-[300px] w-[300px] border-2 border-red-base lg:h-[700px] lg:w-[500px]">
             <Img
               src={sofa1000}
               width={500}
               height={500}
               alt="sofa"
-              className="-ml-3 mt-3 h-[300px] w-[300px] object-contain lg:-ml-4  lg:mt-4 lg:h-[500px] lg:w-[500px]"
+              className="-ml-3 mt-3 h-[300px] w-[300px] object-cover lg:-ml-4  lg:mt-4 lg:h-[700px] lg:w-[500px]"
               srcSet={`${sofa500}, ${sofa1000}, ${sofa1200}`}
               loading="lazy"
             />

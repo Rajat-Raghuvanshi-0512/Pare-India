@@ -1,5 +1,16 @@
 import { useState, useEffect, useCallback } from 'react'
-import { HeroBg, HeroBg1, HeroBg2, HeroBgMobile, HeroBgMobile1, HeroBgMobile2 } from '../../assets'
+import {
+  HeroBg,
+  HeroBg1,
+  HeroBg2,
+  HeroBg3,
+  HeroBg4,
+  HeroBg5,
+  HeroBgMobile,
+  HeroBgMobile1,
+  HeroBgMobile2,
+  Stamp,
+} from '../../assets'
 import { Button } from '../custom'
 import { motion } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
@@ -23,6 +34,27 @@ const HeroData = [
   },
   {
     imageLg: HeroBg2,
+    headingRedText: 'Elevate',
+    headingWhiteText: 'Surfaces',
+    smallText: 'Unmatched Quality',
+    imageSm: HeroBgMobile2,
+  },
+  {
+    imageLg: HeroBg3,
+    headingRedText: 'Finest',
+    headingWhiteText: 'Designs',
+    smallText: 'Enhance Spaces',
+    imageSm: HeroBgMobile,
+  },
+  {
+    imageLg: HeroBg4,
+    headingRedText: 'Indian',
+    headingWhiteText: 'Pioneers',
+    smallText: 'Global Innovators',
+    imageSm: HeroBgMobile1,
+  },
+  {
+    imageLg: HeroBg5,
     headingRedText: 'Elevate',
     headingWhiteText: 'Surfaces',
     smallText: 'Unmatched Quality',
@@ -94,17 +126,19 @@ const HeroLg = () => {
       <div className="absolute top-[120px] z-10 2xl:top-[150px]">
         <b className="flex items-center font-metropolis leading-[145%] md:w-[550px] lg:w-[700px] 2xl:w-[800px]">
           <span className="mt-5 w-full uppercase leading-snug md:text-[3rem] lg:text-[3.5rem] 2xl:text-[4rem]">
-            <span>MANUFACTURERS OF </span>
-            <span className="upper text-red-base">Innovative Surfaces</span>
-            <span> in INDIA.</span>
+            <span>
+              TRANSFORM <br /> YOUR SPACES WITH{' '}
+            </span>
+            <br />
+            <span className="upper text-red-base">PARE</span>
           </span>
         </b>
-        {/* <p className=" md:w-[220px] lg:w-[300px] 2xl:text-xl">
+        <p className=" md:w-[220px] lg:w-[300px] 2xl:text-xl">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam.
-        </p> */}
-        <Button className={'mt-5 !px-8'} variant="outlined" onClick={() => navigate('/contact')}>
-          BUILD WITH US
+        </p>
+        <Button className={'mt-5 !px-4 lg:!text-3xl'} variant="outlined" onClick={() => navigate('/contact')}>
+          VIEW PROJECT
         </Button>
       </div>
       <Swiper
@@ -121,7 +155,7 @@ const HeroLg = () => {
                 src={el.imageLg}
                 width={'1900'}
                 height={'100'}
-                className="ml-auto !h-[450px] !w-[65vw] object-cover object-bottom 2xl:!h-[550px] 2xl:!w-[60vw]"
+                className="ml-auto !h-[450px] !w-[65vw] object-cover object-bottom lg:!h-[450px] xl:!h-[520px] 2xl:!h-[600px] 2xl:!w-[60vw]"
                 alt="bg-hero"
                 key={el.imageLg}
               />
@@ -129,6 +163,7 @@ const HeroLg = () => {
           )
         })}
       </Swiper>
+      <img src={Stamp} alt="stamp" className="absolute -right-5 bottom-2 w-40" />
     </section>
   )
 }

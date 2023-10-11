@@ -30,6 +30,9 @@ import HeroBgMobile2_800 from './images/home/home-hero-bg-mob2-800.webp'
 import HeroBg from './images/home/hero-bg.webp'
 import HeroBg1 from './images/home/hero-bg1.webp'
 import HeroBg2 from './images/home/hero-bg2.webp'
+import HeroBg3 from './images/home/hero-bg3.webp'
+import HeroBg4 from './images/home/hero-bg4.webp'
+import HeroBg5 from './images/home/hero-bg5.webp'
 import sofa from './images/home/sofa.webp'
 import sofa500 from './images/home/sofa-500.webp'
 import sofa1000 from './images/home/sofa-1000.webp'
@@ -40,6 +43,7 @@ import NextProjectImg from './images/home/next-project.webp'
 import NextProjectImgWeb from './images/home/next-project-web.webp'
 import PrevArrowProject from './images/home/prev-arrow-project.webp'
 import NextArrowProject from './images/home/next-arrow-project.webp'
+import Stamp from './images/home/stamp.png'
 
 import P1 from './images/home/products range/p1.webp'
 import P12 from './images/home/products range/p11.webp'
@@ -680,6 +684,9 @@ export {
   HeroBg,
   HeroBg1,
   HeroBg2,
+  HeroBg3,
+  HeroBg4,
+  HeroBg5,
   BurgerMenuBlack,
   sofa500,
   sofa1200,
@@ -1245,4 +1252,5 @@ export {
   ImpactResistanceImg,
   SeamlessImg,
   NoPlyImg,
+  Stamp,
 }

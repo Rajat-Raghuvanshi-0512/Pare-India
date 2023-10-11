@@ -21,7 +21,7 @@ const Info = ({ code = '112', size = '180mm x 3060mm', shades = 13, collections 
         className={'absolute left-0 top-0 -z-10 -mt-5 h-full w-screen object-cover'}
       />
       <div>
-        <h2 className="font-metropolis text-4xl font-black !leading-snug md:text-center md:text-4xl lg:text-5xl">
+        <h2 className="font-metropolis text-4xl font-bold !leading-snug md:text-center md:text-4xl">
           STAYS WITH YOU <br /> THROUGH THICK AND THIN
         </h2>
         <div className="mt-10 grid gap-10 md:grid-cols-2">
@@ -31,10 +31,12 @@ const Info = ({ code = '112', size = '180mm x 3060mm', shades = 13, collections 
             </h4>
             <p className="mt-4 font-montserrat font-semibold lg:text-xl">PRODUCT CODE-{code}</p>
             <p className="mt-4 font-montserrat font-semibold lg:text-xl">
-              SIZING <br /> {size}
+              <span className="text-red-base">SIZING</span> <br /> {size}
             </p>
             <p className="mt-4 font-montserrat font-semibold lg:text-xl">
-              AVAILABLE IN <br /> {shades} Shades <br /> {collections} Collections
+              <span className="text-red-base">AVAILABLE IN</span> <br />{' '}
+              <span className="text-red-base">{shades} </span>
+              Shades <br /> <span className="text-red-base">{collections}</span> Collections
             </p>
           </div>
           <div>
