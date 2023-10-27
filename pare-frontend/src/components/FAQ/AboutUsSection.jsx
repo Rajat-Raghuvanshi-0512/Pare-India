@@ -46,13 +46,13 @@ const AboutSectionSm = () => {
             <>
               <div className="mt-2 grid grid-cols-2">
                 <p className="font-metropolis text-xl font-bold text-red-base">
-                  <CountUp end={10} duration={3} />+
+                  <CountUp end={15} duration={3} />+
                 </p>
                 <p className="font-helvetica text-[10px]">Quality Products</p>
               </div>
               <div className="grid grid-cols-2">
                 <p className="font-metropolis text-xl font-bold text-red-base">
-                  <CountUp end={25} duration={3} />+
+                  <CountUp end={45} duration={3} />+
                 </p>
                 <p className="font-helvetica text-[10px]">Shades TO CHoose </p>
               </div>
@@ -112,13 +112,13 @@ const AboutSectionLg = () => {
                 <>
                   <div>
                     <p className="font-metropolis text-xl font-bold text-red-base lg:text-2xl">
-                      <CountUp end={10} duration={3} />+
+                      <CountUp end={15} duration={3} />+
                     </p>
                     <p className="font-helvetica text-xs">Quality Products</p>
                   </div>
                   <div>
                     <p className="font-metropolis text-xl font-bold text-red-base lg:text-2xl">
-                      <CountUp end={25} duration={3} />+
+                      <CountUp end={45} duration={3} />+
                     </p>
                     <p className="font-helvetica text-xs">Shades TO CHoose </p>
                   </div>

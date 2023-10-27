@@ -42,13 +42,13 @@ const AboutSectionSm = () => {
             <>
               <div>
                 <p className="font-metropolis text-2xl font-bold text-red-base">
-                  <CountUp end={10} duration={3} />+
+                  <CountUp end={15} duration={3} />+
                 </p>
                 <p className="font-helvetica text-xs">Quality Products</p>
               </div>
               <div>
                 <p className="font-metropolis text-2xl font-bold text-red-base">
-                  <CountUp end={25} duration={3} />+
+                  <CountUp end={45} duration={3} />+
                 </p>
                 <p className="font-helvetica text-xs">Shades TO CHoose </p>
               </div>
@@ -70,7 +70,7 @@ const AboutSectionLg = () => {
   const numbersRef = useRef(null)
   const numbersInView = useInView(numbersRef)
   return (
-    <section className="m-10 lg:m-16 2xl:mx-48">
+    <section className="m-10 mt-14 lg:m-16 lg:mt-20 2xl:mx-48">
       <div className="grid grid-cols-2 gap-10 lg:gap-5">
         <div className="mt-0 flex flex-col justify-end">
           <div className="ml-6 h-[300px] w-[300px] border-2 border-red-base lg:h-[700px] lg:w-[500px]">
@@ -99,13 +99,13 @@ const AboutSectionLg = () => {
                 <>
                   <div>
                     <p className="font-metropolis text-xl font-bold text-red-base lg:text-3xl">
-                      <CountUp end={10} duration={3} />+
+                      <CountUp end={15} duration={3} />+
                     </p>
                     <p className="font-helvetica text-xs">Quality Products</p>
                   </div>
                   <div>
                     <p className="font-metropolis text-xl font-bold text-red-base lg:text-3xl">
-                      <CountUp end={25} duration={3} />+
+                      <CountUp end={45} duration={3} />+
                     </p>
                     <p className="font-helvetica text-xs">Shades TO CHoose </p>
                   </div>

@@ -41,7 +41,7 @@ const AboutUs = () => {
             <>
               <div>
                 <p className="w-[90%] border-b border-black  text-center font-metropolis text-xl font-bold md:border-b-2 md:text-left md:text-4xl lg:text-5xl">
-                  <CountUp end={10} duration={4} />+
+                  <CountUp end={15} duration={4} />+
                 </p>
                 <p className="py-1 text-center font-montserrat text-[10px] font-medium leading-3 md:py-3 md:text-left md:text-lg lg:text-xl">
                   Quality Products
@@ -49,7 +49,7 @@ const AboutUs = () => {
               </div>
               <div>
                 <p className="w-[90%] border-b border-black text-center font-metropolis text-xl font-bold md:border-b-2 md:text-left md:text-4xl lg:text-5xl">
-                  <CountUp end={25} duration={2} />+
+                  <CountUp end={45} duration={2} />+
                 </p>
                 <p className="py-1 text-center font-montserrat text-[10px] font-medium leading-3 md:py-3 md:text-left md:text-lg lg:text-xl">
                   Shades to choose
